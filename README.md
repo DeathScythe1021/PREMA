@@ -4,7 +4,7 @@
 
 做簡報時，先從目錄挑一種定義明確的美術風格，再選背景和配色，Claude 會照那套風格的規則做出 HTML 簡報。圖片先留版位，等你給圖再放進去。
 
-- 風格目錄：（部署後填入 GitHub Pages 網址）
+- 風格目錄：https://deathscythe1021.github.io/art-style-deck-skill/
 - 目前收錄：25 種風格
 
 ## 為什麼要先選風格
@@ -18,7 +18,7 @@ AI 做的簡報常常看起來差不多：漸層、圓角卡片、置中排版�
 把這個 repo clone 到 Claude Code 的個人 skills 資料夾：
 
 ```bash
-git clone <這個 repo 的網址> ~/.claude/skills/art-style-deck
+git clone https://github.com/DeathScythe1021/art-style-deck-skill.git ~/.claude/skills/art-style-deck
 ```
 
 之後在 Claude Code 說「幫我做一份簡報」或「用 Postage 風格做投影片」，就會用到這個 skill。
