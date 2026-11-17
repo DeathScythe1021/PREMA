@@ -1,6 +1,6 @@
 # Art Style Deck
 
-一個 Claude skill，加上一個風格目錄網頁。
+這個 repo 同時是一個 Claude skill 和一個風格目錄網頁，兩者讀的是同一份風格資料。
 
 做簡報時，先從目錄挑一種定義明確的美術風格，再選背景和配色，Claude 會照那套風格的規則做出 HTML 簡報。圖片先留版位，等你給圖再放進去。
 
@@ -11,7 +11,7 @@
 
 AI 做的簡報常常看起來差不多：漸層、圓角卡片、置中排版、表情符號圖示。原因是沒有明確的美術方向，每個地方都選了最保險的做法。
 
-這個 skill 的做法是先把方向定死。每種風格都寫清楚它的版面規則、字體、招牌圖形、配色上限和禁忌，Claude 做每一頁時都回到這套規則。
+這個 skill 的做法是先把方向定死。每種風格都寫清楚它的版面規則、字體、招牌圖形、配色上限和禁忌，Claude 做每一頁時都照這套規則檢查。
 
 ## 安裝
 
@@ -21,7 +21,7 @@ AI 做的簡報常常看起來差不多：漸層、圓角卡片、置中排版�
 git clone https://github.com/DeathScythe1021/art-style-deck-skill.git ~/.claude/skills/art-style-deck
 ```
 
-之後在 Claude Code 說「幫我做一份簡報」或「用 Postage 風格做投影片」，就會用到這個 skill。
+之後在 Claude Code 說「幫我做一份簡報」或「用 Postage 風格做投影片」，Claude 就會啟用這個 skill。
 
 更新風格清單：
 
@@ -84,4 +84,4 @@ SKILL.md                    skill 本體
 - [10 Cool Design Style Names You've Been Searching For](https://www.youtube.com/watch?v=WHYVUPs8L3k)
 - [15 More Design Styles You've Never Heard Of](https://www.youtube.com/watch?v=uZWnxa4mkKA)
 
-各風格的規格與示範封面是另外撰寫的。
+影片只提供風格名稱與參考圖；各風格的定義、配色與示範封面是這個專案另外撰寫的。
