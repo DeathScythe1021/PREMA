@@ -1,0 +1,159 @@
+{
+  "id": "wabi-sabi",
+  "name_zh": "侘寂",
+  "name_en": "Wabi Sabi",
+  "summary": "接受不完美與時間痕跡的日式美學：粗糙材質、大地色、不對稱、大量留白，安靜而有溫度。",
+  "definition": "侘寂（Wabi Sabi）欣賞不完美、不永恆、不完整的美：有裂痕的陶器、褪色的木頭、粗糙的和紙、一枝枯枝。轉成簡報時，版面不對稱、留白比內容多，色彩是土、灰、米、炭的大地色，文字少而沉靜，偶爾用一道毛筆筆觸或一塊不規則的形狀當重點。",
+  "keywords": [
+    "安靜",
+    "自然",
+    "不完美",
+    "留白"
+  ],
+  "best_for": [
+    "生活風格與工藝品牌",
+    "茶、陶、手作、空間設計",
+    "冥想與身心靈",
+    "個人理念分享"
+  ],
+  "not_for": [
+    "資訊密集的報告",
+    "熱鬧的活動宣傳"
+  ],
+  "traits": [
+    "大地色：土、灰、米、炭",
+    "粗糙紙張與陶土質感",
+    "不對稱構圖",
+    "大量留白",
+    "不規則有機形狀",
+    "毛筆或墨跡筆觸"
+  ],
+  "layout": [
+    "不對稱：主體偏一側，另一側大片留白",
+    "文字少，標題可以直排",
+    "用一塊不規則形狀或一道墨跡當視覺重心",
+    "照片小而安靜，不滿版"
+  ],
+  "motifs": [
+    "不規則圓（像手捏陶器）",
+    "墨跡筆觸",
+    "和紙纖維",
+    "直排文字",
+    "小印章"
+  ],
+  "typography": {
+    "display": {
+      "family": "Spectral",
+      "weights": "300、500、italic",
+      "role": "英文標題，細而沉靜"
+    },
+    "body": {
+      "family": "Spectral",
+      "weights": "300",
+      "role": "英文內文"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "300、500",
+      "role": "中文；標題可直排"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,500;1,300&family=Noto+Serif+TC:wght@300;500&display=swap",
+    "rules": [
+      "字重偏細，不要粗體",
+      "中文標題可以 writing-mode: vertical-rl 直排",
+      "行距寬鬆"
+    ]
+  },
+  "imagery": [
+    "陶器、木頭、石頭、枯枝、和紙",
+    "照片低飽和、自然光、陰影柔和",
+    "可以留下不完美的邊緣"
+  ],
+  "placeholder": "一塊不規則圓角的米灰形狀，右下小字直排寫「器物照片」，旁邊一個朱色小印",
+  "avoid": [
+    "高飽和色",
+    "完美對稱與整齊格線",
+    "亮面光澤",
+    "粗體大字"
+  ],
+  "color_rules": {
+    "max_accents": 1,
+    "notes": "只有一個重點色，通常是朱紅印章色或深土色，用量要很少。"
+  },
+  "backgrounds": [
+    {
+      "id": "washi",
+      "name": "和紙",
+      "hex": "#EEE8DC"
+    },
+    {
+      "id": "clay",
+      "name": "陶土",
+      "hex": "#D9CBB5"
+    },
+    {
+      "id": "ash",
+      "name": "灰燼",
+      "hex": "#CFCCC5"
+    },
+    {
+      "id": "charcoal",
+      "name": "炭",
+      "hex": "#2A2825"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "W1",
+      "name": "朱印",
+      "ink": "#2E2A25",
+      "accents": [
+        "#A33A2A"
+      ],
+      "pairs_with": [
+        "washi",
+        "clay",
+        "ash"
+      ]
+    },
+    {
+      "id": "W2",
+      "name": "苔",
+      "ink": "#2B2D26",
+      "accents": [
+        "#5A6346"
+      ],
+      "pairs_with": [
+        "washi",
+        "ash"
+      ]
+    },
+    {
+      "id": "W3",
+      "name": "土",
+      "ink": "#2F261E",
+      "accents": [
+        "#7A5232"
+      ],
+      "pairs_with": [
+        "washi",
+        "clay"
+      ]
+    },
+    {
+      "id": "W4",
+      "name": "夜茶",
+      "ink": "#E8E1D3",
+      "accents": [
+        "#C9A27A"
+      ],
+      "pairs_with": [
+        "charcoal"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

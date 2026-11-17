@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Dark Academia 暗黑學院｜示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=EB+Garamond:ital,wght@0,400;1,400&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #1C1814;
+  --ink: #E9DFC9;
+  --a1: #C9A15A; --a2: #CC6A55; --a3: #CC6A55;
+}
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide { font-family: "EB Garamond", "Noto Serif TC", serif; }
+
+/* 燭光：右頁上方一圈暖光 */
+.glow { position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 760px 620px at 1430px 420px, color-mix(in srgb, var(--a1) 13%, transparent), transparent 70%),
+    radial-gradient(ellipse 520px 460px at 500px 520px, color-mix(in srgb, var(--a1) 6%, transparent), transparent 70%); }
+.grain { position: absolute; inset: 0; width: 1920px; height: 1080px; opacity: .07; }
+.grain rect { fill: var(--ink); }
+
+/* 外框：雙線 */
+.frame { position: absolute; inset: 44px; border: 2px solid var(--a1); }
+.frame::after { content: ""; position: absolute; inset: 9px; border: 1px solid color-mix(in srgb, var(--a1) 70%, transparent); }
+.frame-orn { position: absolute; left: 50%; width: 120px; height: 40px; margin-left: -60px; background: var(--bg); }
+.frame-orn.top { top: 32px; } .frame-orn.bot { bottom: 32px; }
+.frame-orn svg { width: 120px; height: 40px; }
+
+/* 書溝 */
+.gutter { position: absolute; left: 900px; top: 57px; bottom: 57px; width: 120px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--ink) 6%, transparent) 46%, color-mix(in srgb, var(--ink) 2%, transparent) 50%, color-mix(in srgb, var(--ink) 6%, transparent) 54%, transparent); }
+.gutter::after { content: ""; position: absolute; left: 60px; top: 0; bottom: 0; width: 1px; background: color-mix(in srgb, var(--ink) 22%, transparent); }
+
+/* 花飾 */
+.leaf { fill: var(--a1); }
+.vein { fill: none; stroke: var(--bg); stroke-width: 1.6; stroke-linecap: round; }
+.stem { fill: none; stroke: var(--a1); stroke-width: 2.2; stroke-linecap: round; }
+.orn line { stroke: var(--a1); stroke-width: 1.4; }
+
+/* 左頁：插圖版位 */
+.ph { position: absolute; left: 250px; top: 176px; width: 520px; height: 650px; box-sizing: border-box;
+  border: 1.5px solid var(--a1);
+  background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--ink) 6%, transparent) 0 1px, transparent 1px 10px); }
+.ph::before { content: ""; position: absolute; inset: 12px; border: 1px solid color-mix(in srgb, var(--a1) 75%, transparent); }
+.ph .corner { position: absolute; width: 44px; height: 34px; }
+.ph .corner.tl { left: 20px; top: 20px; }
+.ph .corner.tr { right: 20px; top: 20px; transform: scaleX(-1); }
+.ph .corner.bl { left: 20px; bottom: 20px; transform: scaleY(-1); }
+.ph .corner.br { right: 20px; bottom: 20px; transform: scale(-1, -1); }
+.ph .label { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); white-space: nowrap;
+  padding: 18px 34px; background: var(--bg); border-top: 1px solid color-mix(in srgb, var(--a1) 60%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--a1) 60%, transparent);
+  font: italic 500 34px/1 "Cormorant Garamond", "Noto Serif TC", serif; letter-spacing: .02em; }
+.ph .label b { font-weight: 400; font-family: "Noto Serif TC", serif; font-style: normal; font-size: 28px; }
+
+/* 蠟封 */
+.seal { position: absolute; left: 690px; top: 760px; width: 190px; height: 190px; }
+.seal .wax { fill: var(--a2); }
+.seal .shade { fill: oklch(from var(--a2) calc(l - 0.12) c h); }
+.seal .ring { fill: none; stroke: oklch(from var(--a2) calc(l - 0.14) c h); stroke-width: 3; }
+.seal .ring2 { fill: none; stroke: oklch(from var(--a2) calc(l + 0.08) c h); stroke-width: 1.5; }
+.seal .mark { fill: oklch(from var(--a2) calc(l - 0.16) c h); }
+.seal .hi { fill: oklch(from var(--a2) calc(l + 0.1) c h); opacity: .6; }
+
+/* 右頁 */
+.recto { position: absolute; left: 1080px; top: 96px; width: 700px; }
+.runhead { display: flex; justify-content: space-between; align-items: baseline;
+  padding-bottom: 14px; border-bottom: 1px solid color-mix(in srgb, var(--a1) 70%, transparent);
+  font: 400 24px/1 "EB Garamond", "Noto Serif TC", serif; letter-spacing: .32em; }
+.runhead i { font-style: italic; letter-spacing: .06em; }
+.numeral { margin: 92px 0 0; font: 700 132px/1 "Cormorant Garamond", serif; letter-spacing: .04em; }
+h1 { margin: 34px 0 0; font: 700 94px/1.15 "Noto Serif TC", serif; letter-spacing: .04em; }
+.rule { display: block; width: 520px; height: 40px; margin: 46px 0 44px; }
+blockquote { margin: 0; font: italic 500 70px/1.08 "Cormorant Garamond", serif; letter-spacing: .005em; }
+blockquote .q { margin-left: -.42em; }
+.attrib { margin-top: 40px; font: italic 400 30px/1 "EB Garamond", "Noto Serif TC", serif; }
+.folio { position: absolute; left: 1080px; width: 700px; top: 958px; text-align: center; font: 400 26px/1 "EB Garamond", serif; letter-spacing: .3em; }
+</style>
+</head>
+<body>
+<main class="slide">
+  <div class="glow"></div>
+  <svg class="grain" aria-hidden="true">
+    <filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1.4 -.55"/><feComposite in="SourceGraphic" operator="in"/></filter>
+    <rect width="1920" height="1080" filter="url(#g)"/>
+  </svg>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="ivy">
+        <path class="leaf" d="M32,0 C22,-3 16,-8 12,-14 C8,-20 0,-22 -6,-18 C-12,-14 -14,-6 -10,0 C-14,6 -12,14 -6,18 C0,22 8,20 12,14 C16,8 22,3 32,0 Z"/>
+        <path class="vein" d="M-8,0 C4,-1 14,-1 24,0"/>
+        <path class="stem" d="M-10,0 C-20,1 -28,-4 -30,-11 C-32,-18 -25,-21 -22,-16 C-20,-13 -22,-10 -25,-10"/>
+      </g>
+    </defs>
+  </svg>
+
+  <div class="frame"></div>
+  <div class="frame-orn top"><svg class="orn" viewBox="-60 -20 120 40" aria-hidden="true"><use href="#ivy" transform="scale(.9)"/></svg></div>
+  <div class="frame-orn bot"><svg class="orn" viewBox="-60 -20 120 40" aria-hidden="true"><use href="#ivy" transform="rotate(180) scale(.9)"/></svg></div>
+  <div class="gutter"></div>
+
+  <!-- 左頁：插圖 -->
+  <div class="ph" data-slot="cover-photo" data-ratio="4/5">
+    <svg class="orn corner tl" viewBox="0 0 44 34" aria-hidden="true"><path class="stem" d="M2,32 L2,2 L32,2"/><use href="#ivy" transform="translate(22,14) scale(.38) rotate(40)"/></svg>
+    <svg class="orn corner tr" viewBox="0 0 44 34" aria-hidden="true"><path class="stem" d="M2,32 L2,2 L32,2"/><use href="#ivy" transform="translate(22,14) scale(.38) rotate(40)"/></svg>
+    <svg class="orn corner bl" viewBox="0 0 44 34" aria-hidden="true"><path class="stem" d="M2,32 L2,2 L32,2"/><use href="#ivy" transform="translate(22,14) scale(.38) rotate(40)"/></svg>
+    <svg class="orn corner br" viewBox="0 0 44 34" aria-hidden="true"><path class="stem" d="M2,32 L2,2 L32,2"/><use href="#ivy" transform="translate(22,14) scale(.38) rotate(40)"/></svg>
+    <div class="label">Plate III — <b>插圖 4:5</b></div>
+  </div>
+
+  <svg class="seal" viewBox="-95 -95 190 190" aria-hidden="true">
+    <path class="shade" transform="translate(3,5)" d="M81,0C83,4 84,9 83,13C81,17 76,20 74,24C72,28 73,33 71,36C69,40 63,41 60,44C57,46 55,50 53,53C50,56 47,58 45,62C43,66 42,73 39,76C35,79 30,81 26,80C21,79 15,71 11,70C7,69 4,73 0,74C-4,75 -8,75 -12,76C-16,77 -21,79 -25,78C-29,77 -33,73 -36,71C-40,69 -44,67 -47,65C-50,62 -54,59 -56,56C-57,52 -54,44 -56,41C-58,37 -65,38 -69,35C-73,32 -76,29 -79,26C-81,22 -84,18 -84,13C-83,9 -77,4 -75,0C-73,-4 -71,-7 -71,-11C-71,-15 -75,-20 -75,-24C-74,-28 -69,-31 -68,-35C-66,-39 -68,-44 -66,-48C-65,-52 -61,-55 -58,-58C-54,-60 -51,-63 -47,-64C-42,-65 -36,-63 -32,-63C-28,-64 -25,-65 -22,-69C-19,-72 -17,-82 -13,-84C-10,-86 -4,-83 -0,-82C4,-81 9,-80 12,-78C16,-76 19,-72 23,-70C27,-69 31,-69 35,-68C38,-67 41,-64 45,-62C48,-59 51,-57 55,-55C59,-53 67,-54 70,-51C73,-48 70,-41 70,-36C70,-31 69,-27 69,-23C70,-18 69,-15 71,-11C72,-7 79,-4 81,0Z"/>
+    <path class="wax" d="M81,0C83,4 84,9 83,13C81,17 76,20 74,24C72,28 73,33 71,36C69,40 63,41 60,44C57,46 55,50 53,53C50,56 47,58 45,62C43,66 42,73 39,76C35,79 30,81 26,80C21,79 15,71 11,70C7,69 4,73 0,74C-4,75 -8,75 -12,76C-16,77 -21,79 -25,78C-29,77 -33,73 -36,71C-40,69 -44,67 -47,65C-50,62 -54,59 -56,56C-57,52 -54,44 -56,41C-58,37 -65,38 -69,35C-73,32 -76,29 -79,26C-81,22 -84,18 -84,13C-83,9 -77,4 -75,0C-73,-4 -71,-7 -71,-11C-71,-15 -75,-20 -75,-24C-74,-28 -69,-31 -68,-35C-66,-39 -68,-44 -66,-48C-65,-52 -61,-55 -58,-58C-54,-60 -51,-63 -47,-64C-42,-65 -36,-63 -32,-63C-28,-64 -25,-65 -22,-69C-19,-72 -17,-82 -13,-84C-10,-86 -4,-83 -0,-82C4,-81 9,-80 12,-78C16,-76 19,-72 23,-70C27,-69 31,-69 35,-68C38,-67 41,-64 45,-62C48,-59 51,-57 55,-55C59,-53 67,-54 70,-51C73,-48 70,-41 70,-36C70,-31 69,-27 69,-23C70,-18 69,-15 71,-11C72,-7 79,-4 81,0Z"/>
+    <circle class="ring" r="52"/>
+    <circle class="ring2" r="47"/>
+    <path class="hi" d="M-50,-30 C-38,-52 -12,-62 12,-60 C-12,-54 -34,-44 -50,-30 Z"/>
+    <polygon class="mark" points="0.0,-24.0 3.8,-9.2 17.0,-17.0 9.2,-3.8 24.0,0.0 9.2,3.8 17.0,17.0 3.8,9.2 0.0,24.0 -3.8,9.2 -17.0,17.0 -9.2,3.8 -24.0,0.0 -9.2,-3.8 -17.0,-17.0 -3.8,-9.2"/>
+    <circle class="mark" r="5"/>
+    <circle class="ring2" r="34" stroke-dasharray="2 5"/>
+  </svg>
+
+  <!-- 右頁 -->
+  <section class="recto">
+    <div class="runhead"><span>2026 品牌提案</span><i>Caput I</i></div>
+    <div class="numeral">I.</div>
+    <h1>把想法做成產品</h1>
+    <svg class="orn rule" viewBox="0 0 520 40" aria-hidden="true">
+      <line x1="0" y1="20" x2="210" y2="20"/><line x1="0" y1="25" x2="150" y2="25"/>
+      <use href="#ivy" transform="translate(262,20)"/>
+      <line x1="310" y1="20" x2="520" y2="20"/><line x1="370" y1="25" x2="520" y2="25"/>
+    </svg>
+    <blockquote><span class="q">“</span>From Idea to Product.”</blockquote>
+    <div class="attrib">— [講者姓名]，2026.11</div>
+  </section>
+  <div class="folio">· 01 ·</div>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

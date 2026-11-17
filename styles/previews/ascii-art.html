@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>ASCII Art 字元藝術｜示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #0E100F; --ink: #8FE388; --a1: #E9F7E6; --a2: #E9F7E6; --a3: #E9F7E6; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+/* one character cell = 14.4px x 30px (IBM Plex Mono 24px, 0.6em advance) */
+.slide { --cw: 14.4px; --ch: 30px; --x0: 38.4px; --y0: 30px; text-shadow: 0 0 8px color-mix(in srgb, var(--ink) 30%, transparent); }
+.grid { position: absolute; left: var(--x0); top: var(--y0); margin: 0; font-family: "IBM Plex Mono", "Noto Sans TC", monospace; font-size: 24px; line-height: var(--ch); font-weight: 400; white-space: pre; }
+.grid i { font-style: normal; display: inline-block; width: calc(var(--cw) * 2); text-align: center; font-family: "Noto Sans TC", sans-serif; }
+.grid .dim { color: color-mix(in srgb, var(--ink) 45%, var(--bg)); text-shadow: none; }
+.grid .rev { background: var(--ink); color: var(--bg); font-weight: 600; text-shadow: none; }
+.at { position: absolute; left: calc(var(--x0) + var(--c) * var(--cw)); top: calc(var(--y0) + var(--r) * var(--ch)); margin: 0; white-space: pre; }
+
+h1.at { font-family: "Noto Sans TC", sans-serif; font-weight: 700; font-size: 144px; line-height: calc(var(--ch) * 5); letter-spacing: .2em; }
+.en { font-family: "VT323", monospace; font-size: 72px; line-height: calc(var(--ch) * 2); }
+.cursor { display: inline-block; width: calc(var(--cw) * 2); height: 52px; vertical-align: -6px; background: var(--a1); box-shadow: 0 0 12px color-mix(in srgb, var(--a1) 60%, transparent); animation: blink 1.06s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+.scan { position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(to bottom, color-mix(in srgb, var(--ink) 6%, transparent) 0 2px, transparent 2px 5px); }
+</style>
+</head>
+<body>
+<main class="slide">
+<pre class="grid" aria-hidden="true">┌──┤ PROPOSAL.TXT ├───────────────────────────────────────────────────────────────────────────────────────────────┤ [ 01 ] ├───┐
+│                                                                                                                              │
+│   &gt; <span class="rev"> 2026 <i>品</i><i>牌</i><i>提</i><i>案</i> </span>                                                                                                          │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+│   ════════════════════════════════════════════════                                                                           │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                 fig.03  cover-photo                                          │
+│   ┌─────────┬──────────────┐                                                                                                 │
+│   │ SPEAKER │ [<i>講</i><i>者</i><i>姓</i><i>名</i>]   │                                                                                                 │
+│   ├─────────┼──────────────┤                                              _.-._                    ┌────────────┐            │
+│   │ DATE    │ 2026.11      │                                            .&#x27;  |  &#x27;.                  │▓▓▓▓▓▓▓▓▓▓▓▓│            │
+│   └─────────┴──────────────┘                                           |  --+--  |   ══════════&gt;   │▓▓▒▒▒▒▒▒▒▒▓▓│            │
+│                                                                         &#x27;.  |  .&#x27;                  │▓▓▒▒░░░░▒▒▓▓│            │
+│   &gt; _                                                                     |===|                    │▓▓▒▒▒▒▒▒▒▒▓▓│            │
+│                                                                           &#x27;---&#x27;                    │▓▓▓▓▓▓▓▓▓▓▓▓│            │
+│                                                                                                    └────────────┘            │
+│                                                                           IDEA                        PRODUCT                │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+│                                                                                                                              │
+└──┤ READY ├──────────────────────────────────────────────────────────────────────────────────────────────────┤░░░▒▒▒▓▓▓███├───┘</pre>
+<pre class="grid ph at" style="--c:66; --r:2" data-slot="cover-photo" data-ratio="16/9">┌────────────────────────────────────────────────────────┐
+│<span class="dim">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░</span>                          <span class="dim">░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░</span> [ IMG_03 ] <i>產</i><i>品</i><i>截</i><i>圖</i> 16:9 <span class="dim">░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░</span>                          <span class="dim">░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>│
+│<span class="dim">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</span>│
+└────────────────────────────────────────────────────────┘</pre>
+<h1 class="at" style="--c:4; --r:4">把想法<br>做成產品</h1>
+<div class="at en" style="--c:4; --r:16">&gt; From Idea to Product<span class="cursor"></span></div>
+<div class="scan"></div>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

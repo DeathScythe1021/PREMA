@@ -1,0 +1,161 @@
+{
+  "id": "knolling",
+  "name_zh": "擺拍陳列",
+  "name_en": "Knolling",
+  "summary": "物件以直角、等距、平行排列在純色平面上，從正上方俯拍的整理美學。",
+  "definition": "Knolling 來自工作室把工具排整齊的習慣：所有物件轉成 90 度、彼此平行、間距相等，放在單一顏色的平面上俯拍。轉成簡報時，每一段內容都被當成一件「物件」，整齊排進網格，附上編號標籤，畫面安靜、精準、可以一眼數清楚。",
+  "keywords": [
+    "整齊",
+    "精準",
+    "冷靜",
+    "產品感"
+  ],
+  "best_for": [
+    "產品介紹",
+    "工具與技能清單",
+    "流程拆解",
+    "作品細節"
+  ],
+  "not_for": [
+    "情緒渲染的品牌故事",
+    "需要大量文字論述的報告"
+  ],
+  "traits": [
+    "正上方俯視角",
+    "所有元素 90 度對齊",
+    "元素之間間距完全相等",
+    "單一純色背景",
+    "物件彼此不重疊",
+    "小型編號與名稱標籤"
+  ],
+  "layout": [
+    "以等寬網格排列內容，格與格的間距一致",
+    "每個內容區塊都有編號（01、02…）和小標籤，像物件的名牌",
+    "標題小而精準，固定放在左上角，不置中",
+    "大量均等留白，留白本身就是結構",
+    "清單類內容排成方陣，不用條列"
+  ],
+  "motifs": [
+    "角落十字對位記號",
+    "1px 細線尺規與刻度",
+    "等寬字標籤",
+    "物件下方極短的平行投影（可省略）"
+  ],
+  "typography": {
+    "display": {
+      "family": "Archivo",
+      "weights": "600–800",
+      "role": "標題，字距略緊"
+    },
+    "body": {
+      "family": "IBM Plex Mono",
+      "weights": "400–500",
+      "role": "標籤、編號、說明"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "400、700",
+      "role": "中文標題與內文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;700&display=swap",
+    "rules": [
+      "英文標籤一律大寫並加字距",
+      "字級最多四級",
+      "不要斜體"
+    ]
+  },
+  "imagery": [
+    "正上方俯拍的物件，背景是純色桌面或紙張",
+    "去背物件排成方陣",
+    "硬光、陰影短，或乾脆沒有陰影",
+    "照片不要歪斜、不要透視角度"
+  ],
+  "placeholder": "虛線方框，四角有十字對位記號，中間用等寬字寫「OBJECT 03／俯拍，1:1」",
+  "avoid": [
+    "斜放或旋轉的元素",
+    "透視與 3D 角度",
+    "元素重疊",
+    "漸層背景",
+    "大圓角卡片與厚陰影"
+  ],
+  "color_rules": {
+    "max_accents": 1,
+    "notes": "重點色只用在編號或一條標示線上，像物件上的一段膠帶。"
+  },
+  "backgrounds": [
+    {
+      "id": "concrete",
+      "name": "水泥灰",
+      "hex": "#D3D2CD"
+    },
+    {
+      "id": "mint",
+      "name": "薄荷桌墊",
+      "hex": "#C4DACF"
+    },
+    {
+      "id": "kraft",
+      "name": "牛皮紙",
+      "hex": "#D9C6A1"
+    },
+    {
+      "id": "felt",
+      "name": "黑絨布",
+      "hex": "#1D1D1C"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "K1",
+      "name": "工具箱",
+      "ink": "#1E1E1C",
+      "accents": [
+        "#B8401C"
+      ],
+      "pairs_with": [
+        "concrete",
+        "mint",
+        "kraft"
+      ]
+    },
+    {
+      "id": "K2",
+      "name": "實驗室",
+      "ink": "#1F2B36",
+      "accents": [
+        "#1F55B8"
+      ],
+      "pairs_with": [
+        "concrete",
+        "mint"
+      ]
+    },
+    {
+      "id": "K3",
+      "name": "文具店",
+      "ink": "#2A2723",
+      "accents": [
+        "#8C4A12"
+      ],
+      "pairs_with": [
+        "kraft",
+        "concrete"
+      ]
+    },
+    {
+      "id": "K4",
+      "name": "夜拍",
+      "ink": "#F1EEE6",
+      "accents": [
+        "#FF8A4C"
+      ],
+      "pairs_with": [
+        "felt"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
+  }
+}

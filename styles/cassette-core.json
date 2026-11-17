@@ -1,0 +1,167 @@
+{
+  "id": "cassette-core",
+  "name_zh": "卡帶核",
+  "name_en": "Cassette Core",
+  "summary": "80、90 年代卡帶與錄影帶的包裝美學：歌單卡、彩虹斜條紋、標籤貼紙、手寫曲目、VHS 雜訊。",
+  "definition": "Cassette Core 取材自卡帶盒裡的歌單卡和空白錄音帶的標籤：上方一條彩色斜條紋、中間留一格手寫標題、旁邊是 A 面和 B 面、計數器數字。轉成簡報時，每頁像一張卡帶標籤，目錄做成曲目表，章節就是 A 面、B 面。",
+  "keywords": [
+    "懷舊",
+    "熱鬧",
+    "音樂",
+    "手作"
+  ],
+  "best_for": [
+    "年度回顧",
+    "音樂與播客",
+    "活動節目單",
+    "團隊與成員介紹"
+  ],
+  "not_for": [
+    "嚴肅的法務或財務報告",
+    "極簡精品品牌"
+  ],
+  "traits": [
+    "三色或彩虹斜條紋",
+    "卡帶標籤的欄位與底線",
+    "手寫曲目",
+    "A 面／B 面",
+    "計數器數字",
+    "錄影帶雜訊與掃描線"
+  ],
+  "layout": [
+    "頁面上方或側邊放一條彩色斜條紋帶",
+    "標題寫在「標籤欄」裡，下面有底線，像手寫上去",
+    "目錄做成曲目表：編號、曲名、時間",
+    "章節分成 SIDE A、SIDE B",
+    "頁碼用計數器樣式 003"
+  ],
+  "motifs": [
+    "彩虹斜條紋",
+    "標籤欄底線",
+    "卡帶捲軸的兩個圓孔",
+    "SIDE A／B",
+    "計數器數字"
+  ],
+  "typography": {
+    "display": {
+      "family": "Barlow Condensed",
+      "weights": "600、800、italic",
+      "role": "斜體窄體標題，像卡帶品牌字"
+    },
+    "body": {
+      "family": "Permanent Marker",
+      "weights": "400",
+      "role": "手寫標題與曲目，一頁不超過兩處"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文印刷字；手寫感用 LXGW WenKai TC"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800&family=Permanent+Marker&family=Noto+Sans+TC:wght@500;900&family=LXGW+WenKai+TC:wght@400;700&display=swap",
+    "rules": [
+      "品牌感文字用斜體窄體大寫",
+      "手寫字只寫在標籤欄裡",
+      "數字用窄體，像計數器"
+    ]
+  },
+  "imagery": [
+    "照片加一點 VHS 雜訊與色偏",
+    "人物照可以裁成卡帶封面比例",
+    "拍立得與底片照也適合"
+  ],
+  "placeholder": "卡帶封面比例的框，上方斜條紋，中間手寫「封面照片｜1:1」",
+  "avoid": [
+    "大面積留白的極簡版面",
+    "細緻的襯線字",
+    "冷灰單色"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "三個重點色就是那條斜條紋，其他地方只用文字色。"
+  },
+  "backgrounds": [
+    {
+      "id": "label",
+      "name": "標籤白",
+      "hex": "#F2EEE3"
+    },
+    {
+      "id": "cream",
+      "name": "奶油黃",
+      "hex": "#F3E3B5"
+    },
+    {
+      "id": "smoke",
+      "name": "透明煙灰",
+      "hex": "#3A3A3E"
+    },
+    {
+      "id": "black",
+      "name": "黑卡帶",
+      "hex": "#1B1B1D"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "T1",
+      "name": "夕陽條紋",
+      "ink": "#1B1B1D",
+      "accents": [
+        "#D64A22",
+        "#E89A2E",
+        "#1F7A86"
+      ],
+      "pairs_with": [
+        "label",
+        "cream"
+      ]
+    },
+    {
+      "id": "T2",
+      "name": "霓虹",
+      "ink": "#F2EEE3",
+      "accents": [
+        "#FF4F9A",
+        "#3CD6E8",
+        "#FFD23F"
+      ],
+      "pairs_with": [
+        "black",
+        "smoke"
+      ]
+    },
+    {
+      "id": "T3",
+      "name": "經典",
+      "ink": "#232323",
+      "accents": [
+        "#C9213A",
+        "#16806F",
+        "#E3B23C"
+      ],
+      "pairs_with": [
+        "label",
+        "cream"
+      ]
+    },
+    {
+      "id": "T4",
+      "name": "褪色",
+      "ink": "#2C2A28",
+      "accents": [
+        "#B8664B",
+        "#587168",
+        "#C9A44E"
+      ],
+      "pairs_with": [
+        "label",
+        "cream"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
+  }
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Modern Nostalgia 示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600&family=Noto+Serif+TC:wght@600;900&family=Noto+Sans+TC:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F6EEDF;
+  --ink: #2E2219;
+  --a1: #C2522B; --a2: #D99A2B; --a3: #4F7A5A;
+}
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide { font-family: "Figtree", "Noto Sans TC", sans-serif; }
+.t { position: absolute; margin: 0; }
+.kicker { left: 128px; top: 128px; font-weight: 600; font-size: 28px; letter-spacing: .14em; display: flex; align-items: center; gap: 18px; }
+.kicker svg { width: 34px; height: 34px; }
+.title { left: 120px; top: 262px; font-family: "Noto Serif TC", serif; font-weight: 900; font-size: 158px; line-height: 1.12; letter-spacing: -.03em; }
+.en { left: 128px; top: 660px; font-family: "Young Serif", serif; font-size: 66px; letter-spacing: -.01em; }
+.dots { left: 132px; top: 790px; display: flex; gap: 16px; }
+.dots i { width: 22px; height: 22px; border-radius: 50%; display: block; }
+.dots i:nth-child(1) { background: var(--a1); }
+.dots i:nth-child(2) { background: var(--a2); }
+.dots i:nth-child(3) { background: var(--a3); }
+.foot { left: 128px; top: 884px; width: 820px; padding-top: 26px; border-top: 3px solid var(--ink);
+  display: flex; justify-content: space-between; font-size: 30px; }
+.foot b { font-weight: 600; }
+
+/* 像復古家電的大圓角面板 */
+.panel { position: absolute; left: 1100px; top: 80px; width: 690px; height: 920px; border-radius: 88px;
+  background: color-mix(in oklab, var(--a1) 13%, var(--bg)); }
+.rainbow { position: absolute; left: 95px; top: 56px; width: 500px; height: 260px; }
+.rainbow path { fill: none; stroke-width: 44; }
+.rainbow .c1 { stroke: var(--a1); }
+.rainbow .c2 { stroke: var(--a2); }
+.rainbow .c3 { stroke: var(--a3); }
+.ph { position: absolute; left: 165px; top: 330px; width: 360px; height: 450px; border-radius: 44px; box-sizing: border-box;
+  background: var(--bg); border: 3px solid color-mix(in srgb, var(--ink) 30%, transparent);
+  display: flex; align-items: center; justify-content: center;
+  font-family: "Figtree", "Noto Sans TC", sans-serif; font-weight: 600; font-size: 30px; letter-spacing: .06em; color: var(--ink); }
+.knobs { position: absolute; left: 70px; right: 70px; top: 812px; height: 76px; display: flex; align-items: center; gap: 22px; }
+.knob { width: 70px; height: 70px; border-radius: 50%; box-sizing: border-box; border: 4px solid var(--ink); position: relative; }
+.knob::after { content: ""; position: absolute; left: 29px; top: 6px; width: 4px; height: 22px; border-radius: 2px; background: var(--ink); }
+.knob.k2::after { transform: rotate(60deg); transform-origin: 2px 25px; }
+.grille { flex: 1; height: 54px; border-radius: 27px;
+  background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--ink) 30%, transparent) 0 4px, transparent 4px 16px); }
+.pg { font-family: "Young Serif", serif; font-size: 52px; line-height: 1; }
+
+.spark path { fill: var(--a2); }
+.spark2 { position: absolute; left: 1010px; top: 200px; width: 70px; height: 70px; }
+.spark3 { position: absolute; left: 860px; top: 560px; width: 40px; height: 40px; }
+
+/* 輕微顆粒 */
+.grain { position: absolute; inset: 0; width: 1920px; height: 1080px; pointer-events: none; opacity: .16; }
+.grain rect { fill: var(--ink); }
+</style>
+</head>
+<body>
+<main class="slide">
+  <p class="t kicker"><svg class="spark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0C21 13 27 19 40 20 27 21 21 27 20 40 19 27 13 21 0 20 13 19 19 13 20 0Z"/></svg>2026 品牌提案</p>
+  <h1 class="t title">把想法<br>做成產品</h1>
+  <p class="t en">From Idea to Product</p>
+  <div class="t dots" aria-hidden="true"><i></i><i></i><i></i></div>
+  <p class="t foot"><b>[講者姓名]</b><span>2026.11</span></p>
+
+  <svg class="spark spark2" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0C21 13 27 19 40 20 27 21 21 27 20 40 19 27 13 21 0 20 13 19 19 13 20 0Z"/></svg>
+  <svg class="spark spark3" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0C21 13 27 19 40 20 27 21 21 27 20 40 19 27 13 21 0 20 13 19 19 13 20 0Z"/></svg>
+
+  <div class="panel">
+    <svg class="rainbow" viewBox="0 0 500 260" aria-hidden="true">
+      <path class="c1" d="M22 260A228 228 0 0 1 478 260"/>
+      <path class="c2" d="M76 260A174 174 0 0 1 424 260"/>
+      <path class="c3" d="M130 260A120 120 0 0 1 370 260"/>
+    </svg>
+    <div class="ph" data-slot="cover-photo" data-ratio="4/5">照片｜4:5</div>
+    <div class="knobs">
+      <span class="knob"></span><span class="knob k2"></span>
+      <span class="grille"></span>
+      <span class="pg">01</span>
+    </div>
+  </div>
+
+  <svg class="grain" viewBox="0 0 1920 1080" aria-hidden="true">
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 2.2 -1" result="a"/>
+      <feComposite in="SourceGraphic" in2="a" operator="in"/>
+    </filter>
+    <rect width="1920" height="1080" filter="url(#grain)"/>
+  </svg>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

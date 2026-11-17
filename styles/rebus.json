@@ -1,0 +1,161 @@
+{
+  "id": "rebus",
+  "name_zh": "圖文謎",
+  "name_en": "Rebus",
+  "summary": "用圖案取代文字的圖文謎：句子裡的某些字被圖示、符號或照片換掉，讀起來像在解謎，俏皮又好記。",
+  "definition": "Rebus 是一種文字遊戲：用圖畫代替字或音節，例如「我 ❤ 台北」。設計上，它讓標題變成一行字和圖混在一起的句子，圖案和字一樣大、站在同一條基線上。轉成簡報時，每頁的標題或關鍵句都有一兩個字被圖案替換，其他版面保持簡潔，讓「解謎」成為記憶點。",
+  "keywords": [
+    "俏皮",
+    "聰明",
+    "好記",
+    "互動感"
+  ],
+  "best_for": [
+    "教育與工作坊",
+    "品牌標語與口號",
+    "活動開場",
+    "給大眾的說明"
+  ],
+  "not_for": [
+    "需要嚴謹措辭的法務、財務",
+    "大量數據"
+  ],
+  "traits": [
+    "文字與圖案混排在同一行",
+    "圖案和字一樣大、對齊基線",
+    "粗體無襯線字",
+    "高對比純色",
+    "簡單的圖形符號",
+    "等號與加號等算式符號"
+  ],
+  "layout": [
+    "一頁一句大標，句中一兩個詞換成圖形",
+    "圖形高度等於字的大寫高度，對齊基線",
+    "其他資訊小而簡單，放在下方",
+    "可以用 ＋、＝ 把概念寫成算式"
+  ],
+  "motifs": [
+    "行內圖形",
+    "加號、等號",
+    "圓點與方塊",
+    "箭頭"
+  ],
+  "typography": {
+    "display": {
+      "family": "Bricolage Grotesque",
+      "weights": "700、800",
+      "role": "大標，字寬可略寬"
+    },
+    "body": {
+      "family": "Bricolage Grotesque",
+      "weights": "400",
+      "role": "內文"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,800&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "大標字級要大，讓行內圖形清楚",
+      "圖形用 SVG，和文字同色或用重點色",
+      "一句話最多換掉兩個詞"
+    ]
+  },
+  "imagery": [
+    "去背物件照片可以當行內圖形",
+    "簡單的幾何 SVG 圖示",
+    "不要寫實插畫"
+  ],
+  "placeholder": "和文字等高的圓角方塊，裡面寫「圖」，旁邊小字註明要替換的詞",
+  "avoid": [
+    "一句話換太多詞，讓人看不懂",
+    "表情符號直接當圖形",
+    "複雜插畫",
+    "漸層"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "圖形用一個重點色，讓它從文字裡跳出來；第二色只當背景色塊。"
+  },
+  "backgrounds": [
+    {
+      "id": "white",
+      "name": "紙白",
+      "hex": "#F5F3EE"
+    },
+    {
+      "id": "yellow",
+      "name": "便條黃",
+      "hex": "#F6E7A6"
+    },
+    {
+      "id": "sky",
+      "name": "粉藍",
+      "hex": "#D5E4F0"
+    },
+    {
+      "id": "ink",
+      "name": "墨黑",
+      "hex": "#161616"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "R1",
+      "name": "紅點",
+      "ink": "#161616",
+      "accents": [
+        "#D7372B",
+        "#2E5BBA"
+      ],
+      "pairs_with": [
+        "white",
+        "sky"
+      ]
+    },
+    {
+      "id": "R2",
+      "name": "藍筆",
+      "ink": "#14213D",
+      "accents": [
+        "#2B50C8",
+        "#C2410C"
+      ],
+      "pairs_with": [
+        "white",
+        "yellow"
+      ]
+    },
+    {
+      "id": "R3",
+      "name": "綠燈",
+      "ink": "#1A2A1F",
+      "accents": [
+        "#1E7A46",
+        "#B83280"
+      ],
+      "pairs_with": [
+        "white",
+        "yellow"
+      ]
+    },
+    {
+      "id": "R4",
+      "name": "黑板",
+      "ink": "#F5F3EE",
+      "accents": [
+        "#FFD23F",
+        "#FF6B57"
+      ],
+      "pairs_with": [
+        "ink"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

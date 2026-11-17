@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Cryptidcore 神祕生物核｜示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime:wght@400;700&family=Noto+Sans+TC:wght@500;900&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #1F2A22; --ink: #EFE6CF; --a1: #E3B341; --a2: #E06A4E; --a3: #E06A4E; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide * { box-sizing: border-box; }
+.abs { position: absolute; }
+.forest { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+.type { font-family: "Courier Prime", "Noto Sans TC", monospace; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+
+.case { left: 120px; top: 92px; font-size: 24px; border: 2px solid var(--ink); padding: 8px 16px 6px; }
+.kicker { left: 120px; top: 560px; font-size: 28px; background: var(--ink); color: var(--bg); padding: 8px 18px 6px; }
+.kicker b { font-family: "Noto Sans TC", sans-serif; font-weight: 900; letter-spacing: .12em; }
+.en { left: 116px; top: 624px; font-family: "Anton", sans-serif; font-size: 92px; line-height: 1; letter-spacing: .03em; text-transform: uppercase; }
+h1 { left: 112px; top: 742px; margin: 0; font-family: "Noto Sans TC", sans-serif; font-weight: 900; font-size: 168px; line-height: .9; letter-spacing: .01em; white-space: nowrap; }
+.mark { left: 900px; top: 700px; width: 470px; height: 250px; overflow: visible; pointer-events: none; }
+.info { left: 120px; top: 960px; font-size: 26px; font-weight: 400; }
+.info b { font-weight: 700; }
+
+/* polaroid evidence photo */
+.polaroid { left: 1150px; top: 196px; width: 500px; height: 462px; background: var(--ink); padding: 28px 28px 104px; transform: rotate(-3.5deg); box-shadow: 0 20px 40px color-mix(in srgb, var(--bg) 70%, transparent); }
+.ph { position: relative; width: 444px; height: 333px; background: color-mix(in srgb, var(--bg) 88%, var(--ink)); overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.ph .blur { position: absolute; inset: 0; width: 100%; height: 100%; }
+.ph span { position: relative; font-size: 22px; line-height: 1.5; text-align: center; letter-spacing: .02em; white-space: nowrap; transform: translateY(40px); }
+.tape { position: absolute; left: 180px; top: -20px; width: 140px; height: 40px; background: color-mix(in srgb, var(--a1) 45%, transparent); transform: rotate(4deg); }
+.badge { left: 1640px; top: 64px; width: 230px; height: 230px; }
+.prints { left: 1220px; top: 740px; width: 640px; height: 320px; }
+
+.grain { position: absolute; inset: 0; background: var(--ink); opacity: .12; pointer-events: none;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.8 -.9'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.8 -.9'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E"); }
+</style>
+</head>
+<body>
+<main class="slide">
+
+  <!-- night forest: far pines, flashlight beam, near pines, ground fade, vignette -->
+  <svg class="forest" viewBox="0 0 1920 1080" aria-hidden="true">
+    <defs>
+      <radialGradient id="beam" cx="760" cy="380" r="560" gradientUnits="userSpaceOnUse">
+        <stop offset="0" style="stop-color: var(--a1); stop-opacity: .5"/>
+        <stop offset=".35" style="stop-color: var(--a1); stop-opacity: .22"/>
+        <stop offset="1" style="stop-color: var(--a1); stop-opacity: 0"/>
+      </radialGradient>
+      <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" style="stop-color: var(--bg); stop-opacity: 0"/>
+        <stop offset=".3" style="stop-color: var(--bg); stop-opacity: 1"/>
+      </linearGradient>
+      <radialGradient id="vig" cx="900" cy="420" r="1250" gradientUnits="userSpaceOnUse">
+        <stop offset=".45" style="stop-color: var(--bg); stop-opacity: 0"/>
+        <stop offset="1" style="stop-color: var(--bg); stop-opacity: .9"/>
+      </radialGradient>
+      <filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="5"/></filter>
+    </defs>
+    <path d="M-31 308L-1 363L-17 351L9 418L-13 406L19 472L-8 461L29 527L-4 516L39 582L1 570L49 637L-21 637L-21 690L-41 690L-41 637L-111 637L-63 570L-101 582L-58 516L-91 527L-54 461L-81 472L-49 406L-71 418L-45 351L-61 363ZM58 289L90 346L72 334L100 404L77 392L111 461L82 449L121 519L86 507L132 576L91 564L142 634L68 634L68 690L48 690L48 634L-26 634L25 564L-16 576L30 507L-5 519L34 449L5 461L39 392L16 404L44 334L26 346ZM184 372L209 418L195 408L217 463L199 454L226 509L203 499L234 554L207 545L242 600L210 590L251 645L192 645L192 690L176 690L176 645L117 645L158 590L126 600L161 545L134 554L165 499L142 509L169 454L151 463L173 408L159 418ZM268 366L294 412L279 403L302 459L283 449L311 505L287 496L319 552L291 542L328 598L295 588L336 645L276 645L276 690L260 690L260 645L200 645L241 588L208 598L245 542L217 552L249 496L225 505L253 449L234 459L257 403L242 412ZM343 241L378 305L359 292L390 370L364 356L402 434L370 421L414 498L375 485L426 563L380 549L437 627L354 627L354 690L332 690L332 627L249 627L306 549L260 563L311 485L272 498L316 421L284 434L322 356L296 370L327 292L308 305ZM448 261L482 322L463 310L493 384L468 371L504 445L473 433L516 507L478 494L527 568L483 556L538 630L459 630L459 690L437 690L437 630L358 630L413 556L369 568L418 494L380 507L423 433L392 445L428 371L403 384L433 310L414 322ZM535 381L559 425L546 416L567 470L550 460L576 514L553 505L584 558L557 549L592 602L561 593L600 647L543 647L543 690L527 690L527 647L470 647L509 593L478 602L513 549L486 558L517 505L494 514L520 460L503 470L524 416L511 425ZM651 279L683 338L666 326L694 397L670 384L705 456L675 443L716 515L680 502L727 574L685 561L737 632L661 632L661 690L641 690L641 632L565 632L617 561L575 574L622 502L586 515L627 443L597 456L632 384L608 397L636 326L619 338ZM735 373L760 418L746 409L768 464L750 454L777 509L754 500L785 555L757 545L793 600L761 591L802 646L743 646L743 690L727 690L727 646L668 646L709 591L677 600L713 545L685 555L716 500L693 509L720 454L702 464L724 409L710 418ZM850 367L875 413L861 404L884 460L865 450L892 506L869 496L901 552L873 542L909 598L877 589L918 645L858 645L858 690L842 690L842 645L782 645L823 589L791 598L827 542L799 552L831 496L808 506L835 450L816 460L839 404L825 413ZM913 282L945 340L927 328L956 399L932 387L967 457L937 445L977 516L942 504L988 574L947 562L999 633L923 633L923 690L903 690L903 633L827 633L879 562L838 574L884 504L849 516L889 445L859 457L894 387L870 399L899 328L881 340ZM1012 246L1047 310L1028 296L1059 373L1033 360L1070 437L1038 424L1082 501L1043 487L1094 564L1049 551L1105 628L1023 628L1023 690L1001 690L1001 628L919 628L975 551L930 564L981 487L942 501L986 424L954 437L991 360L965 373L996 296L977 310ZM1140 333L1168 384L1153 373L1177 435L1157 425L1187 487L1161 476L1196 538L1165 527L1206 589L1170 578L1215 640L1149 640L1149 690L1131 690L1131 640L1065 640L1110 578L1074 589L1115 527L1084 538L1119 476L1093 487L1123 425L1103 435L1127 373L1112 384ZM1232 230L1268 296L1248 282L1280 362L1254 348L1292 428L1259 414L1304 494L1265 480L1317 560L1270 546L1329 626L1244 626L1244 690L1220 690L1220 626L1135 626L1194 546L1147 560L1199 480L1160 494L1205 414L1172 428L1210 348L1184 362L1216 282L1196 296ZM1326 375L1351 420L1337 411L1359 465L1341 456L1367 510L1345 501L1376 556L1348 546L1384 601L1352 591L1392 646L1334 646L1334 690L1318 690L1318 646L1260 646L1300 591L1268 601L1304 546L1276 556L1307 501L1285 510L1311 456L1293 465L1315 411L1301 420ZM1410 241L1445 305L1426 292L1457 370L1431 356L1469 434L1437 421L1481 498L1442 485L1493 563L1447 549L1504 627L1421 627L1421 690L1399 690L1399 627L1316 627L1373 549L1327 563L1378 485L1339 498L1383 421L1351 434L1389 356L1363 370L1394 292L1375 305ZM1494 378L1519 423L1505 413L1527 467L1509 458L1535 512L1512 503L1543 557L1516 548L1551 602L1520 592L1560 646L1502 646L1502 690L1486 690L1486 646L1428 646L1468 592L1437 602L1472 548L1445 557L1476 503L1453 512L1479 458L1461 467L1483 413L1469 423ZM1610 379L1634 424L1621 414L1643 468L1625 459L1651 513L1628 503L1659 557L1632 548L1667 602L1636 593L1675 646L1618 646L1618 690L1602 690L1602 646L1545 646L1584 593L1553 602L1588 548L1561 557L1592 503L1569 513L1595 459L1577 468L1599 414L1586 424ZM1688 356L1714 404L1700 394L1723 452L1704 442L1732 500L1708 490L1741 547L1712 537L1749 595L1716 585L1758 643L1696 643L1696 690L1680 690L1680 643L1618 643L1660 585L1627 595L1664 537L1635 547L1668 490L1644 500L1672 442L1653 452L1676 394L1662 404ZM1774 283L1806 341L1788 329L1817 400L1793 387L1827 458L1798 446L1838 516L1803 504L1849 575L1808 562L1859 633L1784 633L1784 690L1764 690L1764 633L1689 633L1740 562L1699 575L1745 504L1710 516L1750 446L1721 458L1755 387L1731 400L1760 329L1742 341ZM1867 252L1901 315L1883 302L1913 378L1888 364L1924 440L1893 427L1936 503L1898 490L1947 566L1903 553L1959 629L1878 629L1878 690L1856 690L1856 629L1775 629L1831 553L1787 566L1836 490L1798 503L1841 427L1810 440L1846 364L1821 378L1851 302L1833 315Z" style="fill: color-mix(in srgb, var(--ink) 9%, var(--bg))"/>
+    <rect width="1920" height="1080" fill="url(#beam)"/>
+    <path d="M60 -220L125 -115L89 -144L143 -9L97 -39L161 96L105 67L179 201L113 172L197 307L121 277L214 412L129 383L232 517L137 488L250 623L83 623L83 760L37 760L37 623L-130 623L-17 488L-112 517L-9 383L-94 412L-1 277L-77 307L7 172L-59 201L15 67L-41 96L23 -39L-23 -9L31 -144L-5 -115ZM300 40L354 128L324 107L370 217L331 195L386 305L339 284L402 394L346 372L418 482L353 461L434 571L360 549L450 659L318 659L318 760L282 760L282 659L150 659L240 549L166 571L247 461L182 482L254 372L198 394L261 284L214 305L269 195L230 217L276 107L246 128ZM620 160L663 240L639 223L678 321L646 304L692 401L652 384L706 481L659 464L721 561L665 545L735 642L634 642L634 720L606 720L606 642L505 642L575 545L519 561L581 464L534 481L588 384L548 401L594 304L562 321L601 223L577 240ZM1060 90L1105 169L1080 149L1118 247L1086 228L1131 326L1092 307L1145 405L1098 385L1158 483L1104 464L1172 562L1110 543L1185 640L1075 640L1075 730L1045 730L1045 640L935 640L1010 543L948 562L1016 464L962 483L1022 385L975 405L1028 307L989 326L1034 228L1002 247L1040 149L1015 169ZM1880 -240L1949 -132L1911 -162L1968 -25L1919 -55L1986 82L1928 52L2005 190L1936 160L2024 298L1945 268L2042 405L1953 375L2061 512L1962 482L2080 620L1904 620L1904 760L1856 760L1856 620L1680 620L1798 482L1699 512L1807 375L1718 405L1815 268L1736 298L1824 160L1755 190L1832 52L1774 82L1841 -55L1792 -25L1849 -162L1811 -132ZM1500 200L1541 277L1519 261L1555 355L1525 339L1569 432L1531 416L1582 510L1537 493L1596 587L1543 571L1610 664L1513 664L1513 740L1487 740L1487 664L1390 664L1457 571L1404 587L1463 493L1418 510L1469 416L1431 432L1475 339L1445 355L1481 261L1459 277Z" style="fill: var(--bg)"/>
+    <!-- something is watching -->
+    <g style="fill: var(--a1)">
+      <g filter="url(#glow)" opacity=".9"><ellipse cx="884" cy="470" rx="9" ry="5"/><ellipse cx="918" cy="468" rx="9" ry="5"/></g>
+      <ellipse cx="884" cy="470" rx="5" ry="3"/><ellipse cx="918" cy="468" rx="5" ry="3"/>
+    </g>
+    <rect y="480" width="1920" height="600" fill="url(#ground)"/>
+    <rect width="1920" height="1080" fill="url(#vig)"/>
+  </svg>
+
+  <!-- footprints crossing the clearing -->
+  <svg class="abs prints" viewBox="0 0 640 320" aria-hidden="true" style="fill: color-mix(in srgb, var(--ink) 22%, transparent)">
+    <defs>
+      <g id="fp"><ellipse cx="0" cy="8" rx="17" ry="30"/><circle cx="-14" cy="-31" r="6"/><circle cx="-4" cy="-36" r="6"/><circle cx="7" cy="-35" r="5.5"/><circle cx="16" cy="-29" r="5"/><circle cx="21" cy="-20" r="4.5"/></g>
+    </defs>
+    <use href="#fp" transform="translate(60 270) rotate(58)"/>
+    <use href="#fp" transform="translate(170 200) rotate(58) scale(-1 1)"/>
+    <use href="#fp" transform="translate(300 220) rotate(62)"/>
+    <use href="#fp" transform="translate(410 140) rotate(62) scale(-1 1)"/>
+    <use href="#fp" transform="translate(540 150) rotate(66)"/>
+  </svg>
+
+  <div class="abs type case">Case No. 01</div>
+
+  <!-- camp badge -->
+  <svg class="abs badge" viewBox="-115 -115 230 230" aria-hidden="true">
+    <circle r="110" style="fill: var(--bg)" stroke="var(--ink)" stroke-width="4"/>
+    <circle r="98" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+    <circle r="64" fill="none" stroke="var(--ink)" stroke-width="2"/>
+    <defs><path id="ring" d="M0 -78a78 78 0 1 1 -0.1 0"/></defs>
+    <text style="fill: var(--ink); font: 700 20px 'Courier Prime', monospace; letter-spacing: .1em;"><textPath href="#ring" textLength="486" lengthAdjust="spacing">FIELD SURVEY · NIGHT UNIT ·</textPath></text>
+    <path d="M18 -40a24 24 0 1 0 14 40a20 20 0 1 1 -14 -40z" fill="var(--a1)"/>
+    <g style="fill: var(--ink)">
+      <path d="M-22 40 L-22 30 L-46 30 L-30 10 L-40 10 L-26 -8 L-34 -8 L-18 -32 L-2 -8 L-10 -8 L4 10 L-6 10 L10 30 L-14 30 L-14 40Z"/>
+      <path d="M22 40 L22 32 L8 32 L18 18 L12 18 L22 4 L32 18 L26 18 L36 32 L28 32 L28 40Z"/>
+      <rect x="-56" y="40" width="112" height="3"/>
+    </g>
+  </svg>
+
+  <!-- evidence photo -->
+  <div class="abs polaroid">
+    <div class="tape"></div>
+    <div class="ph" data-slot="cover-photo" data-ratio="4/3">
+      <svg class="blur" viewBox="0 0 444 333" aria-hidden="true">
+        <defs><filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter></defs>
+        <g filter="url(#soft)" style="fill: color-mix(in srgb, var(--ink) 16%, transparent)">
+          <g transform="translate(176 -22) scale(.6)"><ellipse cx="350" cy="96" rx="22" ry="24"/>
+          <path d="M318 120 Q350 104 384 122 L398 210 Q400 236 386 236 L380 300 L360 300 L352 240 L346 300 L326 300 L320 236 Q304 232 306 206Z"/></g>
+        </g>
+        <path d="M358 22 C396 8 434 30 432 82 C430 136 392 160 362 150 C330 140 326 70 356 34" fill="none" style="stroke: var(--a2)" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <span class="type">Evidence 03｜目擊照片 4:3</span>
+    </div>
+  </div>
+
+  <div class="abs type kicker">2026 <b>品牌提案</b></div>
+  <div class="abs en">From Idea to Product</div>
+  <h1 class="abs">把想法做成產品</h1>
+  <!-- red marker circle on the key word -->
+  <svg class="abs mark" viewBox="0 0 470 250" aria-hidden="true">
+    <path d="M60 46 C150 6 360 4 432 58 C488 104 446 206 300 228 C168 248 34 214 26 136 C20 80 90 40 190 30" fill="none" style="stroke: var(--a2)" stroke-width="7" stroke-linecap="round"/>
+  </svg>
+
+  <div class="abs type info"><b>Filed by</b> [講者姓名]　2026.11</div>
+
+  <div class="grain"></div>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

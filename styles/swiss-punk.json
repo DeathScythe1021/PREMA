@@ -1,0 +1,160 @@
+{
+  "id": "swiss-punk",
+  "name_zh": "瑞士龐克",
+  "name_en": "Swiss Punk",
+  "summary": "瑞士國際主義的網格紀律，加上龐克的破壞：字疊字、斜放、尺寸極端、影印質感，有秩序的混亂。",
+  "definition": "Swiss Punk（又稱 New Wave Typography）由 1970 年代的 Wolfgang Weingart 等設計師帶起：他們受過嚴格的瑞士網格訓練，卻故意打破它，讓字層層重疊、轉 90 度、尺寸大小極端對比，再加上影印機的顆粒與網點。轉成簡報時，底下仍有清楚的網格，但每頁至少有一個元素違反它：一個巨大的字、一段斜放的文字、一層疊印。",
+  "keywords": [
+    "前衛",
+    "張力",
+    "實驗",
+    "有秩序的混亂"
+  ],
+  "best_for": [
+    "設計、藝術與音樂主題",
+    "創意提案",
+    "宣言與觀點分享",
+    "展覽與活動"
+  ],
+  "not_for": [
+    "需要保守穩重的客戶",
+    "資訊密集需要易讀的報告"
+  ],
+  "traits": [
+    "清楚的網格被刻意打破",
+    "字疊字、疊印",
+    "文字轉 90 度或斜放",
+    "極端的大小對比",
+    "影印網點與顆粒",
+    "黑白加一個螢光色"
+  ],
+  "layout": [
+    "先用 12 欄網格排好資訊",
+    "每頁加一個破壞：巨大的字壓在內文上、一段文字轉 90 度、一層疊印色塊",
+    "大字可以超出畫面邊緣被裁切",
+    "小字仍然整齊對齊網格，維持可讀"
+  ],
+  "motifs": [
+    "巨大裁切字",
+    "疊印色塊（mix-blend-mode: multiply）",
+    "網點",
+    "細格線",
+    "轉向文字"
+  ],
+  "typography": {
+    "display": {
+      "family": "Schibsted Grotesk",
+      "weights": "500、900",
+      "role": "大標，越粗越好"
+    },
+    "body": {
+      "family": "Schibsted Grotesk",
+      "weights": "400",
+      "role": "內文"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "400、900",
+      "role": "中文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;900&family=Noto+Sans+TC:wght@400;900&display=swap",
+    "rules": [
+      "只用一種無襯線字，靠尺寸與方向製造張力",
+      "大字可到 400px 以上",
+      "內文小而整齊"
+    ]
+  },
+  "imagery": [
+    "高對比黑白照片，加網點或影印質感",
+    "照片可以疊色塊（multiply）",
+    "照片可以被字壓住"
+  ],
+  "placeholder": "黑白網點方塊，上面疊一塊螢光色，斜放小字寫「PHOTO 01」",
+  "avoid": [
+    "所有東西整齊置中",
+    "柔和粉彩",
+    "圓角與陰影",
+    "裝飾性插圖"
+  ],
+  "color_rules": {
+    "max_accents": 1,
+    "notes": "黑白之外只有一個螢光或高飽和色，用在疊印與一個重點。"
+  },
+  "backgrounds": [
+    {
+      "id": "paper",
+      "name": "影印紙",
+      "hex": "#EFEEEA"
+    },
+    {
+      "id": "grey",
+      "name": "水泥灰",
+      "hex": "#D4D3CF"
+    },
+    {
+      "id": "black",
+      "name": "黑",
+      "hex": "#121212"
+    },
+    {
+      "id": "newsprint",
+      "name": "新聞紙",
+      "hex": "#E6E1D3"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "SP1",
+      "name": "螢光橘",
+      "ink": "#121212",
+      "accents": [
+        "#E8400C"
+      ],
+      "pairs_with": [
+        "paper",
+        "grey",
+        "newsprint"
+      ]
+    },
+    {
+      "id": "SP2",
+      "name": "電光藍",
+      "ink": "#121212",
+      "accents": [
+        "#1F3BFF"
+      ],
+      "pairs_with": [
+        "paper",
+        "grey",
+        "newsprint"
+      ]
+    },
+    {
+      "id": "SP3",
+      "name": "洋紅",
+      "ink": "#121212",
+      "accents": [
+        "#D1006F"
+      ],
+      "pairs_with": [
+        "paper",
+        "newsprint"
+      ]
+    },
+    {
+      "id": "SP4",
+      "name": "暗夜螢光",
+      "ink": "#EFEEEA",
+      "accents": [
+        "#D7FF3A"
+      ],
+      "pairs_with": [
+        "black"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

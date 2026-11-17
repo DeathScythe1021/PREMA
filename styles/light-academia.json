@@ -1,0 +1,163 @@
+{
+  "id": "light-academia",
+  "name_zh": "明亮學院",
+  "name_en": "Light Academia",
+  "summary": "陽光、亞麻、詩集與古典雕像：米白、淺褐的明亮學院美學，溫柔、優雅、有書卷氣。",
+  "definition": "Light Academia 是 Dark Academia 的白天版：灑進窗戶的陽光、亞麻桌布上的詩集、大理石雕像、乾燥花和手寫信。色調是米白、奶茶、淺褐，字體是優雅的襯線字與手寫字。轉成簡報時，畫面明亮、留白多，像一本精緻的詩集或展覽手冊。",
+  "keywords": [
+    "優雅",
+    "溫柔",
+    "書卷氣",
+    "明亮"
+  ],
+  "best_for": [
+    "教育與課程介紹",
+    "文化與藝術活動",
+    "個人介紹與作品集",
+    "婚禮、典禮流程"
+  ],
+  "not_for": [
+    "科技規格說明",
+    "需要強烈視覺衝擊的發表"
+  ],
+  "traits": [
+    "米白與淺褐色調",
+    "優雅襯線字",
+    "大理石雕像與乾燥花",
+    "陽光與窗影",
+    "手寫字點綴",
+    "細線與大量留白"
+  ],
+  "layout": [
+    "大量留白，內容集中在窄欄",
+    "標題用優雅襯線大字，旁邊一行小手寫字",
+    "照片用拱形或細框，像畫冊",
+    "頁碼與章節用小號大寫襯線字"
+  ],
+  "motifs": [
+    "拱形框",
+    "細線與小星號",
+    "乾燥花枝",
+    "手寫註記",
+    "羅馬數字"
+  ],
+  "typography": {
+    "display": {
+      "family": "Cormorant",
+      "weights": "400、600、italic",
+      "role": "優雅大標"
+    },
+    "body": {
+      "family": "Lora",
+      "weights": "400、italic",
+      "role": "內文"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "400、600",
+      "role": "中文；手寫感用 LXGW WenKai TC"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;1,400&family=Noto+Serif+TC:wght@400;600&family=LXGW+WenKai+TC:wght@400&display=swap",
+    "rules": [
+      "標題字重偏細",
+      "手寫字只用在一兩句旁註",
+      "字距略鬆"
+    ]
+  },
+  "imagery": [
+    "陽光下的書本、亞麻布、雕像、乾燥花",
+    "照片明亮、低對比、偏暖",
+    "可以裁成拱形"
+  ],
+  "placeholder": "拱形細框，中間小字斜體寫「photograph · 3:4」",
+  "avoid": [
+    "深色背景",
+    "高飽和色",
+    "粗黑體",
+    "科技感圖示"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "色彩要低調：一個淺褐當細線與標題，一個淡色只當色塊背景。"
+  },
+  "backgrounds": [
+    {
+      "id": "linen",
+      "name": "亞麻",
+      "hex": "#F3EDE2"
+    },
+    {
+      "id": "cream",
+      "name": "奶油",
+      "hex": "#F7F1E3"
+    },
+    {
+      "id": "marble",
+      "name": "大理石白",
+      "hex": "#EFEEEA"
+    },
+    {
+      "id": "tea",
+      "name": "奶茶",
+      "hex": "#E3D3BC"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "L1",
+      "name": "午後陽光",
+      "ink": "#3B2F25",
+      "accents": [
+        "#8A6A45",
+        "#D9C3A0"
+      ],
+      "pairs_with": [
+        "linen",
+        "cream",
+        "marble"
+      ]
+    },
+    {
+      "id": "L2",
+      "name": "鼠尾草",
+      "ink": "#2F3329",
+      "accents": [
+        "#5E7052",
+        "#C8D1BC"
+      ],
+      "pairs_with": [
+        "linen",
+        "marble"
+      ]
+    },
+    {
+      "id": "L3",
+      "name": "玫瑰信箋",
+      "ink": "#3A2A2A",
+      "accents": [
+        "#9A5A55",
+        "#E3C9C2"
+      ],
+      "pairs_with": [
+        "cream",
+        "linen"
+      ]
+    },
+    {
+      "id": "L4",
+      "name": "奶茶",
+      "ink": "#2E2419",
+      "accents": [
+        "#7A5634",
+        "#F3EDE2"
+      ],
+      "pairs_with": [
+        "tea"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

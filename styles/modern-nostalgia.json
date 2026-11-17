@@ -1,0 +1,166 @@
+{
+  "id": "modern-nostalgia",
+  "name_zh": "現代懷舊",
+  "name_en": "Modern Nostalgia",
+  "summary": "用乾淨的現代版面重做 70 到 90 年代的懷舊元素：圓潤復古字、柔和大地色、圓角色塊與彩虹弧線，溫暖但不老氣。",
+  "definition": "Modern Nostalgia 不是完整復刻某個年代，而是挑出讓人懷念的元素（圓潤肥胖的襯線字、褪色的大地色、彩虹弧線、圓角的電器造型），用現代的網格、留白和精準排版重新組合。結果是溫暖、友善、有記憶點，但看起來是今天做的。轉成簡報時，版面整齊、留白充足，復古元素只出現在標題字、色彩和少數圖形上。",
+  "keywords": [
+    "溫暖",
+    "友善",
+    "懷舊",
+    "精緻"
+  ],
+  "best_for": [
+    "消費品牌與食品",
+    "生活風格提案",
+    "社群與內容企劃",
+    "個人品牌"
+  ],
+  "not_for": [
+    "需要冷靜中性的商務分析",
+    "高科技規格說明"
+  ],
+  "traits": [
+    "圓潤復古的襯線字",
+    "褪色大地色與暖色",
+    "彩虹弧線與圓角色塊",
+    "乾淨的現代網格",
+    "大量留白",
+    "輕微顆粒"
+  ],
+  "layout": [
+    "現代網格為骨架，復古元素只放在標題與少數圖形",
+    "標題用圓潤肥胖的襯線字，大而溫暖",
+    "用三到四條平行彩虹弧線當章節記號",
+    "內容色塊有大圓角，像復古家電的面板"
+  ],
+  "motifs": [
+    "彩虹弧線",
+    "大圓角色塊",
+    "圓點",
+    "星形閃光",
+    "細顆粒"
+  ],
+  "typography": {
+    "display": {
+      "family": "Young Serif",
+      "weights": "400",
+      "role": "圓潤復古襯線大標"
+    },
+    "body": {
+      "family": "Figtree",
+      "weights": "400、600",
+      "role": "內文"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "600、900",
+      "role": "中文標題；內文用 Noto Sans TC"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600&family=Noto+Serif+TC:wght@600;900&family=Noto+Sans+TC:wght@400&display=swap",
+    "rules": [
+      "標題用 Young Serif，字距略緊",
+      "內文用乾淨的現代無襯線",
+      "不要同時用兩種復古字"
+    ]
+  },
+  "imagery": [
+    "暖色調的生活照片，輕微褪色",
+    "照片裁成大圓角",
+    "復古物件的去背照"
+  ],
+  "placeholder": "大圓角色塊，上方三條彩虹弧線，中間寫「照片｜4:5」",
+  "avoid": [
+    "完整復刻老式版面（會變老氣）",
+    "冷色科技感",
+    "細瘦襯線字",
+    "霓虹色"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "三個暖色組成彩虹弧線；大面積只用背景與其中一色。"
+  },
+  "backgrounds": [
+    {
+      "id": "cream",
+      "name": "奶油",
+      "hex": "#F6EEDF"
+    },
+    {
+      "id": "oat",
+      "name": "燕麥",
+      "hex": "#EDE2CF"
+    },
+    {
+      "id": "sage",
+      "name": "淡鼠尾草",
+      "hex": "#DCE3D2"
+    },
+    {
+      "id": "cocoa",
+      "name": "可可",
+      "hex": "#3A2A22"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "MN1",
+      "name": "日落彩虹",
+      "ink": "#2E2219",
+      "accents": [
+        "#C2522B",
+        "#D99A2B",
+        "#4F7A5A"
+      ],
+      "pairs_with": [
+        "cream",
+        "oat"
+      ]
+    },
+    {
+      "id": "MN2",
+      "name": "汽水店",
+      "ink": "#232A33",
+      "accents": [
+        "#C8473F",
+        "#2F6E8E",
+        "#E0A43A"
+      ],
+      "pairs_with": [
+        "cream",
+        "sage"
+      ]
+    },
+    {
+      "id": "MN3",
+      "name": "燕麥奶",
+      "ink": "#33281F",
+      "accents": [
+        "#9C5B3B",
+        "#6E7E4E",
+        "#D9A35C"
+      ],
+      "pairs_with": [
+        "oat",
+        "cream"
+      ]
+    },
+    {
+      "id": "MN4",
+      "name": "可可",
+      "ink": "#F6EEDF",
+      "accents": [
+        "#E8875A",
+        "#E8C15A",
+        "#9CC2A0"
+      ],
+      "pairs_with": [
+        "cocoa"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "id": "receiptify",
+  "name_zh": "收據體",
+  "name_en": "Receiptify",
+  "summary": "把內容排成一張熱感應收據：等寬字、品項與數量、虛線分隔、總計、條碼，窄長、精準又有生活感。",
+  "definition": "Receiptify 這個名字來自把音樂排行榜做成收據的網站：每首歌是一個品項、後面是時間，最後算出總計。這個風格借用收據的格式：窄長的白紙、等寬字、虛線分隔、品項靠左數字靠右、底部有總計與條碼。轉成簡報時，每頁中央是一張收據，條列內容變成品項、數據變成金額，「總結」就是 TOTAL。",
+  "keywords": [
+    "生活感",
+    "精準",
+    "幽默",
+    "清單"
+  ],
+  "best_for": [
+    "年度回顧與成果統計",
+    "清單與排行",
+    "預算與成本說明",
+    "活動流程"
+  ],
+  "not_for": [
+    "需要大圖的作品展示",
+    "情緒與品牌形象"
+  ],
+  "traits": [
+    "窄長白色紙條",
+    "等寬字",
+    "品項靠左、數字靠右",
+    "虛線與星號分隔",
+    "總計與條碼",
+    "熱感應紙的淡灰與褪色"
+  ],
+  "layout": [
+    "每頁中央一張窄收據（寬度約畫面 1/3），背景是桌面色",
+    "標題在收據頂端置中，像店名",
+    "內容排成品項列表，右側對齊數字",
+    "最後一行是 TOTAL，下面是條碼與「謝謝光臨」"
+  ],
+  "motifs": [
+    "虛線 ----",
+    "星號列 ****",
+    "條碼",
+    "鋸齒撕邊",
+    "QTY／TOTAL"
+  ],
+  "typography": {
+    "display": {
+      "family": "Space Mono",
+      "weights": "400、700",
+      "role": "收據上所有文字"
+    },
+    "body": {
+      "family": "Space Mono",
+      "weights": "400",
+      "role": "內文"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "400、700",
+      "role": "中文；一個中文字當兩格"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap",
+    "rules": [
+      "收據上只用等寬字",
+      "全部大寫、字級變化很少",
+      "數字一律靠右對齊"
+    ]
+  },
+  "imagery": [
+    "照片做成熱感應列印的效果：單色、高對比、粗網點",
+    "或放在收據外，像被釘在收據旁"
+  ],
+  "placeholder": "收據上的一個單色方塊，寫「IMG 01 / 單色照片」，下方印一行說明",
+  "avoid": [
+    "比例字型",
+    "彩色大圖",
+    "圓角卡片",
+    "漸層"
+  ],
+  "color_rules": {
+    "max_accents": 1,
+    "notes": "收據本身黑白；唯一的重點色像蓋上去的印章或螢光筆。"
+  },
+  "backgrounds": [
+    {
+      "id": "table",
+      "name": "木桌",
+      "hex": "#C9B79C"
+    },
+    {
+      "id": "counter",
+      "name": "櫃台灰",
+      "hex": "#D6D6D2"
+    },
+    {
+      "id": "night",
+      "name": "深色桌面",
+      "hex": "#1D1D1F"
+    },
+    {
+      "id": "pastel",
+      "name": "粉紅牆",
+      "hex": "#F2D7D5"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "RC1",
+      "name": "超商",
+      "ink": "#1F1F1F",
+      "accents": [
+        "#1F4FB8"
+      ],
+      "pairs_with": [
+        "counter",
+        "pastel"
+      ]
+    },
+    {
+      "id": "RC2",
+      "name": "咖啡店",
+      "ink": "#2A2420",
+      "accents": [
+        "#8C2F1F"
+      ],
+      "pairs_with": [
+        "table",
+        "counter"
+      ]
+    },
+    {
+      "id": "RC3",
+      "name": "印章紅",
+      "ink": "#1F1F1F",
+      "accents": [
+        "#B3261E"
+      ],
+      "pairs_with": [
+        "counter",
+        "pastel"
+      ]
+    },
+    {
+      "id": "RC4",
+      "name": "夜市",
+      "ink": "#EDEDEA",
+      "accents": [
+        "#FFCB3D"
+      ],
+      "pairs_with": [
+        "night"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

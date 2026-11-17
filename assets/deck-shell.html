@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{簡報標題}}</title>
+<!-- 換成風格 JSON 的 typography.google_fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="{{GOOGLE_FONTS_URL}}">
+<style>
+/* ===== 1. 配色：步驟 3、4 選定的顏色 ===== */
+:root {
+  --bg: #F2F0EA;
+  --ink: #161616;
+  --a1: #C8331F;
+  --a2: #C8331F;
+  --a3: #C8331F;
+}
+
+/* ===== 2. 簡報引擎：不要修改 ===== */
+html, body { margin: 0; height: 100%; overflow: hidden; background: #0d0d0d; }
+.deck { position: fixed; inset: 0; }
+.slide {
+  position: absolute; left: 0; top: 0;
+  width: 1920px; height: 1080px; box-sizing: border-box;
+  transform-origin: 0 0; overflow: hidden;
+  background: var(--bg); color: var(--ink);
+  display: none;
+}
+.slide.is-active { display: block; }
+.slide .notes { display: none; }
+.deck-ui {
+  position: fixed; right: 16px; bottom: 12px; z-index: 10;
+  font: 13px/1 ui-monospace, Menlo, monospace; color: #fff; opacity: .0;
+  background: rgba(0,0,0,.55); padding: 6px 9px; border-radius: 3px;
+  transition: opacity .3s; pointer-events: none;
+}
+.deck-ui.show { opacity: .9; }
+@media print {
+  @page { size: 1920px 1080px; margin: 0; }
+  html, body { height: auto; overflow: visible; background: none; }
+  .deck { position: static; }
+  .slide { display: block !important; position: relative; transform: none !important; break-after: page; }
+  .deck-ui { display: none; }
+}
+
+/* 圖片版位的基本行為；外觀在下方風格區塊依風格重寫 */
+.ph { position: relative; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; }
+.slide img.photo { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* ===== 3. 風格：依選定風格的 JSON 與示範封面撰寫 ===== */
+
+</style>
+</head>
+<body>
+<div class="deck">
+
+<section class="slide" data-title="封面">
+  <!-- 內容 -->
+  <aside class="notes">講者備註（不會顯示，也不會列印）</aside>
+</section>
+
+</div>
+<div class="deck-ui" aria-hidden="true"></div>
+<script>
+/* 簡報引擎：方向鍵／空白鍵／PageUp／PageDown 翻頁，Home／End 跳頭尾，F 全螢幕，網址 #3 直接開第 3 頁 */
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var ui = document.querySelector('.deck-ui');
+  var i = 0, hideTimer;
+  function fromHash() {
+    var n = parseInt(location.hash.replace('#', ''), 10);
+    return isNaN(n) ? 0 : Math.min(Math.max(n - 1, 0), slides.length - 1);
+  }
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    var x = (innerWidth - 1920 * s) / 2, y = (innerHeight - 1080 * s) / 2;
+    slides.forEach(function (el) { el.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(' + s + ')'; });
+  }
+  function show(n, fromNav) {
+    i = Math.min(Math.max(n, 0), slides.length - 1);
+    slides.forEach(function (el, k) { el.classList.toggle('is-active', k === i); });
+    if (fromNav) history.replaceState(null, '', '#' + (i + 1));
+    ui.textContent = (i + 1) + ' / ' + slides.length;
+    if (!fromNav) return; /* 剛載入或截圖時不顯示頁碼提示 */
+    ui.classList.add('show'); clearTimeout(hideTimer);
+    hideTimer = setTimeout(function () { ui.classList.remove('show'); }, 1200);
+  }
+  addEventListener('keydown', function (e) {
+    var k = e.key;
+    if (k === 'ArrowRight' || k === 'ArrowDown' || k === ' ' || k === 'PageDown') { e.preventDefault(); show(i + 1, true); }
+    else if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'PageUp') { e.preventDefault(); show(i - 1, true); }
+    else if (k === 'Home') show(0, true);
+    else if (k === 'End') show(slides.length - 1, true);
+    else if (k === 'f' || k === 'F') {
+      if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen();
+    }
+  });
+  addEventListener('click', function (e) { show(e.clientX > innerWidth / 3 ? i + 1 : i - 1, true); });
+  addEventListener('hashchange', function () { show(fromHash(), false); });
+  addEventListener('resize', fit);
+  fit(); show(fromHash(), false);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Googie 古奇太空時代｜示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Josefin+Sans:wght@400;700&family=Noto+Sans+TC:wght@500;900&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #F4E9D4; --ink: #2B2A2F; --a1: #1F7F7D; --a2: #C4442A; --a3: #F2B33D; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide * { box-sizing: border-box; }
+.abs { position: absolute; }
+.art { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+
+.kicker { left: 150px; top: 96px; font-family: "Josefin Sans", "Noto Sans TC", sans-serif; font-weight: 900; font-size: 30px; letter-spacing: .22em; display: flex; align-items: center; gap: 18px; }
+.kicker svg { width: 36px; height: 36px; }
+
+.script { left: 150px; top: 168px; font-family: "Yellowtail", cursive; font-size: 112px; line-height: 1; transform: rotate(-5deg); transform-origin: 0 100%; white-space: nowrap; }
+
+/* the roadside sign */
+.sign { left: 110px; top: 360px; width: 1040px; height: 270px; transform: rotate(-5deg); transform-origin: 0 50%; }
+.sign svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.sign h1 { position: absolute; left: 70px; top: 50%; transform: translateY(-50%); margin: 0; font-family: "Noto Sans TC", sans-serif; font-weight: 900; font-size: 118px; letter-spacing: .03em; line-height: 1; color: var(--bg); white-space: nowrap; }
+
+/* kidney-shaped photo slot */
+.ph { left: 1250px; top: 214px; width: 532px; height: 399px; display: flex; align-items: center; justify-content: center; font-family: "Noto Sans TC", sans-serif; font-weight: 500; font-size: 32px; letter-spacing: .08em; }
+.ph svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.ph span { position: relative; transform: translateY(-24px); }
+
+.info { left: 150px; top: 972px; font-family: "Josefin Sans", "Noto Sans TC", sans-serif; font-weight: 700; font-size: 28px; letter-spacing: .16em; }
+.page { right: 120px; top: 962px; font-family: "Josefin Sans", sans-serif; font-weight: 700; font-size: 44px; letter-spacing: .1em; }
+</style>
+</head>
+<body>
+<main class="slide">
+
+  <svg class="art" viewBox="0 0 1920 1080" aria-hidden="true">
+    <defs>
+      <path id="sparkle" d="M0 -100Q0 0 100 0Q0 0 0 100Q0 0 -100 0Q0 0 0 -100Z"/>
+      <polygon id="burst" points="0,-100 6,-29 24,-59 17,-25 71,-71 25,-17 59,-24 29,-6 100,0 29,6 59,24 25,17 71,71 17,25 24,59 6,29 0,100 -6,29 -24,59 -17,25 -71,71 -25,17 -59,24 -29,6 -100,0 -29,-6 -59,-24 -25,-17 -71,-71 -17,-25 -24,-59 -6,-29"/>
+    </defs>
+
+    <!-- boomerang slab behind the photo -->
+    <path d="M1600 96 C1330 250 1150 560 1150 840 C1420 770 1680 750 1940 776 C1720 700 1500 690 1340 700 C1370 480 1460 270 1600 96 Z" fill="var(--a1)"/>
+
+    <!-- speed lines rising toward the sign -->
+    <g stroke="var(--a1)" stroke-width="16" stroke-linecap="round">
+      <path d="M760 940 L1110 846"/>
+      <path d="M800 990 L1110 906"/>
+      <path d="M840 1040 L1110 966"/>
+    </g>
+
+    <!-- sign posts -->
+    <rect x="560" y="580" width="34" height="520" fill="var(--ink)"/>
+    <rect x="648" y="570" width="20" height="530" fill="var(--ink)"/>
+    <rect x="530" y="1034" width="170" height="16" fill="var(--ink)"/>
+
+    <!-- mast + starburst crowning the sign -->
+    <path d="M1112 290 L1150 150" stroke="var(--ink)" stroke-width="8"/>
+    <use href="#burst" transform="translate(1150 150) scale(.95)" fill="var(--a2)"/>
+    <circle cx="1150" cy="150" r="19" fill="var(--a3)"/>
+
+    <!-- atom: three orbits -->
+    <g transform="translate(1560 860)" fill="none" stroke="var(--ink)" stroke-width="5">
+      <ellipse rx="170" ry="54"/>
+      <ellipse rx="170" ry="54" transform="rotate(60)"/>
+      <ellipse rx="170" ry="54" transform="rotate(-60)"/>
+      <circle r="22" fill="var(--a2)" stroke="none"/>
+      <circle cx="170" r="12" fill="var(--a3)" stroke="none"/>
+      <circle cx="-85" cy="-147" r="12" fill="var(--a3)" stroke="none"/>
+      <circle cx="-85" cy="147" r="12" fill="var(--a3)" stroke="none"/>
+    </g>
+
+    <!-- sparkles -->
+    <use href="#sparkle" transform="translate(1790 214) scale(.62)" fill="var(--a2)"/>
+    <use href="#sparkle" transform="translate(1290 130) scale(.22)" fill="var(--a3)"/>
+    <use href="#sparkle" transform="translate(1250 700) scale(.3)" fill="var(--a2)"/>
+    <use href="#sparkle" transform="translate(1700 985) scale(.2)" fill="var(--a3)"/>
+  </svg>
+
+  <div class="abs kicker"><svg viewBox="-100 -100 200 200"><use href="#sparkle" fill="var(--a2)"/></svg>2026 品牌提案</div>
+  <div class="abs script">From Idea to Product</div>
+
+  <div class="abs sign">
+    <svg viewBox="0 0 1040 270" preserveAspectRatio="none">
+      <polygon points="0,40 1040,0 1000,270 24,232" fill="var(--ink)"/>
+      <polygon points="22,58 1012,22 978,248 42,214" fill="none" stroke="var(--bg)" stroke-width="3"/>
+      <g fill="var(--a3)"><circle cx="120" cy="35" r="11"/><circle cx="240" cy="31" r="11"/><circle cx="360" cy="26" r="11"/><circle cx="480" cy="22" r="11"/><circle cx="600" cy="17" r="11"/><circle cx="720" cy="12" r="11"/><circle cx="840" cy="8" r="11"/><circle cx="960" cy="3" r="11"/></g>
+    </svg>
+    <h1>把想法做成產品</h1>
+  </div>
+
+  <div class="abs ph" data-slot="cover-photo" data-ratio="4/3">
+    <svg viewBox="0 0 532 399"><path d="M96 30 C210 4 330 34 432 22 C512 14 536 104 522 196 C508 296 470 384 376 384 C296 384 290 304 228 304 C166 304 146 380 78 374 C8 368 -2 280 8 196 C18 104 22 46 96 30 Z" fill="color-mix(in srgb, var(--ink) 10%, var(--bg))" stroke="var(--ink)" stroke-width="5"/></svg>
+    <span>招牌照片｜4:3</span>
+  </div>
+
+  <div class="abs info">[講者姓名]　2026.11</div>
+  <div class="abs page">01</div>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

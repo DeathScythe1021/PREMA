@@ -1,0 +1,165 @@
+{
+  "id": "modular-type",
+  "name_zh": "模組字體",
+  "name_en": "Modular Typography",
+  "summary": "用幾何模組拼出的字：圓、方、四分之一圓、半圓在格子裡組成字母，像積木一樣，字本身就是主視覺。",
+  "definition": "Modular Typography 把字母拆成固定的幾何零件，在網格裡重新組合：一個 O 是一個圓，一個 B 是兩個半圓接在直條上。字因此有強烈的結構感，常常大到佔滿畫面，用色塊填滿格子。轉成簡報時，章節頁與封面用模組字當主視覺，內頁沿用同一套網格與幾何零件做圖表和裝飾。",
+  "keywords": [
+    "結構",
+    "幾何",
+    "大膽",
+    "現代主義"
+  ],
+  "best_for": [
+    "設計與建築主題",
+    "品牌識別提案",
+    "活動主視覺",
+    "章節分明的長簡報"
+  ],
+  "not_for": [
+    "溫柔感性的主題",
+    "大量內文的報告"
+  ],
+  "traits": [
+    "幾何零件組成的字",
+    "明顯的方格網格",
+    "大字佔滿畫面",
+    "平塗色塊",
+    "圓與方的對比",
+    "極少的其他裝飾"
+  ],
+  "layout": [
+    "封面與章節頁：用網格中的幾何零件拼出字母或數字",
+    "內頁沿用同一個方格網格，圖表也用圓與方構成",
+    "文字資訊放在格子裡，對齊網格",
+    "一頁只用兩三種零件"
+  ],
+  "motifs": [
+    "四分之一圓",
+    "半圓",
+    "方塊",
+    "網格線",
+    "圓點"
+  ],
+  "typography": {
+    "display": {
+      "family": "Bungee",
+      "weights": "400",
+      "role": "模組化的大標"
+    },
+    "body": {
+      "family": "Outfit",
+      "weights": "400、600",
+      "role": "內文與資訊"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Bungee&family=Outfit:wght@400;600&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "封面大字最好用 CSS 幾何零件拼出",
+      "內文用幾何無襯線，字重兩種就好",
+      "所有文字對齊網格"
+    ]
+  },
+  "imagery": [
+    "照片裁成圓形、半圓或方塊，當成零件之一",
+    "照片可以做成單色"
+  ],
+  "placeholder": "一個網格格子裡的四分之一圓，裡面寫「照片｜1:1」",
+  "avoid": [
+    "手寫字",
+    "紋理與顆粒",
+    "斜放元素",
+    "陰影"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "零件用三個重點色平塗，文字色只用在資訊。"
+  },
+  "backgrounds": [
+    {
+      "id": "paper",
+      "name": "紙白",
+      "hex": "#F2EFE8"
+    },
+    {
+      "id": "grey",
+      "name": "淺灰",
+      "hex": "#DEDCD6"
+    },
+    {
+      "id": "black",
+      "name": "黑",
+      "hex": "#151515"
+    },
+    {
+      "id": "navy",
+      "name": "深藍",
+      "hex": "#152238"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "MT1",
+      "name": "包浩斯",
+      "ink": "#151515",
+      "accents": [
+        "#D2352B",
+        "#2448A8",
+        "#F2B72E"
+      ],
+      "pairs_with": [
+        "paper",
+        "grey"
+      ]
+    },
+    {
+      "id": "MT2",
+      "name": "森林",
+      "ink": "#18231C",
+      "accents": [
+        "#2E6B45",
+        "#C8572A",
+        "#E9B949"
+      ],
+      "pairs_with": [
+        "paper"
+      ]
+    },
+    {
+      "id": "MT3",
+      "name": "粉橘",
+      "ink": "#2A1A20",
+      "accents": [
+        "#D9466F",
+        "#E8772E",
+        "#3B4FB0"
+      ],
+      "pairs_with": [
+        "paper",
+        "grey"
+      ]
+    },
+    {
+      "id": "MT4",
+      "name": "夜燈",
+      "ink": "#F2EFE8",
+      "accents": [
+        "#FF6B4A",
+        "#4FC1E9",
+        "#FFD23F"
+      ],
+      "pairs_with": [
+        "black",
+        "navy"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Art Style Deck — 風格目錄</title>
+<meta name="description" content="__COUNT__ 種定義明確的美術風格，挑一個、選好背景與配色，再交給 Claude 做成 HTML 簡報。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+:root {
+  --paper: #F3F2EE;
+  --paper-2: #E7E5DF;
+  --ink: #171717;
+  --ink-2: #5B5A56;
+  --line: #CFCCC4;
+  --accent: #C23B1C;
+  --sans: "Inter Tight", "Noto Sans TC", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--sans); }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+
+.wrap { max-width: 1440px; margin: 0 auto; padding: 0 32px; }
+
+/* 刊頭 */
+.masthead { padding-top: 56px; padding-bottom: 40px; border-bottom: 2px solid var(--ink); display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: end; }
+.kicker { font: 500 13px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 20px; }
+.masthead h1 { margin: 0; font-weight: 800; font-size: clamp(48px, 8vw, 112px); line-height: .92; letter-spacing: -.04em; }
+.masthead h1 span { display: block; font-size: .42em; letter-spacing: -.01em; font-weight: 700; margin-top: 14px; }
+.intro p { margin: 0 0 14px; color: var(--ink-2); max-width: 46ch; }
+.steps { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+.steps li { padding: 12px 12px 0 0; font-size: 14px; color: var(--ink-2); }
+.steps b { display: block; font: 500 12px/1 var(--mono); color: var(--accent); margin-bottom: 6px; }
+
+/* 篩選列 */
+.toolbar { position: sticky; top: 0; z-index: 5; background: var(--paper); border-bottom: 1px solid var(--line); }
+.toolbar .wrap { display: flex; gap: 16px; align-items: center; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; }
+.search { flex: 0 1 280px; height: 38px; border: 1px solid var(--ink); background: transparent; padding: 0 12px; font: 15px var(--sans); border-radius: 0; }
+.search:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; flex: 1; }
+.chip { border: 1px solid var(--line); background: transparent; padding: 5px 10px; font-size: 13px; cursor: pointer; border-radius: 0; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.count { font: 500 13px var(--mono); color: var(--ink-2); white-space: nowrap; }
+
+/* 風格卡 */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 56px 32px; padding-top: 40px; padding-bottom: 96px; }
+.card { display: flex; flex-direction: column; min-width: 0; }
+.card[hidden] { display: none; }
+.frame { position: relative; aspect-ratio: 16 / 9; background: var(--paper-2); border: 1px solid var(--ink); overflow: hidden; }
+.frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; pointer-events: none; }
+.frame a { position: absolute; inset: 0; }
+.meta { display: grid; grid-template-columns: auto 1fr; gap: 0 14px; margin-top: 16px; }
+.num { font: 500 13px/1.9 var(--mono); color: var(--ink-2); }
+.name { margin: 0; font-size: 26px; line-height: 1.15; font-weight: 700; letter-spacing: -.01em; }
+.name small { display: block; font-size: 15px; font-weight: 500; color: var(--ink-2); letter-spacing: 0; margin-top: 2px; }
+.summary { grid-column: 2; margin: 10px 0 0; font-size: 15px; color: var(--ink-2); }
+
+.picker { grid-column: 2; margin-top: 16px; display: grid; gap: 10px; }
+.row { display: grid; grid-template-columns: 44px 1fr; align-items: center; gap: 8px; }
+.row-label { font: 500 12px var(--mono); color: var(--ink-2); }
+.opts { display: flex; gap: 6px; flex-wrap: wrap; }
+.sw { width: 34px; height: 34px; border: 1px solid var(--line); cursor: pointer; padding: 0; border-radius: 0; position: relative; }
+.sw[aria-pressed="true"] { outline: 2px solid var(--ink); outline-offset: 2px; }
+.sw.dim { opacity: .35; }
+.pal { display: flex; height: 34px; border: 1px solid var(--line); cursor: pointer; padding: 0; background: none; border-radius: 0; }
+.pal span { width: 14px; height: 100%; }
+.pal span:first-child { width: 22px; }
+.pal[aria-pressed="true"] { outline: 2px solid var(--ink); outline-offset: 2px; }
+.pick-name { font-size: 13px; color: var(--ink-2); margin-top: 2px; }
+
+.cmd { grid-column: 2; margin-top: 14px; display: flex; border: 1px solid var(--ink); }
+.cmd code { flex: 1; padding: 8px 10px; font: 13px/1.5 var(--mono); overflow-wrap: anywhere; }
+.cmd button { border: 0; border-left: 1px solid var(--ink); background: var(--ink); color: var(--paper); padding: 0 14px; cursor: pointer; font-size: 13px; white-space: nowrap; }
+.cmd button:focus-visible, .sw:focus-visible, .pal:focus-visible, .chip:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+details { grid-column: 2; margin-top: 14px; border-top: 1px solid var(--line); }
+summary { cursor: pointer; padding: 10px 0; font-size: 14px; font-weight: 500; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "＋"; float: right; color: var(--ink-2); }
+details[open] summary::after { content: "－"; }
+.spec { font-size: 14px; color: var(--ink-2); padding-bottom: 8px; }
+.spec h4 { margin: 14px 0 4px; font: 500 12px var(--mono); letter-spacing: .08em; color: var(--ink); }
+.spec ul { margin: 0; padding-left: 18px; }
+.spec p { margin: 0; }
+
+footer { border-top: 2px solid var(--ink); padding-top: 24px; padding-bottom: 48px; font-size: 14px; color: var(--ink-2); display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+
+@media (max-width: 760px) {
+  .wrap { padding: 0 16px; }
+  .masthead { grid-template-columns: 1fr; gap: 24px; padding-top: 36px; }
+  .steps { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; gap: 48px; }
+  .search { flex-basis: 100%; }
+}
+</style>
+</head>
+<body>
+<header class="wrap masthead">
+  <div>
+    <p class="kicker">Art Style Deck · Style Index</p>
+    <h1>__COUNT__ Styles<span>風格目錄</span></h1>
+  </div>
+  <div class="intro">
+    <p>每種風格都有自己的版面、字體、圖形與禁忌，彼此不混用。先在這裡挑風格、背景和配色，再把指令貼給 Claude，它會照這套規則做出 HTML 簡報。</p>
+    <ol class="steps">
+      <li><b>01</b>挑一種風格</li>
+      <li><b>02</b>選背景與配色</li>
+      <li><b>03</b>複製指令給 Claude</li>
+    </ol>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="wrap">
+    <input class="search" type="search" placeholder="搜尋風格、用途…" aria-label="搜尋風格">
+    <div class="chips" role="group" aria-label="依氣氛篩選"></div>
+    <span class="count" aria-live="polite"></span>
+  </div>
+</div>
+
+<main class="wrap grid" id="grid"></main>
+
+<footer class="wrap">
+  <span>風格來源：<span id="sources"></span></span>
+  <span>資料在 GitHub 的 <code>styles/</code> 資料夾，新增一個 JSON 檔就會出現在這裡。</span>
+</footer>
+
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function () {
+  var styles = JSON.parse(document.getElementById('data').textContent);
+  var grid = document.getElementById('grid');
+  var search = document.querySelector('.search');
+  var chipsBox = document.querySelector('.chips');
+  var countEl = document.querySelector('.count');
+  var active = null;
+
+  function el(tag, attrs, children) {
+    var n = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) {
+      if (k === 'text') n.textContent = attrs[k];
+      else if (k === 'class') n.className = attrs[k];
+      else n.setAttribute(k, attrs[k]);
+    });
+    (children || []).forEach(function (c) { if (c) n.appendChild(c); });
+    return n;
+  }
+  function list(items) { return el('ul', null, items.map(function (t) { return el('li', { text: t }); })); }
+  function hex(h) { return h.replace('#', ''); }
+
+  function card(s, idx) {
+    var state = { bg: s.palettes[0].pairs_with[0], pal: s.palettes[0].id };
+    var iframe = el('iframe', { title: s.name_zh + ' 示範封面', loading: 'lazy', tabindex: '-1' });
+    var bgBtns = [], palBtns = [];
+    var bgName = el('div', { class: 'pick-name' });
+    var palName = el('div', { class: 'pick-name' });
+    var code = el('code');
+    var copyBtn = el('button', { type: 'button', text: '複製指令' });
+
+    function bgObj() { return s.backgrounds.filter(function (b) { return b.id === state.bg; })[0]; }
+    function palObj() { return s.palettes.filter(function (p) { return p.id === state.pal; })[0]; }
+    function render() {
+      var b = bgObj(), p = palObj();
+      var a = p.accents.concat(p.accents.slice(-1), p.accents.slice(-1));
+      var q = '?bg=' + hex(b.hex) + '&ink=' + hex(p.ink) + '&a1=' + hex(a[0]) + '&a2=' + hex(a[1]) + '&a3=' + hex(a[2]);
+      iframe.src = 'previews/' + s.id + '.html' + q;
+      bgBtns.forEach(function (x) {
+        x.btn.setAttribute('aria-pressed', x.id === state.bg);
+        x.btn.classList.toggle('dim', p.pairs_with.indexOf(x.id) < 0);
+      });
+      palBtns.forEach(function (x) { x.btn.setAttribute('aria-pressed', x.id === state.pal); });
+      bgName.textContent = b.name + ' ' + b.hex;
+      palName.textContent = p.id + ' ' + p.name;
+      code.textContent = '用 art-style-deck 做簡報：風格 ' + s.id + '、背景 ' + b.id + '、配色 ' + p.id;
+    }
+    s.backgrounds.forEach(function (b) {
+      var btn = el('button', { type: 'button', class: 'sw', title: b.name + ' ' + b.hex, 'aria-label': '背景 ' + b.name });
+      btn.style.background = b.hex;
+      btn.addEventListener('click', function () {
+        state.bg = b.id;
+        if (palObj().pairs_with.indexOf(b.id) < 0) {
+          var fit = s.palettes.filter(function (p) { return p.pairs_with.indexOf(b.id) >= 0; })[0];
+          if (fit) state.pal = fit.id;
+        }
+        render();
+      });
+      bgBtns.push({ id: b.id, btn: btn });
+    });
+    s.palettes.forEach(function (p) {
+      var btn = el('button', { type: 'button', class: 'pal', title: p.id + ' ' + p.name, 'aria-label': '配色 ' + p.id + ' ' + p.name });
+      [p.ink].concat(p.accents).forEach(function (c) { var sp = el('span'); sp.style.background = c; btn.appendChild(sp); });
+      btn.addEventListener('click', function () {
+        state.pal = p.id;
+        if (p.pairs_with.indexOf(state.bg) < 0) state.bg = p.pairs_with[0];
+        render();
+      });
+      palBtns.push({ id: p.id, btn: btn });
+    });
+    copyBtn.addEventListener('click', function () {
+      var t = code.textContent;
+      (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () {
+        copyBtn.textContent = '已複製';
+      }, function () {
+        var r = document.createRange(); r.selectNodeContents(code);
+        var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+        copyBtn.textContent = '請按 ⌘C';
+      });
+      setTimeout(function () { copyBtn.textContent = '複製指令'; }, 1600);
+    });
+
+    var t = s.typography;
+    var spec = el('div', { class: 'spec' }, [
+      el('p', { text: s.definition }),
+      el('h4', { text: '視覺特徵' }), list(s.traits),
+      el('h4', { text: '版面規則' }), list(s.layout),
+      el('h4', { text: '字體' }), el('p', { text: t.display.family + '＋' + t.body.family + '／中文 ' + t.zh.family }),
+      el('h4', { text: '配色限制' }), el('p', { text: '重點色最多 ' + s.color_rules.max_accents + ' 個。' + s.color_rules.notes }),
+      el('h4', { text: '適合' }), el('p', { text: s.best_for.join('、') }),
+      el('h4', { text: '不適合' }), el('p', { text: s.not_for.join('、') }),
+      el('h4', { text: '避免' }), list(s.avoid),
+      el('h4', { text: '出處' }), el('p', null, [el('a', { href: s.source.url, target: '_blank', rel: 'noopener', text: s.source.title })])
+    ]);
+
+    var link = el('a', { href: 'previews/' + s.id + '.html', target: '_blank', rel: 'noopener', 'aria-label': '在新分頁開啟 ' + s.name_zh + ' 示範封面' });
+    var node = el('article', { class: 'card', id: s.id }, [
+      el('div', { class: 'frame' }, [iframe, link]),
+      el('div', { class: 'meta' }, [
+        el('span', { class: 'num', text: String(idx + 1).padStart(2, '0') }),
+        el('h2', { class: 'name', text: s.name_zh }, [el('small', { text: s.name_en })]),
+        el('p', { class: 'summary', text: s.summary }),
+        el('div', { class: 'picker' }, [
+          el('div', { class: 'row' }, [el('span', { class: 'row-label', text: '背景' }), el('div', null, [el('div', { class: 'opts' }, bgBtns.map(function (x) { return x.btn; })), bgName])]),
+          el('div', { class: 'row' }, [el('span', { class: 'row-label', text: '配色' }), el('div', null, [el('div', { class: 'opts' }, palBtns.map(function (x) { return x.btn; })), palName])])
+        ]),
+        el('div', { class: 'cmd' }, [code, copyBtn]),
+        el('details', null, [el('summary', { text: '完整規格' }), spec])
+      ])
+    ]);
+    render();
+    node._search = [s.id, s.name_zh, s.name_en, s.summary].concat(s.keywords, s.best_for).join(' ').toLowerCase();
+    node._keywords = s.keywords;
+    return node;
+  }
+
+  var cards = styles.map(card);
+  cards.forEach(function (c) { grid.appendChild(c); });
+
+  var kw = {};
+  styles.forEach(function (s) { s.keywords.forEach(function (k) { kw[k] = (kw[k] || 0) + 1; }); });
+  Object.keys(kw).filter(function (k) { return kw[k] > 1; }).sort(function (a, b) { return kw[b] - kw[a]; }).slice(0, 14)
+    .forEach(function (k) {
+      var b = el('button', { type: 'button', class: 'chip', 'aria-pressed': 'false', text: k });
+      b.addEventListener('click', function () {
+        active = active === k ? null : k;
+        Array.prototype.forEach.call(chipsBox.children, function (c) { c.setAttribute('aria-pressed', c.textContent === active); });
+        filter();
+      });
+      chipsBox.appendChild(b);
+    });
+
+  function filter() {
+    var q = search.value.trim().toLowerCase(), n = 0;
+    cards.forEach(function (c) {
+      var show = (!q || c._search.indexOf(q) >= 0) && (!active || c._keywords.indexOf(active) >= 0);
+      c.hidden = !show; if (show) n++;
+    });
+    countEl.textContent = n + ' / ' + cards.length;
+  }
+  search.addEventListener('input', filter);
+  filter();
+
+  var src = {};
+  styles.forEach(function (s) { src[s.source.url] = s.source.title; });
+  var box = document.getElementById('sources');
+  Object.keys(src).forEach(function (u, i) {
+    if (i) box.appendChild(document.createTextNode('、'));
+    box.appendChild(el('a', { href: u, target: '_blank', rel: 'noopener', text: src[u] }));
+  });
+})();
+</script>
+</body>
+</html>

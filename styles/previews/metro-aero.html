@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Metro Aero 千禧科技｜示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=IBM+Plex+Sans+Condensed:wght@400;600&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #EEF3F6; --ink: #13222E; --a1: #0F7FB0; --a2: #C93C20; --a3: #C93C20; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide {
+  font-family: "IBM Plex Sans Condensed", "Noto Sans TC", sans-serif;
+  font-variant-numeric: tabular-nums;
+  background:
+    linear-gradient(color-mix(in srgb, var(--ink) 5%, transparent) 1px, transparent 1px) 0 0 / 60px 60px,
+    linear-gradient(90deg, color-mix(in srgb, var(--ink) 5%, transparent) 1px, transparent 1px) 0 0 / 60px 60px,
+    var(--bg);
+}
+.abs { position: absolute; }
+.cap { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.72; }
+.val { font-family: "IBM Plex Sans Condensed", "Noto Sans TC", sans-serif; font-weight: 600; font-size: 30px; letter-spacing: 0.04em; }
+
+/* 剪下來的紙層與半透明面板 */
+.sheet-1 { left: 820px; top: 120px; width: 700px; height: 720px; background: color-mix(in srgb, var(--a1) 9%, transparent); border: 1px solid color-mix(in srgb, var(--a1) 45%, transparent); }
+.sheet-2 { left: 960px; top: 260px; width: 640px; height: 640px;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--bg) 85%, transparent), color-mix(in srgb, var(--bg) 40%, transparent));
+  border: 1px solid color-mix(in srgb, var(--ink) 22%, transparent);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--ink) 10%, transparent); }
+.sheet-3 { left: 1490px; top: 60px; width: 300px; height: 420px; background: repeating-linear-gradient(-45deg, color-mix(in srgb, var(--a1) 14%, transparent) 0 2px, transparent 2px 14px); border: 1px solid color-mix(in srgb, var(--a1) 35%, transparent); }
+
+/* 主物件：產品去背圖版位 */
+.ph {
+  left: 900px; top: 190px; width: 560px; height: 560px;
+  background:
+    linear-gradient(118deg, transparent 0 18%, color-mix(in srgb, var(--bg) 70%, transparent) 18% 26%, transparent 26% 31%, color-mix(in srgb, var(--bg) 40%, transparent) 31% 33%, transparent 33%),
+    radial-gradient(circle at 70% 75%, color-mix(in srgb, var(--a1) 45%, transparent), transparent 60%),
+    linear-gradient(150deg, color-mix(in srgb, var(--a1) 22%, transparent), color-mix(in srgb, var(--a1) 34%, transparent));
+  border: 2px solid color-mix(in srgb, var(--a1) 80%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--a1) 40%, transparent); outline-offset: 10px;
+  display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 14px;
+}
+.ph svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.ph .t1 { font-family: "Michroma", sans-serif; font-size: 30px; letter-spacing: 0.14em; }
+.ph .t2 { font-family: "Noto Sans TC", sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 0.12em; }
+.cross { stroke: var(--ink); stroke-width: 2; fill: none; }
+
+.barcode { left: 900px; top: 790px; }
+.barcode .bars { fill: var(--ink); }
+.barcode .num { font-family: "IBM Plex Sans Condensed", sans-serif; font-weight: 400; font-size: 20px; letter-spacing: 0.3em; margin-top: 8px; }
+
+/* 指引線 */
+.leaders { left: 0; top: 0; width: 1920px; height: 1080px; pointer-events: none; }
+.leaders .ln { stroke: var(--ink); stroke-width: 1.5; fill: none; }
+.leaders .dot { fill: var(--bg); stroke: var(--a1); stroke-width: 3; }
+.leaders .warn { fill: var(--a2); }
+
+.callout { width: 260px; }
+.callout .val { margin-top: 4px; }
+
+/* 左欄：型號、標題 */
+.model { left: 120px; top: 96px; display: flex; align-items: center; gap: 24px; }
+.model .tag { font-family: "Michroma", sans-serif; font-size: 22px; letter-spacing: 0.12em; padding: 10px 16px; border: 2px solid var(--ink); }
+.model .kicker { font-family: "Noto Sans TC", sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 0.28em; }
+.title { left: 114px; top: 310px; margin: 0; font-family: "Michroma", "Noto Sans TC", sans-serif; font-weight: 700; font-size: 128px; line-height: 1.18; letter-spacing: 0.1em; }
+.sub { left: 120px; top: 650px; margin: 0; font-family: "Michroma", sans-serif; font-size: 31px; letter-spacing: 0.14em; text-transform: uppercase; }
+.metal { left: 120px; top: 736px; width: 640px; height: 16px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--ink) 8%, var(--bg)), color-mix(in srgb, var(--ink) 32%, var(--bg)) 45%, color-mix(in srgb, var(--ink) 14%, var(--bg)) 55%, color-mix(in srgb, var(--ink) 42%, var(--bg)));
+  border: 1px solid color-mix(in srgb, var(--ink) 45%, transparent); }
+.ticks { left: 120px; top: 762px; width: 640px; height: 18px;
+  background: repeating-linear-gradient(90deg, var(--ink) 0 1.5px, transparent 1.5px 16px); opacity: 0.55; }
+.coord { left: 120px; top: 960px; display: flex; gap: 40px; }
+.coord span { font-family: "IBM Plex Sans Condensed", sans-serif; font-size: 20px; letter-spacing: 0.2em; opacity: 0.72; }
+.corner { stroke: var(--ink); stroke-width: 2; fill: none; }
+</style>
+</head>
+<body>
+<main class="slide">
+  <div class="abs sheet-3"></div>
+  <div class="abs sheet-1"></div>
+  <div class="abs sheet-2"></div>
+
+  <div class="abs ph" data-slot="cover-photo" data-ratio="1/1">
+    <svg viewBox="0 0 560 560" aria-hidden="true">
+      <g class="cross">
+        <path d="M14 34h40M34 14v40"/><circle cx="34" cy="34" r="9"/>
+        <path d="M506 34h40M526 14v40"/><circle cx="526" cy="34" r="9"/>
+        <path d="M14 526h40M34 506v40"/><circle cx="34" cy="526" r="9"/>
+        <path d="M506 526h40M526 506v40"/><circle cx="526" cy="526" r="9"/>
+      </g>
+    </svg>
+    <div class="t1">PRODUCT SHOT</div>
+    <div class="t2">產品去背圖 1:1</div>
+  </div>
+
+  <div class="abs barcode">
+    <svg width="213" height="70" viewBox="0 0 213 70" aria-hidden="true"><path class="bars" d="M0 0h9v70h-9zM12 0h6v70h-6zM21 0h12v70h-12zM36 0h3v70h-3zM48 0h6v70h-6zM60 0h3v70h-3zM66 0h9v70h-9zM78 0h6v70h-6zM96 0h3v70h-3zM105 0h3v70h-3zM111 0h9v70h-9zM126 0h3v70h-3zM138 0h3v70h-3zM144 0h6v70h-6zM153 0h12v70h-12zM171 0h3v70h-3zM183 0h6v70h-6zM192 0h3v70h-3zM201 0h9v70h-9z"/></svg>
+    <div class="num">4 710 2026 011</div>
+  </div>
+
+  <svg class="abs leaders" viewBox="0 0 1920 1080" aria-hidden="true">
+    <path class="ln" d="M1400 300 L1560 210 L1860 210"/>
+    <path class="ln" d="M1430 640 L1560 720 L1860 720"/>
+    <path class="ln" d="M1180 760 L1180 900 L1500 900"/>
+    <circle class="dot" cx="1400" cy="300" r="8"/>
+    <circle class="dot" cx="1430" cy="640" r="8"/>
+    <circle class="dot" cx="1180" cy="760" r="8"/>
+    <path class="warn" d="M1240 838 l14 24 h-28z"/>
+    <g class="corner">
+      <path d="M40 60h40M60 40v40"/><path d="M1840 60h40M1860 40v40"/>
+      <path d="M40 1020h40M60 1000v40"/><path d="M1840 1020h40M1860 1000v40"/>
+    </g>
+  </svg>
+
+  <div class="abs callout" style="left:1580px; top:126px"><div class="cap">Presenter</div><div class="val">[講者姓名]</div></div>
+  <div class="abs callout" style="left:1580px; top:636px"><div class="cap">Release</div><div class="val">2026.11</div></div>
+  <div class="abs callout" style="left:1280px; top:816px"><div class="cap">Page</div><div class="val">01</div></div>
+
+  <div class="abs model"><span class="tag">MODEL AX-26</span><span class="kicker">2026 品牌提案</span></div>
+  <h1 class="abs title">把想法<br>做成產品</h1>
+  <p class="abs sub">From Idea to Product</p>
+  <div class="abs metal"></div>
+  <div class="abs ticks"></div>
+  <div class="abs coord"><span>X 0960</span><span>Y 0540</span></div>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

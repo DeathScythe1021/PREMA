@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Skeuomorphism 擬物化｜示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;800&family=Kalam:wght@400;700&family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #F6F1E1; --ink: #2F2A22; --a1: #8A3B2B; --a2: #3F6B4E; --a3: #3F6B4E; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide {
+  /* 所有材質色都從五個變數推出來；光源在左上 */
+  --hi: oklch(from var(--bg) calc(l + 0.06) c h);
+  --shade: oklch(from var(--bg) calc(l * 0.22) c h / 0.42);
+  --shade-soft: oklch(from var(--bg) calc(l * 0.22) c h / 0.18);
+  --desk: oklch(from var(--bg) calc(l * 0.74) calc(c + 0.015) h);
+  --leather: color-mix(in oklab, var(--a1) 55%, oklch(from var(--bg) calc(l * 0.3) c h));
+  --leather-dk: color-mix(in oklab, var(--leather) 70%, oklch(from var(--bg) calc(l * 0.15) c h));
+  --paper-back: oklch(from var(--bg) calc(l - 0.07) c h);
+  font-family: "Libre Franklin", "Noto Sans TC", sans-serif;
+  background:
+    repeating-linear-gradient(91deg, var(--shade-soft) 0 2px, transparent 2px 23px, var(--shade-soft) 23px 24px, transparent 24px 61px),
+    repeating-linear-gradient(89.4deg, transparent 0 140px, var(--shade-soft) 140px 146px, transparent 146px 233px),
+    var(--desk);
+}
+.abs { position: absolute; }
+
+/* 皮革封面＋縫線 */
+.book {
+  left: 90px; top: 50px; width: 1740px; height: 970px; border-radius: 22px;
+  background:
+    radial-gradient(circle at 30% 40%, color-mix(in srgb, var(--hi) 10%, transparent) 0 1px, transparent 2px) 0 0 / 7px 7px,
+    radial-gradient(circle at 60% 70%, var(--shade-soft) 0 1.5px, transparent 2.5px) 3px 2px / 9px 9px,
+    linear-gradient(135deg, color-mix(in srgb, var(--hi) 14%, transparent), transparent 40%, var(--shade-soft)),
+    var(--leather);
+  box-shadow: 14px 22px 34px var(--shade), inset 2px 2px 0 color-mix(in srgb, var(--hi) 22%, transparent), inset -3px -4px 0 var(--shade);
+}
+.stitch {
+  inset: 18px; border-radius: 14px; border: 4px dashed color-mix(in srgb, var(--bg) 80%, var(--a1));
+  filter: drop-shadow(1px 2px 0 var(--shade));
+}
+/* 紙張厚度 */
+.stack { left: 74px; top: 52px; width: 1622px; height: 872px; background: var(--paper-back); box-shadow: 4px 5px 0 -1px var(--paper-back), 8px 10px 0 -2px color-mix(in srgb, var(--paper-back) 85%, var(--ink)), 10px 14px 18px var(--shade); }
+.page {
+  left: 70px; top: 46px; width: 1622px; height: 872px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 96px), calc(100% - 96px) 100%, 0 100%);
+  background:
+    linear-gradient(90deg, var(--shade) 0, var(--shade-soft) 18px, transparent 60px),
+    linear-gradient(90deg, transparent 150px, color-mix(in srgb, var(--a1) 55%, transparent) 150px 152px, transparent 152px 157px, color-mix(in srgb, var(--a1) 55%, transparent) 157px 159px, transparent 159px),
+    repeating-linear-gradient(180deg, transparent 0 62px, color-mix(in srgb, var(--a2) 34%, transparent) 62px 64px) 0 26px,
+    var(--bg);
+}
+.dogear {
+  left: calc(70px + 1622px - 96px); top: calc(46px + 872px - 96px); width: 96px; height: 96px;
+  background: linear-gradient(to top left, transparent 50%, var(--paper-back) 50%);
+  filter: drop-shadow(-3px -2px 3px var(--shade-soft)) drop-shadow(3px 4px 3px var(--shade));
+}
+.strap { left: 1788px; top: 50px; width: 30px; height: 970px;
+  background: linear-gradient(90deg, var(--leather-dk), var(--leather) 40%, var(--leather-dk));
+  box-shadow: -4px 0 6px var(--shade), 4px 0 6px var(--shade-soft); }
+
+/* 頁面上的字 */
+.kicker { left: 362px; top: 150px; font-weight: 800; font-size: 26px; letter-spacing: 0.26em; }
+.title {
+  left: 354px; top: 196px; margin: 0;
+  font-family: "Libre Franklin", "Noto Sans TC", sans-serif; font-weight: 800; font-size: 148px; line-height: 1.2; letter-spacing: 0.04em;
+  text-shadow: -2px -2px 0 var(--hi), 3px 3px 3px var(--shade);
+}
+.sub { left: 360px; top: 580px; margin: 0; font-weight: 500; font-size: 54px; letter-spacing: 0.01em; text-shadow: -1px -1px 0 var(--hi), 2px 2px 2px var(--shade-soft); }
+.pageno { left: 1440px; top: 800px; font-weight: 800; font-size: 32px; letter-spacing: 0.1em; }
+
+/* 便利貼 */
+.note {
+  left: 400px; top: 700px; width: 420px; height: 250px; padding: 46px 40px 0; box-sizing: border-box;
+  transform: rotate(-3.5deg);
+  background: linear-gradient(170deg, color-mix(in oklab, var(--a1) 26%, var(--hi)), color-mix(in oklab, var(--a1) 34%, var(--bg)));
+  box-shadow: 6px 12px 14px -4px var(--shade), inset 0 -16px 18px -12px var(--shade-soft);
+  font-family: "Kalam", "LXGW WenKai TC", cursive; font-weight: 700; color: var(--ink);
+}
+.note .who { font-size: 46px; line-height: 1.25; }
+.note .when { font-size: 50px; line-height: 1.3; }
+
+/* 拍立得版位 */
+.polaroid {
+  left: 1110px; top: 160px; padding: 26px 26px 98px; transform: rotate(3.5deg);
+  background: linear-gradient(160deg, var(--hi), color-mix(in srgb, var(--hi) 88%, var(--ink)));
+  box-shadow: 8px 14px 18px var(--shade), inset 1px 1px 0 var(--hi);
+}
+.ph {
+  width: 540px; height: 405px; display: flex; align-items: center; justify-content: center;
+  background:
+    radial-gradient(ellipse at 35% 30%, color-mix(in srgb, var(--bg) 30%, transparent), transparent 60%),
+    linear-gradient(160deg, color-mix(in srgb, var(--ink) 12%, var(--bg)), color-mix(in srgb, var(--ink) 26%, var(--bg)));
+  box-shadow: inset 2px 3px 6px var(--shade);
+  font-family: "Kalam", "LXGW WenKai TC", cursive; font-weight: 700; font-size: 46px;
+}
+.tape {
+  width: 200px; height: 58px;
+  background:
+    repeating-linear-gradient(90deg, color-mix(in srgb, var(--hi) 30%, transparent) 0 6px, transparent 6px 18px),
+    color-mix(in srgb, var(--a2) 55%, transparent);
+  clip-path: polygon(0 8%, 4% 0, 8% 10%, 12% 0, 16% 8%, 20% 0, 24% 6%, 28% 0, 100% 0, 100% 92%, 96% 100%, 92% 90%, 88% 100%, 84% 92%, 80% 100%, 76% 94%, 72% 100%, 0 100%);
+  filter: drop-shadow(1px 2px 1px var(--shade-soft));
+}
+
+/* 書籤緞帶 */
+.ribbon {
+  left: 1500px; top: 960px; width: 52px; height: 110px;
+  background: linear-gradient(90deg, color-mix(in oklab, var(--a2) 80%, var(--ink)), var(--a2) 35%, color-mix(in oklab, var(--a2) 75%, var(--hi)) 55%, var(--a2) 75%, color-mix(in oklab, var(--a2) 80%, var(--ink)));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+  filter: drop-shadow(3px 4px 3px var(--shade));
+}
+</style>
+</head>
+<body>
+<main class="slide">
+  <div class="abs book">
+    <div class="abs stitch"></div>
+    <div class="abs stack"></div>
+    <div class="abs page"></div>
+    <div class="abs dogear"></div>
+  </div>
+
+  <div class="abs kicker">2026 品牌提案</div>
+  <h1 class="abs title">把想法<br>做成產品</h1>
+  <p class="abs sub">From Idea to Product</p>
+
+  <div class="abs polaroid">
+    <div class="ph" data-slot="cover-photo" data-ratio="4/3">貼照片｜4:3</div>
+  </div>
+  <div class="abs tape" style="left:1066px; top:160px; transform: rotate(-32deg);"></div>
+  <div class="abs tape" style="left:1600px; top:188px; transform: rotate(38deg);"></div>
+
+  <div class="abs note">
+    <div class="who">[講者姓名]</div>
+    <div class="when">2026.11</div>
+  </div>
+  <div class="abs tape" style="left:526px; top:674px; width:170px; transform: rotate(-6deg);"></div>
+
+  <div class="abs pageno">— 01 —</div>
+  <div class="abs strap"></div>
+  <div class="abs ribbon"></div>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

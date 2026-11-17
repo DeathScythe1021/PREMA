@@ -1,0 +1,163 @@
+{
+  "id": "dark-academia",
+  "name_zh": "暗黑學院",
+  "name_en": "Dark Academia",
+  "summary": "老圖書館、燭光、皮革書與哥德建築：深褐、墨綠、酒紅的古典學院美學，嚴肅、沉思又帶點神祕。",
+  "definition": "Dark Academia 取材自歐洲古老大學與文學：深夜的圖書館、燭光下攤開的書、拉丁文引言、版畫插圖、蠟封信件。色調深沉，以深褐、墨綠、酒紅為主，字體是古典襯線。轉成簡報時，每頁像一頁舊書或一封信，有頁眉、章節羅馬數字和引言。",
+  "keywords": [
+    "古典",
+    "沉思",
+    "知性",
+    "神祕"
+  ],
+  "best_for": [
+    "研究與論文發表",
+    "文學、歷史、哲學主題",
+    "讀書會與課程",
+    "品牌故事"
+  ],
+  "not_for": [
+    "輕鬆活潑的活動",
+    "科技產品發表"
+  ],
+  "traits": [
+    "深沉的褐、綠、酒紅",
+    "古典襯線字與斜體",
+    "版畫與銅版插圖",
+    "羅馬數字章節",
+    "蠟封、書脊、燭光",
+    "細框與花飾線"
+  ],
+  "layout": [
+    "像書頁：頁眉放章節名，頁碼用羅馬數字",
+    "標題置中或靠左，下面一道細花飾線",
+    "大段引言用斜體，配上作者署名",
+    "照片加細框，像書裡的插圖版"
+  ],
+  "motifs": [
+    "花飾分隔線 ❦",
+    "羅馬數字",
+    "雙線細框",
+    "蠟封圓章",
+    "首字放大"
+  ],
+  "typography": {
+    "display": {
+      "family": "Cormorant Garamond",
+      "weights": "500、700、italic",
+      "role": "古典大標與引言"
+    },
+    "body": {
+      "family": "EB Garamond",
+      "weights": "400、italic",
+      "role": "內文"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "400、700",
+      "role": "中文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=EB+Garamond:ital,wght@0,400;1,400&family=Noto+Serif+TC:wght@400;700&display=swap",
+    "rules": [
+      "全部使用襯線字",
+      "引言用斜體",
+      "小標用大寫加字距"
+    ]
+  },
+  "imagery": [
+    "圖書館、書架、燭光、石造建築",
+    "照片偏暗、暖色、加顆粒",
+    "古典畫作與版畫"
+  ],
+  "placeholder": "雙線細框，四角有小花飾，中間斜體寫「Plate III — 插圖 4:5」",
+  "avoid": [
+    "明亮飽和色",
+    "無襯線粗體",
+    "圓角卡片",
+    "表情符號與扁平圖示"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "一個酒紅或墨綠當章節色，一個舊金色只用在花飾與細線。"
+  },
+  "backgrounds": [
+    {
+      "id": "ink",
+      "name": "墨夜",
+      "hex": "#1C1814"
+    },
+    {
+      "id": "walnut",
+      "name": "胡桃木",
+      "hex": "#2E2219"
+    },
+    {
+      "id": "forest",
+      "name": "書房綠",
+      "hex": "#1F2A23"
+    },
+    {
+      "id": "parchment",
+      "name": "舊紙",
+      "hex": "#E6DBC4"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "D1",
+      "name": "燭光",
+      "ink": "#E9DFC9",
+      "accents": [
+        "#C9A15A",
+        "#CC6A55"
+      ],
+      "pairs_with": [
+        "ink",
+        "walnut",
+        "forest"
+      ]
+    },
+    {
+      "id": "D2",
+      "name": "藏書室",
+      "ink": "#E4DCC8",
+      "accents": [
+        "#8FAE8B",
+        "#C9A15A"
+      ],
+      "pairs_with": [
+        "ink",
+        "forest"
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "舊信件",
+      "ink": "#2A211A",
+      "accents": [
+        "#6E1F24",
+        "#3F5640"
+      ],
+      "pairs_with": [
+        "parchment"
+      ]
+    },
+    {
+      "id": "D4",
+      "name": "酒窖",
+      "ink": "#EADBC8",
+      "accents": [
+        "#D07A6A",
+        "#C9A15A"
+      ],
+      "pairs_with": [
+        "walnut",
+        "ink"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

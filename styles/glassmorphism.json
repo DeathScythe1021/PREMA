@@ -1,0 +1,159 @@
+{
+  "id": "glassmorphism",
+  "name_zh": "毛玻璃",
+  "name_en": "Glassmorphism",
+  "summary": "半透明的毛玻璃面板浮在鮮豔的色彩或照片上：背景模糊、細白邊、層層堆疊，清透有深度。",
+  "definition": "Glassmorphism 用「磨砂玻璃」做介面：面板半透明、透出後面模糊的色彩，邊緣有一道細細的亮邊，多層面板疊出深度。這個風格很容易做成 AI 範本的樣子，關鍵是背景要有真正的內容（照片或明確的色彩構成），而不是隨便幾顆漸層光球。轉成簡報時，背景每章換一張照片或一組色塊，內容放在少數幾片玻璃上，玻璃片數要少、層次要清楚。",
+  "keywords": [
+    "清透",
+    "現代",
+    "層次",
+    "介面感"
+  ],
+  "best_for": [
+    "app 與介面設計展示",
+    "科技產品",
+    "數位服務介紹",
+    "設計作品集"
+  ],
+  "not_for": [
+    "印刷品與講義",
+    "需要復古手作感的內容"
+  ],
+  "traits": [
+    "半透明磨砂面板",
+    "背景模糊（backdrop blur）",
+    "細白亮邊",
+    "多層堆疊的深度",
+    "鮮豔的背景色彩或照片",
+    "簡潔的無襯線字"
+  ],
+  "layout": [
+    "背景是一張照片或一組明確的色彩構成，不是隨機光球",
+    "一頁最多兩到三片玻璃，層次清楚",
+    "玻璃上的文字要有足夠對比，必要時加深玻璃",
+    "數字與圖表放在玻璃上，背景負責氣氛"
+  ],
+  "motifs": [
+    "磨砂玻璃面板",
+    "細亮邊",
+    "柔和投影",
+    "色彩構成背景"
+  ],
+  "typography": {
+    "display": {
+      "family": "Manrope",
+      "weights": "500、700、800",
+      "role": "標題與內文"
+    },
+    "body": {
+      "family": "Manrope",
+      "weights": "400",
+      "role": "內文"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "400、700",
+      "role": "中文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans+TC:wght@400;700&display=swap",
+    "rules": [
+      "字要清楚，玻璃上的字不要太細",
+      "標題可大，字距略緊",
+      "避免裝飾字"
+    ]
+  },
+  "imagery": [
+    "鮮豔的抽象照片、建築、自然風景都可以當背景",
+    "介面截圖放在玻璃面板裡"
+  ],
+  "placeholder": "背景是一大塊模糊色彩，上面一片毛玻璃面板寫「背景照片｜16:9」",
+  "avoid": [
+    "背景只有幾顆隨機漸層光球",
+    "一頁超過三片玻璃",
+    "玻璃上放細字導致看不清",
+    "紫藍色系預設漸層"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "兩個重點色用在背景色彩構成；玻璃上的文字只用文字色。"
+  },
+  "backgrounds": [
+    {
+      "id": "dawn",
+      "name": "清晨",
+      "hex": "#E8EEF5"
+    },
+    {
+      "id": "peach",
+      "name": "蜜桃",
+      "hex": "#F6E3D8"
+    },
+    {
+      "id": "night",
+      "name": "夜色",
+      "hex": "#121826"
+    },
+    {
+      "id": "forest",
+      "name": "森林",
+      "hex": "#13261F"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "GL1",
+      "name": "珊瑚與海",
+      "ink": "#14202E",
+      "accents": [
+        "#D2442D",
+        "#1C6FB0"
+      ],
+      "pairs_with": [
+        "dawn",
+        "peach"
+      ]
+    },
+    {
+      "id": "GL2",
+      "name": "柑橘",
+      "ink": "#2A1C14",
+      "accents": [
+        "#C8501E",
+        "#2F7D5B"
+      ],
+      "pairs_with": [
+        "peach",
+        "dawn"
+      ]
+    },
+    {
+      "id": "GL3",
+      "name": "霓虹夜",
+      "ink": "#EEF2FA",
+      "accents": [
+        "#FF5C8A",
+        "#36C5F0"
+      ],
+      "pairs_with": [
+        "night"
+      ]
+    },
+    {
+      "id": "GL4",
+      "name": "螢光森林",
+      "ink": "#E8F3EC",
+      "accents": [
+        "#7BE0A0",
+        "#F2C94C"
+      ],
+      "pairs_with": [
+        "forest"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

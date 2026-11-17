@@ -1,0 +1,167 @@
+{
+  "id": "southwestern",
+  "name_zh": "美西沙漠",
+  "name_en": "Southwestern",
+  "summary": "美國西南部沙漠的視覺：赤陶、綠松石、夕陽、仙人掌、幾何紋樣與西部木刻字，溫暖、粗獷、陽光感強。",
+  "definition": "Southwestern 來自美國亞利桑那、新墨西哥一帶的沙漠景色與西部文化：紅土台地、仙人掌、日落漸層、綠松石首飾、階梯與菱形的幾何紋樣、西部招牌字。轉成簡報時，色彩溫暖飽和，版面用幾何紋樣帶當邊框，標題像木刻招牌。使用幾何紋樣時，用自己組合的階梯、菱形、鋸齒，不要直接複製原住民的神聖圖騰。",
+  "keywords": [
+    "溫暖",
+    "粗獷",
+    "陽光",
+    "公路旅行"
+  ],
+  "best_for": [
+    "旅遊與戶外",
+    "餐飲與市集",
+    "品牌故事",
+    "活動企劃"
+  ],
+  "not_for": [
+    "冷調科技產品",
+    "需要極簡與留白的精品品牌"
+  ],
+  "traits": [
+    "赤陶、沙色、綠松石",
+    "沙漠夕陽漸層",
+    "階梯與菱形幾何紋樣",
+    "仙人掌與台地剪影",
+    "西部木刻招牌字",
+    "太陽圖形"
+  ],
+  "layout": [
+    "頁面上下用一條幾何紋樣帶當邊框",
+    "標題放在拱形或台地剪影上方",
+    "內容色塊用赤陶、沙色等大地色",
+    "數字與重點用綠松石標出"
+  ],
+  "motifs": [
+    "階梯紋與菱形紋",
+    "日落同心半圓",
+    "仙人掌剪影",
+    "台地輪廓",
+    "星芒"
+  ],
+  "typography": {
+    "display": {
+      "family": "Rye",
+      "weights": "400",
+      "role": "西部招牌字，只用於主標"
+    },
+    "body": {
+      "family": "Bitter",
+      "weights": "400、700",
+      "role": "副標與內文"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "500、900",
+      "role": "中文標題用 900"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Rye&family=Bitter:wght@400;700&family=Noto+Serif+TC:wght@500;900&display=swap",
+    "rules": [
+      "Rye 只能用在英文主標",
+      "副標用 Bitter 大寫加字距",
+      "中文用粗明體"
+    ]
+  },
+  "imagery": [
+    "沙漠、台地、仙人掌、公路",
+    "照片暖色、高飽和、強陽光",
+    "陶器與織品細節"
+  ],
+  "placeholder": "拱形框，上方是同心半圓的夕陽，中間寫「沙漠照片｜4:3」，底部一條鋸齒紋",
+  "avoid": [
+    "冷色調",
+    "細瘦無襯線字",
+    "直接複製原住民神聖圖騰",
+    "玻璃與光澤效果"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "赤陶、綠松石、芥末黃分工：大色塊、重點、紋樣點綴。"
+  },
+  "backgrounds": [
+    {
+      "id": "sand",
+      "name": "沙色",
+      "hex": "#F1E2C8"
+    },
+    {
+      "id": "adobe",
+      "name": "土磚",
+      "hex": "#E7CBA9"
+    },
+    {
+      "id": "dusk",
+      "name": "沙漠夜",
+      "hex": "#2D1E1A"
+    },
+    {
+      "id": "bone",
+      "name": "骨白",
+      "hex": "#F6EFE3"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "SW1",
+      "name": "日落台地",
+      "ink": "#3A2218",
+      "accents": [
+        "#B4502B",
+        "#1D7A73",
+        "#D9A13A"
+      ],
+      "pairs_with": [
+        "sand",
+        "bone",
+        "adobe"
+      ]
+    },
+    {
+      "id": "SW2",
+      "name": "綠松石",
+      "ink": "#2B2420",
+      "accents": [
+        "#17716B",
+        "#A9452B",
+        "#E2B15A"
+      ],
+      "pairs_with": [
+        "bone",
+        "sand"
+      ]
+    },
+    {
+      "id": "SW3",
+      "name": "仙人掌",
+      "ink": "#2E2A1E",
+      "accents": [
+        "#4F6B3A",
+        "#B4502B",
+        "#E2B15A"
+      ],
+      "pairs_with": [
+        "bone",
+        "sand"
+      ]
+    },
+    {
+      "id": "SW4",
+      "name": "營火夜",
+      "ink": "#F3E5CF",
+      "accents": [
+        "#E07A4F",
+        "#4FB3A9",
+        "#E8B85C"
+      ],
+      "pairs_with": [
+        "dusk"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

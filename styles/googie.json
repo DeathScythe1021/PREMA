@@ -1,0 +1,167 @@
+{
+  "id": "googie",
+  "name_zh": "古奇太空時代",
+  "name_en": "Googie",
+  "summary": "1950 年代美國原子時代的公路建築與招牌：迴力鏢、星芒、拋物線和往上翹的斜角。",
+  "definition": "Googie 源自二戰後南加州的咖啡店、汽車旅館與加油站建築，充滿對太空時代的樂觀想像：屋頂往上斜翹、招牌上掛著星芒與原子軌道、色塊是腰果形和迴力鏢形。轉成簡報時，版面要打破方正格線，用斜角與曲線帶出速度感，標題像路邊招牌一樣醒目。",
+  "keywords": [
+    "樂觀",
+    "復古未來",
+    "熱鬧",
+    "親切"
+  ],
+  "best_for": [
+    "活動與市集企劃",
+    "餐飲與零售品牌",
+    "輕鬆的團隊分享",
+    "復古主題提案"
+  ],
+  "not_for": [
+    "嚴肅的財報",
+    "醫療或法律等需要權威感的內容"
+  ],
+  "traits": [
+    "星芒爆炸記號",
+    "迴力鏢與腰果形色塊",
+    "原子軌道線",
+    "往上斜翹的切角",
+    "招牌感手寫字配幾何無襯線字",
+    "暖色系高飽和撞色"
+  ],
+  "layout": [
+    "主標題放在斜切色塊或「招牌」上，可以略微傾斜",
+    "用曲線色塊分割畫面，不用直角卡片",
+    "星芒當重點記號，標在數字或關鍵字旁",
+    "內頁可以用一條斜向的長色帶貫穿，營造速度感"
+  ],
+  "motifs": [
+    "四芒與八芒星芒",
+    "迴力鏢形",
+    "原子軌道（三個交錯橢圓）",
+    "斜向平行速度線",
+    "腰果形色塊"
+  ],
+  "typography": {
+    "display": {
+      "family": "Yellowtail",
+      "weights": "400",
+      "role": "招牌式手寫主標，一頁最多一處"
+    },
+    "body": {
+      "family": "Josefin Sans",
+      "weights": "400、700",
+      "role": "副標用大寫粗體加字距；內文用 400"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文標題用 900"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Yellowtail&family=Josefin+Sans:wght@400;700&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "手寫字只用在英文主標或一個關鍵字",
+      "中文標題用粗黑體，不要用手寫字模仿",
+      "副標大寫，字距 0.15em 以上"
+    ]
+  },
+  "imagery": [
+    "中世紀現代建築、霓虹招牌、汽車旅館、復古餐車",
+    "照片偏暖色、略微褪色",
+    "照片可以裁成腰果形或圓角斜切形"
+  ],
+  "placeholder": "腰果形或斜切形的色塊，中間寫「招牌照片｜4:3」，右上角放一個星芒",
+  "avoid": [
+    "灰階與冷色極簡",
+    "細線條商務格線",
+    "太多直角方框排成一排",
+    "等寬字與科技 UI 元素"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "三個重點色要分工：一個當大色塊、一個當星芒與記號、一個當點綴。"
+  },
+  "backgrounds": [
+    {
+      "id": "cream",
+      "name": "奶油白",
+      "hex": "#F4E9D4"
+    },
+    {
+      "id": "mint",
+      "name": "汽水薄荷",
+      "hex": "#D3E8DD"
+    },
+    {
+      "id": "coral",
+      "name": "淡珊瑚",
+      "hex": "#F6D7C8"
+    },
+    {
+      "id": "night",
+      "name": "夜空藍",
+      "hex": "#1D2A3A"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "G1",
+      "name": "汽車旅館",
+      "ink": "#2B2A2F",
+      "accents": [
+        "#1F7F7D",
+        "#C4442A",
+        "#F2B33D"
+      ],
+      "pairs_with": [
+        "cream",
+        "mint",
+        "coral"
+      ]
+    },
+    {
+      "id": "G2",
+      "name": "太空站",
+      "ink": "#F4E9D4",
+      "accents": [
+        "#F26B4F",
+        "#7FD1C7",
+        "#F2B33D"
+      ],
+      "pairs_with": [
+        "night"
+      ]
+    },
+    {
+      "id": "G3",
+      "name": "路邊餐館",
+      "ink": "#3A1F1A",
+      "accents": [
+        "#C23B2A",
+        "#2B7466",
+        "#E7A93B"
+      ],
+      "pairs_with": [
+        "cream",
+        "coral"
+      ]
+    },
+    {
+      "id": "G4",
+      "name": "糖果店",
+      "ink": "#2E2A3A",
+      "accents": [
+        "#D2487A",
+        "#2D86A8",
+        "#F6C445"
+      ],
+      "pairs_with": [
+        "cream",
+        "mint"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
+  }
+}

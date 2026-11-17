@@ -1,0 +1,161 @@
+{
+  "id": "astro-attic",
+  "name_zh": "星際閣樓",
+  "name_en": "Astro Attic",
+  "summary": "70 年代迷幻海報遇上超現實場景：粉彩漸層的天空、擺在荒原上的復古家具，字型被拉長或彎曲，帶著夢境感。",
+  "definition": "Astro Attic 像是在閣樓翻出的 70 年代唱片與海報：粉彩漸層天空、遠山或月面、一張孤零零的復古沙發，配上柔軟圓潤的襯線大字。畫面柔和、懷舊又有一點超現實。轉成簡報時，每頁像一扇拱形窗，往外看到一個夢裡的風景，文字安靜地擺在下方。",
+  "keywords": [
+    "夢幻",
+    "懷舊",
+    "柔和",
+    "超現實"
+  ],
+  "best_for": [
+    "品牌形象與願景",
+    "音樂、藝文活動",
+    "個人作品集開場",
+    "生活風格提案"
+  ],
+  "not_for": [
+    "資料密集的報表",
+    "技術規格說明"
+  ],
+  "traits": [
+    "粉彩漸層天空",
+    "拱形窗框",
+    "超現實場景（家具、門、樓梯出現在荒原）",
+    "柔軟的 70 年代襯線字",
+    "細緻顆粒",
+    "太陽與星星的簡單圖形"
+  ],
+  "layout": [
+    "主視覺放在拱形或圓形窗框裡，像往外看的一扇窗",
+    "海報式構圖：上方大圖、下方標題與小字資訊",
+    "標題可以大到佔滿寬度，字距略鬆",
+    "內頁維持同一個拱框，換不同漸層天空當章節區隔"
+  ],
+  "motifs": [
+    "拱形窗",
+    "漸層太陽",
+    "遠山剪影",
+    "細小星點",
+    "環繞文字或波浪線"
+  ],
+  "typography": {
+    "display": {
+      "family": "Fraunces",
+      "weights": "300–700（可用 SOFT、WONK 軸）",
+      "role": "柔軟的復古襯線大標"
+    },
+    "body": {
+      "family": "Jost",
+      "weights": "400、500",
+      "role": "資訊與內文"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "400、700",
+      "role": "中文標題與內文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600&family=Jost:wght@400;500&family=Noto+Serif+TC:wght@400;700&display=swap",
+    "rules": [
+      "英文大標用 Fraunces 較細的字重，顯得柔和",
+      "資訊小字用大寫 Jost 加字距",
+      "避免粗黑體"
+    ]
+  },
+  "imagery": [
+    "超現實拼貼：家具、門、樓梯放在沙漠、月面或雲上",
+    "漸層天空、柔焦",
+    "照片加暖色調與顆粒，降低一點對比"
+  ],
+  "placeholder": "拱形窗框裡放上漸層天空，中間寫「場景照片｜3:4」",
+  "avoid": [
+    "冷色科技感",
+    "細格線與資訊圖表",
+    "硬邊陰影",
+    "高飽和螢光色"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "漸層天空由背景色和兩個重點色組成，不要再加其他顏色。"
+  },
+  "backgrounds": [
+    {
+      "id": "blush",
+      "name": "霧粉",
+      "hex": "#F3DCD3"
+    },
+    {
+      "id": "dune",
+      "name": "沙丘",
+      "hex": "#EEDDBB"
+    },
+    {
+      "id": "lavender",
+      "name": "薰衣草",
+      "hex": "#DCD5EA"
+    },
+    {
+      "id": "dusk",
+      "name": "夜紫",
+      "hex": "#2B2240"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "A1",
+      "name": "日落沙丘",
+      "ink": "#3B2A2A",
+      "accents": [
+        "#E97B5A",
+        "#3F7F82"
+      ],
+      "pairs_with": [
+        "dune",
+        "blush"
+      ]
+    },
+    {
+      "id": "A2",
+      "name": "粉紅月面",
+      "ink": "#3A2B3F",
+      "accents": [
+        "#E58BA8",
+        "#7A9CC6"
+      ],
+      "pairs_with": [
+        "blush",
+        "lavender"
+      ]
+    },
+    {
+      "id": "A3",
+      "name": "金色午後",
+      "ink": "#3B3020",
+      "accents": [
+        "#D9A441",
+        "#56713F"
+      ],
+      "pairs_with": [
+        "dune"
+      ]
+    },
+    {
+      "id": "A4",
+      "name": "夜遊",
+      "ink": "#F3DCD3",
+      "accents": [
+        "#F29E7A",
+        "#9FC3D9"
+      ],
+      "pairs_with": [
+        "dusk"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
+  }
+}

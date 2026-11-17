@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Wabi Sabi 侘寂｜示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,500;1,300&family=Noto+Serif+TC:wght@300;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #EEE8DC;
+  --ink: #2E2A25;
+  --a1: #A33A2A; --a2: #A33A2A; --a3: #A33A2A;
+}
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide { font-family: "Spectral", "Noto Serif TC", serif; font-weight: 300; }
+
+/* 和紙纖維 */
+.paper { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+.paper .fib { fill: var(--ink); opacity: .025; }
+.paper .dot { fill: var(--ink); opacity: .045; }
+
+/* 手捏陶器般的不規則形狀＝圖片版位 */
+.ph { position: absolute; left: 190px; top: 392px; width: 620px; height: 600px; }
+.ph .pot { position: absolute; inset: 0; width: 620px; height: 600px; overflow: visible; }
+.ph .body { fill: color-mix(in srgb, var(--ink) 12%, var(--bg)); }
+.ph .rim { fill: none; stroke: color-mix(in srgb, var(--ink) 22%, var(--bg)); stroke-width: 2; }
+.ph .tex { fill: var(--ink); opacity: .06; }
+.ph .label { position: absolute; right: 128px; bottom: 96px; writing-mode: vertical-rl;
+  font: 300 24px/1 "Noto Serif TC", serif; letter-spacing: .4em; }
+.ph .seal { position: absolute; right: 168px; bottom: 98px; width: 34px; height: 36px; }
+
+.seal .pad { fill: var(--a1); }
+.seal .cut { fill: none; stroke: var(--bg); stroke-width: 2.4; stroke-linecap: square; }
+
+/* 一道墨跡 */
+.brush { position: absolute; left: 96px; top: 250px; width: 1060px; height: 180px; overflow: visible; }
+.brush .ink { fill: var(--ink); }
+.brush .dry { fill: none; stroke: var(--bg); stroke-linecap: round; }
+
+/* 直排標題 */
+h1 { position: absolute; right: 214px; top: 118px; margin: 0; writing-mode: vertical-rl;
+  font: 300 100px/1 "Noto Serif TC", serif; letter-spacing: .32em; }
+.kicker { position: absolute; right: 368px; top: 136px; writing-mode: vertical-rl;
+  font: 300 24px/1 "Noto Serif TC", serif; letter-spacing: .36em; }
+.kicker::before { content: ""; display: inline-block; width: 1px; height: 64px; margin-bottom: 26px; background: color-mix(in srgb, var(--ink) 45%, transparent); }
+
+.en { position: absolute; left: 960px; top: 742px; }
+.en p { margin: 0; font: italic 300 44px/1.2 "Spectral", serif; letter-spacing: .02em; }
+.en .meta { margin-top: 22px; font: 300 24px/1 "Spectral", "Noto Serif TC", serif; letter-spacing: .14em; }
+
+.folio { position: absolute; left: 120px; bottom: 64px; font: 300 22px/1 "Spectral", serif; letter-spacing: .3em; }
+</style>
+</head>
+<body>
+<main class="slide">
+  <svg class="paper" viewBox="0 0 1920 1080" aria-hidden="true">
+    <filter id="fiber" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="turbulence" baseFrequency="0.012 0.32" numOctaves="2" seed="7"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 1.25"/>
+      <feComposite in="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="speck" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="1" seed="2"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 3 -1.6"/>
+      <feComposite in="SourceGraphic" operator="in"/>
+    </filter>
+    <rect class="fib" x="-300" y="-300" width="2520" height="1680" filter="url(#fiber)" transform="rotate(-8 960 540)"/>
+    <rect class="dot" width="1920" height="1080" filter="url(#speck)"/>
+  </svg>
+
+  <!-- 墨跡：一筆由左而右，尾端飛白 -->
+  <svg class="brush" viewBox="-10 -110 1030 180" aria-hidden="true">
+    <filter id="rough" x="-5%" y="-30%" width="110%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035 0.09" numOctaves="3" seed="11"/>
+      <feDisplacementMap in="SourceGraphic" scale="9"/>
+    </filter>
+    <g filter="url(#rough)" transform="rotate(4 500 0)">
+      <path class="ink" d="M0,-26 L17,-36 L33,-46 L50,-49 L67,-52 L83,-53 L100,-54 L117,-54 L133,-55 L150,-56 L167,-57 L183,-59 L200,-61 L217,-63 L233,-64 L250,-65 L267,-65 L283,-64 L300,-64 L317,-63 L333,-62 L350,-63 L367,-63 L383,-65 L400,-66 L417,-68 L433,-70 L450,-71 L467,-72 L483,-72 L500,-71 L517,-70 L533,-69 L550,-68 L567,-68 L583,-67 L600,-67 L617,-67 L633,-66 L650,-64 L667,-62 L683,-58 L700,-55 L717,-51 L733,-48 L750,-44 L767,-41 L783,-38 L800,-36 L817,-33 L833,-31 L850,-28 L867,-24 L883,-21 L900,-17 L917,-13 L933,-10 L950,-6 L967,-2 L983,3 L1000,8 L1004,14 L987,13 L971,11 L954,9 L937,7 L921,5 L904,3 L887,2 L871,-0 L854,-2 L837,-4 L821,-7 L804,-9 L787,-11 L771,-13 L754,-15 L737,-16 L721,-17 L704,-17 L687,-18 L671,-18 L654,-19 L637,-20 L621,-21 L604,-23 L587,-24 L571,-24 L554,-25 L537,-24 L521,-23 L504,-22 L487,-21 L471,-20 L454,-19 L437,-19 L421,-19 L404,-19 L387,-19 L371,-18 L354,-17 L337,-15 L321,-13 L304,-10 L287,-7 L271,-5 L254,-2 L237,-1 L221,0 L204,1 L187,3 L171,4 L154,6 L137,9 L121,12 L104,16 L87,20 L71,23 L54,26 L37,28 L21,26 L4,22Z"/>
+      <path class="dry" stroke-width="3.5" d="M550,-60 L572,-58 L594,-56 L616,-54 L638,-52 L661,-50 L683,-47 L705,-44 L727,-41 L749,-38 L771,-34 L793,-31 L815,-27 L837,-23 L859,-18 L882,-14 L904,-10 L926,-5 L948,-0 L970,5"/>
+      <path class="dry" stroke-width="2.5" d="M590,-49 L608,-48 L627,-47 L645,-45 L664,-43 L682,-41 L701,-39 L719,-37 L737,-35 L756,-32 L774,-30 L793,-27 L811,-24 L829,-21 L848,-18 L866,-15 L885,-11 L903,-8 L922,-4 L940,-1"/>
+      <path class="dry" stroke-width="4" d="M630,-40 L645,-39 L659,-38 L674,-36 L689,-35 L704,-34 L718,-32 L733,-31 L748,-29 L763,-27 L777,-25 L792,-23 L807,-21 L822,-19 L836,-17 L851,-15 L866,-12 L881,-10 L895,-8 L910,-5"/>
+      <path class="dry" stroke-width="2" d="M670,-31 L681,-30 L692,-29 L703,-28 L714,-27 L725,-27 L736,-25 L747,-24 L758,-23 L769,-22 L781,-21 L792,-20 L803,-18 L814,-17 L825,-16 L836,-14 L847,-13 L858,-11 L869,-10 L880,-8"/>
+      <path class="dry" stroke-width="3" d="M410,-40 L440,-41 L470,-42 L500,-40 L530,-39"/>
+      <path class="dry" stroke-width="1.6" d="M150,-30 L210,-34 L260,-33"/>
+    </g>
+  </svg>
+
+  <div class="ph" data-slot="cover-photo" data-ratio="1/1">
+    <svg class="pot" viewBox="0 0 620 600" aria-hidden="true">
+      <clipPath id="pot"><path d="M607,290C610,321 598,357 582,385C566,412 536,434 512,454C488,475 464,493 436,508C409,523 379,538 348,542C318,546 283,541 254,533C224,526 196,511 171,497C145,482 118,467 98,446C78,426 62,400 50,374C39,348 35,319 30,290C26,261 18,228 23,197C27,166 36,127 58,102C79,78 118,60 151,51C184,43 222,49 254,51C286,54 315,59 343,66C371,73 398,81 423,93C449,105 472,121 495,139C519,157 545,176 564,201C583,226 604,259 607,290Z"/></clipPath>
+      <path class="body" d="M607,290C610,321 598,357 582,385C566,412 536,434 512,454C488,475 464,493 436,508C409,523 379,538 348,542C318,546 283,541 254,533C224,526 196,511 171,497C145,482 118,467 98,446C78,426 62,400 50,374C39,348 35,319 30,290C26,261 18,228 23,197C27,166 36,127 58,102C79,78 118,60 151,51C184,43 222,49 254,51C286,54 315,59 343,66C371,73 398,81 423,93C449,105 472,121 495,139C519,157 545,176 564,201C583,226 604,259 607,290Z"/>
+      <g clip-path="url(#pot)"><rect class="tex" width="620" height="600" filter="url(#speck)"/></g>
+      <path class="rim" d="M120,96 C200,58 330,64 430,104 C500,134 560,190 588,262"/>
+    </svg>
+    <div class="label">器物照片</div>
+    <svg class="seal" viewBox="0 0 34 36" aria-hidden="true">
+      <path class="pad" d="M2,3 L31,1 L33,33 L19,35 L1,34 Z"/>
+      <path class="cut" d="M8,8 L8,28 L19,28 M14,8 L26,8 L26,22 M14,14 L20,14 L20,21 M24,28 L27,28"/>
+    </svg>
+  </div>
+
+  <div class="kicker">2026 品牌提案</div>
+  <h1>把想法做成產品</h1>
+
+  <div class="en">
+    <p>From Idea to Product</p>
+    <div class="meta">[講者姓名]　2026.11</div>
+  </div>
+
+  <div class="folio">01</div>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

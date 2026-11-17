@@ -1,0 +1,161 @@
+{
+  "id": "skeuomorphism",
+  "name_zh": "擬物化",
+  "name_en": "Skeuomorphism",
+  "summary": "模仿真實材質與物件：皮革、縫線、木紋、金屬旋鈕、紙張捲角，讓畫面像可以摸到的實體。",
+  "definition": "擬物化是早期 iPhone 介面的主流：記事本有黃色橫線紙和皮革封面，計算機有立體按鍵。它的核心是「用真實物件做比喻」。轉成簡報時，每一頁都是一個實物：筆記本內頁、軟木板上的便利貼、資料夾、儀表板，元素有厚度、有光影、有材質。",
+  "keywords": [
+    "懷舊",
+    "觸感",
+    "親切",
+    "具體"
+  ],
+  "best_for": [
+    "教學與教育訓練",
+    "流程與操作說明",
+    "懷舊或復古科技主題",
+    "工作坊"
+  ],
+  "not_for": [
+    "極簡精品品牌",
+    "需要大量數據圖表的報告"
+  ],
+  "traits": [
+    "真實材質紋理",
+    "立體光影與浮雕字",
+    "縫線與釘書針",
+    "亮面高光按鈕",
+    "紙張捲角與膠帶",
+    "儀表與旋鈕"
+  ],
+  "layout": [
+    "每頁選一個實物當容器：筆記本、軟木板、資料夾、儀表板",
+    "文字寫在實物上：便利貼、標籤、紙條",
+    "元素要有厚度，光源統一從左上來",
+    "章節頁可以是資料夾分頁標籤"
+  ],
+  "motifs": [
+    "橫線筆記紙",
+    "便利貼與紙膠帶",
+    "皮革縫線邊",
+    "金屬螺絲與旋鈕",
+    "亮面膠囊按鈕"
+  ],
+  "typography": {
+    "display": {
+      "family": "Libre Franklin",
+      "weights": "500–800",
+      "role": "標題，可加浮雕效果"
+    },
+    "body": {
+      "family": "Kalam",
+      "weights": "400、700",
+      "role": "便利貼與手寫筆記"
+    },
+    "zh": {
+      "family": "LXGW WenKai TC",
+      "weights": "400、700",
+      "role": "中文手寫筆記；正式內文改用 Noto Sans TC"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;800&family=Kalam:wght@400;700&family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap",
+    "rules": [
+      "手寫字只用在便利貼、批註這類「寫上去」的地方",
+      "印刷感文字用 Libre Franklin 或 Noto Sans TC",
+      "浮雕字效果用一層亮、一層暗的文字陰影"
+    ]
+  },
+  "imagery": [
+    "照片做成拍立得或相片，用膠帶或圖釘固定",
+    "截圖放進立體的螢幕或裝置框裡"
+  ],
+  "placeholder": "一張用紙膠帶貼住的拍立得相片框，中間手寫「貼照片｜4:3」",
+  "avoid": [
+    "扁平純色區塊",
+    "極細線條極簡風",
+    "霓虹與螢光色",
+    "毫無材質的漸層"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "材質本身已經有很多顏色，重點色只用在便利貼和按鈕。"
+  },
+  "backgrounds": [
+    {
+      "id": "paper",
+      "name": "筆記紙",
+      "hex": "#F6F1E1"
+    },
+    {
+      "id": "cork",
+      "name": "軟木板",
+      "hex": "#B98E5E"
+    },
+    {
+      "id": "aluminum",
+      "name": "拉絲鋁",
+      "hex": "#C9CCCF"
+    },
+    {
+      "id": "leather",
+      "name": "皮革棕",
+      "hex": "#5A3B2A"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "K1",
+      "name": "書房",
+      "ink": "#2F2A22",
+      "accents": [
+        "#8A3B2B",
+        "#3F6B4E"
+      ],
+      "pairs_with": [
+        "paper",
+        "aluminum"
+      ]
+    },
+    {
+      "id": "K2",
+      "name": "公告欄",
+      "ink": "#2B2118",
+      "accents": [
+        "#F2D04B",
+        "#6E1D1A"
+      ],
+      "pairs_with": [
+        "cork",
+        "paper"
+      ]
+    },
+    {
+      "id": "K3",
+      "name": "鋁合金",
+      "ink": "#22262B",
+      "accents": [
+        "#1F5FCC",
+        "#C4452F"
+      ],
+      "pairs_with": [
+        "aluminum",
+        "paper"
+      ]
+    },
+    {
+      "id": "K4",
+      "name": "皮革手帳",
+      "ink": "#F3E6CF",
+      "accents": [
+        "#E1B66B",
+        "#9FC3A0"
+      ],
+      "pairs_with": [
+        "leather"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
+  }
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Modular Typography 示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Outfit:wght@400;600&family=Noto+Sans+TC:wght@500;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F2EFE8;
+  --ink: #151515;
+  --a1: #D2352B; --a2: #2448A8; --a3: #F2B72E;
+}
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+/* 120px 方格：16 欄 × 9 列 */
+.parts { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+.parts .r { fill: var(--a1); }
+.parts .b { fill: var(--a2); }
+.parts .y { fill: var(--a3); }
+.parts .k { fill: var(--ink); }
+.parts .g { fill: var(--bg); }
+.grid line { stroke: var(--ink); stroke-opacity: .16; stroke-width: 2; }
+
+.t { position: absolute; margin: 0; font-family: "Outfit", "Noto Sans TC", sans-serif; }
+.kicker { left: 1212px; top: 120px; height: 120px; display: flex; align-items: flex-end; padding-bottom: 14px; box-sizing: border-box;
+  font-weight: 600; font-size: 28px; letter-spacing: .06em; }
+.kicker b { font-family: "Bungee", "Noto Sans TC", sans-serif; font-weight: 400; margin-right: 14px; }
+
+/* 主標：一個字放一格 */
+.title { left: 1200px; top: 240px; font-family: "Noto Sans TC", sans-serif; font-weight: 900; font-size: 0; line-height: 0; }
+.title span { display: block; height: 120px; }
+.title i { font-style: normal; display: inline-block; width: 120px; height: 120px; line-height: 120px; text-align: center; font-size: 100px; }
+
+.en { left: 1212px; top: 480px; height: 120px; display: flex; align-items: center;
+  font-family: "Bungee", sans-serif; font-size: 36px; letter-spacing: .01em; }
+.info { left: 132px; top: 840px; height: 120px; display: flex; align-items: center; gap: 48px;
+  font-weight: 600; font-size: 30px; font-family: "Outfit", "Noto Sans TC", sans-serif; }
+.info span:last-child { font-weight: 400; }
+.pg { left: 1680px; top: 960px; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center;
+  font-family: "Bungee", sans-serif; font-size: 30px; }
+
+/* 圖片版位：格子裡的四分之一圓 */
+.ph { position: absolute; left: 1440px; top: 600px; width: 360px; height: 360px; box-sizing: border-box;
+  border-radius: 360px 0 0 0; background: color-mix(in srgb, var(--ink) 9%, var(--bg));
+  display: flex; align-items: flex-end; justify-content: flex-end; padding: 0 26px 22px 0;
+  font-family: "Outfit", "Noto Sans TC", sans-serif; font-weight: 600; font-size: 26px; color: var(--ink); }
+</style>
+</head>
+<body>
+<main class="slide">
+  <svg class="parts" viewBox="0 0 1920 1080" aria-hidden="true">
+    <!-- 0：上下半圓 + 兩根方柱 -->
+    <path class="r" d="M120 360A240 240 0 0 1 600 360Z"/>
+    <path class="g" d="M240 360A120 120 0 0 1 480 360Z"/>
+    <rect class="y" x="120" y="360" width="120" height="240"/>
+    <rect class="k" x="480" y="360" width="120" height="240"/>
+    <path class="b" d="M120 600A240 240 0 0 0 600 600Z"/>
+    <path class="g" d="M240 600A120 120 0 0 0 480 600Z"/>
+    <circle class="k" cx="360" cy="480" r="34"/>
+    <!-- 1：四分之一圓旗 + 方塊柱 + 底座 -->
+    <path class="b" d="M1080 360L840 360A240 240 0 0 1 1080 120Z"/>
+    <path class="r" d="M840 360L720 360A120 120 0 0 1 840 240Z"/>
+    <rect class="k" x="840" y="360" width="240" height="240"/>
+    <path class="y" d="M840 600H1080V840H960A120 120 0 0 1 840 720Z"/>
+    <!-- 主標旁的零件 -->
+    <path class="y" d="M1560 360L1560 240A120 120 0 0 1 1680 360Z"/>
+    <rect class="r" x="1680" y="360" width="120" height="120"/>
+    <circle class="b" cx="1260" cy="1020" r="60"/>
+    <path class="r" d="M1320 960H1440V1080A120 120 0 0 1 1320 960Z"/>
+    <g class="grid">
+      <line x1="120" y1="0" x2="120" y2="1080"/><line x1="240" y1="0" x2="240" y2="1080"/><line x1="360" y1="0" x2="360" y2="1080"/><line x1="480" y1="0" x2="480" y2="1080"/><line x1="600" y1="0" x2="600" y2="1080"/><line x1="720" y1="0" x2="720" y2="1080"/><line x1="840" y1="0" x2="840" y2="1080"/><line x1="960" y1="0" x2="960" y2="1080"/><line x1="1080" y1="0" x2="1080" y2="1080"/><line x1="1200" y1="0" x2="1200" y2="1080"/><line x1="1320" y1="0" x2="1320" y2="1080"/><line x1="1440" y1="0" x2="1440" y2="1080"/><line x1="1560" y1="0" x2="1560" y2="1080"/><line x1="1680" y1="0" x2="1680" y2="1080"/><line x1="1800" y1="0" x2="1800" y2="1080"/>
+      <line x1="0" y1="120" x2="1920" y2="120"/><line x1="0" y1="240" x2="1920" y2="240"/><line x1="0" y1="360" x2="1920" y2="360"/><line x1="0" y1="480" x2="1920" y2="480"/><line x1="0" y1="600" x2="1920" y2="600"/><line x1="0" y1="720" x2="1920" y2="720"/><line x1="0" y1="840" x2="1920" y2="840"/><line x1="0" y1="960" x2="1920" y2="960"/>
+    </g>
+  </svg>
+
+  <p class="t kicker"><b>2026</b>品牌提案</p>
+  <h1 class="t title" aria-label="把想法做成產品">
+    <span><i>把</i><i>想</i><i>法</i></span>
+    <span><i>做</i><i>成</i><i>產</i><i>品</i></span>
+  </h1>
+  <p class="t en">From Idea to Product</p>
+  <div class="ph" data-slot="cover-photo" data-ratio="1/1">照片｜1:1</div>
+  <p class="t info"><span>[講者姓名]</span><span>2026.11</span></p>
+  <p class="t pg">01</p>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

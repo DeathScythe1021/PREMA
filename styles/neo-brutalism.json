@@ -1,0 +1,166 @@
+{
+  "id": "neo-brutalism",
+  "name_zh": "敘事新粗野",
+  "name_en": "Narrative Neo-Brutalism",
+  "summary": "新粗野主義的粗黑框線、平塗亮色、硬邊位移陰影，用來說一個故事：像漫畫分格一樣一步一步推進。",
+  "definition": "Neo-Brutalism 是近年網頁常見的風格：粗黑邊框、飽和平塗色、不模糊的位移陰影、粗體無襯線字，刻意顯得直接、不修飾。Narrative 的版本把它用來講故事：畫面像漫畫分格，有對話框、步驟編號、箭頭，一格一格推進情節。轉成簡報時，每頁是一個故事段落，用分格、對話框和大編號帶觀眾往下走。",
+  "keywords": [
+    "直接",
+    "活潑",
+    "敘事",
+    "有個性"
+  ],
+  "best_for": [
+    "使用者旅程與流程",
+    "產品故事與案例",
+    "工作坊與教學",
+    "新創簡報"
+  ],
+  "not_for": [
+    "高級精品品牌",
+    "需要安靜氛圍的主題"
+  ],
+  "traits": [
+    "粗黑邊框（3–4px）",
+    "硬邊位移陰影",
+    "飽和平塗色塊",
+    "粗體無襯線字",
+    "漫畫分格與對話框",
+    "大號步驟編號"
+  ],
+  "layout": [
+    "一頁分成 2–4 格，像漫畫分格，依閱讀順序排列",
+    "每格有大號編號與一句話",
+    "重點句放在對話框裡",
+    "用粗箭頭連接格子，表示接下來發生什麼"
+  ],
+  "motifs": [
+    "對話框",
+    "粗箭頭",
+    "位移陰影",
+    "星形爆炸框",
+    "貼紙標籤"
+  ],
+  "typography": {
+    "display": {
+      "family": "Archivo Black",
+      "weights": "400",
+      "role": "大標"
+    },
+    "body": {
+      "family": "Public Sans",
+      "weights": "500、800",
+      "role": "內文與標籤"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@500;800&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "標題粗、字距略緊",
+      "標籤用全大寫小字",
+      "不要細字重"
+    ]
+  },
+  "imagery": [
+    "照片加粗黑框與位移陰影",
+    "截圖放在有粗框的視窗裡",
+    "簡單的平塗插畫"
+  ],
+  "placeholder": "粗黑框加位移陰影的方格，左上貼一張標籤寫「PANEL 02 照片」",
+  "avoid": [
+    "模糊陰影",
+    "漸層",
+    "細線條",
+    "圓潤柔和的配色"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "三個亮色分配給不同分格，文字與框線一律用文字色。"
+  },
+  "backgrounds": [
+    {
+      "id": "paper",
+      "name": "紙白",
+      "hex": "#FAF6EC"
+    },
+    {
+      "id": "lemon",
+      "name": "檸檬",
+      "hex": "#FFF1A8"
+    },
+    {
+      "id": "lilac",
+      "name": "丁香",
+      "hex": "#E3DBFF"
+    },
+    {
+      "id": "ink",
+      "name": "墨黑",
+      "hex": "#141414"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "NB1",
+      "name": "原色漫畫",
+      "ink": "#141414",
+      "accents": [
+        "#FF5A36",
+        "#3D7DFF",
+        "#FFD23F"
+      ],
+      "pairs_with": [
+        "paper",
+        "lilac"
+      ]
+    },
+    {
+      "id": "NB2",
+      "name": "汽水",
+      "ink": "#141414",
+      "accents": [
+        "#FF6FB5",
+        "#22C1A6",
+        "#FFB020"
+      ],
+      "pairs_with": [
+        "paper",
+        "lemon"
+      ]
+    },
+    {
+      "id": "NB3",
+      "name": "辦公室",
+      "ink": "#141414",
+      "accents": [
+        "#5B6CFF",
+        "#FF7A45",
+        "#9BE564"
+      ],
+      "pairs_with": [
+        "paper",
+        "lemon"
+      ]
+    },
+    {
+      "id": "NB4",
+      "name": "暗房",
+      "ink": "#FAF6EC",
+      "accents": [
+        "#FF5A36",
+        "#3DD6FF",
+        "#FFE14D"
+      ],
+      "pairs_with": [
+        "ink"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "id": "neo-frutiger",
+  "name_zh": "新水感科技",
+  "name_en": "Neo Frutiger",
+  "summary": "Frutiger Aero 的復興：天空藍、草地綠、水珠、泡泡和亮面光澤，2000 年代中期「科技很乾淨、未來很美好」的樂觀感。",
+  "definition": "Frutiger Aero 是 2004–2013 年間電子產品與作業系統常見的視覺：藍天白雲、青草地、水滴與氣泡、玻璃般的亮面按鈕，配上圓潤的人文無襯線字。Neo Frutiger 用更乾淨的版面重新詮釋它。轉成簡報時，畫面明亮清透，色塊有光澤和高光，自然元素（水、天空、葉子）和科技元素並存。",
+  "keywords": [
+    "清透",
+    "樂觀",
+    "自然科技",
+    "2000 年代"
+  ],
+  "best_for": [
+    "環保與永續科技",
+    "app 與軟體介紹",
+    "教育與健康",
+    "品牌煥新"
+  ],
+  "not_for": [
+    "沉重或嚴肅的議題",
+    "需要復古紙本質感的內容"
+  ],
+  "traits": [
+    "天空藍與草地綠",
+    "水珠、泡泡、氣泡",
+    "亮面光澤與高光反射",
+    "圓潤人文無襯線字",
+    "極光與鏡頭光暈",
+    "自然與科技並置"
+  ],
+  "layout": [
+    "背景是明亮的天空漸層或草地，內容放在亮面膠囊或圓角面板上",
+    "標題下方可以有一道柔和的倒影",
+    "用泡泡和水珠當裝飾與重點記號",
+    "圖示做成有光澤的立體球形"
+  ],
+  "motifs": [
+    "水珠與氣泡",
+    "亮面膠囊按鈕",
+    "光暈與極光",
+    "葉子與草地",
+    "玻璃反光"
+  ],
+  "typography": {
+    "display": {
+      "family": "Nunito Sans",
+      "weights": "300、700、800",
+      "role": "標題與內文，圓潤人文無襯線"
+    },
+    "body": {
+      "family": "Nunito Sans",
+      "weights": "400",
+      "role": "內文"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "400、700",
+      "role": "中文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&family=Noto+Sans+TC:wght@400;700&display=swap",
+    "rules": [
+      "標題用 700–800 但不要壓縮字距",
+      "可以加一層白色細描邊或柔和倒影",
+      "不要用窄體或等寬字"
+    ]
+  },
+  "imagery": [
+    "藍天、草原、水面、氣泡的照片",
+    "產品或螢幕截圖加亮面倒影",
+    "飽和但明亮，不要暗沉"
+  ],
+  "placeholder": "圓角亮面面板，上緣有一道白色高光，中間寫「照片｜16:9」，旁邊浮著兩顆泡泡",
+  "avoid": [
+    "暗色調",
+    "粗糙紙張與顆粒",
+    "窄體大寫標題",
+    "復古印刷質感"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "天空藍與草地綠是主角；第二個重點色只用在一兩個按鈕或數字。"
+  },
+  "backgrounds": [
+    {
+      "id": "sky",
+      "name": "晴空",
+      "hex": "#DDEFFB"
+    },
+    {
+      "id": "cloud",
+      "name": "雲白",
+      "hex": "#F3F8FB"
+    },
+    {
+      "id": "meadow",
+      "name": "嫩綠",
+      "hex": "#E3F3D8"
+    },
+    {
+      "id": "deepsea",
+      "name": "深海",
+      "hex": "#0D2A45"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "N1",
+      "name": "藍天草地",
+      "ink": "#0E2A44",
+      "accents": [
+        "#0A6FB8",
+        "#3E8E23"
+      ],
+      "pairs_with": [
+        "sky",
+        "cloud",
+        "meadow"
+      ]
+    },
+    {
+      "id": "N2",
+      "name": "水族箱",
+      "ink": "#0B2B3A",
+      "accents": [
+        "#00838F",
+        "#0A6FB8"
+      ],
+      "pairs_with": [
+        "cloud",
+        "sky"
+      ]
+    },
+    {
+      "id": "N3",
+      "name": "嫩芽",
+      "ink": "#1E3317",
+      "accents": [
+        "#3E8E23",
+        "#C56A00"
+      ],
+      "pairs_with": [
+        "meadow",
+        "cloud"
+      ]
+    },
+    {
+      "id": "N4",
+      "name": "深海光",
+      "ink": "#E6F4FF",
+      "accents": [
+        "#4FC3F7",
+        "#9BE15D"
+      ],
+      "pairs_with": [
+        "deepsea"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Narrative Neo-Brutalism 示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@500;800&family=Noto+Sans+TC:wght@500;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAF6EC;
+  --ink: #141414;
+  --a1: #FF5A36; --a2: #3D7DFF; --a3: #FFD23F;
+}
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide { font-family: "Public Sans", "Noto Sans TC", sans-serif; }
+.panel { position: absolute; box-sizing: border-box; border: 4px solid var(--ink); box-shadow: 12px 12px 0 var(--ink); }
+.p1 { left: 60px; top: 56px; width: 1020px; height: 590px; background: var(--a1); }
+.p2 { left: 1140px; top: 56px; width: 720px; height: 590px; }
+.p3 { left: 60px; top: 712px; width: 1800px; height: 310px; background: var(--a2); }
+
+/* 大號步驟編號：墨色塊上用底色字 */
+.num { position: absolute; left: -4px; top: -4px; width: 92px; height: 92px; background: var(--ink); color: var(--bg);
+  font-family: "Archivo Black", sans-serif; font-size: 60px; line-height: 92px; text-align: center; }
+
+/* 對話框 */
+.bubble { position: absolute; left: 140px; top: 104px; width: 640px; padding: 34px 44px 40px; box-sizing: border-box;
+  background: var(--bg); border: 4px solid var(--ink); border-radius: 46px; box-shadow: 10px 10px 0 var(--ink); }
+.bubble h1 { margin: 0; font-family: "Noto Sans TC", sans-serif; font-weight: 900; font-size: 132px; line-height: 1.08; letter-spacing: -.02em; }
+.tail { position: absolute; left: 760px; top: 300px; width: 120px; height: 110px; }
+.tail path { fill: var(--bg); stroke: var(--ink); stroke-width: 4; stroke-linejoin: round; }
+
+.sticker { position: absolute; left: 590px; top: 30px; padding: 10px 22px; background: var(--ink); color: var(--bg);
+  font-weight: 800; font-size: 30px; letter-spacing: .04em; transform: rotate(-4deg); box-shadow: 6px 6px 0 var(--a3); }
+
+svg .k { fill: var(--ink); }
+svg .bgf { fill: var(--bg); stroke: var(--ink); stroke-width: 5; stroke-linejoin: round; }
+svg .y { fill: var(--a3); stroke: var(--ink); stroke-width: 5; stroke-linejoin: round; }
+svg .r { fill: var(--a1); stroke: var(--ink); stroke-width: 5; stroke-linejoin: round; }
+svg .ln { stroke: var(--ink); stroke-width: 9; stroke-linecap: square; fill: none; }
+.bulb { position: absolute; left: 800px; top: 150px; width: 200px; height: 300px; }
+
+/* 圖片版位 */
+.ph { position: absolute; left: 1140px; top: 56px; width: 720px; height: 590px; box-sizing: border-box;
+  border: 4px solid var(--ink); box-shadow: 12px 12px 0 var(--ink);
+  background: repeating-linear-gradient(-45deg, color-mix(in srgb, var(--ink) 22%, transparent) 0 4px, transparent 4px 26px), var(--a3); }
+.tag { position: absolute; background: var(--bg); border: 4px solid var(--ink); box-shadow: 6px 6px 0 var(--ink);
+  font-weight: 800; font-size: 28px; letter-spacing: .06em; padding: 8px 18px; }
+.ph .tag { left: 118px; top: 22px; transform: rotate(-3deg); }
+.ph .tag.r { left: auto; top: auto; right: 28px; bottom: 28px; transform: none; }
+
+/* 粗箭頭 */
+.arrow { position: absolute; z-index: 3; filter: drop-shadow(6px 6px 0 var(--ink)); }
+.arrow path { fill: var(--bg); stroke: var(--ink); stroke-width: 5; stroke-linejoin: round; }
+.ar1 { left: 1020px; top: 500px; width: 190px; height: 120px; }
+.ar2 { left: 1420px; top: 596px; width: 120px; height: 170px; }
+
+.cap { position: absolute; left: 150px; top: 46px; padding: 26px 40px 28px; background: var(--bg);
+  border: 4px solid var(--ink); box-shadow: 10px 10px 0 var(--ink); }
+.cap h2 { margin: 0; font-family: "Archivo Black", sans-serif; font-weight: 400; font-size: 78px; line-height: 1; letter-spacing: -.02em; }
+.cap p { margin: 18px 0 0; font-weight: 800; font-size: 32px; letter-spacing: .02em; display: flex; gap: 40px; }
+.cap p span:last-child { font-weight: 500; }
+.box { position: absolute; left: 1180px; top: 30px; width: 250px; height: 250px; }
+.burst { position: absolute; right: 70px; top: 30px; width: 240px; height: 240px; filter: drop-shadow(8px 8px 0 var(--ink)); }
+.burst polygon { fill: var(--bg); stroke: var(--ink); stroke-width: 5; stroke-linejoin: round; }
+.burst span { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-family: "Archivo Black", sans-serif; font-size: 76px; }
+</style>
+</head>
+<body>
+<main class="slide">
+  <!-- 1：想法 -->
+  <section class="panel p1">
+    <div class="num">1</div>
+    <div class="bubble"><h1>把想法<br>做成產品</h1></div>
+    <svg class="tail" viewBox="0 0 120 110" aria-hidden="true"><path d="M-6 8 L112 92 L-6 70"/></svg>
+    <svg class="bulb" viewBox="0 0 200 300" aria-hidden="true">
+      <path class="ln" d="M100 6v26M26 40l18 18M174 40l-18 18M2 120h24M174 120h24"/>
+      <circle class="y" cx="100" cy="126" r="70"/>
+      <path class="ln" d="M80 132l20 24 20-24" style="stroke-width:7"/>
+      <rect class="bgf" x="66" y="196" width="68" height="34"/>
+      <rect class="bgf" x="66" y="230" width="68" height="30"/>
+      <rect class="k" x="82" y="260" width="36" height="20"/>
+    </svg>
+  </section>
+  <p class="sticker">2026 品牌提案</p>
+
+  <!-- 2：照片版位 -->
+  <div class="ph" data-slot="cover-photo" data-ratio="5/4">
+    <div class="num">2</div>
+    <span class="tag">PANEL 02 照片</span>
+    <span class="tag r">5:4</span>
+  </div>
+
+  <svg class="arrow ar1" viewBox="0 0 190 120" aria-hidden="true"><path d="M6 36h104V6l74 54-74 54V84H6z"/></svg>
+  <svg class="arrow ar2" viewBox="0 0 120 170" aria-hidden="true"><path d="M36 6h48v90h30l-54 68L6 96h30z"/></svg>
+
+  <!-- 3：產品 -->
+  <section class="panel p3">
+    <div class="num">3</div>
+    <div class="cap">
+      <h2>From Idea to Product</h2>
+      <p><span>[講者姓名]</span><span>2026.11</span></p>
+    </div>
+    <svg class="box" viewBox="0 0 250 250" aria-hidden="true">
+      <path class="y" d="M125 20l100 50-100 50L25 70z"/>
+      <path class="r" d="M25 70l100 50v112L25 182z"/>
+      <path class="bgf" d="M225 70l-100 50v112l100-50z"/>
+      <path class="ln" d="M75 45l100 50" style="stroke-width:7"/>
+    </svg>
+    <div class="burst">
+      <svg viewBox="0 0 240 240" width="240" height="240" aria-hidden="true"><polygon points="120,8 139,38 169,19 172,54 208,50 196,84 229,95 204,120 229,145 196,156 208,190 172,186 169,221 139,202 120,232 101,202 71,221 68,186 32,190 44,156 11,145 36,120 11,95 44,84 32,50 68,54 71,19 101,38"/></svg>
+      <span>01</span>
+    </div>
+  </section>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

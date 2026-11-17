@@ -1,0 +1,163 @@
+{
+  "id": "cryptidcore",
+  "name_zh": "神祕生物核",
+  "name_en": "Cryptidcore",
+  "summary": "以大腳怪、天蛾人這類傳說生物為題的荒野探險美學：夜晚森林、模糊的目擊照、田野筆記與徽章。",
+  "definition": "Cryptidcore 把都市傳說和戶外探險混在一起：深色森林照片上壓著粗壯的大字，旁邊是線稿畫的神祕生物、營地徽章、手寫的調查筆記和紅筆圈起來的「目擊證據」。轉成簡報時，整份就像一份調查檔案：有編號、有日期、有證據照片，語氣神祕但資訊清楚。",
+  "keywords": [
+    "神祕",
+    "粗獷",
+    "探險",
+    "敘事"
+  ],
+  "best_for": [
+    "調查與研究報告",
+    "專案追蹤與問題分析",
+    "戶外與露營品牌",
+    "說故事型簡報"
+  ],
+  "not_for": [
+    "可愛或童趣主題",
+    "需要明亮清爽感的商務提案"
+  ],
+  "traits": [
+    "深色森林與夜景",
+    "粗壯的窄體大字",
+    "線稿生物插畫與徽章",
+    "手電筒光暈",
+    "模糊、顆粒重的目擊照",
+    "檔案編號與紅筆圈註"
+  ],
+  "layout": [
+    "大字直接壓在暗色照片上，佔畫面下半部",
+    "角落放圓形或盾形徽章，標示章節",
+    "內頁像調查檔案：左側證據照片、右側筆記與編號",
+    "重點用紅筆圈起來或打叉，而不是用色塊卡片"
+  ],
+  "motifs": [
+    "圓形營地徽章",
+    "手電筒圓形光暈",
+    "打字機字的檔案標籤（CASE 07）",
+    "紅筆圈選與箭頭",
+    "腳印"
+  ],
+  "typography": {
+    "display": {
+      "family": "Anton",
+      "weights": "400",
+      "role": "粗壯窄體大標，全大寫"
+    },
+    "body": {
+      "family": "Courier Prime",
+      "weights": "400、700",
+      "role": "檔案標籤、筆記、說明"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文大標用 900"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime:wght@400;700&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "大標行距要緊，0.9 左右",
+      "筆記與標籤一律用打字機字",
+      "不要用細字重"
+    ]
+  },
+  "imagery": [
+    "夜間森林、霧、紅外線相機質感",
+    "模糊、晃動、顆粒重的照片反而加分",
+    "線稿生物或腳印插畫"
+  ],
+  "placeholder": "暗色方框，四周有拍立得白邊，中間寫「EVIDENCE 03｜目擊照片 4:3」，角落一個紅筆圈",
+  "avoid": [
+    "明亮粉彩",
+    "乾淨的扁平圖示",
+    "可愛卡通角色",
+    "大圓角卡片"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "一個暖色當燈光與重點，一個紅色只用在圈註。"
+  },
+  "backgrounds": [
+    {
+      "id": "forest",
+      "name": "森林墨綠",
+      "hex": "#1F2A22"
+    },
+    {
+      "id": "night",
+      "name": "夜黑",
+      "hex": "#141613"
+    },
+    {
+      "id": "moss",
+      "name": "苔原",
+      "hex": "#37432F"
+    },
+    {
+      "id": "dossier",
+      "name": "牛皮檔案",
+      "hex": "#D8C9A3"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "C1",
+      "name": "營火",
+      "ink": "#EFE6CF",
+      "accents": [
+        "#E3B341",
+        "#E06A4E"
+      ],
+      "pairs_with": [
+        "forest",
+        "night",
+        "moss"
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "苔蘚",
+      "ink": "#E8E3CF",
+      "accents": [
+        "#A7C080",
+        "#E08A3B"
+      ],
+      "pairs_with": [
+        "forest",
+        "night"
+      ]
+    },
+    {
+      "id": "C3",
+      "name": "檔案室",
+      "ink": "#2A2A22",
+      "accents": [
+        "#A8342A",
+        "#2F4A3A"
+      ],
+      "pairs_with": [
+        "dossier"
+      ]
+    },
+    {
+      "id": "C4",
+      "name": "霧夜",
+      "ink": "#DCE3DA",
+      "accents": [
+        "#9EC1C7",
+        "#E0C36B"
+      ],
+      "pairs_with": [
+        "night",
+        "forest"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
+  }
+}

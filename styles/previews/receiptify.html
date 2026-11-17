@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Receiptify 示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #D6D6D2;
+  --ink: #1F1F1F;
+  --a1: #1F4FB8; --a2: #1F4FB8; --a3: #1F4FB8;
+}
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+/* 紙色由文字色反推：深字配淺紙、淺字配深紙，換配色也看得清楚 */
+.slide {
+  --paper: color-mix(in oklab, oklch(from var(--ink) clamp(.3, calc(1.24 - l), .985) .006 h) 90%, var(--bg));
+  --fade: color-mix(in srgb, var(--ink) 72%, var(--paper));
+}
+
+.receipt {
+  position: absolute; left: 50%; top: 26px; width: 640px; margin-left: -320px;
+  transform: rotate(-.8deg); transform-origin: 50% 0;
+  background: var(--paper);
+  box-shadow: 0 18px 30px -18px color-mix(in srgb, var(--ink) 45%, transparent);
+  font-family: "Space Mono", "Noto Sans TC", monospace; font-size: 24px; line-height: 1.45;
+  padding: 30px 44px 26px; box-sizing: border-box; text-transform: uppercase;
+}
+/* 鋸齒撕邊 */
+.receipt::before, .receipt::after {
+  content: ""; position: absolute; left: 0; right: 0; height: 18px;
+  background: linear-gradient(135deg, var(--paper) 50%, transparent 50%) 0 0 / 18px 18px repeat-x,
+              linear-gradient(225deg, var(--paper) 50%, transparent 50%) 0 0 / 18px 18px repeat-x;
+}
+.receipt::before { top: -18px; transform: scaleY(-1); }
+.receipt::after { bottom: -18px; }
+
+.receipt p { margin: 0; }
+.c { text-align: center; }
+.store-top { font-weight: 700; letter-spacing: .12em; font-family: "Space Mono", "Noto Sans TC", monospace; }
+.store { font-family: "Noto Sans TC", monospace; font-weight: 700; font-size: 62px; line-height: 1.12; letter-spacing: .04em; margin: 6px 0 2px !important; }
+.en { font-weight: 700; letter-spacing: .04em; }
+.sep { overflow: hidden; white-space: nowrap; color: var(--fade); letter-spacing: .1em; margin: 4px 0 !important; }
+.row { display: flex; justify-content: space-between; gap: 16px; }
+.row.hd { color: var(--fade); }
+.row .q { width: 88px; flex: none; }
+.row .n { flex: 1; }
+.dots { flex: 1; border-bottom: 3px dotted var(--fade); margin: 0 10px 10px; }
+.total { font-weight: 700; font-size: 34px; margin: 4px 0 !important; position: relative; }
+.total::before { /* 螢光筆 */
+  content: ""; position: absolute; left: -10px; right: -10px; top: 18px; height: 26px;
+  background: color-mix(in srgb, var(--a1) 38%, transparent); transform: rotate(-.6deg); z-index: 0;
+}
+.total span { position: relative; }
+
+.ph { margin: 10px 0 4px; height: 184px; box-sizing: border-box; border: 3px solid var(--ink);
+  background: repeating-linear-gradient(0deg, color-mix(in srgb, var(--ink) 16%, transparent) 0 3px, transparent 3px 7px), var(--paper);
+  display: flex; align-items: center; justify-content: center; }
+.ph span { background: var(--paper); padding: 2px 14px; font-weight: 700; }
+.cap { color: var(--fade); }
+.bcnum { letter-spacing: .4em; color: var(--fade); }
+
+.barcode { display: block; width: 100%; height: 70px; margin: 10px 0 4px; }
+.barcode rect { fill: var(--ink); }
+
+/* 印章：唯一的重點色 */
+.stamp { position: absolute; left: 1160px; top: 440px; width: 230px; height: 230px; transform: rotate(14deg); opacity: .85; }
+.stamp circle, .stamp path { fill: none; stroke: var(--a1); }
+.stamp .s { fill: var(--a1); stroke: none; }
+</style>
+</head>
+<body>
+<main class="slide">
+  <div class="receipt">
+    <p class="c store-top">*** 2026 品牌提案 ***</p>
+    <h1 class="c store">把想法做成產品</h1>
+    <p class="c en">From Idea to Product</p>
+    <p class="sep">********************************************</p>
+    <p class="row"><span>NO.01</span><span>2026.11</span></p>
+    <p class="row"><span>SPEAKER</span><span>[講者姓名]</span></p>
+    <p class="sep">--------------------------------------------</p>
+    <p class="row hd"><span class="q">QTY</span><span class="n">ITEM</span><span>STATUS</span></p>
+    <p class="row"><span class="q">1</span><span class="n">IDEA</span><span>IN</span></p>
+    <div class="ph" data-slot="cover-photo" data-ratio="3/1"><span>IMG 01 / 單色照片</span></div>
+    <p class="cap">&gt; COVER PHOTO 3:1</p>
+    <p class="row"><span class="q">1</span><span class="n">PRODUCT</span><span>OUT</span></p>
+    <p class="sep">--------------------------------------------</p>
+    <p class="row total"><span>TOTAL</span><i class="dots"></i><span>01</span></p>
+    <p class="sep">********************************************</p>
+    <svg class="barcode" viewBox="0 0 503 80" preserveAspectRatio="none" aria-hidden="true"><rect x="0" width="3" height="80"/><rect x="6" width="4" height="80"/><rect x="12" width="2" height="80"/><rect x="16" width="3" height="80"/><rect x="21" width="6" height="80"/><rect x="30" width="2" height="80"/><rect x="34" width="4" height="80"/><rect x="43" width="2" height="80"/><rect x="48" width="2" height="80"/><rect x="55" width="2" height="80"/><rect x="59" width="2" height="80"/><rect x="63" width="6" height="80"/><rect x="74" width="2" height="80"/><rect x="79" width="2" height="80"/><rect x="84" width="3" height="80"/><rect x="92" width="2" height="80"/><rect x="96" width="6" height="80"/><rect x="106" width="6" height="80"/><rect x="115" width="2" height="80"/><rect x="120" width="3" height="80"/><rect x="125" width="6" height="80"/><rect x="133" width="6" height="80"/><rect x="141" width="6" height="80"/><rect x="150" width="4" height="80"/><rect x="159" width="3" height="80"/><rect x="167" width="6" height="80"/><rect x="178" width="3" height="80"/><rect x="185" width="2" height="80"/><rect x="190" width="2" height="80"/><rect x="194" width="6" height="80"/><rect x="204" width="6" height="80"/><rect x="215" width="3" height="80"/><rect x="223" width="3" height="80"/><rect x="228" width="2" height="80"/><rect x="235" width="2" height="80"/><rect x="241" width="2" height="80"/><rect x="248" width="4" height="80"/><rect x="254" width="2" height="80"/><rect x="260" width="3" height="80"/><rect x="267" width="6" height="80"/><rect x="278" width="6" height="80"/><rect x="289" width="2" height="80"/><rect x="293" width="3" height="80"/><rect x="301" width="2" height="80"/><rect x="305" width="3" height="80"/><rect x="313" width="3" height="80"/><rect x="321" width="3" height="80"/><rect x="326" width="4" height="80"/><rect x="334" width="2" height="80"/><rect x="338" width="4" height="80"/><rect x="344" width="2" height="80"/><rect x="350" width="2" height="80"/><rect x="355" width="4" height="80"/><rect x="364" width="4" height="80"/><rect x="370" width="2" height="80"/><rect x="377" width="4" height="80"/><rect x="385" width="2" height="80"/><rect x="392" width="6" height="80"/><rect x="402" width="4" height="80"/><rect x="410" width="4" height="80"/><rect x="417" width="2" height="80"/><rect x="421" width="2" height="80"/><rect x="426" width="2" height="80"/><rect x="431" width="2" height="80"/><rect x="438" width="6" height="80"/><rect x="447" width="3" height="80"/><rect x="454" width="2" height="80"/><rect x="459" width="4" height="80"/><rect x="467" width="6" height="80"/><rect x="477" width="2" height="80"/><rect x="481" width="4" height="80"/><rect x="490" width="4" height="80"/><rect x="499" width="4" height="80"/></svg>
+    <p class="c bcnum">2026 11 01</p>
+    <p class="c">*** 謝謝光臨 ***</p>
+  </div>
+
+  <svg class="stamp" viewBox="0 0 230 230" aria-hidden="true">
+    <circle cx="115" cy="115" r="108" stroke-width="7"/>
+    <circle cx="115" cy="115" r="92" stroke-width="3" stroke-dasharray="10 7"/>
+    <path class="s" d="M115 52l14 42h44l-36 26 14 42-36-26-36 26 14-42-36-26h44z"/>
+  </svg>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>毛玻璃 Glassmorphism</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #E8EEF5; --ink: #14202E; --a1: #D2442D; --a2: #1C6FB0; --a3: #1C6FB0; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide { font-family: "Manrope", "Noto Sans TC", sans-serif; }
+.zh { font-family: "Noto Sans TC", sans-serif; }
+
+/* colour composition = the background-photo slot */
+.ph { position: absolute; inset: 0; overflow: hidden; }
+.ph i { position: absolute; display: block; }
+.sun { left: 1000px; top: 30px; width: 780px; height: 780px; border-radius: 50%; background: var(--a1); }
+.ring { left: 940px; top: -30px; width: 900px; height: 900px; border-radius: 50%; box-sizing: border-box; border: 22px solid var(--a2); }
+.arch { left: 110px; top: 470px; width: 470px; height: 700px; border-radius: 235px 235px 0 0; background: var(--a2); }
+.slab { left: 580px; top: 830px; width: 560px; height: 300px; background: var(--a1); border-radius: 280px 280px 0 0; }
+.bars { left: 1560px; top: 860px; width: 300px; height: 150px;
+  background: repeating-linear-gradient(90deg, var(--a2) 0 22px, transparent 22px 48px); }
+.grain { inset: 0; background: radial-gradient(circle, color-mix(in srgb, var(--ink) 9%, transparent) 0 1.2px, transparent 1.6px) 0 0 / 22px 22px; }
+
+/* glass */
+.glass { position: absolute; border-radius: 34px;
+  background: color-mix(in srgb, var(--bg) 64%, transparent);
+  -webkit-backdrop-filter: blur(38px) saturate(150%); backdrop-filter: blur(38px) saturate(150%);
+  border: 2px solid color-mix(in srgb, var(--bg) 85%, transparent);
+  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--ink) 20%, transparent),
+              inset 0 3px 0 color-mix(in srgb, var(--bg) 90%, transparent); }
+
+.main { left: 176px; top: 176px; width: 1080px; height: 620px; box-sizing: border-box; padding: 64px 76px; }
+.kicker { display: flex; align-items: center; gap: 14px; font-size: 30px; font-weight: 700; letter-spacing: 3px; }
+.kicker::before { content: ""; width: 14px; height: 14px; border-radius: 50%; background: var(--ink); }
+.title { white-space: nowrap; margin: 44px 0 0; font-family: "Noto Sans TC", sans-serif; font-weight: 700; font-size: 120px; line-height: 1.12; letter-spacing: 0; }
+.en { margin-top: 18px; font-size: 54px; font-weight: 700; letter-spacing: -1.5px; }
+.main .foot { position: absolute; left: 76px; right: 76px; bottom: 56px; display: flex; justify-content: space-between; align-items: center;
+  border-top: 2px solid color-mix(in srgb, var(--ink) 30%, transparent); padding-top: 26px; font-size: 28px; font-weight: 500; }
+
+.side { left: 1190px; top: 690px; width: 470px; height: 230px; box-sizing: border-box; padding: 34px 44px;
+  display: flex; flex-direction: column; justify-content: space-between; }
+.side .no { font-size: 112px; font-weight: 800; line-height: .9; letter-spacing: -4px; }
+.side .cap { width: 64px; height: 8px; border-radius: 4px; background: var(--ink); }
+
+.label { left: auto; right: 96px; top: 84px; border-radius: 999px; padding: 18px 34px; font-size: 28px; font-weight: 700; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<main class="slide">
+  <div class="ph" data-slot="cover-photo" data-ratio="16/9" aria-label="背景照片 16:9">
+    <i class="sun"></i><i class="ring"></i><i class="arch"></i><i class="slab"></i><i class="bars"></i><i class="grain"></i>
+  </div>
+
+  <section class="glass main">
+    <div class="kicker">2026 <span class="zh">品牌提案</span></div>
+    <h1 class="title">把想法做成產品</h1>
+    <div class="en">From Idea to Product</div>
+    <div class="foot"><span class="zh">[講者姓名]</span><span>2026.11</span></div>
+  </section>
+
+  <aside class="glass side">
+    <div class="cap" aria-hidden="true"></div>
+    <div class="no">01</div>
+  </aside>
+
+  <div class="glass label"><span class="zh">背景照片｜16:9</span></div>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

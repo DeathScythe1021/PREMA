@@ -1,0 +1,157 @@
+{
+  "id": "ascii-art",
+  "name_zh": "字元藝術",
+  "name_en": "ASCII Art",
+  "summary": "只用鍵盤字元拼出圖像與版面：等寬字、終端機、框線字元，低科技但精準的駭客美學。",
+  "definition": "ASCII Art 是電腦還不能好好顯示圖片時的產物：用字母、符號拼出圖案，用 ┌─┐ 這類框線字元畫表格。轉成簡報時，整個畫面以「字元格」為網格，標題是大型字元字，資訊用 [ ] 標籤和 > 提示符號呈現，像在終端機裡讀一份報告。",
+  "keywords": [
+    "技術",
+    "精準",
+    "極客",
+    "復古電腦"
+  ],
+  "best_for": [
+    "技術分享與開發者活動",
+    "產品更新紀錄",
+    "駭客松與工作坊",
+    "數據與系統說明"
+  ],
+  "not_for": [
+    "溫暖的品牌故事",
+    "以照片為主的作品展示"
+  ],
+  "traits": [
+    "等寬字",
+    "字元拼成的圖像與大字",
+    "框線字元表格",
+    "閃爍游標",
+    "掃描線",
+    "單色或雙色"
+  ],
+  "layout": [
+    "以字元寬度（ch）為網格，所有東西對齊字元格",
+    "標題用字元拼成的大字，或等寬大字加底線 ════",
+    "清單前面用 >、-、[01] 等符號",
+    "表格用框線字元畫，不用 HTML 預設框線",
+    "頁碼寫成 [ 03/12 ]"
+  ],
+  "motifs": [
+    "┌─┐│└┘ 框線",
+    "閃爍的 █ 游標",
+    "> 提示符號",
+    "░▒▓ 濃淡字元",
+    "掃描線"
+  ],
+  "typography": {
+    "display": {
+      "family": "VT323",
+      "weights": "400",
+      "role": "像素終端機大字"
+    },
+    "body": {
+      "family": "IBM Plex Mono",
+      "weights": "400、600",
+      "role": "所有內文與標籤"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "400、700",
+      "role": "中文；一個中文字佔兩個字元寬"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+TC:wght@400;700&display=swap",
+    "rules": [
+      "只能用等寬字（中文例外）",
+      "排版時把中文當兩格寬計算",
+      "不要粗細變化太多，靠大小與反白做層級"
+    ]
+  },
+  "imagery": [
+    "使用者給的圖可以轉成字元畫或抖動點陣後再放",
+    "原圖要放時，加掃描線與單色處理"
+  ],
+  "placeholder": "框線字元畫成的方框，中間寫「[ IMG_03 ] 產品截圖 16:9」，背景用 ░ 字元填滿",
+  "avoid": [
+    "圓角",
+    "陰影",
+    "漸層",
+    "比例字型",
+    "彩色照片直接放上去"
+  ],
+  "color_rules": {
+    "max_accents": 1,
+    "notes": "畫面基本是單色，重點色只用在游標、反白與警示。"
+  },
+  "backgrounds": [
+    {
+      "id": "terminal",
+      "name": "終端黑",
+      "hex": "#0E100F"
+    },
+    {
+      "id": "paper",
+      "name": "列印紙",
+      "hex": "#F2F0E9"
+    },
+    {
+      "id": "deepblue",
+      "name": "深藍",
+      "hex": "#0B1A2B"
+    },
+    {
+      "id": "amberbase",
+      "name": "琥珀底",
+      "hex": "#1A1408"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "S1",
+      "name": "綠磷光",
+      "ink": "#8FE388",
+      "accents": [
+        "#E9F7E6"
+      ],
+      "pairs_with": [
+        "terminal"
+      ]
+    },
+    {
+      "id": "S2",
+      "name": "琥珀螢幕",
+      "ink": "#FFB547",
+      "accents": [
+        "#FFE3B0"
+      ],
+      "pairs_with": [
+        "amberbase",
+        "terminal"
+      ]
+    },
+    {
+      "id": "S3",
+      "name": "點陣印表機",
+      "ink": "#1C1C1C",
+      "accents": [
+        "#C2321F"
+      ],
+      "pairs_with": [
+        "paper"
+      ]
+    },
+    {
+      "id": "S4",
+      "name": "藍色系統",
+      "ink": "#DDE8F5",
+      "accents": [
+        "#6FC3FF"
+      ],
+      "pairs_with": [
+        "deepblue"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
+  }
+}

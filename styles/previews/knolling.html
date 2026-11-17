@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Knolling 擺拍陳列｜示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #D3D2CD; --ink: #1E1E1C; --a1: #B8401C; --a2: #B8401C; --a3: #B8401C; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide * { box-sizing: border-box; }
+.mono { font-family: "IBM Plex Mono", "Noto Sans TC", monospace; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
+.abs { position: absolute; }
+.lines { position: absolute; inset: 0; pointer-events: none; }
+
+/* header / footer */
+.head-l { left: 160px; top: 92px; font-family: "Archivo", "Noto Sans TC", sans-serif; font-weight: 700; font-size: 24px; letter-spacing: .04em; display: flex; gap: 24px; align-items: baseline; }
+.head-l .mono { font-size: 20px; font-weight: 400; }
+.head-r { right: 160px; top: 96px; font-size: 20px; font-weight: 400; }
+.foot-l { left: 160px; top: 954px; font-size: 24px; }
+.foot-r { right: 160px; top: 942px; display: flex; align-items: baseline; gap: 18px; }
+.foot-r .mono { font-size: 20px; font-weight: 400; }
+.foot-r b { font-family: "Archivo", sans-serif; font-weight: 800; font-size: 40px; letter-spacing: -.01em; border-bottom: 4px solid var(--a1); line-height: 1; padding-bottom: 6px; }
+
+/* object 01: title plate */
+.plate { left: 160px; top: 216px; width: 864px; height: 384px; background: color-mix(in srgb, var(--ink) 7%, var(--bg)); box-shadow: 0 8px 0 color-mix(in srgb, var(--ink) 13%, transparent); padding: 34px 44px; }
+.tag { font-size: 20px; font-weight: 400; display: flex; justify-content: space-between; }
+.plate h1 { margin: 26px 0 0; font-family: "Archivo", "Noto Sans TC", sans-serif; font-weight: 700; font-size: 132px; line-height: 1.08; letter-spacing: -.01em; }
+
+/* object 02: tape strip */
+.strip { left: 160px; top: 648px; width: 864px; height: 80px; border: 2px solid var(--ink); display: flex; align-items: center; }
+.strip::before { content: ""; width: 28px; align-self: stretch; background: var(--a1); }
+.strip .mono { font-size: 20px; font-weight: 400; margin: 0 28px 0 24px; }
+.strip strong { font-family: "Archivo", sans-serif; font-weight: 800; font-size: 30px; letter-spacing: .16em; text-transform: uppercase; }
+
+/* small objects 04–07 */
+.cell { top: 776px; width: 180px; height: 128px; }
+.cell .obj { height: 72px; display: flex; align-items: center; justify-content: space-between; }
+.cell .mono { position: absolute; left: 0; bottom: 0; font-size: 20px; font-weight: 400; }
+.ruler { width: 180px; height: 36px; border: 2px solid var(--ink); background: repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 18px) 8px 0 / calc(100% - 8px) 12px no-repeat; }
+.dot { width: 36px; height: 36px; border-radius: 50%; background: color-mix(in srgb, var(--ink) 82%, var(--bg)); box-shadow: 0 5px 0 color-mix(in srgb, var(--ink) 14%, transparent); }
+.dot.o { background: none; border: 2px solid var(--ink); box-shadow: none; }
+.pencil { width: 180px; height: 16px; background: linear-gradient(90deg, var(--ink) 0 14px, color-mix(in srgb, var(--ink) 30%, var(--bg)) 14px 30px, var(--a1) 30px 52px, color-mix(in srgb, var(--ink) 82%, var(--bg)) 52px); box-shadow: 0 5px 0 color-mix(in srgb, var(--ink) 14%, transparent); }
+.block { width: 72px; height: 36px; background: color-mix(in srgb, var(--ink) 20%, var(--bg)); box-shadow: 0 5px 0 color-mix(in srgb, var(--ink) 14%, transparent); }
+.block.o { background: none; border: 2px solid var(--ink); box-shadow: none; }
+
+/* object 03: placeholder */
+.ph { left: 1072px; top: 216px; width: 688px; height: 688px; border: 2px dashed color-mix(in srgb, var(--ink) 70%, var(--bg));
+  background:
+    linear-gradient(color-mix(in srgb, var(--ink) 9%, transparent) 1px, transparent 1px) 0 0 / 86px 86px,
+    linear-gradient(90deg, color-mix(in srgb, var(--ink) 9%, transparent) 1px, transparent 1px) 0 0 / 86px 86px;
+  display: flex; align-items: center; justify-content: center; }
+.ph .label { position: relative; background: var(--bg); padding: 14px 22px; font-size: 26px; text-align: center; line-height: 1.6; }
+.ph .label small { display: block; font-size: 20px; font-weight: 400; opacity: .8; }
+.ph svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+<main class="slide">
+
+  <!-- hairline layer: registration marks, rulers, dimension line -->
+  <svg class="lines" viewBox="0 0 1920 1080" fill="none" stroke="var(--ink)" stroke-width="1.5">
+    <defs>
+      <g id="reg"><circle r="13"/><path d="M-28 0H28M0 -28V28"/></g>
+    </defs>
+    <use href="#reg" x="72" y="72"/><use href="#reg" x="1848" y="72"/>
+    <use href="#reg" x="72" y="1008"/><use href="#reg" x="1848" y="1008"/>
+    <!-- top ruler -->
+    <path d="M160 168H1760"/>
+    <path d="M160 172H1762" stroke-width="8" stroke-dasharray="1.5 18.5"/>
+    <path d="M160.75 168v18M560 168v18M960 168v18M1360 168v18M1759.25 168v18"/>
+    <!-- left ruler -->
+    <path d="M112 216V904"/>
+    <path d="M116 216V906" stroke-width="8" stroke-dasharray="1.5 18.5"/>
+    <path d="M112 216.75h18M112 560h18M112 903.25h18"/>
+    <!-- dimension: equal gap -->
+    <path d="M1024 410H1072M1024 398V422M1072 398V422"/>
+  </svg>
+  <div class="abs mono" style="left:1036px; top:364px; font-size:20px; font-weight:400;">48</div>
+
+  <div class="abs head-l">2026 品牌提案 <span class="mono">Proposal / Top View</span></div>
+  <div class="abs mono head-r">Sheet 01 — 7 Objects</div>
+
+  <!-- 01 title -->
+  <section class="abs plate">
+    <div class="tag mono"><span>01 — Title</span><span>864 × 384</span></div>
+    <h1>把想法<br>做成產品</h1>
+  </section>
+
+  <!-- 02 subtitle tape -->
+  <div class="abs strip"><span class="mono">02</span><strong>From Idea to Product</strong></div>
+
+  <!-- 04–07 small objects -->
+  <div class="abs cell" style="left:160px"><div class="obj"><div class="ruler"></div></div><span class="mono">04 Ruler</span></div>
+  <div class="abs cell" style="left:388px"><div class="obj"><i class="dot"></i><i class="dot"></i><i class="dot o"></i></div><span class="mono">05 Pins ×3</span></div>
+  <div class="abs cell" style="left:616px"><div class="obj"><div class="pencil"></div></div><span class="mono">06 Pencil</span></div>
+  <div class="abs cell" style="left:844px"><div class="obj"><i class="block"></i><i class="block o"></i></div><span class="mono">07 Blocks</span></div>
+
+  <!-- 03 image placeholder -->
+  <div class="abs ph" data-slot="cover-photo" data-ratio="1/1">
+    <svg viewBox="0 0 688 688" fill="none" stroke="var(--ink)" stroke-width="1.5">
+      <path d="M8 36H64M36 8V64M624 36H680M652 8V64M8 652H64M36 624V680M624 652H680M652 624V680"/>
+    </svg>
+    <div class="label mono">Object 03／俯拍，1:1<small>Top view · Flat light</small></div>
+  </div>
+
+  <div class="abs mono foot-l">[講者姓名]　2026.11</div>
+  <div class="abs foot-r"><span class="mono">Page</span><b>01</b></div>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+{
+  "id": "nautical-tattoo",
+  "name_zh": "水手刺青",
+  "name_en": "Nautical & Tattoo",
+  "summary": "美式傳統刺青與航海意象：粗黑輪廓、船錨、燕子、玫瑰、緞帶標語，限定色的紅、綠、黃、藏青。",
+  "definition": "這個風格結合了美式傳統刺青（American Traditional）的圖稿與航海文化：粗而均勻的黑色輪廓線、平塗的限定色、船錨、燕子、羅盤、玫瑰，再加一條飄動的緞帶寫上標語。轉成簡報時，每頁像一張刺青圖稿紙（flash sheet），標題寫在緞帶上，重點用徽章框起來。",
+  "keywords": [
+    "大膽",
+    "經典",
+    "海派",
+    "有態度"
+  ],
+  "best_for": [
+    "品牌與團隊精神",
+    "活動宣傳",
+    "餐飲、酒吧、服飾品牌",
+    "里程碑與宣言"
+  ],
+  "not_for": [
+    "學術報告",
+    "需要中性專業感的商務提案"
+  ],
+  "traits": [
+    "粗黑均勻輪廓線",
+    "平塗限定色",
+    "緞帶標語",
+    "船錨、燕子、羅盤、玫瑰",
+    "老紙張底色",
+    "星星與光芒線"
+  ],
+  "layout": [
+    "標題寫在一條飄動的緞帶上",
+    "重點放在盾形或圓形徽章裡",
+    "頁面像刺青圖稿紙：多個小圖案排在一頁，各配一行說明",
+    "所有色塊都有粗黑邊"
+  ],
+  "motifs": [
+    "飄動緞帶",
+    "船錨",
+    "燕子",
+    "羅盤星",
+    "光芒線"
+  ],
+  "typography": {
+    "display": {
+      "family": "Sancreek",
+      "weights": "400",
+      "role": "主標，只用在緞帶與徽章"
+    },
+    "body": {
+      "family": "Libre Franklin",
+      "weights": "600、800",
+      "role": "副標與內文"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Sancreek&family=Libre+Franklin:wght@600;800&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "主標字只用在英文短標語",
+      "內文用粗無襯線，大寫",
+      "中文標題用粗黑體加粗黑描邊"
+    ]
+  },
+  "imagery": [
+    "手繪刺青圖稿",
+    "海、船、港口的老照片",
+    "照片可以做成單色並加粗框"
+  ],
+  "placeholder": "粗黑邊盾形框，上面一條緞帶寫「照片」，框內斜線網底",
+  "avoid": [
+    "細線條",
+    "漸層",
+    "柔和粉彩",
+    "照片滿版沒有邊框"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "傳統刺青只有紅、綠、黃加黑；重點色就是這三個角色。"
+  },
+  "backgrounds": [
+    {
+      "id": "flash",
+      "name": "圖稿紙",
+      "hex": "#EFE4CC"
+    },
+    {
+      "id": "sail",
+      "name": "帆布",
+      "hex": "#E6DCC6"
+    },
+    {
+      "id": "navy",
+      "name": "深海藍",
+      "hex": "#1B2638"
+    },
+    {
+      "id": "black",
+      "name": "墨黑",
+      "hex": "#151414"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "NT1",
+      "name": "傳統",
+      "ink": "#151414",
+      "accents": [
+        "#B12A22",
+        "#2F6B3A",
+        "#E3A72F"
+      ],
+      "pairs_with": [
+        "flash",
+        "sail"
+      ]
+    },
+    {
+      "id": "NT2",
+      "name": "藏青水手",
+      "ink": "#1B2638",
+      "accents": [
+        "#B12A22",
+        "#2A5E8C",
+        "#E3A72F"
+      ],
+      "pairs_with": [
+        "flash",
+        "sail"
+      ]
+    },
+    {
+      "id": "NT3",
+      "name": "夜港",
+      "ink": "#EFE4CC",
+      "accents": [
+        "#E2574C",
+        "#5FAF7A",
+        "#F1C04F"
+      ],
+      "pairs_with": [
+        "navy",
+        "black"
+      ]
+    },
+    {
+      "id": "NT4",
+      "name": "褪色刺青",
+      "ink": "#2A2622",
+      "accents": [
+        "#8E3A2E",
+        "#4D6B57",
+        "#C99A45"
+      ],
+      "pairs_with": [
+        "flash"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

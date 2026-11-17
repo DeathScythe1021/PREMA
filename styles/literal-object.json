@@ -1,0 +1,160 @@
+{
+  "id": "literal-object",
+  "name_zh": "實物擬態",
+  "name_en": "Literal Object",
+  "summary": "把版面直接做成一個日常物件：車票、藥盒、成績單、標籤、證件、地圖，內容依那個物件的格式填進去。",
+  "definition": "Literal Object 讓設計「變成」主題相關的實物：介紹旅程就做成登機證，分析問題就做成藥盒說明書，介紹成員就做成識別證。重點是借用那個物件原本的欄位與格式（條碼、編號、日期欄、撕線），讓觀眾一眼就懂。轉成簡報時，先為整份簡報挑一個主物件，每頁是那個物件的一部分或同一系列的物件。",
+  "keywords": [
+    "巧思",
+    "具體",
+    "好懂",
+    "有梗"
+  ],
+  "best_for": [
+    "活動邀請與行程",
+    "產品與服務說明",
+    "團隊介紹",
+    "提案的開場與結尾"
+  ],
+  "not_for": [
+    "抽象概念需要大量論述",
+    "主題找不到對應物件的內容"
+  ],
+  "traits": [
+    "版面就是一個實物",
+    "借用物件的欄位格式",
+    "條碼、編號、撕線、印章",
+    "平面正視，不做透視",
+    "印刷感小字",
+    "真實比例"
+  ],
+  "layout": [
+    "先決定主物件（登機證、藥盒、成績單、識別證、收據、標籤）",
+    "每頁內容依那個物件的欄位排：日期、編號、說明、注意事項",
+    "物件置中，周圍留背景色",
+    "同一份簡報維持同一個物件系列，不要每頁換"
+  ],
+  "motifs": [
+    "條碼",
+    "撕線虛線",
+    "欄位表格",
+    "印章",
+    "序號"
+  ],
+  "typography": {
+    "display": {
+      "family": "Oswald",
+      "weights": "500、700",
+      "role": "物件上的大標，窄體大寫"
+    },
+    "body": {
+      "family": "IBM Plex Sans",
+      "weights": "400、600",
+      "role": "欄位與說明"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "400、700",
+      "role": "中文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=IBM+Plex+Sans:wght@400;600&family=Noto+Sans+TC:wght@400;700&display=swap",
+    "rules": [
+      "照物件原本的排版習慣選字：票券用窄體，藥盒用無襯線",
+      "欄位標籤小而大寫",
+      "數字用等寬"
+    ]
+  },
+  "imagery": [
+    "照片當成物件上的一部分（證件照、商品圖）",
+    "不要額外的情境照"
+  ],
+  "placeholder": "物件上的照片欄（例如證件照框），寫「照片｜3:4」",
+  "avoid": [
+    "物件做成 3D 透視",
+    "物件和主題無關",
+    "每頁換不同物件",
+    "裝飾性漸層"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "顏色跟著物件走：一個是物件的品牌色，一個是警示或印章色。"
+  },
+  "backgrounds": [
+    {
+      "id": "desk",
+      "name": "桌面灰",
+      "hex": "#D9D7D2"
+    },
+    {
+      "id": "paper",
+      "name": "紙白",
+      "hex": "#F4F2EC"
+    },
+    {
+      "id": "blueprint",
+      "name": "藍圖",
+      "hex": "#1E3A5F"
+    },
+    {
+      "id": "kraft",
+      "name": "牛皮",
+      "hex": "#CDB48F"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "LO1",
+      "name": "登機證",
+      "ink": "#1B1F27",
+      "accents": [
+        "#1F4FA8",
+        "#D2452C"
+      ],
+      "pairs_with": [
+        "desk",
+        "paper"
+      ]
+    },
+    {
+      "id": "LO2",
+      "name": "藥盒",
+      "ink": "#1C2A26",
+      "accents": [
+        "#1B7A5E",
+        "#C0392B"
+      ],
+      "pairs_with": [
+        "paper",
+        "desk"
+      ]
+    },
+    {
+      "id": "LO3",
+      "name": "郵包",
+      "ink": "#2A2219",
+      "accents": [
+        "#7A3E1C",
+        "#1F4FA8"
+      ],
+      "pairs_with": [
+        "kraft"
+      ]
+    },
+    {
+      "id": "LO4",
+      "name": "工程圖",
+      "ink": "#E8F0F8",
+      "accents": [
+        "#F2C14E",
+        "#7FB8E6"
+      ],
+      "pairs_with": [
+        "blueprint"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 15 More Design Styles You've Never Heard Of",
+    "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
+  }
+}

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Cassette Core 卡帶核｜示範封面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800&family=Permanent+Marker&family=Noto+Sans+TC:wght@500;900&family=LXGW+WenKai+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #F2EEE3; --ink: #1B1B1D; --a1: #D64A22; --a2: #E89A2E; --a3: #1F7A86; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide { font-family: "Barlow Condensed", "Noto Sans TC", sans-serif; }
+.abs { position: absolute; }
+.brand { font-family: "Barlow Condensed", "Noto Sans TC", sans-serif; font-style: italic; font-weight: 800; text-transform: uppercase; }
+.field { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 22px; letter-spacing: 0.22em; text-transform: uppercase; }
+.hand { font-family: "Permanent Marker", "LXGW WenKai TC", cursive; font-weight: 700; }
+
+/* 標籤紙紋理 */
+.slide::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(0deg, color-mix(in srgb, var(--ink) 3%, transparent) 0 1px, transparent 1px 5px);
+}
+
+/* 表頭：SIDE A、品牌字 */
+.side { left: 100px; top: 88px; width: 132px; height: 132px; background: var(--ink); color: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 132px; line-height: 1; padding-right: 8px; box-sizing: border-box; }
+.side-lab { left: 262px; top: 92px; }
+.side-lab .s { font-size: 34px; letter-spacing: 0.12em; }
+.side-lab .k { font-family: "Noto Sans TC", sans-serif; font-weight: 900; font-size: 40px; letter-spacing: 0.08em; margin-top: 6px; }
+.tape-type { right: calc(1920px - 1220px); top: 88px; text-align: right; }
+.tape-type .c { font-size: 92px; line-height: 0.9; letter-spacing: 0.02em; }
+.tape-type .n { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 22px; letter-spacing: 0.2em; margin-top: 6px; text-transform: uppercase; }
+
+/* 標題欄：手寫在底線上 */
+.lab-title { left: 100px; top: 262px; }
+.title { left: 112px; top: 284px; margin: 0; font-size: 140px; line-height: 1.2; letter-spacing: 0.02em; transform: rotate(-1.5deg); transform-origin: left bottom; }
+.rule { left: 100px; width: 1120px; height: 0; border-top: 4px solid var(--ink); }
+.sub { left: 100px; top: 484px; margin: 0; font-size: 64px; letter-spacing: 0.03em; line-height: 1; }
+
+/* 卡帶視窗＋計數器 */
+.window { left: 100px; top: 604px; }
+.win-frame { fill: color-mix(in srgb, var(--ink) 88%, var(--bg)); }
+.win-edge { fill: none; stroke: var(--ink); stroke-width: 4; }
+.pack-1 { fill: color-mix(in oklab, var(--ink) 72%, var(--a1)); }
+.pack-2 { fill: color-mix(in oklab, var(--ink) 80%, var(--a1)); }
+.reel { fill: var(--bg); }
+.hub { fill: color-mix(in srgb, var(--ink) 80%, var(--bg)); }
+.glare { fill: color-mix(in srgb, var(--bg) 10%, transparent); }
+
+.counter { left: 900px; top: 600px; }
+.counter .digits { display: flex; gap: 8px; margin-top: 10px; }
+.counter .digits span {
+  width: 92px; height: 124px; display: flex; align-items: center; justify-content: center;
+  background: var(--ink); color: var(--bg); font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 104px; line-height: 1;
+  box-shadow: inset 0 -60px 0 -58px var(--bg);
+}
+
+/* 三色斜條紋帶 */
+.stripes { left: 0; top: 0; width: 1920px; height: 1080px; pointer-events: none; }
+.stripes path { fill: none; stroke-width: 30; stroke-linejoin: miter; stroke-miterlimit: 4; }
+.s1 { stroke: var(--a1); } .s2 { stroke: var(--a2); } .s3 { stroke: var(--a3); }
+
+/* 封面版位 */
+.ph {
+  left: 1300px; top: 88px; width: 530px; height: 530px; box-sizing: border-box; border: 4px solid var(--ink); overflow: hidden;
+  background:
+    repeating-linear-gradient(0deg, color-mix(in srgb, var(--ink) 7%, transparent) 0 2px, transparent 2px 6px),
+    color-mix(in srgb, var(--ink) 6%, var(--bg));
+}
+.ph svg { position: absolute; left: 0; top: 0; width: 522px; height: 150px; }
+.ph .hand { position: absolute; left: 0; right: 0; top: 270px; text-align: center; font-size: 54px; transform: rotate(-2deg); }
+.ph .noise { position: absolute; left: 0; right: 0; height: 6px; background: color-mix(in srgb, var(--ink) 18%, transparent); }
+
+.info { left: 1300px; width: 530px; display: flex; align-items: baseline; gap: 24px; padding-bottom: 8px; border-bottom: 3px solid var(--ink); }
+.info .v { font-family: "Barlow Condensed", "Noto Sans TC", sans-serif; font-weight: 600; font-size: 40px; letter-spacing: 0.04em; }
+.info .v.zh { font-family: "Noto Sans TC", sans-serif; font-weight: 500; font-size: 34px; }
+</style>
+</head>
+<body>
+<main class="slide">
+  <svg class="abs stripes" viewBox="0 0 1920 1080" aria-hidden="true">
+    <path class="s1" d="M-20 962 L640 962 L770 832 L1940 832"/>
+    <path class="s2" d="M-20 1000 L655.7 1000 L785.7 870 L1940 870"/>
+    <path class="s3" d="M-20 1038 L671.5 1038 L801.5 908 L1940 908"/>
+  </svg>
+
+  <div class="abs side brand">A</div>
+  <div class="abs side-lab"><div class="s brand">Side</div><div class="k">2026 品牌提案</div></div>
+  <div class="abs tape-type"><div class="c brand">C-60</div><div class="n">Normal Position · Type I</div></div>
+
+  <div class="abs field lab-title">Title</div>
+  <h1 class="abs title hand">把想法做成產品</h1>
+  <div class="abs rule" style="top:466px"></div>
+  <p class="abs sub brand">From Idea to Product</p>
+  <div class="abs rule" style="top:556px; border-top-width:2px"></div>
+
+  <svg class="abs window" width="740" height="200" viewBox="0 0 740 200" aria-hidden="true">
+    <defs><clipPath id="win"><rect x="0" y="0" width="740" height="200" rx="28"/></clipPath></defs>
+    <g clip-path="url(#win)">
+      <rect class="win-frame" width="740" height="200"/>
+      <circle class="pack-1" cx="190" cy="100" r="150"/>
+      <circle class="pack-2" cx="550" cy="100" r="92"/>
+      <circle class="reel" cx="190" cy="100" r="58"/>
+      <circle class="reel" cx="550" cy="100" r="58"/>
+      <circle class="hub" cx="190" cy="100" r="30"/>
+      <circle class="hub" cx="550" cy="100" r="30"/>
+      <g class="reel">
+        <rect x="185" y="66" width="10" height="16"/><rect x="185" y="118" width="10" height="16"/>
+        <rect x="185" y="66" width="10" height="16" transform="rotate(60 190 100)"/><rect x="185" y="118" width="10" height="16" transform="rotate(60 190 100)"/>
+        <rect x="185" y="66" width="10" height="16" transform="rotate(120 190 100)"/><rect x="185" y="118" width="10" height="16" transform="rotate(120 190 100)"/>
+        <rect x="545" y="66" width="10" height="16"/><rect x="545" y="118" width="10" height="16"/>
+        <rect x="545" y="66" width="10" height="16" transform="rotate(60 550 100)"/><rect x="545" y="118" width="10" height="16" transform="rotate(60 550 100)"/>
+        <rect x="545" y="66" width="10" height="16" transform="rotate(120 550 100)"/><rect x="545" y="118" width="10" height="16" transform="rotate(120 550 100)"/>
+      </g>
+      <path class="glare" d="M60 0 L140 0 L60 200 L-20 200Z"/>
+    </g>
+    <rect class="win-edge" x="2" y="2" width="736" height="196" rx="26"/>
+  </svg>
+
+  <div class="abs counter"><div class="field">Counter</div><div class="digits"><span>0</span><span>0</span><span>1</span></div></div>
+
+  <div class="abs ph" data-slot="cover-photo" data-ratio="1/1">
+    <svg viewBox="0 0 522 150" preserveAspectRatio="none" aria-hidden="true">
+      <path class="s1" stroke-width="26" fill="none" d="M-20 150 L160 -30"/>
+      <path class="s2" stroke-width="26" fill="none" d="M18 150 L198 -30"/>
+      <path class="s3" stroke-width="26" fill="none" d="M56 150 L236 -30"/>
+    </svg>
+    <div class="noise" style="top:380px; opacity:.6"></div>
+    <div class="noise" style="top:392px; height:2px"></div>
+    <div class="hand">封面照片｜1:1</div>
+  </div>
+
+  <div class="abs info" style="top:648px"><span class="field">Name</span><span class="v zh">[講者姓名]</span></div>
+  <div class="abs info" style="top:722px"><span class="field">Date</span><span class="v">2026.11</span></div>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

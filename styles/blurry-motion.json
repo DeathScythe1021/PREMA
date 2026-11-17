@@ -1,0 +1,159 @@
+{
+  "id": "blurry-motion",
+  "name_zh": "動態模糊",
+  "name_en": "Blurry Motion",
+  "summary": "用動態模糊與失焦捕捉速度和情緒：人影拉出殘影、色塊糊開，配上極小又精準的文字，像當代藝術展的海報。",
+  "definition": "Blurry Motion 刻意讓影像不清楚：快門拉長拍出的人影殘影、對焦失敗的色塊、柔和的漸層光，搭配非常小、排得很精準的文字。重點是「影像負責情緒，文字負責資訊」。轉成簡報時，一張模糊影像撐起整個畫面，文字小而安靜地靠邊，像展覽海報上的資訊欄。",
+  "keywords": [
+    "情緒",
+    "當代",
+    "安靜",
+    "藝術感"
+  ],
+  "best_for": [
+    "品牌形象與願景",
+    "藝術展演與時尚",
+    "簡報開場與章節頁",
+    "攝影作品集"
+  ],
+  "not_for": [
+    "條列很多的資訊型簡報",
+    "需要清楚產品照的規格說明"
+  ],
+  "traits": [
+    "動態模糊攝影",
+    "失焦色塊與柔和漸層",
+    "極小的精準文字",
+    "大量留白",
+    "細膩顆粒",
+    "大標題輕而不搶"
+  ],
+  "layout": [
+    "一張模糊影像或色塊佔畫面主體",
+    "文字很小，貼齊邊角或沿著網格排成資訊欄",
+    "大標題可以很大，但字重要細",
+    "內頁維持同樣的資訊欄位置，只換影像",
+    "一頁一個重點，其餘留白"
+  ],
+  "motifs": [
+    "水平動態模糊的色塊",
+    "細線資訊欄",
+    "小號編號（No. 03）",
+    "顆粒"
+  ],
+  "typography": {
+    "display": {
+      "family": "Instrument Serif",
+      "weights": "400、italic",
+      "role": "細緻襯線大標，可用斜體"
+    },
+    "body": {
+      "family": "Hanken Grotesk",
+      "weights": "300、500",
+      "role": "小字資訊與內文"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "300、500",
+      "role": "中文標題；小字內文用 Noto Sans TC 300"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@300;500&family=Noto+Serif+TC:wght@300;500&family=Noto+Sans+TC:wght@300;500&display=swap",
+    "rules": [
+      "標題用細字重，不要粗體",
+      "資訊小字可以小，但要排得整齊",
+      "全頁字級對比要大：大標很大、資訊很小"
+    ]
+  },
+  "imagery": [
+    "長曝光的人影、車流、舞者",
+    "失焦的花、光、色塊",
+    "可以對使用者給的照片加水平模糊"
+  ],
+  "placeholder": "一大片水平模糊的漸層色塊，角落小字寫「Image 01｜動態模糊照片 4:5」",
+  "avoid": [
+    "粗框線",
+    "圖示與表情符號",
+    "密集條列",
+    "多個顏色同時出現"
+  ],
+  "color_rules": {
+    "max_accents": 1,
+    "notes": "只有一個重點色，用在模糊色塊裡，文字維持單色。"
+  },
+  "backgrounds": [
+    {
+      "id": "gallery",
+      "name": "畫廊白",
+      "hex": "#F1EFEA"
+    },
+    {
+      "id": "fog",
+      "name": "霧灰",
+      "hex": "#D8D6D2"
+    },
+    {
+      "id": "warm",
+      "name": "暖紙",
+      "hex": "#EDE3D6"
+    },
+    {
+      "id": "midnight",
+      "name": "深夜",
+      "hex": "#121214"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "B1",
+      "name": "紅色殘影",
+      "ink": "#1A1A1A",
+      "accents": [
+        "#C8331F"
+      ],
+      "pairs_with": [
+        "gallery",
+        "fog",
+        "warm"
+      ]
+    },
+    {
+      "id": "B2",
+      "name": "鈷藍",
+      "ink": "#16181D",
+      "accents": [
+        "#2D4BE0"
+      ],
+      "pairs_with": [
+        "gallery",
+        "fog"
+      ]
+    },
+    {
+      "id": "B3",
+      "name": "柑橘",
+      "ink": "#1D1A16",
+      "accents": [
+        "#F08A24"
+      ],
+      "pairs_with": [
+        "warm",
+        "gallery"
+      ]
+    },
+    {
+      "id": "B4",
+      "name": "夜行",
+      "ink": "#EDEBE6",
+      "accents": [
+        "#FF4D6D"
+      ],
+      "pairs_with": [
+        "midnight"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
+  }
+}

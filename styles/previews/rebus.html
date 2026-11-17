@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>圖文謎 Rebus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,800&family=Noto+Sans+TC:wght@500;900&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #F5F3EE; --ink: #161616; --a1: #D7372B; --a2: #2E5BBA; --a3: #2E5BBA; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+.slide { width: 1920px; height: 1080px; transform-origin: 0 0; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); }
+
+.slide { font-family: "Bricolage Grotesque", "Noto Sans TC", sans-serif; }
+.zh { font-family: "Noto Sans TC", sans-serif; }
+
+/* second colour: background block only */
+.disc { position: absolute; width: 640px; height: 640px; border-radius: 50%; background: var(--a2); right: -170px; bottom: -250px; }
+
+.top { position: absolute; left: 140px; right: 140px; top: 96px; display: flex; align-items: center; gap: 28px; }
+.kicker { font-size: 34px; font-weight: 800; letter-spacing: 2px; }
+.kicker .zh { font-weight: 900; }
+.marks { flex: 1; display: flex; align-items: center; gap: 22px; }
+.marks i { display: block; width: 14px; height: 14px; background: var(--ink); }
+.marks i:nth-child(odd) { border-radius: 50%; }
+.marks b { flex: 1; height: 6px; background: var(--ink); }
+.pg { font-size: 64px; font-weight: 800; font-variation-settings: "opsz" 96; line-height: 1; letter-spacing: -2px; }
+
+/* the rebus line */
+.rebus { margin: 0; position: absolute; left: 128px; top: 214px; white-space: nowrap;
+  font-family: "Noto Sans TC", sans-serif; font-weight: 900; font-size: 292px; line-height: 1.1; letter-spacing: -4px; }
+.pic { display: inline-block; height: .9em; width: .9em; vertical-align: -0.09em; margin: 0 .06em; }
+.pic svg { width: 100%; height: 100%; display: block; }
+.ph { position: relative; display: inline-block; vertical-align: -0.08em;
+  width: .88em; height: .88em; margin-left: .06em; box-sizing: border-box; border-radius: .14em;
+  border: 10px dashed var(--ink); background: color-mix(in srgb, var(--ink) 7%, var(--bg)); }
+.ph span { position: absolute; inset: 0; display: grid; place-items: center; line-height: 1; font-size: 92px; font-weight: 500; letter-spacing: 0; }
+.ph em { position: absolute; left: 50%; top: 100%; transform: translateX(-50%); margin-top: 26px; white-space: nowrap;
+  font-style: normal; font-size: 26px; font-weight: 500; letter-spacing: 1px; display: flex; align-items: center; gap: 10px; }
+.ph em svg { width: 26px; height: 34px; }
+
+/* the decoding equation */
+.key { position: absolute; left: 140px; top: 660px; display: flex; align-items: center; gap: 26px;
+  font-size: 50px; font-weight: 900; }
+.key .eq { font-size: 64px; font-weight: 500; }
+.key u { text-decoration: none; background: linear-gradient(var(--a1), var(--a1)) 0 100% / 100% 12px no-repeat; padding-bottom: 6px; }
+
+.en { position: absolute; left: 140px; top: 800px; font-size: 84px; font-weight: 800; letter-spacing: -2px; font-variation-settings: "opsz" 96; line-height: 1; }
+.en svg { display: inline-block; width: 64px; height: 50px; vertical-align: 6px; margin: 0 8px; }
+
+.info { position: absolute; left: 140px; bottom: 92px; font-size: 30px; font-weight: 400; letter-spacing: 1px; display: flex; gap: 36px; align-items: center; }
+.info .zh { font-weight: 500; }
+.info i { display: block; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); }
+</style>
+</head>
+<body>
+<main class="slide">
+  <div class="disc"></div>
+
+  <div class="top">
+    <div class="kicker">2026 <span class="zh">品牌提案</span></div>
+    <div class="marks"><i></i><i></i><i></i><b></b><i></i><i></i></div>
+    <div class="pg">01</div>
+  </div>
+
+  <h1 class="rebus" aria-label="把想法做成產品">把<span class="pic" aria-hidden="true"><svg viewBox="0 0 100 100">
+      <path d="M50,4 C26,4 11,21 11,42 C11,56 19,65 27,73 C31,77 33,81 33,85 H67 C67,81 69,77 73,73 C81,65 89,56 89,42 C89,21 74,4 50,4 Z" style="fill:var(--a1)"/>
+      <path d="M27,42 C27,28 36,19 47,17" style="fill:none;stroke:var(--bg);stroke-width:6;stroke-linecap:round"/>
+      <rect x="33" y="87" width="34" height="6" rx="2" style="fill:var(--ink)"/>
+      <rect x="37" y="94" width="26" height="6" rx="3" style="fill:var(--ink)"/>
+    </svg></span>做成<span class="ph" data-slot="cover-photo" data-ratio="1/1"><span>圖</span><em><svg viewBox="0 0 26 34" aria-hidden="true"><path d="M13,32 V6 M3,15 L13,4 L23,15" style="fill:none;stroke:var(--a1);stroke-width:5;stroke-linecap:round;stroke-linejoin:round"/></svg>替換「產品」的去背照片</em></span></h1>
+
+  <div class="key zh">
+    <span class="eq">＝</span>
+    <span>把<u>想法</u>做成<u>產品</u></span>
+  </div>
+
+  <div class="en">From Idea<svg viewBox="0 0 64 50" aria-hidden="true"><path d="M4,25 H54 M36,7 L56,25 L36,43" style="fill:none;stroke:var(--a1);stroke-width:9;stroke-linecap:round;stroke-linejoin:round"/></svg>to Product</div>
+
+  <div class="info"><span class="zh">[講者姓名]</span><i></i><span>2026.11</span></div>
+</main>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  ['bg', 'ink', 'a1', 'a2', 'a3'].forEach(function (k) {
+    var v = p.get(k);
+    if (v && /^[0-9a-fA-F]{6}$/.test(v)) document.documentElement.style.setProperty('--' + k, '#' + v);
+  });
+  function fit() {
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    document.querySelector('.slide').style.transform = 'scale(' + s + ')';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+</body>
+</html>

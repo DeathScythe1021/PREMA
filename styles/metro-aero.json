@@ -1,0 +1,164 @@
+{
+  "id": "metro-aero",
+  "name_zh": "千禧科技",
+  "name_en": "Metro Aero",
+  "summary": "千禧年前後的透明塑膠科技感：半透明的冰藍機殼、規格標籤、條碼與座標線，乾淨又帶點未來雜誌拼貼。",
+  "definition": "Metro Aero 讓人想起透明機殼的掌上遊戲機、冰藍色的電子產品型錄和千禧年的科技雜誌：主角物件放在中央，周圍環繞細小的規格文字、指引線、條碼和座標，背景是幾層剪下來的紙張。轉成簡報時，畫面乾淨偏冷，資訊像產品規格表一樣精確標註。",
+  "keywords": [
+    "科技",
+    "清爽",
+    "千禧年",
+    "未來感"
+  ],
+  "best_for": [
+    "科技產品發表",
+    "規格與功能說明",
+    "新創與 app 介紹",
+    "遊戲與數位娛樂"
+  ],
+  "not_for": [
+    "溫暖懷舊的人文主題",
+    "手作與自然品牌"
+  ],
+  "traits": [
+    "透明或半透明的冰藍色",
+    "細小規格標籤與型號",
+    "條碼與 QR 方格",
+    "十字座標與指引線",
+    "多層紙張拼貼",
+    "銀色金屬感"
+  ],
+  "layout": [
+    "主視覺物件置中或偏一側，周圍用細線拉出標註",
+    "資訊寫成規格表：小號大寫標籤＋數值",
+    "背景可以疊兩三層錯開的半透明面板",
+    "角落放條碼、型號、版本號"
+  ],
+  "motifs": [
+    "條碼",
+    "十字準星與座標",
+    "細線指引標註",
+    "半透明面板",
+    "型號標籤（MODEL AX-07）"
+  ],
+  "typography": {
+    "display": {
+      "family": "Michroma",
+      "weights": "400",
+      "role": "寬體科技標題，全大寫"
+    },
+    "body": {
+      "family": "IBM Plex Sans Condensed",
+      "weights": "400、600",
+      "role": "規格與內文"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "400、700",
+      "role": "中文標題與內文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Michroma&family=IBM+Plex+Sans+Condensed:wght@400;600&family=Noto+Sans+TC:wght@400;700&display=swap",
+    "rules": [
+      "標題字距要開，0.08em 以上",
+      "規格標籤字級小但要清楚，最小 14px（以 1920 寬計）",
+      "數字一律等寬"
+    ]
+  },
+  "imagery": [
+    "去背的產品照，最好是透明或亮面材質",
+    "螢幕截圖放在細線框裡加標註",
+    "照片偏冷色、高明度"
+  ],
+  "placeholder": "半透明冰藍面板，四角十字準星，中間寫「PRODUCT SHOT／產品去背圖 1:1」，旁邊一條假條碼",
+  "avoid": [
+    "暖色懷舊調",
+    "手寫字",
+    "厚重陰影",
+    "粗獷紋理"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "一個冰藍或主色當透明面板與線條，另一個只用在警示或重點數字。"
+  },
+  "backgrounds": [
+    {
+      "id": "ice",
+      "name": "冰白",
+      "hex": "#EEF3F6"
+    },
+    {
+      "id": "mist",
+      "name": "冷霧藍",
+      "hex": "#D7E6EE"
+    },
+    {
+      "id": "silver",
+      "name": "銀灰",
+      "hex": "#D9DCDF"
+    },
+    {
+      "id": "space",
+      "name": "深空",
+      "hex": "#0F1A24"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "M1",
+      "name": "冰藍機殼",
+      "ink": "#13222E",
+      "accents": [
+        "#0F7FB0",
+        "#C93C20"
+      ],
+      "pairs_with": [
+        "ice",
+        "mist",
+        "silver"
+      ]
+    },
+    {
+      "id": "M2",
+      "name": "薄荷機殼",
+      "ink": "#14262A",
+      "accents": [
+        "#13806C",
+        "#D9481F"
+      ],
+      "pairs_with": [
+        "ice",
+        "silver"
+      ]
+    },
+    {
+      "id": "M3",
+      "name": "銀河紫",
+      "ink": "#1A1D24",
+      "accents": [
+        "#4B55D6",
+        "#5D6470"
+      ],
+      "pairs_with": [
+        "ice",
+        "silver",
+        "mist"
+      ]
+    },
+    {
+      "id": "M4",
+      "name": "深空",
+      "ink": "#E6F1F7",
+      "accents": [
+        "#3CD4FF",
+        "#C6FF4A"
+      ],
+      "pairs_with": [
+        "space"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
+  }
+}

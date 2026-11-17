@@ -1,0 +1,163 @@
+{
+  "id": "postage",
+  "name_zh": "郵票設計",
+  "name_en": "Postage",
+  "summary": "郵票與郵件的視覺：齒孔邊、面額數字、郵戳圓章、航空郵件斜紋，加上半色調與粗糙的印刷質感。",
+  "definition": "Postage 取材自郵票與信封：小小的方框裡放一張圖、一個國名、一個面額數字，周圍是齒孔；上面蓋著圓形郵戳和波浪線，信封邊緣是紅藍相間的航空條紋。轉成簡報時，內容被裝進一張張「郵票」裡，可以錯落拼貼，頁碼就是面額，重點用郵戳蓋上去。",
+  "keywords": [
+    "旅行",
+    "收藏",
+    "手工印刷",
+    "文化"
+  ],
+  "best_for": [
+    "旅行與文化主題",
+    "地方品牌與觀光",
+    "歷史回顧與年表",
+    "徵件與活動宣傳"
+  ],
+  "not_for": [
+    "需要大面積數據圖表的報告",
+    "冷調科技產品"
+  ],
+  "traits": [
+    "齒孔邊框",
+    "面額大數字",
+    "圓形郵戳與波浪註銷線",
+    "航空郵件斜紋邊",
+    "半色調網點",
+    "拼貼與輕微錯位"
+  ],
+  "layout": [
+    "主要內容放在郵票框裡，郵票內留白邊",
+    "多張郵票可以錯落拼貼，略微旋轉（±3 度以內）",
+    "頁碼當成郵票面額，放在郵票角落",
+    "郵戳壓在照片或標題的一角，當作日期或標註",
+    "頁面邊緣可以加航空條紋當章節開頭"
+  ],
+  "motifs": [
+    "齒孔邊",
+    "圓形郵戳＋波浪線",
+    "航空斜紋 ////",
+    "面額數字",
+    "半色調網點"
+  ],
+  "typography": {
+    "display": {
+      "family": "Old Standard TT",
+      "weights": "400、700、italic",
+      "role": "古典郵票式襯線大標"
+    },
+    "body": {
+      "family": "Archivo Narrow",
+      "weights": "400、600",
+      "role": "國名式大寫標籤與內文"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "400、700",
+      "role": "中文標題與內文"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Archivo+Narrow:wght@400;600&family=Noto+Serif+TC:wght@400;700&display=swap",
+    "rules": [
+      "郵票內的國名式標籤用大寫窄體加字距",
+      "面額數字用襯線粗體",
+      "郵戳上的字沿圓形排列"
+    ]
+  },
+  "imagery": [
+    "照片做成半色調或雙色調",
+    "風景、建築、植物、人物肖像都適合",
+    "照片要裝進郵票框，不要滿版出血"
+  ],
+  "placeholder": "齒孔邊郵票框，框內寫「郵票圖案｜4:5」，右下角面額數字，斜蓋一個郵戳",
+  "avoid": [
+    "滿版照片沒有框",
+    "扁平科技 UI",
+    "霓虹與螢光色",
+    "圓角卡片"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "像兩色套印：一個主色印圖案，一個色印郵戳或條紋。"
+  },
+  "backgrounds": [
+    {
+      "id": "envelope",
+      "name": "信封米",
+      "hex": "#EFE6D2"
+    },
+    {
+      "id": "airmail",
+      "name": "航空白",
+      "hex": "#EEF1F4"
+    },
+    {
+      "id": "kraft",
+      "name": "牛皮",
+      "hex": "#D2BC95"
+    },
+    {
+      "id": "green",
+      "name": "郵筒墨綠",
+      "hex": "#24392F"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "P1",
+      "name": "航空郵件",
+      "ink": "#1F2A44",
+      "accents": [
+        "#C8352B",
+        "#2C5BA8"
+      ],
+      "pairs_with": [
+        "envelope",
+        "airmail"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "老郵票",
+      "ink": "#2B2420",
+      "accents": [
+        "#7A2E2A",
+        "#3E6B5A"
+      ],
+      "pairs_with": [
+        "envelope",
+        "kraft"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "熱帶島嶼",
+      "ink": "#233028",
+      "accents": [
+        "#B9552A",
+        "#1F6E68"
+      ],
+      "pairs_with": [
+        "envelope",
+        "airmail"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "夜間郵務",
+      "ink": "#EFE6D2",
+      "accents": [
+        "#E3A94B",
+        "#E07E6C"
+      ],
+      "pairs_with": [
+        "green"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
+  }
+}

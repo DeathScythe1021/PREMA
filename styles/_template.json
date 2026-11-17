@@ -1,0 +1,81 @@
+{
+  "id": "kebab-case-id",
+  "name_zh": "中文名",
+  "name_en": "English Name",
+  "source": {
+    "title": "風格出處（影片、書、網站）",
+    "url": "https://"
+  },
+  "summary": "一句話定義，30–50 字。",
+  "definition": "一段 80–150 字的說明：這個風格從哪裡來、看起來像什麼、轉成簡報時是什麼樣子。",
+  "keywords": [
+    "氣氛關鍵字"
+  ],
+  "best_for": [
+    "適合的簡報內容"
+  ],
+  "not_for": [
+    "不適合的簡報內容"
+  ],
+  "traits": [
+    "一眼可辨認的視覺特徵，4–6 條"
+  ],
+  "layout": [
+    "轉成簡報時的版面規則，3–5 條"
+  ],
+  "motifs": [
+    "反覆出現的圖形元素"
+  ],
+  "typography": {
+    "display": {
+      "family": "Google Fonts 字體名",
+      "weights": "",
+      "role": ""
+    },
+    "body": {
+      "family": "",
+      "weights": "",
+      "role": ""
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "",
+      "role": ""
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=...&display=swap",
+    "rules": [
+      ""
+    ]
+  },
+  "imagery": [
+    "圖片要怎麼拍、怎麼處理"
+  ],
+  "placeholder": "圖片版位長什麼樣子",
+  "avoid": [
+    "這個風格絕對不能出現的東西"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "重點色怎麼分工"
+  },
+  "backgrounds": [
+    {
+      "id": "bg1",
+      "name": "",
+      "hex": "#FFFFFF"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "X1",
+      "name": "",
+      "ink": "#111111",
+      "accents": [
+        "#000000"
+      ],
+      "pairs_with": [
+        "bg1"
+      ]
+    }
+  ]
+}
