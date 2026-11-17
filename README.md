@@ -1,19 +1,27 @@
-# Art Style Deck
+# PREMA
 
-這個 repo 同時是一個 Claude skill 和一個風格目錄網頁，兩者讀的是同一份風格資料。
+PREMA 是一個設計風格靈感庫，收錄定義明確的美術風格。每種風格都有 Pinterest 參考圖、英文 prompt、背景色和配色，可以拿來找靈感、跟團隊對齊方向，或交給 AI 生成工具。
 
-做簡報時，先從目錄挑一種定義明確的美術風格，再選背景和配色，Claude 會照那套風格的規則做出 HTML 簡報。圖片先留版位，等你給圖再放進去。
+這個 repo 同時是一個 Claude skill：選好風格之後，可以請 Claude 照那套規則做出 HTML 簡報。網站和 skill 讀的是同一份風格資料。
 
 - 風格目錄：https://deathscythe1021.github.io/art-style-deck-skill/
 - 目前收錄：25 種風格
 
-## 為什麼要先選風格
+## 為什麼要先定風格
 
-AI 做的簡報常常看起來差不多：漸層、圓角卡片、置中排版、表情符號圖示。原因是沒有明確的美術方向，每個地方都選了最保險的做法。
+設計方向模糊的時候，每個地方都會選最保險的做法，結果什麼風格都不像。AI 產出的東西尤其明顯：漸層、圓角卡片、置中排版、表情符號圖示。
 
-這個 skill 的做法是先把方向定死。每種風格都寫清楚它的版面規則、字體、招牌圖形、配色上限和禁忌，Claude 做每一頁時都照這套規則檢查。
+所以這裡的每種風格都寫清楚版面規則、字體、招牌圖形、配色上限和禁忌，看圖就分得出來，也能照著做。
 
-## 安裝
+## 當作靈感使用
+
+1. 到風格目錄依分類或氣氛篩選，看各風格的參考圖。
+2. 在風格頁複製英文 prompt，或記下背景色和配色。
+3. 用在你的設計、提案，或貼進 AI 生成工具。
+
+## 用 Claude 做簡報
+
+### 安裝
 
 把這個 repo clone 到 Claude Code 的個人 skills 資料夾：
 
@@ -29,7 +37,7 @@ git clone https://github.com/DeathScythe1021/art-style-deck-skill.git ~/.claude/
 git -C ~/.claude/skills/art-style-deck pull
 ```
 
-## 使用流程
+### 使用流程
 
 1. **內容**：告訴 Claude 主題、聽眾、頁數，有現成資料就一起給。
 2. **風格**：到風格目錄網頁看各風格的 Pinterest 參考圖和英文 prompt，挑一種；也可以讓 Claude 依內容推薦。
@@ -44,7 +52,7 @@ git -C ~/.claude/skills/art-style-deck pull
 
 1. 複製 `styles/_template.json` 成 `styles/<風格 id>.json`，填好每個欄位。
 2. 照 `references/preview-spec.md` 做一張示範封面 `styles/previews/<風格 id>.html`，這是給 Claude 做簡報時參考的，不會放上網站。
-3. 在 JSON 寫好英文 prompt（`prompt_en`）和搜尋關鍵字（`pinterest_queries`），再到 Pinterest 挑 6 張參考圖，把 pin 網址裡的數字 ID 填進 `pins`。
+3. 在 JSON 寫好英文分類（`categories`）、英文 prompt（`prompt_en`）和搜尋關鍵字（`pinterest_queries`），再到 Pinterest 挑 6 張參考圖，把 pin 網址裡的數字 ID 填進 `pins`。
 4. 執行檢查：
 
    ```bash

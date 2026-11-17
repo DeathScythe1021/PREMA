@@ -14,7 +14,7 @@ STYLES = os.path.join(ROOT, "styles")
 
 REQUIRED = ["id", "name_zh", "name_en", "source", "summary", "definition", "keywords",
             "best_for", "not_for", "traits", "layout", "motifs", "typography", "imagery",
-            "placeholder", "avoid", "color_rules", "backgrounds", "palettes", "prompt_en", "pinterest_queries"]
+            "placeholder", "avoid", "color_rules", "backgrounds", "palettes", "prompt_en", "pinterest_queries", "categories"]
 
 
 def load_styles():
@@ -47,6 +47,9 @@ def validate(name, s):
     bgs = {b["id"]: b["hex"] for b in s["backgrounds"]}
     if len(bgs) != 4:
         warns.append(f"背景色建議 4 個，目前 {len(bgs)} 個")
+    cats = s.get("categories", [])
+    if not (isinstance(cats, list) and 1 <= len(cats) <= 3 and all(isinstance(c, str) and re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9 &'-]{0,23}", c) for c in cats)):
+        errs.append("categories 必須是 1–3 個英文分類（例如 [\"Retro\", \"Typographic\"]）")
     pins = s.get("pins", [])
     for p in pins:
         if not re.fullmatch(r"\d{6,25}", str(p.get("id", ""))):
