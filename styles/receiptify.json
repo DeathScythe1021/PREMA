@@ -153,5 +153,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "Content laid out as a thermal-printed receipt",
+    "Monospaced type, items on the left and numbers on the right",
+    "Dashed and asterisk separators, a TOTAL line and a barcode",
+    "Narrow, tall paper strip with torn zigzag edges",
+    "Black on off-white with faded thermal grey",
+    "Everyday, precise, a little humorous"
+  ],
+  "pinterest_queries": [
+    "receipt graphic design poster",
+    "receiptify design"
+  ],
+  "pins": [
+    {
+      "id": "958633470697780760",
+      "note": "pop-up event receipt with red doodles"
+    },
+    {
+      "id": "745697650834699611",
+      "note": "Mayumi market receipt-style poster, blue"
+    },
+    {
+      "id": "516506651039906750",
+      "note": "September schedule as till receipt"
+    },
+    {
+      "id": "497225615111089793",
+      "note": "Public Plant receipt with flower doodle"
+    },
+    {
+      "id": "844495367671141638",
+      "note": "Berry Good product receipt poster"
+    },
+    {
+      "id": "413909022021230251",
+      "note": "record shop receipt on punched paper"
+    }
+  ]
 }

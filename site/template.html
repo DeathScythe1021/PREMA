@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Art Style Deck — 風格目錄</title>
-<meta name="description" content="__COUNT__ 種定義明確的美術風格，挑一個、選好背景與配色，再交給 Claude 做成 HTML 簡報。">
+<meta name="description" content="__COUNT__ 種定義明確的設計風格：Pinterest 參考圖、英文 prompt、配色，挑好後交給 Claude 做成 HTML 簡報。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
@@ -24,8 +24,8 @@ html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--sans); }
 a { color: inherit; }
 button { font: inherit; color: inherit; }
-
-.wrap { max-width: 1440px; margin: 0 auto; padding: 0 32px; }
+[hidden] { display: none !important; }
+.wrap { max-width: 1440px; margin: 0 auto; padding-left: 32px; padding-right: 32px; }
 
 /* 刊頭 */
 .masthead { padding-top: 56px; padding-bottom: 40px; border-bottom: 2px solid var(--ink); display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: end; }
@@ -41,45 +41,60 @@ button { font: inherit; color: inherit; }
 .toolbar { position: sticky; top: 0; z-index: 5; background: var(--paper); border-bottom: 1px solid var(--line); }
 .toolbar .wrap { display: flex; gap: 16px; align-items: center; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; }
 .search { flex: 0 1 280px; height: 38px; border: 1px solid var(--ink); background: transparent; padding: 0 12px; font: 15px var(--sans); border-radius: 0; }
-.search:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; flex: 1; }
 .chip { border: 1px solid var(--line); background: transparent; padding: 5px 10px; font-size: 13px; cursor: pointer; border-radius: 0; }
 .chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .count { font: 500 13px var(--mono); color: var(--ink-2); white-space: nowrap; }
+.search:focus-visible, .chip:focus-visible, .btn:focus-visible, .sw:focus-visible, .pal:focus-visible, .card-link:focus-visible, summary:focus-visible, .back:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-/* 風格卡 */
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 56px 32px; padding-top: 40px; padding-bottom: 96px; }
-.card { display: flex; flex-direction: column; min-width: 0; }
-.card[hidden] { display: none; }
-.frame { position: relative; aspect-ratio: 16 / 9; background: var(--paper-2); border: 1px solid var(--ink); overflow: hidden; }
-.frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; pointer-events: none; }
-.frame a { position: absolute; inset: 0; }
+/* 首頁卡片 */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(345px, 1fr)); gap: 56px 32px; padding-top: 40px; padding-bottom: 96px; align-items: start; }
+.card { min-width: 0; }
+.cover { min-height: 200px; display: flex; justify-content: center; background: var(--paper-2); border: 1px solid var(--ink); padding: 12px 0; overflow: hidden; }
+.cover-empty { align-self: center; font: 500 13px var(--mono); color: var(--ink-2); }
 .meta { display: grid; grid-template-columns: auto 1fr; gap: 0 14px; margin-top: 16px; }
 .num { font: 500 13px/1.9 var(--mono); color: var(--ink-2); }
 .name { margin: 0; font-size: 26px; line-height: 1.15; font-weight: 700; letter-spacing: -.01em; }
 .name small { display: block; font-size: 15px; font-weight: 500; color: var(--ink-2); letter-spacing: 0; margin-top: 2px; }
 .summary { grid-column: 2; margin: 10px 0 0; font-size: 15px; color: var(--ink-2); }
+.card-link { grid-column: 2; justify-self: start; margin-top: 14px; font-weight: 500; font-size: 15px; text-decoration: none; border-bottom: 2px solid var(--ink); padding-bottom: 2px; }
+.card-link:hover { color: var(--accent); border-color: var(--accent); }
 
-.picker { grid-column: 2; margin-top: 16px; display: grid; gap: 10px; }
-.row { display: grid; grid-template-columns: 44px 1fr; align-items: center; gap: 8px; }
-.row-label { font: 500 12px var(--mono); color: var(--ink-2); }
+/* 詳細頁 */
+.detail { padding-top: 28px; padding-bottom: 96px; }
+.back { display: inline-block; font: 500 14px var(--mono); text-decoration: none; margin-bottom: 28px; }
+.back:hover { color: var(--accent); }
+.d-head { display: grid; grid-template-columns: auto 1fr; gap: 0 20px; border-bottom: 2px solid var(--ink); padding-bottom: 28px; }
+.d-head .num { font-size: 15px; }
+.d-head h2 { margin: 0; font-size: clamp(40px, 6vw, 80px); line-height: 1; letter-spacing: -.03em; font-weight: 800; }
+.d-head h2 small { display: block; font-size: .36em; font-weight: 500; letter-spacing: 0; color: var(--ink-2); margin-top: 10px; }
+.d-head p { grid-column: 2; margin: 16px 0 0; max-width: 60ch; color: var(--ink-2); font-size: 17px; }
+.d-body { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 48px; margin-top: 36px; align-items: start; }
+.pins { columns: 3 240px; column-gap: 20px; }
+.pins > span, .pins > a { break-inside: avoid; display: block; margin-bottom: 24px; }
+.pins-empty { border: 1px dashed var(--line); padding: 48px 24px; text-align: center; color: var(--ink-2); font-size: 15px; }
+.side { position: sticky; top: 78px; display: grid; gap: 28px; }
+.block h3 { margin: 0 0 10px; font: 500 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); }
+.prompt { margin: 0; padding: 18px 18px 18px 36px; background: var(--ink); color: var(--paper); font: 14px/1.7 var(--mono); }
+.prompt li + li { margin-top: 4px; }
+.btn { border: 1px solid var(--ink); background: transparent; padding: 8px 14px; font-size: 14px; cursor: pointer; border-radius: 0; margin-top: 10px; }
+.btn.solid { background: var(--ink); color: var(--paper); }
+.queries { display: flex; flex-wrap: wrap; gap: 8px; }
+.queries a { font-size: 14px; border: 1px solid var(--line); padding: 5px 10px; text-decoration: none; }
+.queries a:hover { border-color: var(--ink); }
 .opts { display: flex; gap: 6px; flex-wrap: wrap; }
-.sw { width: 34px; height: 34px; border: 1px solid var(--line); cursor: pointer; padding: 0; border-radius: 0; position: relative; }
-.sw[aria-pressed="true"] { outline: 2px solid var(--ink); outline-offset: 2px; }
+.sw { width: 36px; height: 36px; border: 1px solid var(--line); cursor: pointer; padding: 0; border-radius: 0; }
+.sw[aria-pressed="true"], .pal[aria-pressed="true"] { outline: 2px solid var(--ink); outline-offset: 2px; }
 .sw.dim { opacity: .35; }
-.pal { display: flex; height: 34px; border: 1px solid var(--line); cursor: pointer; padding: 0; background: none; border-radius: 0; }
-.pal span { width: 14px; height: 100%; }
-.pal span:first-child { width: 22px; }
-.pal[aria-pressed="true"] { outline: 2px solid var(--ink); outline-offset: 2px; }
-.pick-name { font-size: 13px; color: var(--ink-2); margin-top: 2px; }
-
-.cmd { grid-column: 2; margin-top: 14px; display: flex; border: 1px solid var(--ink); }
-.cmd code { flex: 1; padding: 8px 10px; font: 13px/1.5 var(--mono); overflow-wrap: anywhere; }
-.cmd button { border: 0; border-left: 1px solid var(--ink); background: var(--ink); color: var(--paper); padding: 0 14px; cursor: pointer; font-size: 13px; white-space: nowrap; }
-.cmd button:focus-visible, .sw:focus-visible, .pal:focus-visible, .chip:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-
-details { grid-column: 2; margin-top: 14px; border-top: 1px solid var(--line); }
-summary { cursor: pointer; padding: 10px 0; font-size: 14px; font-weight: 500; list-style: none; }
+.pal { display: flex; height: 36px; border: 1px solid var(--line); cursor: pointer; padding: 0; background: none; border-radius: 0; }
+.pal span { width: 15px; height: 100%; }
+.pal span:first-child { width: 24px; }
+.pick-name { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
+.cmd { display: flex; border: 1px solid var(--ink); }
+.cmd code { flex: 1; padding: 9px 11px; font: 13px/1.5 var(--mono); overflow-wrap: anywhere; }
+.cmd .btn { margin: 0; border: 0; border-left: 1px solid var(--ink); white-space: nowrap; }
+details { border-top: 1px solid var(--line); }
+summary { cursor: pointer; padding: 12px 0; font-size: 15px; font-weight: 500; list-style: none; }
 summary::-webkit-details-marker { display: none; }
 summary::after { content: "＋"; float: right; color: var(--ink-2); }
 details[open] summary::after { content: "－"; }
@@ -87,58 +102,69 @@ details[open] summary::after { content: "－"; }
 .spec h4 { margin: 14px 0 4px; font: 500 12px var(--mono); letter-spacing: .08em; color: var(--ink); }
 .spec ul { margin: 0; padding-left: 18px; }
 .spec p { margin: 0; }
+.credit { font-size: 13px; color: var(--ink-2); margin: 0; }
 
 footer { border-top: 2px solid var(--ink); padding-top: 24px; padding-bottom: 48px; font-size: 14px; color: var(--ink-2); display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
 
+@media (max-width: 980px) {
+  .d-body { grid-template-columns: 1fr; }
+  .side { position: static; }
+}
 @media (max-width: 760px) {
-  .wrap { padding: 0 16px; }
+  .wrap { padding-left: 16px; padding-right: 16px; }
   .masthead { grid-template-columns: 1fr; gap: 24px; padding-top: 36px; }
   .steps { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; gap: 48px; }
   .search { flex-basis: 100%; }
+  .pins { columns: 1; }
 }
 </style>
 </head>
 <body>
-<header class="wrap masthead">
-  <div>
-    <p class="kicker">Art Style Deck · Style Index</p>
-    <h1>__COUNT__ Styles<span>風格目錄</span></h1>
+<div id="home">
+  <header class="wrap masthead">
+    <div>
+      <p class="kicker">Art Style Deck · Style Index</p>
+      <h1>__COUNT__ Styles<span>風格目錄</span></h1>
+    </div>
+    <div class="intro">
+      <p>每種風格都有自己的版面、字體、圖形與禁忌，彼此不混用。先看參考圖認識風格，再選背景與配色，把指令貼給 Claude，它會照這套規則做出 HTML 簡報。</p>
+      <ol class="steps">
+        <li><b>01</b>看參考圖挑風格</li>
+        <li><b>02</b>選背景與配色</li>
+        <li><b>03</b>複製指令給 Claude</li>
+      </ol>
+    </div>
+  </header>
+  <div class="toolbar">
+    <div class="wrap">
+      <input class="search" type="search" placeholder="搜尋風格、用途…" aria-label="搜尋風格">
+      <div class="chips" role="group" aria-label="依氣氛篩選"></div>
+      <span class="count" aria-live="polite"></span>
+    </div>
   </div>
-  <div class="intro">
-    <p>每種風格都有自己的版面、字體、圖形與禁忌，彼此不混用。先在這裡挑風格、背景和配色，再把指令貼給 Claude，它會照這套規則做出 HTML 簡報。</p>
-    <ol class="steps">
-      <li><b>01</b>挑一種風格</li>
-      <li><b>02</b>選背景與配色</li>
-      <li><b>03</b>複製指令給 Claude</li>
-    </ol>
-  </div>
-</header>
-
-<div class="toolbar">
-  <div class="wrap">
-    <input class="search" type="search" placeholder="搜尋風格、用途…" aria-label="搜尋風格">
-    <div class="chips" role="group" aria-label="依氣氛篩選"></div>
-    <span class="count" aria-live="polite"></span>
-  </div>
+  <main class="wrap grid" id="grid"></main>
 </div>
 
-<main class="wrap grid" id="grid"></main>
+<main class="wrap detail" id="detail" hidden></main>
 
 <footer class="wrap">
   <span>風格來源：<span id="sources"></span></span>
-  <span>資料在 GitHub 的 <code>styles/</code> 資料夾，新增一個 JSON 檔就會出現在這裡。</span>
+  <span>參考圖透過 Pinterest 官方嵌入顯示，版權屬於原作者。</span>
 </footer>
 
 <script type="application/json" id="data">__DATA__</script>
 <script>
 (function () {
   var styles = JSON.parse(document.getElementById('data').textContent);
+  var byId = {}; styles.forEach(function (s, i) { s._n = i + 1; byId[s.id] = s; });
   var grid = document.getElementById('grid');
+  var home = document.getElementById('home');
+  var detail = document.getElementById('detail');
   var search = document.querySelector('.search');
   var chipsBox = document.querySelector('.chips');
   var countEl = document.querySelector('.count');
-  var active = null;
+  var active = null, scrollY = 0;
 
   function el(tag, attrs, children) {
     var n = document.createElement(tag);
@@ -151,104 +177,36 @@ footer { border-top: 2px solid var(--ink); padding-top: 24px; padding-bottom: 48
     return n;
   }
   function list(items) { return el('ul', null, items.map(function (t) { return el('li', { text: t }); })); }
-  function hex(h) { return h.replace('#', ''); }
-
-  function card(s, idx) {
-    var state = { bg: s.palettes[0].pairs_with[0], pal: s.palettes[0].id };
-    var iframe = el('iframe', { title: s.name_zh + ' 示範封面', loading: 'lazy', tabindex: '-1' });
-    var bgBtns = [], palBtns = [];
-    var bgName = el('div', { class: 'pick-name' });
-    var palName = el('div', { class: 'pick-name' });
-    var code = el('code');
-    var copyBtn = el('button', { type: 'button', text: '複製指令' });
-
-    function bgObj() { return s.backgrounds.filter(function (b) { return b.id === state.bg; })[0]; }
-    function palObj() { return s.palettes.filter(function (p) { return p.id === state.pal; })[0]; }
-    function render() {
-      var b = bgObj(), p = palObj();
-      var a = p.accents.concat(p.accents.slice(-1), p.accents.slice(-1));
-      var q = '?bg=' + hex(b.hex) + '&ink=' + hex(p.ink) + '&a1=' + hex(a[0]) + '&a2=' + hex(a[1]) + '&a3=' + hex(a[2]);
-      iframe.src = 'previews/' + s.id + '.html' + q;
-      bgBtns.forEach(function (x) {
-        x.btn.setAttribute('aria-pressed', x.id === state.bg);
-        x.btn.classList.toggle('dim', p.pairs_with.indexOf(x.id) < 0);
-      });
-      palBtns.forEach(function (x) { x.btn.setAttribute('aria-pressed', x.id === state.pal); });
-      bgName.textContent = b.name + ' ' + b.hex;
-      palName.textContent = p.id + ' ' + p.name;
-      code.textContent = '用 art-style-deck 做簡報：風格 ' + s.id + '、背景 ' + b.id + '、配色 ' + p.id;
-    }
-    s.backgrounds.forEach(function (b) {
-      var btn = el('button', { type: 'button', class: 'sw', title: b.name + ' ' + b.hex, 'aria-label': '背景 ' + b.name });
-      btn.style.background = b.hex;
-      btn.addEventListener('click', function () {
-        state.bg = b.id;
-        if (palObj().pairs_with.indexOf(b.id) < 0) {
-          var fit = s.palettes.filter(function (p) { return p.pairs_with.indexOf(b.id) >= 0; })[0];
-          if (fit) state.pal = fit.id;
-        }
-        render();
-      });
-      bgBtns.push({ id: b.id, btn: btn });
-    });
-    s.palettes.forEach(function (p) {
-      var btn = el('button', { type: 'button', class: 'pal', title: p.id + ' ' + p.name, 'aria-label': '配色 ' + p.id + ' ' + p.name });
-      [p.ink].concat(p.accents).forEach(function (c) { var sp = el('span'); sp.style.background = c; btn.appendChild(sp); });
-      btn.addEventListener('click', function () {
-        state.pal = p.id;
-        if (p.pairs_with.indexOf(state.bg) < 0) state.bg = p.pairs_with[0];
-        render();
-      });
-      palBtns.push({ id: p.id, btn: btn });
-    });
-    copyBtn.addEventListener('click', function () {
-      var t = code.textContent;
-      (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () {
-        copyBtn.textContent = '已複製';
-      }, function () {
-        var r = document.createRange(); r.selectNodeContents(code);
-        var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
-        copyBtn.textContent = '請按 ⌘C';
-      });
-      setTimeout(function () { copyBtn.textContent = '複製指令'; }, 1600);
-    });
-
-    var t = s.typography;
-    var spec = el('div', { class: 'spec' }, [
-      el('p', { text: s.definition }),
-      el('h4', { text: '視覺特徵' }), list(s.traits),
-      el('h4', { text: '版面規則' }), list(s.layout),
-      el('h4', { text: '字體' }), el('p', { text: t.display.family + '＋' + t.body.family + '／中文 ' + t.zh.family }),
-      el('h4', { text: '配色限制' }), el('p', { text: '重點色最多 ' + s.color_rules.max_accents + ' 個。' + s.color_rules.notes }),
-      el('h4', { text: '適合' }), el('p', { text: s.best_for.join('、') }),
-      el('h4', { text: '不適合' }), el('p', { text: s.not_for.join('、') }),
-      el('h4', { text: '避免' }), list(s.avoid),
-      el('h4', { text: '出處' }), el('p', null, [el('a', { href: s.source.url, target: '_blank', rel: 'noopener', text: s.source.title })])
-    ]);
-
-    var link = el('a', { href: 'previews/' + s.id + '.html', target: '_blank', rel: 'noopener', 'aria-label': '在新分頁開啟 ' + s.name_zh + ' 示範封面' });
-    var node = el('article', { class: 'card', id: s.id }, [
-      el('div', { class: 'frame' }, [iframe, link]),
-      el('div', { class: 'meta' }, [
-        el('span', { class: 'num', text: String(idx + 1).padStart(2, '0') }),
-        el('h2', { class: 'name', text: s.name_zh }, [el('small', { text: s.name_en })]),
-        el('p', { class: 'summary', text: s.summary }),
-        el('div', { class: 'picker' }, [
-          el('div', { class: 'row' }, [el('span', { class: 'row-label', text: '背景' }), el('div', null, [el('div', { class: 'opts' }, bgBtns.map(function (x) { return x.btn; })), bgName])]),
-          el('div', { class: 'row' }, [el('span', { class: 'row-label', text: '配色' }), el('div', null, [el('div', { class: 'opts' }, palBtns.map(function (x) { return x.btn; })), palName])])
-        ]),
-        el('div', { class: 'cmd' }, [code, copyBtn]),
-        el('details', null, [el('summary', { text: '完整規格' }), spec])
-      ])
-    ]);
-    render();
-    node._search = [s.id, s.name_zh, s.name_en, s.summary].concat(s.keywords, s.best_for).join(' ').toLowerCase();
-    node._keywords = s.keywords;
-    return node;
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function pin(id, width) {
+    return el('a', { 'data-pin-do': 'embedPin', 'data-pin-width': width, href: 'https://www.pinterest.com/pin/' + id + '/' });
+  }
+  function buildPins() { if (window.PinUtils && window.PinUtils.build) window.PinUtils.build(); }
+  function copy(btn, text, label) {
+    function done(msg) { btn.textContent = msg; setTimeout(function () { btn.textContent = label; }, 1600); }
+    if (navigator.clipboard) navigator.clipboard.writeText(text).then(function () { done('已複製'); }, function () { done('複製失敗'); });
+    else done('請手動複製');
   }
 
-  var cards = styles.map(card);
-  cards.forEach(function (c) { grid.appendChild(c); });
+  /* ---------- 首頁 ---------- */
+  var cards = styles.map(function (s) {
+    var cover = el('div', { class: 'cover' });
+    if (s.pins && s.pins.length) cover.appendChild(pin(s.pins[0].id, 'medium'));
+    else cover.appendChild(el('span', { class: 'cover-empty', text: '參考圖整理中' }));
+    var node = el('article', { class: 'card', id: 'card-' + s.id }, [
+      cover,
+      el('div', { class: 'meta' }, [
+        el('span', { class: 'num', text: pad(s._n) }),
+        el('h2', { class: 'name', text: s.name_zh }, [el('small', { text: s.name_en })]),
+        el('p', { class: 'summary', text: s.summary }),
+        el('a', { class: 'card-link', href: '#' + s.id, text: '看參考圖與 prompt →' })
+      ])
+    ]);
+    node._search = [s.id, s.name_zh, s.name_en, s.summary].concat(s.keywords, s.best_for, s.prompt_en || []).join(' ').toLowerCase();
+    node._keywords = s.keywords;
+    grid.appendChild(node);
+    return node;
+  });
 
   var kw = {};
   styles.forEach(function (s) { s.keywords.forEach(function (k) { kw[k] = (kw[k] || 0) + 1; }); });
@@ -262,7 +220,6 @@ footer { border-top: 2px solid var(--ink); padding-top: 24px; padding-bottom: 48
       });
       chipsBox.appendChild(b);
     });
-
   function filter() {
     var q = search.value.trim().toLowerCase(), n = 0;
     cards.forEach(function (c) {
@@ -274,6 +231,118 @@ footer { border-top: 2px solid var(--ink); padding-top: 24px; padding-bottom: 48
   search.addEventListener('input', filter);
   filter();
 
+  /* ---------- 詳細頁 ---------- */
+  function renderDetail(s) {
+    var state = { bg: s.palettes[0].pairs_with[0], pal: s.palettes[0].id };
+    var bgBtns = [], palBtns = [];
+    var bgName = el('div', { class: 'pick-name' }), palName = el('div', { class: 'pick-name' });
+    var code = el('code');
+    var cmdBtn = el('button', { type: 'button', class: 'btn solid', text: '複製指令' });
+    function bgObj() { return s.backgrounds.filter(function (b) { return b.id === state.bg; })[0]; }
+    function palObj() { return s.palettes.filter(function (p) { return p.id === state.pal; })[0]; }
+    function update() {
+      var b = bgObj(), p = palObj();
+      bgBtns.forEach(function (x) { x.btn.setAttribute('aria-pressed', x.id === state.bg); x.btn.classList.toggle('dim', p.pairs_with.indexOf(x.id) < 0); });
+      palBtns.forEach(function (x) { x.btn.setAttribute('aria-pressed', x.id === state.pal); });
+      bgName.textContent = b.name + ' ' + b.hex;
+      palName.textContent = p.id + ' ' + p.name + '｜文字 ' + p.ink + '｜重點 ' + p.accents.join('、');
+      code.textContent = '用 art-style-deck 做簡報：風格 ' + s.id + '、背景 ' + b.id + '、配色 ' + p.id;
+    }
+    s.backgrounds.forEach(function (b) {
+      var btn = el('button', { type: 'button', class: 'sw', title: b.name + ' ' + b.hex, 'aria-label': '背景 ' + b.name });
+      btn.style.background = b.hex;
+      btn.addEventListener('click', function () {
+        state.bg = b.id;
+        if (palObj().pairs_with.indexOf(b.id) < 0) {
+          var fit = s.palettes.filter(function (p) { return p.pairs_with.indexOf(b.id) >= 0; })[0];
+          if (fit) state.pal = fit.id;
+        }
+        update();
+      });
+      bgBtns.push({ id: b.id, btn: btn });
+    });
+    s.palettes.forEach(function (p) {
+      var btn = el('button', { type: 'button', class: 'pal', title: p.id + ' ' + p.name, 'aria-label': '配色 ' + p.id + ' ' + p.name });
+      [p.ink].concat(p.accents).forEach(function (c) { var sp = el('span'); sp.style.background = c; btn.appendChild(sp); });
+      btn.addEventListener('click', function () {
+        state.pal = p.id;
+        if (p.pairs_with.indexOf(state.bg) < 0) state.bg = p.pairs_with[0];
+        update();
+      });
+      palBtns.push({ id: p.id, btn: btn });
+    });
+    cmdBtn.addEventListener('click', function () { copy(cmdBtn, code.textContent, '複製指令'); });
+
+    var promptText = (s.prompt_en || []).map(function (t) { return '- ' + t; }).join('\n');
+    var promptBtn = el('button', { type: 'button', class: 'btn', text: 'Copy prompt' });
+    promptBtn.addEventListener('click', function () { copy(promptBtn, s.name_en + ' style\n' + promptText, 'Copy prompt'); });
+
+    var pins = el('div', { class: 'pins' });
+    if (s.pins && s.pins.length) s.pins.forEach(function (p) { pins.appendChild(pin(p.id, 'medium')); });
+    else pins.appendChild(el('div', { class: 'pins-empty', text: '這個風格的參考圖還在整理中，可以先用右邊的連結到 Pinterest 搜尋。' }));
+
+    var queries = el('div', { class: 'queries' }, (s.pinterest_queries || [s.name_en]).map(function (q) {
+      return el('a', { href: 'https://www.pinterest.com/search/pins/?q=' + encodeURIComponent(q), target: '_blank', rel: 'noopener', text: q + ' ↗' });
+    }));
+
+    var t = s.typography;
+    var spec = el('div', { class: 'spec' }, [
+      el('p', { text: s.definition }),
+      el('h4', { text: '視覺特徵' }), list(s.traits),
+      el('h4', { text: '版面規則' }), list(s.layout),
+      el('h4', { text: '字體' }), el('p', { text: t.display.family + '＋' + t.body.family + '／中文 ' + t.zh.family }),
+      el('h4', { text: '配色限制' }), el('p', { text: '重點色最多 ' + s.color_rules.max_accents + ' 個。' + s.color_rules.notes }),
+      el('h4', { text: '適合' }), el('p', { text: s.best_for.join('、') }),
+      el('h4', { text: '不適合' }), el('p', { text: s.not_for.join('、') }),
+      el('h4', { text: '避免' }), list(s.avoid)
+    ]);
+
+    detail.innerHTML = '';
+    detail.appendChild(el('a', { class: 'back', href: '#', text: '← 全部風格' }));
+    detail.appendChild(el('header', { class: 'd-head' }, [
+      el('span', { class: 'num', text: pad(s._n) }),
+      el('h2', { text: s.name_en }, [el('small', { text: s.name_zh })]),
+      el('p', { text: s.summary })
+    ]));
+    detail.appendChild(el('div', { class: 'd-body' }, [
+      pins,
+      el('aside', { class: 'side' }, [
+        el('div', { class: 'block' }, [el('h3', { text: 'Prompt' }), el('ul', { class: 'prompt' }, (s.prompt_en || []).map(function (x) { return el('li', { text: x }); })), promptBtn]),
+        el('div', { class: 'block' }, [el('h3', { text: '在 Pinterest 找更多' }), queries]),
+        el('div', { class: 'block' }, [
+          el('h3', { text: '背景' }), el('div', { class: 'opts' }, bgBtns.map(function (x) { return x.btn; })), bgName
+        ]),
+        el('div', { class: 'block' }, [
+          el('h3', { text: '配色' }), el('div', { class: 'opts' }, palBtns.map(function (x) { return x.btn; })), palName
+        ]),
+        el('div', { class: 'block' }, [el('h3', { text: '貼給 Claude' }), el('div', { class: 'cmd' }, [code, cmdBtn])]),
+        el('details', null, [el('summary', { text: '完整規格（中文）' }), spec]),
+        el('p', { class: 'credit' }, [document.createTextNode('風格名稱出處：'), el('a', { href: s.source.url, target: '_blank', rel: 'noopener', text: s.source.title })])
+      ])
+    ]));
+    update();
+  }
+
+  function route() {
+    var id = decodeURIComponent(location.hash.slice(1));
+    var s = byId[id];
+    if (s) {
+      if (!home.hidden) scrollY = window.scrollY;
+      renderDetail(s);
+      home.hidden = true; detail.hidden = false;
+      document.title = s.name_en + ' — Art Style Deck';
+      window.scrollTo(0, 0);
+    } else {
+      detail.hidden = true; detail.innerHTML = ''; home.hidden = false;
+      document.title = 'Art Style Deck — 風格目錄';
+      window.scrollTo(0, scrollY);
+    }
+    buildPins();
+  }
+  addEventListener('hashchange', route);
+  window.__pinsReady = function () { buildPins(); };
+  route();
+
   var src = {};
   styles.forEach(function (s) { src[s.source.url] = s.source.title; });
   var box = document.getElementById('sources');
@@ -283,5 +352,6 @@ footer { border-top: 2px solid var(--ink); padding-top: 24px; padding-bottom: 48
   });
 })();
 </script>
+<script async defer src="https://assets.pinterest.com/js/pinit.js" onload="window.__pinsReady && window.__pinsReady()"></script>
 </body>
 </html>

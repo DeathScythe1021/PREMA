@@ -162,5 +162,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "Thick black outlines and hard offset shadows with no blur",
+    "Flat, saturated colour fills",
+    "Chunky bold sans-serif type",
+    "Comic-panel sequences that tell a story step by step",
+    "Speech bubbles, big step numbers and thick arrows",
+    "Direct, loud, playful"
+  ],
+  "pinterest_queries": [
+    "neo brutalism graphic design",
+    "neubrutalism design"
+  ],
+  "pins": [
+    {
+      "id": "600878775330915911",
+      "note": "Neo Brutalism poster, cartoon, hard outlines"
+    },
+    {
+      "id": "1094093303302002942",
+      "note": "dashboard UI, bold blocks, black borders"
+    },
+    {
+      "id": "1072349361292329302",
+      "note": "developer portfolio, flat colors, hard shadows"
+    },
+    {
+      "id": "978195981582851360",
+      "note": "neo-brutalist design system components sheet"
+    },
+    {
+      "id": "946811521680804224",
+      "note": "yellow and purple outlined mobile app"
+    },
+    {
+      "id": "1101200546387948770",
+      "note": "Self Love poster, chunky outlined shapes"
+    }
+  ]
 }

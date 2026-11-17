@@ -159,5 +159,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "The daylight side of academia: sunlit study rooms and poetry",
+    "Cream, linen, beige and soft brown tones",
+    "Elegant thin serif type with small handwritten notes",
+    "Marble statues, dried flowers, books and handwritten letters",
+    "Arched frames, fine rules and generous white space",
+    "Gentle, refined, bookish"
+  ],
+  "pinterest_queries": [
+    "light academia graphic design",
+    "light academia poster"
+  ],
+  "pins": [
+    {
+      "id": "725783296227286338",
+      "note": "Palace of Versailles arched fresco poster"
+    },
+    {
+      "id": "845762005038055407",
+      "note": "Liberty and Progress classical painting poster"
+    },
+    {
+      "id": "949415165174654679",
+      "note": "cream angel statue poster, serif type"
+    },
+    {
+      "id": "624452304598131822",
+      "note": "Prague editorial poster, cream layout"
+    },
+    {
+      "id": "1127166612986675446",
+      "note": "Angel Sin Cielo cherub engraving poster"
+    },
+    {
+      "id": "943504190721725584",
+      "note": "Hourglass poster, classical ruins, cream"
+    }
+  ]
 }

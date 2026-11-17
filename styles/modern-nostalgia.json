@@ -162,5 +162,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "Retro elements from the 70s to 90s, executed with a clean modern layout",
+    "Rounded, chunky retro serif headlines",
+    "Faded earthy and warm colours",
+    "Rainbow arcs and big rounded-corner shapes",
+    "Generous white space with light grain",
+    "Warm, friendly, nostalgic but current"
+  ],
+  "pinterest_queries": [
+    "modern nostalgia graphic design",
+    "modern retro 70s graphic design"
+  ],
+  "pins": [
+    {
+      "id": "565835140694153664",
+      "note": "Grand Leisure poster on retro CRT"
+    },
+    {
+      "id": "1095782153095179142",
+      "note": "1-800 telephone poster, red on blue"
+    },
+    {
+      "id": "508343876725798618",
+      "note": "Where Are You Going, film-still collage"
+    },
+    {
+      "id": "781374604106401217",
+      "note": "Sweet poster, cherries, blackletter on red"
+    },
+    {
+      "id": "294563631903335403",
+      "note": "headphones collage, Choose Your Escape Route"
+    },
+    {
+      "id": "994310423984800487",
+      "note": "Superaudio cassette-label inspired poster"
+    }
+  ]
 }

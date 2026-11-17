@@ -155,5 +155,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "Frosted, semi-transparent glass panels with background blur",
+    "Thin light edges and subtle layered depth",
+    "Vivid colour shapes or photography behind the glass",
+    "Only a few panels, with a clear hierarchy",
+    "Clean modern sans-serif type",
+    "Clear, modern, interface-like"
+  ],
+  "pinterest_queries": [
+    "glassmorphism poster design",
+    "glassmorphism graphic design"
+  ],
+  "pins": [
+    {
+      "id": "438608451218780706",
+      "note": "frosted glass blocks over event typography"
+    },
+    {
+      "id": "766597167847866468",
+      "note": "See Beyond the Surface glass type poster"
+    },
+    {
+      "id": "733875701828733765",
+      "note": "ribbed glass distorting portraits and type"
+    },
+    {
+      "id": "1049549888173793083",
+      "note": "Focus poster, frosted glass over face"
+    },
+    {
+      "id": "1152780835888028135",
+      "note": "summer poster, frosted gradient cards"
+    },
+    {
+      "id": "881438958334569189",
+      "note": "foggy glass blurred figure poster"
+    }
+  ]
 }

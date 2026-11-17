@@ -157,5 +157,43 @@
   "source": {
     "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
     "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
-  }
+  },
+  "prompt_en": [
+    "Objects arranged at strict 90-degree angles, parallel and evenly spaced",
+    "Shot straight from above on a single flat, solid-colour surface",
+    "No overlapping items; every object has its own clear space",
+    "Small numbered labels or tags naming each item",
+    "Neutral, calm palette with one accent like a strip of tape",
+    "Precise, organised, satisfying sense of order"
+  ],
+  "pinterest_queries": [
+    "knolling flat lay",
+    "knolling graphic design"
+  ],
+  "pins": [
+    {
+      "id": "34340015885819869",
+      "note": "white tech gadgets flat lay grid"
+    },
+    {
+      "id": "363243526201371319",
+      "note": "yellow objects knolled on yellow"
+    },
+    {
+      "id": "399764904408004251",
+      "note": "film poster made from knolled props"
+    },
+    {
+      "id": "309833649342548193",
+      "note": "colorful office items on blue"
+    },
+    {
+      "id": "379991287286485554",
+      "note": "teal monochrome tools neatly organized"
+    },
+    {
+      "id": "363243526201371315",
+      "note": "all-red objects knolled on red"
+    }
+  ]
 }

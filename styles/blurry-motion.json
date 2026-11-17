@@ -155,5 +155,43 @@
   "source": {
     "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
     "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
-  }
+  },
+  "prompt_en": [
+    "Long-exposure photography with motion blur and ghosting",
+    "Out-of-focus colour forms and soft gradients",
+    "Very small, precise typography placed at the edges",
+    "Thin or italic serif headlines that stay quiet",
+    "Lots of negative space and fine film grain",
+    "Contemporary art-exhibition poster mood"
+  ],
+  "pinterest_queries": [
+    "blurry motion poster design",
+    "motion blur typography poster"
+  ],
+  "pins": [
+    {
+      "id": "1047649932087082275",
+      "note": "Gone in a Blur subway poster"
+    },
+    {
+      "id": "734438651767229657",
+      "note": "blurred figures, blue projector poster"
+    },
+    {
+      "id": "816840451198766213",
+      "note": "motion-blurred dancers sequence"
+    },
+    {
+      "id": "312789136643545737",
+      "note": "stretched blurred typography in blue"
+    },
+    {
+      "id": "870391065507399771",
+      "note": "poetry festival poster, blurred runner"
+    },
+    {
+      "id": "48202658506302202",
+      "note": "blurred blue exhibition poster, London"
+    }
+  ]
 }

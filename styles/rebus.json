@@ -157,5 +157,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "Words in a sentence replaced by pictures or symbols",
+    "Icons sized to the letter height and sitting on the baseline",
+    "Bold sans-serif type with simple pictograms",
+    "Equation-like layouts using + and =",
+    "High-contrast flat colours",
+    "Playful, clever, puzzle-like"
+  ],
+  "pinterest_queries": [
+    "rebus graphic design",
+    "rebus typography poster"
+  ],
+  "pins": [
+    {
+      "id": "811210951663271368",
+      "note": "type with inline icons replacing words"
+    },
+    {
+      "id": "509399407874517602",
+      "note": "Rebus poster, script type with objects"
+    },
+    {
+      "id": "16747829835742388",
+      "note": "red letter-and-picture equation poster"
+    },
+    {
+      "id": "736127501627798416",
+      "note": "portfolio index with images inline"
+    },
+    {
+      "id": "499688521153632300",
+      "note": "letter-math rebus poster, black on grey"
+    },
+    {
+      "id": "719379740458817704",
+      "note": "vintage engraved picture-word rebus"
+    }
+  ]
 }

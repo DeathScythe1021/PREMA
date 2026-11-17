@@ -156,5 +156,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "Swiss grid discipline deliberately broken (New Wave typography)",
+    "Layered, overlapping and overprinted type",
+    "Text rotated 90 degrees or set at angles",
+    "Extreme contrast in scale, with giant cropped letters",
+    "Photocopy texture and halftone dots",
+    "Black and white plus one fluorescent colour; ordered chaos"
+  ],
+  "pinterest_queries": [
+    "swiss punk design",
+    "wolfgang weingart poster"
+  ],
+  "pins": [
+    {
+      "id": "581386633131317356",
+      "note": "Wolfgang Weingart collage poster"
+    },
+    {
+      "id": "30188259989068200",
+      "note": "fragmented black and red letterforms"
+    },
+    {
+      "id": "475200198154549966",
+      "note": "Didacta Eurodidac layered typographic poster"
+    },
+    {
+      "id": "621637554860436480",
+      "note": "Post Punk poster, stacked red type"
+    },
+    {
+      "id": "1066579124254093854",
+      "note": "The Jam gig poster, red Swiss layout"
+    },
+    {
+      "id": "245586985923261642",
+      "note": "red photo collage with layered type"
+    }
+  ]
 }

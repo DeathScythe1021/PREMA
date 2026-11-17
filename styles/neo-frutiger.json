@@ -159,5 +159,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "Revival of the mid-2000s Frutiger Aero look",
+    "Bright sky blue and grass green, clouds, water and bubbles",
+    "Glossy, glassy surfaces with highlights and reflections",
+    "Rounded humanist sans-serif typography",
+    "Nature and technology shown together, often with aurora or lens flare",
+    "Clean, optimistic, fresh"
+  ],
+  "pinterest_queries": [
+    "frutiger aero",
+    "neo frutiger design"
+  ],
+  "pins": [
+    {
+      "id": "936396947545256127",
+      "note": "glossy Y2K poster, CRT and bubbles"
+    },
+    {
+      "id": "637892734760566656",
+      "note": "Frutiger Aero poster, chrome type, aqua"
+    },
+    {
+      "id": "882705595723155067",
+      "note": "Media Player window portrait poster"
+    },
+    {
+      "id": "921619511265158616",
+      "note": "green aero poster, glass UI widgets"
+    },
+    {
+      "id": "383157880819809023",
+      "note": "aqua water bubbles, glassy gradient"
+    },
+    {
+      "id": "1014717359805396718",
+      "note": "chrome star over green hills sky"
+    }
+  ]
 }

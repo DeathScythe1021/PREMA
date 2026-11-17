@@ -161,5 +161,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "Letters built from repeating geometric modules",
+    "Circles, half-circles, quarter-circles and squares on a grid",
+    "Oversized letterforms filling the composition",
+    "Flat, bold colour fills, often primary colours",
+    "A visible underlying grid",
+    "Structured, bold, modernist"
+  ],
+  "pinterest_queries": [
+    "modular typography poster",
+    "geometric modular type"
+  ],
+  "pins": [
+    {
+      "id": "492722015473304097",
+      "note": "Ben Bos 30 grid-built numerals poster"
+    },
+    {
+      "id": "941182022119829199",
+      "note": "Cosmic Club poster, modular 3D letters"
+    },
+    {
+      "id": "853784041902067624",
+      "note": "yellow festival poster, geometric glyphs"
+    },
+    {
+      "id": "372461831663286606",
+      "note": "Karl Nawrot lecture poster, modular type"
+    },
+    {
+      "id": "21744010691728466",
+      "note": "MODULAR poster, black blocks on yellow"
+    },
+    {
+      "id": "479351954083934613",
+      "note": "Open Call poster, blue pixel-module letters"
+    }
+  ]
 }

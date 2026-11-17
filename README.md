@@ -32,25 +32,26 @@ git -C ~/.claude/skills/art-style-deck pull
 ## 使用流程
 
 1. **內容**：告訴 Claude 主題、聽眾、頁數，有現成資料就一起給。
-2. **風格**：在風格目錄網頁挑一種，或讓 Claude 依內容推薦。
+2. **風格**：到風格目錄網頁看各風格的 Pinterest 參考圖和英文 prompt，挑一種；也可以讓 Claude 依內容推薦。
 3. **背景**：每種風格有 4 個背景色，也可以讓 Claude 推薦。
 4. **配色**：每種風格有 4 組預設配色。要用自己的顏色也可以，但重點色數量不能超過該風格的上限，也要通過對比檢查。
 5. **確認**：Claude 會列出設定摘要，確認後才開始做。
 6. **放圖**：簡報完成後會列出所有圖片版位，你把圖給 Claude，它會放進去並依風格處理。
 
-在網頁上選好風格、背景和配色後，按「複製指令」，貼給 Claude 就能直接開始。
+在網頁的風格頁選好背景和配色後，按「複製指令」，貼給 Claude 就能直接開始。
 
 ## 新增風格
 
 1. 複製 `styles/_template.json` 成 `styles/<風格 id>.json`，填好每個欄位。
-2. 照 `references/preview-spec.md` 做一張示範封面 `styles/previews/<風格 id>.html`。
-3. 執行檢查：
+2. 照 `references/preview-spec.md` 做一張示範封面 `styles/previews/<風格 id>.html`，這是給 Claude 做簡報時參考的，不會放上網站。
+3. 在 JSON 寫好英文 prompt（`prompt_en`）和搜尋關鍵字（`pinterest_queries`），再到 Pinterest 挑 6 張參考圖，把 pin 網址裡的數字 ID 填進 `pins`。
+4. 執行檢查：
 
    ```bash
    python3 scripts/validate_styles.py
    ```
 
-4. commit 並 push 到 `main`，GitHub Actions 會重新檢查並更新網頁。
+5. commit 並 push 到 `main`，GitHub Actions 會重新檢查並更新網頁。
 
 也可以直接跟 Claude 說「幫我在 art-style-deck 新增一個風格」，它會照上面的步驟做。
 
@@ -69,7 +70,7 @@ open _site/index.html
 
 ```
 styles/<id>.json            風格規格
-styles/previews/<id>.html   示範封面
+styles/previews/<id>.html   示範封面（給 Claude 參考，不上網站）
 assets/deck-shell.html      HTML 簡報外殼
 references/                 寫給 Claude 的規範（去 AI 感清單、簡報寫法、封面規格）
 scripts/                    列出風格、檢查配色、驗證資料、產生網頁
@@ -83,5 +84,7 @@ SKILL.md                    skill 本體
 
 - [10 Cool Design Style Names You've Been Searching For](https://www.youtube.com/watch?v=WHYVUPs8L3k)
 - [15 More Design Styles You've Never Heard Of](https://www.youtube.com/watch?v=uZWnxa4mkKA)
+
+網站上的參考圖透過 Pinterest 官方嵌入顯示，圖片沒有下載到這個 repo，版權屬於原作者。
 
 影片只提供風格名稱與參考圖；各風格的定義、配色與示範封面是這個專案另外撰寫的。

@@ -156,5 +156,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "The whole design takes the form of an everyday object",
+    "Tickets, boarding passes, medicine boxes, labels, ID cards, report cards",
+    "Borrowed object details: fields, barcodes, serial numbers, tear lines",
+    "Flat, front-facing layout at true proportions",
+    "Small printed-matter typography",
+    "Clever, concrete, instantly understood"
+  ],
+  "pinterest_queries": [
+    "literal object graphic design",
+    "boarding pass poster design"
+  ],
+  "pins": [
+    {
+      "id": "1074601161079380301",
+      "note": "Earth to Neptune boarding pass print"
+    },
+    {
+      "id": "423479171232350312",
+      "note": "France poster styled as passport stamp"
+    },
+    {
+      "id": "468092955036361096",
+      "note": "poster mimicking airport departure board"
+    },
+    {
+      "id": "448248969178320604",
+      "note": "event ticket design, neon and grey"
+    },
+    {
+      "id": "1122592644607154984",
+      "note": "Human Being poster as product label"
+    },
+    {
+      "id": "1092685928368098761",
+      "note": "poster as OS window and phone"
+    }
+  ]
 }

@@ -77,5 +77,19 @@
         "bg1"
       ]
     }
+  ],
+  "prompt_en": [
+    "English bullet: the defining visual trait",
+    "5–7 bullets total, usable as an image or search prompt"
+  ],
+  "pinterest_queries": [
+    "main search phrase",
+    "fallback search phrase"
+  ],
+  "pins": [
+    {
+      "id": "Pinterest pin 數字 ID",
+      "note": "short English note on what it shows"
+    }
   ]
 }

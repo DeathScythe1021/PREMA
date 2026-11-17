@@ -45,7 +45,7 @@ art-style-deck/
 
 給使用者看兩樣東西：
 
-1. **風格目錄網頁**：`config.json` 的 `gallery_url`。網頁上每種風格都有示範封面，可以即時切換配色，看圖比看文字準確。如果網址還沒設定，就執行 `python3 scripts/build_site.py --out <簡報資料夾>/_gallery`，再用 `open <簡報資料夾>/_gallery/index.html`（macOS）幫使用者打開；不能執行 `open` 時，告訴使用者檔案位置。
+1. **風格目錄網頁**：`config.json` 的 `gallery_url`。網頁上每種風格都有 Pinterest 參考圖、英文 prompt 和配色，看圖比看文字準確。如果網址還沒設定，就執行 `python3 scripts/build_site.py --out <簡報資料夾>/_gallery`，再用 `open <簡報資料夾>/_gallery/index.html`（macOS）幫使用者打開；不能執行 `open` 時，告訴使用者檔案位置。
 2. **文字清單**：每種風格一行，標出你依內容推薦的 2–3 種，並用一句話說明為什麼適合。
 
 風格之間差異很大，不要混搭。使用者說「Googie 加一點 ASCII」的時候，說明混搭會讓兩種風格都失去辨識度，請他選一個主風格；另一種的元素最多只能當單頁的點綴。
@@ -109,5 +109,6 @@ art-style-deck/
 
 1. 複製 `styles/_template.json` 成 `styles/<id>.json`，照格式填寫。定義要具體到「看到畫面就能判斷是不是這個風格」，並和現有風格有明顯差別；太接近的話，改成在現有風格裡多一組配色。
 2. 照 `references/preview-spec.md` 寫一張 `styles/previews/<id>.html` 示範封面，用無頭 Chrome 截圖確認。
-3. 執行 `python3 scripts/validate_styles.py`，它會檢查欄位、示範封面和每組配色的對比。
-4. 通過後 commit 並 push 到 GitHub（push 前先問使用者），網頁會自動更新。
+3. 寫 `prompt_en`（5–7 條英文重點，描述這個風格的視覺特徵）和 `pinterest_queries`（2 個搜尋關鍵字），再到 Pinterest 挑 6 張代表性的作品，把 pin 的數字 ID 寫進 `pins`。只存 ID，網站會用 Pinterest 官方嵌入顯示，不下載圖片。
+4. 執行 `python3 scripts/validate_styles.py`，它會檢查欄位、示範封面、pin ID 和每組配色的對比。
+5. 通過後 commit 並 push 到 GitHub（push 前先問使用者），網頁會自動更新。

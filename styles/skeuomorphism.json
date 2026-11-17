@@ -157,5 +157,43 @@
   "source": {
     "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
     "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
-  }
+  },
+  "prompt_en": [
+    "Digital surfaces imitating real materials: leather, wood, paper, metal",
+    "Stitched edges, embossed text and realistic lighting from one source",
+    "Glossy capsule buttons, knobs and dials with depth",
+    "Real-object metaphors: notebooks, sticky notes, corkboards, dashboards",
+    "Soft shadows, highlights and visible thickness",
+    "Tactile, familiar, early-iPhone feel"
+  ],
+  "pinterest_queries": [
+    "skeuomorphism design",
+    "skeuomorphic ui"
+  ],
+  "pins": [
+    {
+      "id": "778419116886847816",
+      "note": "tactile knobs and switches interface"
+    },
+    {
+      "id": "63191201009335161",
+      "note": "Winamp skin, brushed metal GUI"
+    },
+    {
+      "id": "823806956894015753",
+      "note": "retro recorder device UI, Ultra poster"
+    },
+    {
+      "id": "1085860160161529798",
+      "note": "leather and paper task app UI"
+    },
+    {
+      "id": "654147914657267545",
+      "note": "podcast app with physical buttons"
+    },
+    {
+      "id": "95138610853368104",
+      "note": "iBooks-style wooden bookshelf UI"
+    }
+  ]
 }

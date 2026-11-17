@@ -159,5 +159,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "Old libraries, candlelight, leather-bound books and Gothic stone",
+    "Deep browns, forest green, burgundy and aged gold",
+    "Classical serif type, italics and Roman numerals",
+    "Engravings, classical paintings and wax seals",
+    "Book-page layouts with running heads and ornamental rules",
+    "Moody, scholarly, slightly mysterious"
+  ],
+  "pinterest_queries": [
+    "dark academia graphic design",
+    "dark academia poster design"
+  ],
+  "pins": [
+    {
+      "id": "577586721000354320",
+      "note": "Vanity poster, baroque hands, rosary"
+    },
+    {
+      "id": "764697211765411926",
+      "note": "apple engraving poster, ornate serif"
+    },
+    {
+      "id": "723109283960797051",
+      "note": "editorial poster, classical figures, serif"
+    },
+    {
+      "id": "662099582754892223",
+      "note": "gilded sun, blackletter Latin poster"
+    },
+    {
+      "id": "1004443523131122251",
+      "note": "dark florals with large serif type"
+    },
+    {
+      "id": "1023513452835764699",
+      "note": "museum poster, classical paintings, black"
+    }
+  ]
 }

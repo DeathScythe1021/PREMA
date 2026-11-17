@@ -153,5 +153,43 @@
   "source": {
     "title": "Kittl — 10 Cool Design Style Names You've Been Searching For",
     "url": "https://www.youtube.com/watch?v=WHYVUPs8L3k"
-  }
+  },
+  "prompt_en": [
+    "Images and lettering built entirely from keyboard characters",
+    "Monospaced type aligned to a strict character grid",
+    "Box-drawing frames, shading blocks (░▒▓) and command-line prompts",
+    "Terminal colours: green or amber on black, or black on paper",
+    "Scanlines and a blinking block cursor",
+    "Low-tech, precise, hacker aesthetic"
+  ],
+  "pinterest_queries": [
+    "ascii art graphic design",
+    "ascii art poster"
+  ],
+  "pins": [
+    {
+      "id": "1053772012826325933",
+      "note": "Metamorphosis poster, ASCII leaf figure"
+    },
+    {
+      "id": "843862048965813958",
+      "note": "ASCII-rendered portraits editorial layout"
+    },
+    {
+      "id": "886646245400727565",
+      "note": "ASCII horse rider editorial spread"
+    },
+    {
+      "id": "735353445448976059",
+      "note": "Resolution poster, bird dissolving into characters"
+    },
+    {
+      "id": "365424957246131408",
+      "note": "Korean poster with ASCII gradient"
+    },
+    {
+      "id": "1138003399628234397",
+      "note": "ASCII art orchid poster"
+    }
+  ]
 }

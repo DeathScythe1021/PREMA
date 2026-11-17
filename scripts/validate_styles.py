@@ -14,7 +14,7 @@ STYLES = os.path.join(ROOT, "styles")
 
 REQUIRED = ["id", "name_zh", "name_en", "source", "summary", "definition", "keywords",
             "best_for", "not_for", "traits", "layout", "motifs", "typography", "imagery",
-            "placeholder", "avoid", "color_rules", "backgrounds", "palettes"]
+            "placeholder", "avoid", "color_rules", "backgrounds", "palettes", "prompt_en", "pinterest_queries"]
 
 
 def load_styles():
@@ -47,6 +47,12 @@ def validate(name, s):
     bgs = {b["id"]: b["hex"] for b in s["backgrounds"]}
     if len(bgs) != 4:
         warns.append(f"背景色建議 4 個，目前 {len(bgs)} 個")
+    pins = s.get("pins", [])
+    for p in pins:
+        if not re.fullmatch(r"\d{6,25}", str(p.get("id", ""))):
+            errs.append(f"pins 裡的 id 必須是 Pinterest 的數字 ID：{p.get('id')}")
+    if len(pins) < 6:
+        warns.append(f"Pinterest 參考圖建議 6 張，目前 {len(pins)} 張")
     if len(s["palettes"]) != 4:
         warns.append(f"配色建議 4 組，目前 {len(s['palettes'])} 組")
     for p in s["palettes"]:

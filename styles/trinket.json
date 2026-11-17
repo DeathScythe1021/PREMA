@@ -162,5 +162,43 @@
   "source": {
     "title": "Kittl — 15 More Design Styles You've Never Heard Of",
     "url": "https://www.youtube.com/watch?v=uZWnxa4mkKA"
-  }
+  },
+  "prompt_en": [
+    "Small collectible objects shown like an open trinket box",
+    "Enamel pins, keychain charms, beads, stickers and tiny toys",
+    "Stickers with thick white borders and soft glossy highlights",
+    "Loosely scattered but balanced arrangement",
+    "Candy colours and rounded, friendly type",
+    "Cute, detailed, collectable"
+  ],
+  "pinterest_queries": [
+    "trinket design graphic",
+    "enamel pin sticker collage design"
+  ],
+  "pins": [
+    {
+      "id": "7810999349546868",
+      "note": "scattered keepsakes poster, cards and dice"
+    },
+    {
+      "id": "716142778265493556",
+      "note": "Goods pop-up poster, small curios grid"
+    },
+    {
+      "id": "660762576624832567",
+      "note": "colorful trinkets scattered on black"
+    },
+    {
+      "id": "743305113539814830",
+      "note": "cut-out household objects collage poster"
+    },
+    {
+      "id": "1136244180987789297",
+      "note": "keychain and luggage tag poster"
+    },
+    {
+      "id": "254312710197852777",
+      "note": "Object of poster, chrome trinkets, blue"
+    }
+  ]
 }
