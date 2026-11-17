@@ -4,7 +4,7 @@ PREMA 是一個設計風格靈感庫，收錄定義明確的美術風格。每�
 
 這個 repo 同時是一個 Claude skill：選好風格之後，可以請 Claude 照那套規則做出 HTML 簡報。網站和 skill 讀的是同一份風格資料。
 
-- 風格目錄：https://deathscythe1021.github.io/art-style-deck-skill/
+- 風格目錄：https://deathscythe1021.github.io/PREMA/
 - 目前收錄：25 種風格
 
 ## 為什麼要先定風格
@@ -26,7 +26,7 @@ PREMA 是一個設計風格靈感庫，收錄定義明確的美術風格。每�
 把這個 repo clone 到 Claude Code 的個人 skills 資料夾：
 
 ```bash
-git clone https://github.com/DeathScythe1021/art-style-deck-skill.git ~/.claude/skills/art-style-deck
+git clone https://github.com/DeathScythe1021/PREMA.git ~/.claude/skills/art-style-deck
 ```
 
 之後在 Claude Code 說「幫我做一份簡報」或「用 Postage 風格做投影片」，Claude 就會啟用這個 skill。
