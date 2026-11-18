@@ -1,0 +1,210 @@
+{
+  "id": "risograph",
+  "name_zh": "孔版印刷",
+  "name_en": "Risograph",
+  "summary": "孔版印刷機的印痕：兩三色螢光油墨分版疊印、套色微微錯位、色塊帶顆粒，像獨立出版的小誌與海報。",
+  "definition": "Risograph 是日本理想科學工業（RISO）的數位孔版印刷機，原本給學校和辦公室大量印講義，後來被獨立出版社、小誌和插畫家拿來印海報與書。它一次只印一個顏色，每色一個油墨滾筒，所以作品多半只有兩三色；油墨半透明，疊在一起會變出新顏色，套色常差個一兩公釐，大色塊會有顆粒。轉成簡報時，每個元素都屬於某一個色版，重疊處直接疊色，刻意留下錯位與顆粒。它和瑞士龐克不同：瑞士龐克是黑白影印加一色、靠打破網格製造張力；孔版印刷不靠黑色，靠兩個彩色版互疊，版面可以很安靜。",
+  "keywords": [
+    "手作感",
+    "獨立出版",
+    "螢光",
+    "不完美"
+  ],
+  "categories": [
+    "Contemporary",
+    "Print"
+  ],
+  "best_for": [
+    "插畫、出版與文創品牌提案",
+    "活動、市集與講座海報",
+    "設計工作坊與社群分享",
+    "小型品牌的年度回顧"
+  ],
+  "not_for": [
+    "需要精準品牌色的企業簡報",
+    "資料密集的財務報表"
+  ],
+  "traits": [
+    "只有兩三個顏色，多半是螢光粉、藍、黃這類孔版油墨",
+    "半透明疊印，兩色重疊處變出第三色",
+    "套色錯位：同一個形狀的兩個色版差幾公釐",
+    "大色塊有顆粒、漏墨與不均勻",
+    "照片轉成單色網點",
+    "紙張是再生紙或色紙，看得到纖維"
+  ],
+  "layout": [
+    "每個元素先決定屬於哪一個色版：最多兩個彩色版，加一個深色字版",
+    "主視覺用大塊幾何色塊或大字，至少有一處兩色重疊",
+    "大標題可以兩個色版各印一次，錯開 6–12px",
+    "小字與資訊只印深色字版，不錯位，維持可讀",
+    "角落放對位十字、裁切線或油墨色票，像印刷廠的打樣"
+  ],
+  "motifs": [
+    "對位十字",
+    "兩色疊印的圓與方塊",
+    "單色網點照片",
+    "裁切線",
+    "油墨色票小方塊"
+  ],
+  "typography": {
+    "display": {
+      "family": "Bowlby One",
+      "weights": "400",
+      "role": "英文大標與數字；粗胖的字在錯位疊印時最好看"
+    },
+    "body": {
+      "family": "DM Mono",
+      "weights": "400、500",
+      "role": "說明、版次與印刷資訊，像小誌的版權頁"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文標題用 900，內文用 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Mono:wght@400;500&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "大標要粗，細字錯位時會糊掉",
+      "錯位只用在大標與色塊，內文永遠清楚對齊",
+      "英文副標用等寬字全大寫，加一點字距"
+    ]
+  },
+  "imagery": [
+    "照片轉成單色網點，用其中一個色版的顏色印",
+    "高對比、主體清楚的照片最好，細節太多會糊",
+    "插畫用平塗加顆粒筆刷，邊緣不要太乾淨"
+  ],
+  "placeholder": "一塊藍色網點方塊，上面錯開疊一層粉紅色塊，角落有對位十字，中間寫「照片｜單色網點 4:5」",
+  "avoid": [
+    "漸層與光澤（孔版印刷印不出平滑漸層）",
+    "超過三個顏色",
+    "黑白影印加一個螢光色、字疊字打破網格（那是瑞士龐克）",
+    "乾淨無瑕的數位平塗，看不到顆粒與錯位",
+    "細線條與小字疊印"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "兩個重點色各是一個色版，重疊處用 multiply 疊出第三色，不另外加色；文字色當成深色油墨版，只印字與小記號。"
+  },
+  "backgrounds": [
+    {
+      "id": "paper",
+      "name": "再生紙",
+      "hex": "#F2EDE2"
+    },
+    {
+      "id": "white",
+      "name": "白模造紙",
+      "hex": "#FAF8F3"
+    },
+    {
+      "id": "yellow",
+      "name": "淺黃色紙",
+      "hex": "#F4EBC8"
+    },
+    {
+      "id": "blue",
+      "name": "淺藍色紙",
+      "hex": "#DCE6EE"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "R1",
+      "name": "螢光粉＋藍",
+      "ink": "#1A2456",
+      "accents": [
+        "#F5338F",
+        "#1E78C8"
+      ],
+      "pairs_with": [
+        "paper",
+        "white",
+        "yellow"
+      ]
+    },
+    {
+      "id": "R2",
+      "name": "橘＋綠",
+      "ink": "#14224A",
+      "accents": [
+        "#FF6C2F",
+        "#00A95C"
+      ],
+      "pairs_with": [
+        "paper",
+        "white",
+        "yellow"
+      ]
+    },
+    {
+      "id": "R3",
+      "name": "青綠＋珊瑚紅",
+      "ink": "#0F2B30",
+      "accents": [
+        "#00838A",
+        "#FF665E"
+      ],
+      "pairs_with": [
+        "paper",
+        "white",
+        "yellow"
+      ]
+    },
+    {
+      "id": "R4",
+      "name": "紫＋黃",
+      "ink": "#2E1F5A",
+      "accents": [
+        "#765BA7",
+        "#FFE800"
+      ],
+      "pairs_with": [
+        "blue",
+        "white"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 20 More Design Styles You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=xpLUouSZHi8&t=160s"
+  },
+  "prompt_en": [
+    "Risograph print look with two or three translucent spot inks such as fluorescent pink, blue and yellow",
+    "Overprinted shapes where overlapping inks create a third colour",
+    "Slight misregistration between colour layers",
+    "Grainy, uneven ink coverage on large flat areas",
+    "Halftone photos printed in a single ink",
+    "Recycled or coloured paper stock; indie zine and print studio mood"
+  ],
+  "pinterest_queries": [
+    "risograph poster",
+    "riso print two color"
+  ],
+  "pins": [
+    {
+      "id": "1016687684624634437",
+      "note": "A3 risograph flower print in fluo pink"
+    },
+    {
+      "id": "493777546653257545",
+      "note": "pink and red risograph poster, A4"
+    },
+    {
+      "id": "539657967844930866",
+      "note": "Berlin Moon A3 risograph print"
+    },
+    {
+      "id": "98586679344059828",
+      "note": "sardine can label, three-ink riso print"
+    },
+    {
+      "id": "775182154635920416",
+      "note": "pink and blue riso ink illustration print"
+    },
+    {
+      "id": "666814288626297200",
+      "note": "three-colour riso print in blue, yellow and fluo pink"
+    }
+  ]
+}

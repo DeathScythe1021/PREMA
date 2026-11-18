@@ -1,0 +1,204 @@
+{
+  "id": "blueprint",
+  "name_zh": "藍圖",
+  "name_en": "Blueprint",
+  "source": {
+    "title": "Kittl — 20 More Design Styles You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=xpLUouSZHi8&t=620s"
+  },
+  "summary": "工程藍曬圖的視覺語言：深藍底、白色細線、方格紙、尺寸標註與引線說明，把東西拆開來講清楚。",
+  "definition": "藍圖來自 19 世紀的藍曬法（cyanotype），工程師和建築師用它複製技術圖面：整張深藍，線條是白的。後來的重氮複印（白圖）則反過來，是白底藍線。轉成設計風格時，畫面是一張工程圖：細格線打底，物件拆成零件或只畫外框，用細引線、端點小圓圈和尺寸線標出每個部分，右下角有圖框標題欄。字用等寬字，整體安靜、精準、一看就懂。",
+  "keywords": [
+    "精準",
+    "理性",
+    "拆解",
+    "可信"
+  ],
+  "categories": [
+    "Graphic",
+    "Contemporary"
+  ],
+  "best_for": [
+    "產品介紹與功能拆解",
+    "系統架構、流程與技術說明",
+    "建築、工業設計與工程提案",
+    "菜單、食譜、配方這類「組成」說明"
+  ],
+  "not_for": [
+    "感性的品牌故事",
+    "以人像照片為主的內容",
+    "需要溫暖手作感的主題"
+  ],
+  "traits": [
+    "深藍底配白色或淺藍細線（或反過來的白底藍線）",
+    "細方格紙打底，主格線和次格線兩種粗細",
+    "物件拆成零件或只畫外框線，不填色",
+    "細引線加端點小圓圈，連到等寬字的說明",
+    "尺寸線、箭頭、中心十字線等製圖符號",
+    "右下角的圖框標題欄：圖名、圖號、比例、日期"
+  ],
+  "layout": [
+    "整頁當一張圖紙：外圍一圈圖框線，右下角放標題欄",
+    "主標題放進標題欄或圖框上緣，不另做大色塊",
+    "一頁一個主物件或一張系統圖，周圍用引線標註，標註文字靠網格對齊",
+    "線條只走水平、垂直和 45 度，線寬 1～2 px，次要資訊用虛線",
+    "編號用 A-01、REV.02、SHEET 01/12 這類圖號格式"
+  ],
+  "motifs": [
+    "細方格紙",
+    "尺寸線與箭頭",
+    "引線與端點小圓圈",
+    "中心十字線與角落對位記號",
+    "圖框標題欄",
+    "爆炸圖（拆開的零件沿虛線排開）"
+  ],
+  "typography": {
+    "display": {
+      "family": "Space Mono",
+      "weights": "400、700",
+      "role": "英文標題與圖號，全大寫"
+    },
+    "body": {
+      "family": "IBM Plex Mono",
+      "weights": "400、500",
+      "role": "標註、說明與標題欄欄位"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "400、700",
+      "role": "中文標題用 700，標註用 400"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;700&display=swap",
+    "rules": [
+      "西文只用等寬字",
+      "標註文字全大寫、字距 0.08em，字級統一",
+      "數字與單位寫清楚，例如 1:20、120 MM",
+      "中文標題不要比圖本身搶眼，放在標題欄或圖框邊"
+    ]
+  },
+  "imagery": [
+    "線稿、剖面圖、平面圖、爆炸圖",
+    "照片要用的話，轉成單色藍並降低對比，像曬圖",
+    "物件去背後只留外框線最好"
+  ],
+  "placeholder": "一個白色虛線矩形，四角有十字對位記號，上方和左側各一條尺寸線，中間用等寬字寫「產品線稿｜4:3」",
+  "avoid": [
+    "填色色塊與漸層",
+    "曲線隨意、手繪抖動的線條",
+    "陰影、圓角卡片與立體效果",
+    "超過兩種線條顏色"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "主線條用文字色；第一個重點色畫格線和次要線，第二個只用在修訂記號或一處強調。"
+  },
+  "backgrounds": [
+    {
+      "id": "cyanotype",
+      "name": "藍曬",
+      "hex": "#1E4F8F"
+    },
+    {
+      "id": "navy",
+      "name": "深藍圖紙",
+      "hex": "#16243F"
+    },
+    {
+      "id": "whiteprint",
+      "name": "白圖",
+      "hex": "#EEF1EC"
+    },
+    {
+      "id": "forest",
+      "name": "森林綠圖紙",
+      "hex": "#1F3B2D"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "B1",
+      "name": "經典藍曬",
+      "ink": "#F3F6F8",
+      "accents": [
+        "#A8CBEA",
+        "#F4D35E"
+      ],
+      "pairs_with": [
+        "cyanotype",
+        "navy"
+      ]
+    },
+    {
+      "id": "B2",
+      "name": "白圖紅筆",
+      "ink": "#1E3F73",
+      "accents": [
+        "#C0392B"
+      ],
+      "pairs_with": [
+        "whiteprint"
+      ]
+    },
+    {
+      "id": "B3",
+      "name": "深藍描圖",
+      "ink": "#F2EBDD",
+      "accents": [
+        "#8FB8DE"
+      ],
+      "pairs_with": [
+        "navy"
+      ]
+    },
+    {
+      "id": "B4",
+      "name": "森林圖紙",
+      "ink": "#EEF1EC",
+      "accents": [
+        "#A9C8A0"
+      ],
+      "pairs_with": [
+        "forest"
+      ]
+    }
+  ],
+  "prompt_en": [
+    "Cyanotype blueprint: thin white linework on deep Prussian blue",
+    "Fine graph-paper grid with major and minor lines",
+    "Deconstructed or exploded-view object drawn as outlines only, no fills",
+    "Leader lines with small anchor circles, dimension lines, arrows and crosshairs",
+    "Monospaced uppercase labels and a title block in the bottom-right corner",
+    "Precise, calm, technical"
+  ],
+  "pinterest_queries": [
+    "blueprint poster design",
+    "blueprint graphic design",
+    "blueprint technical illustration poster"
+  ],
+  "pins": [
+    {
+      "id": "620441286153070648",
+      "note": "blueprint art of an espresso coffee maker"
+    },
+    {
+      "id": "839076974313694492",
+      "note": "coffee mill blueprint drawing"
+    },
+    {
+      "id": "869476271784699257",
+      "note": "vintage camera blueprint art"
+    },
+    {
+      "id": "4222193394826124",
+      "note": "spacecraft blueprint, detailed mechanical drawing"
+    },
+    {
+      "id": "148196643976253359",
+      "note": "Pantheon architectural blueprint poster, plan and section"
+    },
+    {
+      "id": "958914945640412429",
+      "note": "espresso machine patent print in blueprint style"
+    }
+  ]
+}

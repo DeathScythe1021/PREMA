@@ -1,0 +1,209 @@
+{
+  "id": "cottagecore",
+  "name_zh": "田園核",
+  "name_en": "Cottagecore",
+  "summary": "鄉間小屋的手作日常：格紋桌布、野花、果醬罐標籤、刺繡針腳和花邊，奶油、鼠尾草綠與草莓紅的溫暖田園感。",
+  "definition": "Cottagecore 大約在 2018 年從 Tumblr 流行起來，嚮往的是慢慢過日子的鄉間生活：烤麵包、採野花、做果醬、縫縫補補。畫面裡有紅白格紋桌布、碎花布、蕾絲杯墊、手寫標籤和壓花，顏色是奶油黃、鼠尾草綠、草莓紅。轉成簡報時，版面像一張手作標籤或食譜卡，邊框是刺繡針腳和波浪花邊，標題用溫和的手寫感字體。",
+  "keywords": [
+    "溫暖",
+    "手作",
+    "慢活",
+    "鄉間"
+  ],
+  "categories": [
+    "Folk",
+    "Illustrative"
+  ],
+  "best_for": [
+    "手作、烘焙與小農品牌",
+    "市集與親子活動",
+    "生活風格與園藝分享",
+    "社區營造與地方提案"
+  ],
+  "not_for": [
+    "科技產品與數據報告",
+    "講求俐落、冷靜的企業簡報"
+  ],
+  "traits": [
+    "紅白或綠白格紋布",
+    "波浪花邊與蕾絲杯墊的邊緣",
+    "刺繡平針縫的虛線框",
+    "手寫字標籤與吊牌",
+    "野花、草莓、蘑菇等小圖案",
+    "奶油、鼠尾草綠、草莓紅的柔和配色"
+  ],
+  "layout": [
+    "主要內容放在一張手作標籤或食譜卡上，邊緣做成波浪花邊",
+    "版面四周用平針縫虛線圍一圈，像繡在布上",
+    "格紋布只占一塊，例如畫面底部的桌布或罐蓋，不要滿版",
+    "照片放在花邊圓框或橢圓框裡，可以稍微傾斜",
+    "標籤、日期、頁碼用手寫字，像綁在罐子上的吊牌"
+  ],
+  "motifs": [
+    "格紋布",
+    "波浪花邊",
+    "平針縫虛線",
+    "五瓣小花",
+    "葉片枝條",
+    "吊牌與麻繩"
+  ],
+  "typography": {
+    "display": {
+      "family": "Sorts Mill Goudy",
+      "weights": "400、italic",
+      "role": "英文標題與數字，像老種子包與果醬標籤上的字"
+    },
+    "body": {
+      "family": "Caveat",
+      "weights": "400、700",
+      "role": "手寫標籤、吊牌、註記"
+    },
+    "zh": {
+      "family": "LXGW WenKai TC",
+      "weights": "400、700",
+      "role": "中文標題用 700，內文用 400，帶一點手寫溫度"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&family=Caveat:wght@400;700&family=LXGW+WenKai+TC:wght@400;700&display=swap",
+    "rules": [
+      "手寫字只用在短標籤，長段落用中文字體",
+      "英文副標用斜體襯線，不要用粗黑體",
+      "字不要全部大寫，維持溫和的語氣"
+    ]
+  },
+  "imagery": [
+    "野花田、窗台盆栽、剛出爐的麵包、果醬罐、竹籃、針線",
+    "自然光、暖色調、略帶柔焦",
+    "照片放在花邊框或橢圓框裡，周圍可以加小花"
+  ],
+  "placeholder": "一個波浪花邊的橢圓框，像蕾絲杯墊，中間寫「野花照片｜4:5」，旁邊綁一張手寫吊牌",
+  "avoid": [
+    "大理石雕像、古典書頁、拱窗這類學院元素（那是明亮學院）",
+    "冷色、霓虹與金屬質感",
+    "幾何無襯線粗體字",
+    "整面格紋或碎花讓字看不清楚",
+    "寫實的動物或人物插畫"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "一個暖色當格紋與小花（草莓紅或玫瑰粉），一個綠色當葉片與針腳。"
+  },
+  "backgrounds": [
+    {
+      "id": "cream",
+      "name": "鮮奶油",
+      "hex": "#F6EEDC"
+    },
+    {
+      "id": "butter",
+      "name": "奶油黃",
+      "hex": "#F3E3B5"
+    },
+    {
+      "id": "sage",
+      "name": "鼠尾草",
+      "hex": "#DCE3CC"
+    },
+    {
+      "id": "dusk",
+      "name": "黃昏木屋",
+      "hex": "#3B3A2B"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "C1",
+      "name": "草莓果醬",
+      "ink": "#3A2E22",
+      "accents": [
+        "#B8372F",
+        "#5E7D4A"
+      ],
+      "pairs_with": [
+        "cream",
+        "butter",
+        "sage"
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "玫瑰花園",
+      "ink": "#3A2E22",
+      "accents": [
+        "#A94A5E",
+        "#6E6A2E"
+      ],
+      "pairs_with": [
+        "cream",
+        "sage"
+      ]
+    },
+    {
+      "id": "C3",
+      "name": "藍格野餐",
+      "ink": "#2E3A2A",
+      "accents": [
+        "#4E6FA0",
+        "#B8372F"
+      ],
+      "pairs_with": [
+        "cream",
+        "butter"
+      ]
+    },
+    {
+      "id": "C4",
+      "name": "燭光廚房",
+      "ink": "#F6EEDC",
+      "accents": [
+        "#E7A0A0",
+        "#C9D59A"
+      ],
+      "pairs_with": [
+        "dusk"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 20 More Design Styles You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=xpLUouSZHi8&t=390s"
+  },
+  "prompt_en": [
+    "Cottagecore aesthetic, romanticised rural cottage life and handmade crafts",
+    "Red-and-white gingham cloth, scalloped lace doily edges and running-stitch borders",
+    "Wildflowers, strawberries, mushrooms and leafy sprigs as small motifs",
+    "Hand-written jam-jar labels and paper tags tied with twine",
+    "Soft old-style serif and handwriting, never bold geometric sans",
+    "Cream, butter yellow, sage green and strawberry red, warm natural light"
+  ],
+  "pinterest_queries": [
+    "cottagecore poster design",
+    "cottagecore branding label",
+    "cottagecore graphic design illustration"
+  ],
+  "pins": [
+    {
+      "id": "1016617315921834159",
+      "note": "cottagecore brand identity for a homestead studio"
+    },
+    {
+      "id": "4591138469946849280",
+      "note": "cottagecore jam jar label sticker set, watercolor"
+    },
+    {
+      "id": "670473463280981294",
+      "note": "English countryside cottage poster, flowers and white house"
+    },
+    {
+      "id": "889460995169078921",
+      "note": "cottagecore clipart frames and poster set"
+    },
+    {
+      "id": "229824387224659047",
+      "note": "vintage mushroom botanical print set"
+    },
+    {
+      "id": "55591376644590212",
+      "note": "floral cottagecore alphabet letter S"
+    }
+  ]
+}

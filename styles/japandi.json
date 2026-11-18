@@ -1,0 +1,208 @@
+{
+  "id": "japandi",
+  "name_zh": "日式北歐",
+  "name_en": "Japandi",
+  "source": {
+    "title": "Kittl — 5 Weird Design Styles That Go Together Perfectly",
+    "url": "https://www.youtube.com/watch?v=rKx7AsY3HTk&t=30s"
+  },
+  "summary": "日式簡約加上北歐家具的實用與溫度：燕麥、橡木、鼠尾草綠，乾淨直線、整齊網格、大量留白。",
+  "definition": "Japandi 是 Japanese 和 Scandinavian 的合成字，原本是室內設計用語：日式的克制、留白與「間」，配上北歐的機能與居家溫暖感，常見淺色木頭、亞麻、紙燈、低矮家具。轉成簡報時，版面是乾淨的直線與整齊網格，字細而寬鬆，色彩是燕麥、白橡、鼠尾草綠，偶爾一個黑點或一道細線當重點。和侘寂不同，它不追求殘缺與時間痕跡，而是整潔、平衡、好用。",
+  "keywords": [
+    "整潔",
+    "溫暖",
+    "平衡",
+    "居家"
+  ],
+  "categories": [
+    "Minimal",
+    "Contemporary"
+  ],
+  "best_for": [
+    "家具、居家與室內設計品牌",
+    "生活風格與選物店",
+    "建築與空間提案",
+    "保養品、茶飲等安靜的品牌"
+  ],
+  "not_for": [
+    "熱鬧的促銷活動",
+    "資訊密集的數據報告",
+    "需要強烈衝擊感的發表會"
+  ],
+  "traits": [
+    "燕麥、白橡、亞麻等溫暖中性色，加一點鼠尾草綠",
+    "乾淨的直線與整齊網格，邊界清楚",
+    "細到中等字重的無襯線字，字距寬鬆",
+    "木紋直條、拱形、圓形等家具與建築的簡單形狀",
+    "一個小黑點或一道細線當視覺重心",
+    "大量留白，但構圖平衡、不歪斜"
+  ],
+  "layout": [
+    "用整齊的網格分區，左右或上下的比例清楚（例如 1:2）",
+    "主體可以放在中線兩側保持平衡，不刻意不對稱",
+    "一條橫向細線像層架或矮櫃，把畫面分成上下兩段",
+    "照片放進拱形或圓角矩形框，像窗或鏡子",
+    "文字少，標題一行講完，其他資訊縮小靠邊"
+  ],
+  "motifs": [
+    "木紋直條（像格柵牆面）",
+    "拱形窗框",
+    "圓形紙燈",
+    "橫向細線層架",
+    "單一黑點",
+    "亞麻布紋理"
+  ],
+  "typography": {
+    "display": {
+      "family": "Jost",
+      "weights": "300、400",
+      "role": "英文標題，細而寬，字距 0.08em 以上"
+    },
+    "body": {
+      "family": "Jost",
+      "weights": "400、500",
+      "role": "英文內文與小標，小標可以全大寫"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "300、400",
+      "role": "中文標題用 300，內文用 400"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Noto+Sans+TC:wght@300;400&display=swap",
+    "rules": [
+      "只用無襯線字，不用毛筆字或襯線字（那是侘寂的做法）",
+      "字重偏細，最粗到 500",
+      "中文標題字距 0.1em 左右，行距 1.6 以上",
+      "文字一律橫排、靠網格對齊"
+    ]
+  },
+  "imagery": [
+    "淺色木頭家具、亞麻布、紙燈、陶杯、一枝綠葉",
+    "自然光、低飽和、陰影柔和，畫面乾淨整齊",
+    "物件少，排列有秩序，背景是牆面或木頭"
+  ],
+  "placeholder": "一個拱形的淺燕麥色框，底部貼齊一條橫向細線，框內下方小字寫「家具照片｜4:5」，旁邊一個小黑點",
+  "avoid": [
+    "毛筆墨跡、裂痕、刻意的殘缺感（那是侘寂）",
+    "高飽和色與霓虹色",
+    "亮面光澤、漸層與重陰影",
+    "粗黑大字與擁擠的版面"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "一個重點色當木頭或綠葉的色塊，另一個只用在細線或小黑點；深色只點綴，不要大面積。"
+  },
+  "backgrounds": [
+    {
+      "id": "oat",
+      "name": "燕麥",
+      "hex": "#EDE6DA"
+    },
+    {
+      "id": "linen",
+      "name": "亞麻白",
+      "hex": "#F4F1EA"
+    },
+    {
+      "id": "oak",
+      "name": "白橡",
+      "hex": "#DCD3C4"
+    },
+    {
+      "id": "walnut",
+      "name": "胡桃木",
+      "hex": "#3A2E25"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "J1",
+      "name": "白橡與鼠尾草",
+      "ink": "#2D2B28",
+      "accents": [
+        "#8A6A4F",
+        "#6F7A62"
+      ],
+      "pairs_with": [
+        "oat",
+        "linen",
+        "oak"
+      ]
+    },
+    {
+      "id": "J2",
+      "name": "鼠尾草",
+      "ink": "#2C302B",
+      "accents": [
+        "#5F6B57"
+      ],
+      "pairs_with": [
+        "linen",
+        "oat"
+      ]
+    },
+    {
+      "id": "J3",
+      "name": "陶土點",
+      "ink": "#1F1F1E",
+      "accents": [
+        "#A65F3B"
+      ],
+      "pairs_with": [
+        "linen",
+        "oak"
+      ]
+    },
+    {
+      "id": "J4",
+      "name": "胡桃夜",
+      "ink": "#EFE9DF",
+      "accents": [
+        "#C9AE8C",
+        "#A3AE94"
+      ],
+      "pairs_with": [
+        "walnut"
+      ]
+    }
+  ],
+  "prompt_en": [
+    "Japanese minimalism blended with Scandinavian warmth and function",
+    "Oat, linen, light oak and sage green, with a single black dot as accent",
+    "Clean straight lines, orderly grid, balanced composition, generous negative space",
+    "Simple furniture shapes: arches, round paper lanterns, wooden slats, a low shelf line",
+    "Light-weight geometric sans-serif with wide letter spacing",
+    "Calm, tidy, warm and homely"
+  ],
+  "pinterest_queries": [
+    "japandi graphic design",
+    "japandi poster minimalist",
+    "japandi branding"
+  ],
+  "pins": [
+    {
+      "id": "795448352971816040",
+      "note": "Japandi-inspired minimal branding for an architecture studio"
+    },
+    {
+      "id": "784822672599065560",
+      "note": "Japandi definition typography poster by Opposite Wall"
+    },
+    {
+      "id": "1900024838984202",
+      "note": "minimalist flower mark with typography, Japandi logo"
+    },
+    {
+      "id": "1021824602958456240",
+      "note": "Japandi poster, red berries on a branch, neutral ground"
+    },
+    {
+      "id": "792000284495340170",
+      "note": "beige Japandi line-art ocean wave print"
+    },
+    {
+      "id": "305189312277688076",
+      "note": "Japandi living room, light wood and paper lantern"
+    }
+  ]
+}

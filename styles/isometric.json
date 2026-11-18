@@ -1,0 +1,212 @@
+{
+  "id": "isometric",
+  "name_zh": "等角插畫",
+  "name_en": "Isometric",
+  "summary": "用等角投影畫出的立體小世界：所有斜線都是 30 度、平行線不收束，一個個方塊、房間和城市像模型一樣擺在畫面上。",
+  "definition": "等角投影原本是工程與建築製圖的方法：三個軸彼此相隔 120 度，平行線不會往消失點收束，所以東西不會近大遠小。2010 年代起，科技公司的官網、資訊圖表和電玩把它變成一種插畫風格：乾淨的方塊、亮暗三面的平塗色、像模型一樣的房間與城市。轉成簡報時，主視覺是一組等角方塊或平台，文字可以貼在方塊的面上，流程和架構用一格格堆疊的模組來說明。",
+  "keywords": [
+    "精準",
+    "立體",
+    "有條理",
+    "模型感"
+  ],
+  "categories": [
+    "Contemporary",
+    "Illustrative"
+  ],
+  "best_for": [
+    "產品架構與系統流程",
+    "資訊圖表與數據故事",
+    "科技、物流、智慧城市主題",
+    "遊戲與空間規劃提案"
+  ],
+  "not_for": [
+    "情感訴求強的人物故事",
+    "需要真實照片說服力的內容"
+  ],
+  "traits": [
+    "所有斜線固定 30 度，平行線不收束",
+    "每個立體物都分亮、中、暗三個面",
+    "平塗色塊，幾乎沒有漸層",
+    "背景常有淡淡的等角網格",
+    "物件像模型一樣浮在平台上",
+    "細緻但統一的線寬與圓角"
+  ],
+  "layout": [
+    "主視覺是一組等角方塊或平台，放在畫面一側，文字在另一側靠左對齊",
+    "背景鋪一層很淡的等角菱形網格，物件對齊網格擺放",
+    "流程或層級用往上堆疊、往斜後方排列的方塊說明，不用平面的箭頭圖",
+    "標題可以保持水平；短標籤可以貼在方塊的面上，跟著面傾斜",
+    "每個方塊的亮面、暗面方向全份一致（光從左上來）"
+  ],
+  "motifs": [
+    "等角方塊",
+    "等角菱形網格",
+    "階梯與堆疊平台",
+    "管線與連接線",
+    "浮起的地板塊"
+  ],
+  "typography": {
+    "display": {
+      "family": "Sora",
+      "weights": "700、800",
+      "role": "英文標題與大數字，幾何、清楚"
+    },
+    "body": {
+      "family": "Sora",
+      "weights": "400、600",
+      "role": "內文與標籤"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文標題用 900，內文用 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "貼在方塊面上的字，用 skew 與旋轉對齊等角方向，只放短標籤",
+      "標題保持水平，確保好讀",
+      "標籤用大寫加一點字距"
+    ]
+  },
+  "imagery": [
+    "產品、房間或場景的等角渲染圖",
+    "照片少用；要用時放進等角螢幕或看板的面上",
+    "圖示也要畫成等角，不要混用正面平面圖示"
+  ],
+  "placeholder": "一塊等角的看板或螢幕，畫出側面厚度，看板正面寫「產品渲染圖｜4:3」",
+  "avoid": [
+    "有消失點的透視（近大遠小）",
+    "斜線角度不一致、亮暗面方向亂跳",
+    "正面平面圖示和等角物件混在一起",
+    "寫實照片當主視覺",
+    "大面積漸層與模糊光暈"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "每個重點色都要做亮、中、暗三階當方塊的三個面；三個色分別代表不同的模組或層級。"
+  },
+  "backgrounds": [
+    {
+      "id": "paper",
+      "name": "繪圖紙",
+      "hex": "#F2F0EA"
+    },
+    {
+      "id": "sky",
+      "name": "淺天藍",
+      "hex": "#E3ECF7"
+    },
+    {
+      "id": "blush",
+      "name": "淡杏",
+      "hex": "#F7E6DF"
+    },
+    {
+      "id": "deep",
+      "name": "深夜藍",
+      "hex": "#1F2540"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "I1",
+      "name": "藍圖模組",
+      "ink": "#1F2540",
+      "accents": [
+        "#3D5AFE",
+        "#D9442B",
+        "#138262"
+      ],
+      "pairs_with": [
+        "paper",
+        "sky",
+        "blush"
+      ]
+    },
+    {
+      "id": "I2",
+      "name": "數位城市",
+      "ink": "#1F2540",
+      "accents": [
+        "#7A4FE0",
+        "#E0357A",
+        "#0E8F9C"
+      ],
+      "pairs_with": [
+        "paper",
+        "sky"
+      ]
+    },
+    {
+      "id": "I3",
+      "name": "積木房間",
+      "ink": "#2A2320",
+      "accents": [
+        "#D9573A",
+        "#2E7D5B",
+        "#3E64C8"
+      ],
+      "pairs_with": [
+        "paper",
+        "blush"
+      ]
+    },
+    {
+      "id": "I4",
+      "name": "夜間機房",
+      "ink": "#F2F0EA",
+      "accents": [
+        "#6E8BFF",
+        "#FF7A59",
+        "#3FD0A0"
+      ],
+      "pairs_with": [
+        "deep"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 20 More Design Styles You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=xpLUouSZHi8&t=590s"
+  },
+  "prompt_en": [
+    "Isometric illustration with true 30-degree axes and no perspective convergence",
+    "Cubes, platforms and miniature rooms or cities floating like scale models",
+    "Flat colour with a consistent light, mid and dark tone on each face",
+    "Faint isometric diamond grid in the background",
+    "Clean geometric sans-serif labels set on the planes of the objects",
+    "Precise, orderly, tech-infographic mood"
+  ],
+  "pinterest_queries": [
+    "isometric illustration design",
+    "isometric city poster",
+    "isometric room illustration"
+  ],
+  "pins": [
+    {
+      "id": "184506915976543401",
+      "note": "isometric living room illustration, blue walls"
+    },
+    {
+      "id": "510666045265396707",
+      "note": "detailed isometric hobby room, speedpaint"
+    },
+    {
+      "id": "409264684900497157",
+      "note": "colorful isometric pink bedroom"
+    },
+    {
+      "id": "614459942919870616",
+      "note": "isometric city poster with companies as buildings"
+    },
+    {
+      "id": "502292164702134185",
+      "note": "3D city isometric infographics"
+    },
+    {
+      "id": "389350330261652766",
+      "note": "dense isometric cityscape poster with typography"
+    }
+  ]
+}

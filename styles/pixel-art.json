@@ -1,0 +1,209 @@
+{
+  "id": "pixel-art",
+  "name_zh": "像素藝術",
+  "name_en": "Pixel Art",
+  "source": {
+    "title": "Kittl — 40 Design Style Names You've Been Looking For (Find References Faster)",
+    "url": "https://www.youtube.com/watch?v=bZ1vbmV5gk8&t=387s"
+  },
+  "summary": "8 位元、16 位元遊戲畫面的方塊美學：看得見的像素格、少量鮮豔色、混色網點、點陣字和遊戲介面。",
+  "definition": "像素藝術來自早期遊戲機與電腦：解析度低、顏色有限，畫師只能一格一格點出角色和場景，用棋盤狀的混色網點（dithering）假裝出漸層。轉成簡報時，畫面像一個遊戲標題畫面或關卡：點陣字大標、方塊堆成的地形、像素星星與愛心，資訊放進 RPG 對話框或狀態列，所有邊緣都是硬的階梯狀。和字元藝術不同，它用的是色塊不是鍵盤字元。",
+  "keywords": [
+    "懷舊",
+    "好玩",
+    "直接",
+    "遊戲感"
+  ],
+  "categories": [
+    "Retro",
+    "Illustrative"
+  ],
+  "best_for": [
+    "遊戲、動漫與玩具相關主題",
+    "活動、工作坊與黑客松宣傳",
+    "輕鬆的團隊分享與年度回顧",
+    "給年輕族群的產品介紹"
+  ],
+  "not_for": [
+    "嚴肅的財務或法律報告",
+    "高端精品與奢華品牌",
+    "需要細膩照片質感的內容"
+  ],
+  "traits": [
+    "看得見的方形像素格，邊緣是階梯狀、不平滑",
+    "少量鮮豔色，像 NES、PICO-8 或 Game Boy 的調色盤",
+    "棋盤狀混色網點做出漸層與陰影",
+    "點陣字大標，加一格偏移的硬陰影",
+    "遊戲介面元素：對話框、血條、分數、PRESS START",
+    "像素圖示：星星、愛心、金幣、方塊地形"
+  ],
+  "layout": [
+    "整頁對齊同一個像素單位（例如 8 px 或 12 px），所有元素是它的倍數",
+    "封面排成遊戲標題畫面：大標在上半，下方是方塊地形或角色",
+    "內文放進 RPG 對話框（雙層框線、方角），一框一段話",
+    "頁碼和進度寫成 STAGE 01、LV.03、1UP 這類遊戲用語",
+    "數字可以做成分數或血條呈現"
+  ],
+  "motifs": [
+    "像素星星與愛心",
+    "方塊堆疊的地形或磚牆",
+    "RPG 對話框",
+    "血條與分數計數器",
+    "棋盤混色網點",
+    "8 位元角色或道具"
+  ],
+  "typography": {
+    "display": {
+      "family": "Press Start 2P",
+      "weights": "400",
+      "role": "英文大標、分數、STAGE 編號"
+    },
+    "body": {
+      "family": "Pixelify Sans",
+      "weights": "400、700",
+      "role": "英文內文與對話框文字"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "700、900",
+      "role": "中文標題用 900，可以套像素化濾鏡或硬陰影做出點陣感"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;700&family=Noto+Sans+TC:wght@700;900&display=swap",
+    "rules": [
+      "Press Start 2P 只用在短的英文與數字，長句改用 Pixelify Sans",
+      "陰影一律是往右下偏移一格的硬陰影，不要模糊",
+      "Google Fonts 沒有完整的繁體中文點陣字（DotGothic16 缺「產」等字），中文用 Noto Sans TC 粗體，必要時用 SVG 濾鏡做像素化",
+      "關掉字體與圖形的平滑：圖形用 shape-rendering: crispEdges，圖片用 image-rendering: pixelated"
+    ]
+  },
+  "imagery": [
+    "像素插畫、遊戲截圖、點陣角色與道具",
+    "照片要用的話，降解析度後放大成方塊，並減到調色盤的顏色",
+    "不要寫實照片直接放進去"
+  ],
+  "placeholder": "一個方角的像素框（角落缺一格成階梯狀），裡面鋪棋盤混色網點，中間用點陣字寫「角色插畫｜1:1」",
+  "avoid": [
+    "平滑的漸層與模糊陰影",
+    "圓角、毛玻璃與反鋸齒的細線",
+    "鍵盤字元拼圖、終端機提示符號（那是字元藝術）",
+    "調色盤以外的顏色"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "照遊戲調色盤分工：一個當主角與大標陰影，一個當星星、金幣這類道具，一個當血條或地形；Game Boy 綠配色只用單一重點色。"
+  },
+  "backgrounds": [
+    {
+      "id": "night",
+      "name": "主機夜藍",
+      "hex": "#1D2B53"
+    },
+    {
+      "id": "void",
+      "name": "黑屏",
+      "hex": "#0F0F1B"
+    },
+    {
+      "id": "cream",
+      "name": "卡帶白",
+      "hex": "#FFF1E8"
+    },
+    {
+      "id": "gameboy",
+      "name": "掌機綠",
+      "hex": "#9BBC0F"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "P1",
+      "name": "主機",
+      "ink": "#FFF1E8",
+      "accents": [
+        "#FF004D",
+        "#FFEC27",
+        "#00E436"
+      ],
+      "pairs_with": [
+        "night",
+        "void"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "掌機",
+      "ink": "#0F380F",
+      "accents": [
+        "#306230"
+      ],
+      "pairs_with": [
+        "gameboy"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "說明書",
+      "ink": "#1D2B53",
+      "accents": [
+        "#FF004D",
+        "#008751",
+        "#FFA300"
+      ],
+      "pairs_with": [
+        "cream"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "大型電玩",
+      "ink": "#FFF1E8",
+      "accents": [
+        "#FF77A8",
+        "#29ADFF",
+        "#FFEC27"
+      ],
+      "pairs_with": [
+        "void"
+      ]
+    }
+  ],
+  "prompt_en": [
+    "8-bit and 16-bit video game pixel art with a visible square pixel grid",
+    "Small bright palette like NES, PICO-8 or Game Boy, checkerboard dithering for shading",
+    "Bitmap pixel-font headline with a hard one-pixel offset shadow",
+    "Game UI elements: RPG dialogue box, health bar, score counter, PRESS START",
+    "Stepped block terrain, pixel stars, hearts and coins, no anti-aliasing",
+    "Playful, nostalgic, arcade mood"
+  ],
+  "pinterest_queries": [
+    "pixel art poster design",
+    "pixel art title screen",
+    "8 bit poster typography"
+  ],
+  "pins": [
+    {
+      "id": "433049320429803353",
+      "note": "indie game pixel art title screen"
+    },
+    {
+      "id": "148267012727177866",
+      "note": "Destiny reimagined as a pixel art title screen"
+    },
+    {
+      "id": "57491332732355057",
+      "note": "retro games poster with NES-era pixel art"
+    },
+    {
+      "id": "470766967271513775",
+      "note": "8-bit knight 16x16 sprite poster"
+    },
+    {
+      "id": "21884748180251855",
+      "note": "retro game font poster, pixel lettering"
+    },
+    {
+      "id": "752030837759246495",
+      "note": "Tower in the Middle, dithered pixel art scene"
+    }
+  ]
+}

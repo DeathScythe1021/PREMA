@@ -1,0 +1,209 @@
+{
+  "id": "chinoiserie",
+  "name_zh": "歐式中國風",
+  "name_en": "Chinoiserie",
+  "summary": "18 世紀歐洲人想像中的東方：青花瓷的藍白、花鳥枝條、亭台小橋與手繪壁紙，配上洛可可的曲線外框。",
+  "definition": "Chinoiserie 是 17 世紀末到 18 世紀中期在歐洲流行的裝飾風格。隨著中國瓷器、漆器和手繪壁紙大量進口，歐洲工匠開始仿作，把中國、日本、印度的圖案混在一起，畫出一個想像中的東方：開花的枝條上停著鳥、遠處有亭台和小橋、瓷瓶上是藍白花紋。它是歐洲的東方想像，不是中國傳統設計本身。轉成簡報時，畫面像一面手繪壁紙或一件青花瓷：大量留白的花鳥枝條從邊緣長進來，內容放在洛可可式的曲線框裡，配色以藍白或米白配淡彩為主。",
+  "keywords": [
+    "典雅",
+    "華麗",
+    "東西交流",
+    "收藏"
+  ],
+  "categories": [
+    "Classic",
+    "Illustrative"
+  ],
+  "best_for": [
+    "茶、瓷器、家飾與生活品牌",
+    "藝術史與博物館展覽",
+    "婚禮與正式晚宴",
+    "東西文化交流主題"
+  ],
+  "not_for": [
+    "介紹中國或華人傳統文化本身（容易把歐洲的想像當成原貌）",
+    "科技產品與數據簡報"
+  ],
+  "traits": [
+    "青花瓷的藍白配色",
+    "開花枝條與停在枝上的鳥",
+    "遠景的亭台、拱橋與小島",
+    "手繪壁紙般的大量留白與枝葉延伸",
+    "洛可可式曲線外框與卷草",
+    "瓷瓶、薑罐的輪廓"
+  ],
+  "layout": [
+    "花鳥枝條從畫面一邊或一角長進來，另一邊留給文字",
+    "內容放在洛可可曲線框或圓形瓷盤框裡，框線細而精緻",
+    "標題用古典襯線字，置中或靠左都可以，周圍留足空白",
+    "頁碼與章節像瓷器底款，放在小框或小圓章裡",
+    "全份只用一種主色系（例如藍白），裝飾集中在邊緣"
+  ],
+  "motifs": [
+    "開花枝條",
+    "鳥",
+    "瓷瓶與薑罐輪廓",
+    "亭台與拱橋剪影",
+    "洛可可卷草框",
+    "回紋或格子邊飾"
+  ],
+  "typography": {
+    "display": {
+      "family": "Playfair Display",
+      "weights": "400、italic",
+      "role": "英文標題，18 世紀過渡期襯線字的高反差"
+    },
+    "body": {
+      "family": "Libre Caslon Text",
+      "weights": "400、italic、700",
+      "role": "副標、內文與小標籤"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "400、700",
+      "role": "中文標題與內文，用明體保持典雅"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Noto+Serif+TC:wght@400;700&display=swap",
+    "rules": [
+      "英文用 18 世紀風格的襯線字，斜體當副標",
+      "中文用明體，不用書法字或仿古篆字來「裝中國」",
+      "小標籤用小型大寫加字距，像瓷器底款"
+    ]
+  },
+  "imagery": [
+    "青花瓷器、手繪花鳥壁紙、漆器屏風、宮廷裡的中國廳",
+    "博物館藏品的平拍照片，背景乾淨",
+    "照片可以裝進圓盤框或曲線框裡，像掛在牆上的瓷盤"
+  ],
+  "placeholder": "一個圓形瓷盤框，外圈兩道細線和一圈格子邊飾，盤心寫「瓷器照片｜1:1」",
+  "avoid": [
+    "醜化或刻板化的人物形象（瞇眼、辮子、苦力造型）",
+    "用筆畫拼成英文字母的「仿中文」字體",
+    "把中國、日本、東南亞元素亂混後當成同一種「東方」",
+    "龍、燈籠、鞭炮堆在一起的廉價節慶裝飾",
+    "大紅大金的滿版配色"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "像瓷器上釉：一個主色畫花鳥與框線（鈷藍或綠），另一個色只點在花或鳥上。"
+  },
+  "backgrounds": [
+    {
+      "id": "porcelain",
+      "name": "瓷白",
+      "hex": "#F4F1EA"
+    },
+    {
+      "id": "silk",
+      "name": "絹黃",
+      "hex": "#EDE3CF"
+    },
+    {
+      "id": "celadon",
+      "name": "青瓷",
+      "hex": "#D6E3D7"
+    },
+    {
+      "id": "lacquer",
+      "name": "漆夜",
+      "hex": "#1E2A3E"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "H1",
+      "name": "青花",
+      "ink": "#1B2B4F",
+      "accents": [
+        "#1F4FA0",
+        "#3B6EBF"
+      ],
+      "pairs_with": [
+        "porcelain",
+        "silk"
+      ]
+    },
+    {
+      "id": "H2",
+      "name": "花鳥壁紙",
+      "ink": "#22352C",
+      "accents": [
+        "#3F6E58",
+        "#B04A3A"
+      ],
+      "pairs_with": [
+        "celadon",
+        "porcelain",
+        "silk"
+      ]
+    },
+    {
+      "id": "H3",
+      "name": "絲綢屏風",
+      "ink": "#2C2420",
+      "accents": [
+        "#A7452F",
+        "#2F5B8E"
+      ],
+      "pairs_with": [
+        "silk",
+        "porcelain"
+      ]
+    },
+    {
+      "id": "H4",
+      "name": "描金漆器",
+      "ink": "#EDE3CF",
+      "accents": [
+        "#D9A84E",
+        "#E07A62"
+      ],
+      "pairs_with": [
+        "lacquer"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 20 More Design Styles You've Been Searching For",
+    "url": "https://www.youtube.com/watch?v=xpLUouSZHi8&t=110s"
+  },
+  "prompt_en": [
+    "18th-century European chinoiserie, an imagined East rather than authentic Chinese design",
+    "Cobalt blue and white porcelain palette",
+    "Flowering branches with perched birds growing in from the edges like hand-painted wallpaper",
+    "Distant pavilions, arched bridges and small islands as delicate vignettes",
+    "Rococo scroll frames and fine-line borders around the content",
+    "Transitional high-contrast serif type, airy and refined mood"
+  ],
+  "pinterest_queries": [
+    "chinoiserie wallpaper birds",
+    "chinoiserie blue and white illustration",
+    "chinoiserie pattern design"
+  ],
+  "pins": [
+    {
+      "id": "140806234216772",
+      "note": "chinoiserie wallpaper with colorful birds and flowers"
+    },
+    {
+      "id": "635570566170567934",
+      "note": "blue and white birds in a flowering tree with pagoda"
+    },
+    {
+      "id": "341569952997632247",
+      "note": "Empress chinoiserie floral wallpaper by Milton & King"
+    },
+    {
+      "id": "112730796962004732",
+      "note": "hand-drawn blue and white chinoiserie pattern set"
+    },
+    {
+      "id": "432627107959726324",
+      "note": "chinoiserie blue and white porcelain art print"
+    },
+    {
+      "id": "1140607043096496525",
+      "note": "printable art from an antique chinoiserie Delft plaque"
+    }
+  ]
+}
