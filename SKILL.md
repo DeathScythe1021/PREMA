@@ -1,6 +1,6 @@
 ---
 name: art-style-deck
-description: 引導使用者先挑一種明確的美術風格（目前 25 種，例如 Swiss Punk、Dark Academia、Wabi Sabi、Receiptify、Postage、Googie、Neo-Brutalism、Blurry Motion、ASCII Art，清單會持續擴充），再挑背景色與配色，最後做出沒有 AI 感的 HTML 簡報；圖片先留版位，等使用者提供再放入。只要使用者想做簡報、投影片、deck、提案、slides、自我介紹簡報、作品集簡報，或說「幫我挑一個風格」「不要 AI 感的簡報」「用某某風格做投影片」，就使用這個 skill，即使沒有明講 HTML 也一樣：這個 skill 的簡報一律輸出成 HTML。
+description: 引導使用者先挑一種明確的美術風格（目前 37 種，例如 Swiss Punk、Dark Academia、Wabi Sabi、Receiptify、Postage、Googie、Neo-Brutalism、Blurry Motion、ASCII Art，清單會持續擴充），再挑背景色與配色，最後做出沒有 AI 感的 HTML 簡報；圖片先留版位，等使用者提供再放入。只要使用者想做簡報、投影片、deck、提案、slides、自我介紹簡報、作品集簡報，或說「幫我挑一個風格」「不要 AI 感的簡報」「用某某風格做投影片」，就使用這個 skill，即使沒有明講 HTML 也一樣：這個 skill 的簡報一律輸出成 HTML。
 ---
 
 # Art Style Deck：先選風格，再做簡報
@@ -84,7 +84,7 @@ art-style-deck/
 ## 步驟 6：製作 HTML 簡報
 
 1. 讀 `references/deck-spec.md`（外殼怎麼用、版位怎麼寫）和 `references/anti-ai.md`。
-2. 讀選定風格的 JSON 全文和 `styles/previews/<id>.html`。示範封面是這個風格「做對了」的樣子，內頁要延續同一套字體、線條、質感與構圖手法。
+2. 讀選定風格的 JSON 全文和 `styles/previews/<id>.html`。示範封面是這個風格「做對了」的樣子，內頁要延續同一套字體、線條、質感與構圖手法。沒有示範封面的風格（後來新增的都沒有），就直接依 JSON 的 `layout`、`motifs`、`traits`、`typography` 做，並參考 Pinterest 參考圖的描述。
 3. 複製 `assets/deck-shell.html` 為使用者的簡報檔，例如 `<主題>-deck/index.html`。在 `:root` 填入選定的背景與配色變數，再逐頁寫 `<section class="slide">`。
 4. 每頁只講一件事。條列超過 4 點就拆頁，或改成表格、數字、引言。
 5. 風格 JSON 的 `layout` 和 `motifs` 要真的用上（例如 Postage 的齒孔邊與郵戳、ASCII 的字元格線），不能只套顏色和字體。只換顏色的簡報，看起來還是 AI 模板。
@@ -108,7 +108,7 @@ art-style-deck/
 使用者想新增風格時：
 
 1. 複製 `styles/_template.json` 成 `styles/<id>.json`，照格式填寫。定義要具體到「看到畫面就能判斷是不是這個風格」，並和現有風格有明顯差別；太接近的話，改成在現有風格裡多一組配色。
-2. 照 `references/preview-spec.md` 寫一張 `styles/previews/<id>.html` 示範封面，用無頭 Chrome 截圖確認。
+2. 不做示範封面，也不生成任何圖片；參考圖只用 Pinterest 連結。完整流程見 `references/auto-update.md`。
 3. 寫 `prompt_en`（5–7 條英文重點，描述這個風格的視覺特徵）和 `pinterest_queries`（2 個搜尋關鍵字），再到 Pinterest 挑 6 張代表性的作品，把 pin 的數字 ID 寫進 `pins`。只存 ID，網站會用 Pinterest 官方嵌入顯示，不下載圖片。
-4. 執行 `python3 scripts/validate_styles.py`，它會檢查欄位、示範封面、pin ID 和每組配色的對比。
+4. 執行 `python3 scripts/validate_styles.py`，它會檢查欄位、pin ID、每組配色的對比和候選清單。
 5. 通過後 commit 並 push 到 GitHub（push 前先問使用者），網頁會自動更新。
