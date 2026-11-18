@@ -1,6 +1,6 @@
 ---
 name: art-style-deck
-description: 引導使用者先挑一種明確的美術風格（目前 37 種，例如 Swiss Punk、Dark Academia、Wabi Sabi、Receiptify、Postage、Googie、Neo-Brutalism、Blurry Motion、ASCII Art，清單會持續擴充），再挑背景色與配色，最後做出沒有 AI 感的 HTML 簡報；圖片先留版位，等使用者提供再放入。只要使用者想做簡報、投影片、deck、提案、slides、自我介紹簡報、作品集簡報，或說「幫我挑一個風格」「不要 AI 感的簡報」「用某某風格做投影片」，就使用這個 skill，即使沒有明講 HTML 也一樣：這個 skill 的簡報一律輸出成 HTML。
+description: 引導使用者先挑一種明確的美術風格（目前 41 種，例如 Swiss Punk、Dark Academia、Wabi Sabi、Receiptify、Postage、Googie、Neo-Brutalism、Blurry Motion、ASCII Art，清單會持續擴充），再挑背景色與配色，最後做出沒有 AI 感的 HTML 簡報；圖片先留版位，等使用者提供再放入。只要使用者想做簡報、投影片、deck、提案、slides、自我介紹簡報、作品集簡報，或說「幫我挑一個風格」「不要 AI 感的簡報」「用某某風格做投影片」，就使用這個 skill，即使沒有明講 HTML 也一樣：這個 skill 的簡報一律輸出成 HTML。
 ---
 
 # Art Style Deck：先選風格，再做簡報

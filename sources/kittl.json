@@ -605,7 +605,8 @@
       "name_en": "Art Nouveau",
       "video": "bZ1vbmV5gk8",
       "t": "13:14",
-      "status": "pending"
+      "status": "done",
+      "style_id": "art-nouveau"
     },
     {
       "name_en": "Mystical Western",
@@ -630,7 +631,8 @@
       "name_en": "Y2K",
       "video": "bZ1vbmV5gk8",
       "t": "15:59",
-      "status": "pending"
+      "status": "done",
+      "style_id": "y2k"
     },
     {
       "name_en": "Bauhaus",
@@ -656,7 +658,8 @@
       "name_en": "Synthwave",
       "video": "bZ1vbmV5gk8",
       "t": "18:27",
-      "status": "pending"
+      "status": "done",
+      "style_id": "synthwave"
     },
     {
       "name_en": "Pop Art",
@@ -698,7 +701,8 @@
       "name_en": "Steampunk",
       "video": "bZ1vbmV5gk8",
       "t": "24:15",
-      "status": "pending"
+      "status": "done",
+      "style_id": "steampunk"
     },
     {
       "name_en": "Kawaii",

@@ -1,0 +1,208 @@
+{
+  "id": "steampunk",
+  "name_zh": "蒸汽龐克",
+  "name_en": "Steampunk",
+  "source": {
+    "title": "Kittl — 40 Design Style Names You've Been Looking For (Find References Faster)",
+    "url": "https://www.youtube.com/watch?v=bZ1vbmV5gk8&t=1455s"
+  },
+  "summary": "維多利亞時代的蒸汽機械幻想：黃銅齒輪、壓力錶、鉚釘、飛行船與設計藍圖，配上老報紙廣告字和皮革、羊皮紙的質感。",
+  "definition": "Steampunk 一詞出自科幻作家 K. W. Jeter 1987 年投給《Locus》雜誌的信，原本是拿 cyberpunk 開的玩笑，指把維多利亞時代和超前科技混在一起的小說；更早的源頭是凡爾納與威爾斯的冒險故事。後來它變成一整套視覺：黃銅與紅銅的齒輪、壓力錶、鉚釘、蒸汽管線、護目鏡、飛行船，畫在泛黃的羊皮紙或專利圖上。轉成簡報時，畫面像一份發明家的檔案：內容放在黃銅邊框或鉚釘鐵板裡，圖表畫成儀表與齒輪，標題用 19 世紀廣告常見的粗襯線字。",
+  "keywords": [
+    "機械",
+    "冒險",
+    "懷舊",
+    "工藝感"
+  ],
+  "categories": [
+    "Retro",
+    "Illustrative"
+  ],
+  "best_for": [
+    "桌遊、密室逃脫與奇幻小說宣傳",
+    "鐘錶、皮件、精釀與咖啡品牌",
+    "工程原理與發明史教學",
+    "主題派對與市集活動"
+  ],
+  "not_for": [
+    "要清爽、極簡的科技產品介紹",
+    "醫療、法務等需要中性語氣的內容"
+  ],
+  "traits": [
+    "黃銅與紅銅色的齒輪、壓力錶、鉚釘",
+    "蒸汽管線、閥門與鐘錶機芯",
+    "飛行船、熱氣球、潛水艇等維多利亞式交通工具",
+    "泛黃羊皮紙、皮革與鑄鐵板的質感",
+    "專利圖般的細線剖面與尺寸標註",
+    "19 世紀廣告的粗襯線字與花飾線"
+  ],
+  "layout": [
+    "內容放在黃銅邊框或鉚釘鐵板裡，四角有螺絲或鉚釘",
+    "數字和比例畫成壓力錶或刻度盤，不用一般長條圖",
+    "主視覺的機械圖用細線剖面加編號標註，像專利圖",
+    "標題置中、上下加花飾線，像老報紙廣告",
+    "背景用羊皮紙或牛皮紙，角落可以有一個半露出的齒輪"
+  ],
+  "motifs": [
+    "齒輪與鐘錶機芯",
+    "壓力錶與刻度盤",
+    "鉚釘與螺絲",
+    "蒸汽管線與閥門",
+    "飛行船與熱氣球",
+    "護目鏡"
+  ],
+  "typography": {
+    "display": {
+      "family": "Abril Fatface",
+      "weights": "400",
+      "role": "英文標題與大數字，19 世紀廣告的粗襯線"
+    },
+    "body": {
+      "family": "Libre Baskerville",
+      "weights": "400、700、italic",
+      "role": "內文、圖說與標註；斜體用在型號與日期"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "500、900",
+      "role": "中文標題用 900，內文用 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+TC:wght@500;900&display=swap",
+    "rules": [
+      "英文標題可以全大寫，上下加一條花飾線或細雙線",
+      "標註編號用斜體，例如「Fig. 3」",
+      "黃銅色的字要放在深底上，淺底上的字一律用文字色"
+    ]
+  },
+  "imagery": [
+    "黃銅機械、懷錶、老相機、望遠鏡、蒸汽火車",
+    "照片調成棕褐色或偏暖的低飽和色，帶一點顆粒",
+    "照片裁成圓形放進黃銅框，像舷窗或懷錶錶面"
+  ],
+  "placeholder": "圓形黃銅舷窗框，外圈一排鉚釘，內部是羊皮紙底，中間寫「機械照片｜1:1」，下方掛一張寫著 Fig. 1 的小標籤",
+  "avoid": [
+    "霓虹燈、螢光色與電子介面",
+    "乾淨的扁平圖示與圓角卡片",
+    "冷色系的極簡留白",
+    "1920、30 年代的扇形放射與幾何對稱（那是裝飾藝術）",
+    "只放幾個齒輪、其他都是現代版面"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "黃銅色是主重點色，負責邊框、齒輪與大字；第二個重點色（銅綠或紅銅）只用在指針、警示和一兩個數字。"
+  },
+  "backgrounds": [
+    {
+      "id": "parchment",
+      "name": "羊皮紙",
+      "hex": "#EADFC8"
+    },
+    {
+      "id": "kraft",
+      "name": "牛皮紙",
+      "hex": "#D9C7A3"
+    },
+    {
+      "id": "leather",
+      "name": "舊皮革",
+      "hex": "#2B211A"
+    },
+    {
+      "id": "iron",
+      "name": "鑄鐵",
+      "hex": "#1F2A2E"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "S1",
+      "name": "發明家檔案",
+      "ink": "#2B1D12",
+      "accents": [
+        "#7E520F",
+        "#2A6159"
+      ],
+      "pairs_with": [
+        "parchment",
+        "kraft"
+      ]
+    },
+    {
+      "id": "S2",
+      "name": "鍋爐房",
+      "ink": "#F0E3C8",
+      "accents": [
+        "#C9973F",
+        "#D0703F"
+      ],
+      "pairs_with": [
+        "leather",
+        "iron"
+      ]
+    },
+    {
+      "id": "S3",
+      "name": "銅綠",
+      "ink": "#E9E2D0",
+      "accents": [
+        "#6FB3A2",
+        "#C9973F"
+      ],
+      "pairs_with": [
+        "iron"
+      ]
+    },
+    {
+      "id": "S4",
+      "name": "航海日誌",
+      "ink": "#2B1D12",
+      "accents": [
+        "#8E3522",
+        "#4F4224"
+      ],
+      "pairs_with": [
+        "parchment",
+        "kraft"
+      ]
+    }
+  ],
+  "prompt_en": [
+    "Steampunk: Victorian-era retro-futurism powered by steam",
+    "Brass and copper gears, pressure gauges, rivets, valves and pipes",
+    "Airships, hot-air balloons and submarines drawn like patent diagrams",
+    "Aged parchment, leather and cast-iron plate textures",
+    "19th-century fat-face advertising type with ornamental rules",
+    "Adventurous, inventive, sepia-toned mood"
+  ],
+  "pinterest_queries": [
+    "steampunk poster design gears",
+    "steampunk airship blueprint",
+    "steampunk typography"
+  ],
+  "pins": [
+    {
+      "id": "315814992595611461",
+      "note": "Jules Verne steampunk book cover by MaxMade"
+    },
+    {
+      "id": "295900638004229833",
+      "note": "cardboard airship model on a Victorian greenhouse by Jeroen van Kesteren"
+    },
+    {
+      "id": "1138918193262020962",
+      "note": "steampunk airship blueprint on parchment with grid and compass rose"
+    },
+    {
+      "id": "117726977748650870",
+      "note": "Steampunk Librarian painting by EvocativeExperiments (print listing)"
+    },
+    {
+      "id": "49610033392287940",
+      "note": "mechanical metal alphabet, steampunk lettering"
+    },
+    {
+      "id": "626141154432257791",
+      "note": "Victopian, neo-Victorian steampunk typeface from 19th-century newspaper ads"
+    }
+  ]
+}

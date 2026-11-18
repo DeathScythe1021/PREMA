@@ -1,0 +1,215 @@
+{
+  "id": "synthwave",
+  "name_zh": "合成器浪潮",
+  "name_en": "Synthwave",
+  "source": {
+    "title": "Kittl — 40 Design Style Names You've Been Looking For (Find References Faster)",
+    "url": "https://www.youtube.com/watch?v=bZ1vbmV5gk8&t=1107s"
+  },
+  "summary": "向 1980 年代電影與街機致敬的夜間霓虹：黑底上的桃紅與青色光線、被橫條切開的日落、往地平線延伸的格線公路、跑車與鉻字。",
+  "definition": "Synthwave 是 2000 年代中後期從法國興起的電子音樂，視覺取材自 80 年代的動作片、VHS 封面和 Sega 1986 年的賽車街機《OutRun》（法拉利、棕櫚樹、海岸公路）。2011 年電影《落日車神》（Drive）用了 Kavinsky 的〈Nightcall〉，讓這種風格大紅；2013 年《Far Cry 3: Blood Dragon》的海報由 James White 操刀，是常被引用的範本。畫面是深夜：黑或深紫的天空、霓虹線條、被橫條切開的大太陽、透視格線一路延伸到地平線，標題是鉻色立體字配手寫霓虹字。轉成簡報時，底色一律深色，內容像發光的招牌浮在夜裡。它和蒸氣波（粉彩天空、石膏像、Windows 95 視窗、反諷拼貼）不同：這裡是黑底霓虹、跑車與速度感，認真地想當一部 80 年代電影。",
+  "keywords": [
+    "霓虹",
+    "夜晚",
+    "速度感",
+    "80 年代電影"
+  ],
+  "categories": [
+    "Retro",
+    "Graphic"
+  ],
+  "best_for": [
+    "電子音樂、演唱會與夜間活動",
+    "電競、遊戲與科技娛樂",
+    "電影放映與影展主題",
+    "年終晚會與尾牙開場"
+  ],
+  "not_for": [
+    "白天、戶外、自然環保主題",
+    "要大量閱讀的報告與教材"
+  ],
+  "traits": [
+    "黑或深紫的夜空，桃紅與青色的霓虹光",
+    "被橫條切開的漸層大太陽",
+    "透視格線地面或公路，一路收束到地平線",
+    "鉻色立體標題字，配一行霓虹手寫字",
+    "跑車、棕櫚樹、城市天際線剪影",
+    "發光的線條與一點點 VHS 掃描線"
+  ],
+  "layout": [
+    "地平線放在畫面下方三分之一，下面是透視格線，上面是天空",
+    "橫條太陽放在地平線正中央或略偏，主標題壓在太陽前面",
+    "主標題用鉻色立體字，下方斜放一行霓虹手寫字當副標",
+    "內頁內容放在發光細線框裡，框外留大片暗色",
+    "數字和頁碼做成霓虹燈管的樣子，只用一個顏色發光"
+  ],
+  "motifs": [
+    "橫條切開的太陽",
+    "透視格線",
+    "霓虹燈管線條",
+    "棕櫚樹剪影",
+    "跑車側影",
+    "VHS 掃描線"
+  ],
+  "typography": {
+    "display": {
+      "family": "Audiowide",
+      "weights": "400",
+      "role": "英文主標，全大寫，做鉻色漸層與立體厚度"
+    },
+    "body": {
+      "family": "Rajdhani",
+      "weights": "500、700",
+      "role": "內文、副標與數字，大寫時加字距"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文標題用 900，可以加外發光；內文用 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Audiowide&family=Rajdhani:wght@500;700&family=Mr+Dafoe&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "霓虹手寫副標用 Mr Dafoe，一頁只有一行，斜放壓在主標下緣",
+      "發光效果只加在標題和一兩個數字，內文不發光",
+      "中文不要做手寫字，用粗黑體加外發光"
+    ]
+  },
+  "imagery": [
+    "夜晚的城市、公路、跑車、霓虹招牌、街機",
+    "照片壓暗後疊一層桃紅或青色調，可以加掃描線",
+    "人物用逆光剪影，邊緣留一道霓虹色光"
+  ],
+  "placeholder": "深色版位，外框是一圈桃紅色發光細線，底部有幾條透視格線，中間寫「夜景照片｜16:9」",
+  "avoid": [
+    "粉彩漸層天空、希臘石膏像、Windows 95 視窗與棋盤地板（那是蒸氣波）",
+    "白底或淺色底",
+    "大地色、做舊紙張與手繪質感",
+    "四芒閃光與泡泡字的千禧年流行感（那是 Y2K）",
+    "每個元素都發光，畫面糊成一片"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "桃紅是主光，負責格線、太陽與外框；青色當第二道光，用在副標與線條；黃橙只用在太陽的漸層和一個重點數字。"
+  },
+  "backgrounds": [
+    {
+      "id": "midnight",
+      "name": "午夜黑",
+      "hex": "#0A0614"
+    },
+    {
+      "id": "purple",
+      "name": "深夜紫",
+      "hex": "#1A0B2E"
+    },
+    {
+      "id": "navy",
+      "name": "公路藍",
+      "hex": "#0B1030"
+    },
+    {
+      "id": "dusk",
+      "name": "暮光紫",
+      "hex": "#2A0F3A"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "W1",
+      "name": "霓虹日落",
+      "ink": "#F4ECFF",
+      "accents": [
+        "#FF2E97",
+        "#00E1FF",
+        "#FFB627"
+      ],
+      "pairs_with": [
+        "midnight",
+        "purple",
+        "navy"
+      ]
+    },
+    {
+      "id": "W2",
+      "name": "夜行公路",
+      "ink": "#EDEBFF",
+      "accents": [
+        "#FF3864",
+        "#2DE2E6",
+        "#F9C80E"
+      ],
+      "pairs_with": [
+        "midnight",
+        "navy",
+        "dusk"
+      ]
+    },
+    {
+      "id": "W3",
+      "name": "鉻字片頭",
+      "ink": "#E8F0FF",
+      "accents": [
+        "#9AD9FF",
+        "#FF5EC8",
+        "#C8D2E0"
+      ],
+      "pairs_with": [
+        "navy",
+        "midnight"
+      ]
+    },
+    {
+      "id": "W4",
+      "name": "雷射紫",
+      "ink": "#F6E9FF",
+      "accents": [
+        "#B64BFF",
+        "#FF2E97",
+        "#FF8F3F"
+      ],
+      "pairs_with": [
+        "midnight",
+        "purple"
+      ]
+    }
+  ],
+  "prompt_en": [
+    "Synthwave / outrun aesthetic inspired by 1980s action films and arcade games",
+    "Black or deep purple night sky with hot pink and cyan neon light",
+    "Striped gradient sun sitting on the horizon over a perspective wireframe grid road",
+    "Chrome extruded title lettering with a neon script subtitle",
+    "Sports car, palm trees and city skyline silhouettes",
+    "Glowing lines, faint VHS scanlines, fast and cinematic night-drive mood"
+  ],
+  "pinterest_queries": [
+    "synthwave poster art",
+    "outrun synthwave album cover",
+    "80s chrome logo synthwave"
+  ],
+  "pins": [
+    {
+      "id": "859976491324675035",
+      "note": "James White, Far Cry 3: Blood Dragon poster art"
+    },
+    {
+      "id": "285345326374501531",
+      "note": "Kavinsky, OutRun deluxe edition vinyl LP"
+    },
+    {
+      "id": "450219293997444164",
+      "note": "The Midnight, Endless Summer album cover, neon title"
+    },
+    {
+      "id": "703617141765232142",
+      "note": "Drive (2011) poster design, pink script on black"
+    },
+    {
+      "id": "111323422027016683",
+      "note": "showcase of 80s-style chrome text effect designs"
+    },
+    {
+      "id": "572027590176636696",
+      "note": "Synthwave Miami 85 poster by Denny Busyet"
+    }
+  ]
+}

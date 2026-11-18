@@ -1,0 +1,209 @@
+{
+  "id": "art-nouveau",
+  "name_zh": "新藝術運動",
+  "name_en": "Art Nouveau",
+  "source": {
+    "title": "Kittl — 40 Design Style Names You've Been Looking For (Find References Faster)",
+    "url": "https://www.youtube.com/watch?v=bZ1vbmV5gk8&t=794s"
+  },
+  "summary": "1890 到 1910 年前後歐洲的新藝術運動：鞭繩般的 S 形曲線、藤蔓花草、長髮女性與圓形光環，字和插畫纏在一起。",
+  "definition": "Art Nouveau 在 1890 年代興起於巴黎、布魯塞爾與維也納，德國叫 Jugendstil。它從植物莖、藤蔓和海洋生物取形，最招牌的是像甩出去的鞭子一樣的 S 形曲線；海報以慕夏（Alphonse Mucha）為代表，1894 年替莎拉．伯恩哈特畫的《Gismonda》定下了「長版構圖、女性人像、背後一圈圓形光環、四周花草邊框」的樣子，巴黎地鐵入口的鑄鐵花莖則出自吉馬德（Hector Guimard）。轉成簡報時，畫面用彎曲的植物邊框收邊，標題的字形也帶曲線，配色是柔和的鼠尾草綠、赭金和玫瑰色。它和裝飾藝術（1920、30 年代的扇形放射、階梯輪廓、左右對稱）剛好相反：這裡是曲線、植物、手繪感，不是幾何與拋光金屬。",
+  "keywords": [
+    "優雅",
+    "自然",
+    "浪漫",
+    "手工感"
+  ],
+  "categories": [
+    "Classic",
+    "Illustrative"
+  ],
+  "best_for": [
+    "花藝、茶飲、香氛與保養品牌",
+    "藝文展演與音樂會",
+    "婚禮與典禮邀請",
+    "歐洲藝術史與設計史課程"
+  ],
+  "not_for": [
+    "科技產品發表與數據儀表板",
+    "需要快速掃讀的大量條列資訊"
+  ],
+  "traits": [
+    "鞭繩般的 S 形曲線，粗細有變化",
+    "藤蔓、百合、罌粟、鳶尾等花草纏繞",
+    "女性人像配飄散的長髮",
+    "人物背後的圓形光環或拱形框",
+    "帶曲線、手繪感的標題字，嵌進插畫裡",
+    "柔和的鼠尾草綠、赭金、玫瑰色與奶油底"
+  ],
+  "layout": [
+    "用長版直幅構圖：主視覺偏高、偏一側，另一側留給標題與內文",
+    "主圖背後放一個圓形光環或拱形框，框邊有花草紋樣",
+    "四周用彎曲的植物邊框收邊，角落的藤蔓往內伸，不用直角線框",
+    "標題放在一條彎曲的飾帶或弧形框裡，和插畫連在一起",
+    "內文放在框內的淺色區塊，段落短，左右各留一段邊框空間"
+  ],
+  "motifs": [
+    "鞭繩曲線",
+    "藤蔓與花莖",
+    "百合、罌粟、鳶尾",
+    "圓形光環",
+    "孔雀羽毛",
+    "蜻蜓"
+  ],
+  "typography": {
+    "display": {
+      "family": "Federant",
+      "weights": "400",
+      "role": "英文標題與數字；1911 年 Feder Antiqua 的復刻，帶曲線的老式廣告字"
+    },
+    "body": {
+      "family": "Cormorant Garamond",
+      "weights": "400、600、italic",
+      "role": "內文與副標，斜體用在引文與作品名"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "500、700",
+      "role": "中文標題用 700，內文用 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Federant&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@500;700&display=swap",
+    "rules": [
+      "標題可以沿著弧線排，但一頁只有一處",
+      "英文標題首字母可以放大做成花飾字，用插畫藤蔓包住",
+      "不要用細長的幾何大寫字，那會變成裝飾藝術"
+    ]
+  },
+  "imagery": [
+    "花草、植物標本、女性人像、彩繪玻璃與鑄鐵欄杆",
+    "照片調成偏暖的低飽和色，像老石版印刷",
+    "照片裁成圓形、拱形或圓角長方形，外面套一圈花草邊框"
+  ],
+  "placeholder": "拱頂長方形版位，背後一個淡金色圓形光環，外框是纏繞的藤蔓線條，中間寫「人像照片｜2:3」",
+  "avoid": [
+    "扇形放射線、階梯輪廓與嚴格的左右對稱（那是裝飾藝術）",
+    "亮面金屬漸層與反光特效",
+    "螢光色與高飽和撞色",
+    "直角卡片、細線格網等現代介面元素",
+    "冷硬的幾何無襯線字"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "一個主重點色負責線條與邊框（赭金或橄欖綠），另一個只用在花朵與標題的一兩處。"
+  },
+  "backgrounds": [
+    {
+      "id": "parchment",
+      "name": "石版米",
+      "hex": "#F1E8D3"
+    },
+    {
+      "id": "sage",
+      "name": "鼠尾草",
+      "hex": "#DCE3CF"
+    },
+    {
+      "id": "blush",
+      "name": "淡玫瑰",
+      "hex": "#F2DED6"
+    },
+    {
+      "id": "garden",
+      "name": "夜花園",
+      "hex": "#26312A"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "A1",
+      "name": "黃道光環",
+      "ink": "#3A2A1C",
+      "accents": [
+        "#8C5E14",
+        "#4E6B3A"
+      ],
+      "pairs_with": [
+        "parchment",
+        "sage",
+        "blush"
+      ]
+    },
+    {
+      "id": "A2",
+      "name": "苦艾酒",
+      "ink": "#2A2F22",
+      "accents": [
+        "#3F6E4A",
+        "#9A4A26"
+      ],
+      "pairs_with": [
+        "parchment",
+        "sage"
+      ]
+    },
+    {
+      "id": "A3",
+      "name": "罌粟",
+      "ink": "#3B2027",
+      "accents": [
+        "#9E3A54",
+        "#6E5F22"
+      ],
+      "pairs_with": [
+        "blush",
+        "parchment"
+      ]
+    },
+    {
+      "id": "A4",
+      "name": "夜間花園",
+      "ink": "#F1E8D3",
+      "accents": [
+        "#D4A64A",
+        "#9DBF8A"
+      ],
+      "pairs_with": [
+        "garden"
+      ]
+    }
+  ],
+  "prompt_en": [
+    "Art Nouveau poster and decorative art, circa 1890 to 1910",
+    "Whiplash S-curves, vines, lilies and poppies wrapping the frame",
+    "Female figure with flowing hair in front of a circular halo, in the manner of Mucha",
+    "Curving hand-drawn lettering woven into the illustration",
+    "Muted sage green, ochre gold, dusty rose on cream, like a stone lithograph",
+    "Organic, graceful, romantic mood; no geometric symmetry"
+  ],
+  "pinterest_queries": [
+    "art nouveau poster mucha",
+    "art nouveau typography lettering",
+    "art nouveau ornament border"
+  ],
+  "pins": [
+    {
+      "id": "14003448826038255",
+      "note": "Mucha, Gismonda poster for Sarah Bernhardt, 1894"
+    },
+    {
+      "id": "346143921370436735",
+      "note": "Mucha, JOB cigarette paper poster, 1898"
+    },
+    {
+      "id": "315252042639645041",
+      "note": "Mucha, Zodiac lithograph, 1896"
+    },
+    {
+      "id": "611715561917633390",
+      "note": "Privat-Livemont, Palais de la Femme lithograph"
+    },
+    {
+      "id": "379357968614650262",
+      "note": "Lettres Art Nouveau, 1900 lettering plate print"
+    },
+    {
+      "id": "49047083432676319",
+      "note": "Hector Guimard, Paris Metro entrance, 1902"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ PREMA 是一個設計風格靈感庫，收錄定義明確的美術風格。每�
 這個 repo 同時是一個 Claude skill：選好風格之後，可以請 Claude 照那套規則做出 HTML 簡報。網站和 skill 讀的是同一份風格資料。
 
 - 風格目錄：https://deathscythe1021.github.io/PREMA/
-- 目前收錄：37 種風格
+- 目前收錄：41 種風格
 
 ## 為什麼要先定風格
 
