@@ -62,18 +62,6 @@ svg { display: block; }
 .icon-btn { width: 64px; display: grid; place-items: center; flex: none; color: var(--ink); transition: background var(--t-fast) linear, color var(--t-fast) linear; }
 .icon-btn:hover, .icon-btn:active, .icon-btn[aria-expanded="true"] { background: var(--ink); color: var(--paper); }
 
-/* 說明書 */
-.manual { position: fixed; left: 0; right: 0; z-index: 45; background: var(--paper); border-bottom: 2px solid var(--ink); border-top: 1px solid var(--ink);
-  clip-path: inset(0 0 100% 0); visibility: hidden; transition: clip-path var(--t-base) var(--ease-out), visibility 0s linear var(--t-base); }
-.manual.on { clip-path: inset(0 0 0 0); visibility: visible; transition: clip-path var(--t-base) var(--ease-out); }
-.manual .head { display: flex; justify-content: space-between; padding: 16px 0 12px; border-bottom: 1px solid var(--line); font: 500 13px var(--mono); letter-spacing: .12em; text-transform: uppercase; }
-.manual .clauses { display: grid; grid-template-columns: repeat(5, 1fr); }
-.manual .clause { padding: 16px 20px 24px 0; }
-.manual .clause + .clause { padding-left: 20px; border-left: 1px solid var(--line); }
-.manual h4 { margin: 0 0 8px; font: 500 13px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
-.manual h4 b { color: var(--accent); font-weight: 500; margin-right: 8px; }
-.manual p, .manual ol { margin: 0; font-size: 15px; line-height: 1.75; }
-.manual ol { padding-left: 1.3em; }
 
 /* 卡片：H10 重點色套色、M1 間距 */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 48px 28px; padding-bottom: 96px; }
@@ -105,7 +93,7 @@ svg { display: block; }
 @keyframes openBox { from { clip-path: inset(0 50% 0 50%); } to { clip-path: inset(0 0 0 0); } }
 
 /* 側邊篩選 */
-.scrim { position: fixed; inset: 0; background: var(--scrim); z-index: 80; opacity: 0; pointer-events: none; transition: opacity var(--t-base) linear; }
+.scrim { position: fixed; inset: 0; background: var(--scrim); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); z-index: 80; opacity: 0; pointer-events: none; transition: opacity var(--t-base) linear; }
 .scrim.on { opacity: 1; pointer-events: auto; }
 .side { position: fixed; top: 0; bottom: 0; right: 0; background: var(--paper); border-left: 2px solid var(--ink); z-index: 90; transform: translateX(100%); transition: transform 320ms var(--ease-out); display: flex; flex-direction: column; overscroll-behavior: contain; }
 .side.on { transform: none; }
@@ -115,16 +103,47 @@ svg { display: block; }
 .close:hover, .close:active { background: var(--ink); color: var(--paper); }
 .filter { width: min(380px, 92vw); }
 .filter .body { flex: 1; overflow-y: auto; padding-bottom: 24px; }
-.filter h3 { margin: 20px 24px 8px; font: 500 13px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
-.fi { display: flex; justify-content: space-between; align-items: center; width: 100%; min-height: 52px; padding: 14px 24px; border-bottom: 1px solid var(--line); font-size: 16px; text-align: left; transition: background var(--t-fast) linear; }
+.fg-h { display: flex; justify-content: space-between; align-items: center; width: 100%; min-height: 52px; padding: 16px 24px 8px; font: 500 13px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); text-align: left; transition: color var(--t-fast) linear; }
+.fg-h:hover { color: var(--ink); }
+.fg-h .sel-n { margin-left: 10px; color: var(--accent); }
+.fg-h svg { transition: transform var(--t-base) var(--ease-out); }
+.fg-h[aria-expanded="false"] svg { transform: rotate(180deg); }
+.fi { display: flex; align-items: center; gap: 14px; width: 100%; min-height: 48px; padding: 12px 24px; border-bottom: 1px solid var(--line); font-size: 16px; text-align: left; transition: background var(--t-fast) linear; }
+.fi .lbl { flex: 1; min-width: 0; }
 .fi .n { font: 500 14px var(--mono); color: var(--ink-2); }
+.fi .ck { width: 20px; height: 20px; flex: none; border: 2px solid var(--ink); display: grid; place-items: center; color: var(--paper); transition: background var(--t-fast) linear; }
+.fi .ck svg { opacity: 0; }
 .fi:hover { background: var(--paper-2); }
-.fi[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); font-weight: 700; border-bottom-color: var(--accent); }
-.fi[aria-pressed="true"] .n { color: var(--on-accent); }
+.fi[aria-pressed="true"] { font-weight: 700; }
+.fi[aria-pressed="true"] .ck { background: var(--ink); }
+.fi[aria-pressed="true"] .ck svg { opacity: 1; }
 .fi:focus-visible { outline-offset: -4px; }
-.filter footer { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; border-top: 1px solid var(--line); }
-.filter footer button { font: 500 14px var(--mono); text-decoration: underline; text-underline-offset: 3px; }
-.filter footer .count { padding: 0; }
+/* 年代：雙端範圍滑桿 */
+.era { padding: 4px 24px 8px; }
+.era-val { font: 700 20px/1.2 var(--sans); letter-spacing: -.01em; margin: 0 0 14px; }
+/* 拉桿端點是 14px 黑色圓點；刻度、色帶、標籤都從 7px 內縮處開始算，才會和端點中心對齊 */
+/* 線條和其他區塊同寬；端點中心內縮 18px（剛好是 5 個字元標籤的一半），標籤置中在端點下方就會左右貼齊、彼此等距 */
+.rng { position: relative; height: 24px; --k: 18px; }
+.rng .track, .rng .fill { position: absolute; top: 11px; height: 2px; }
+.rng .track { left: 0; right: 0; background: var(--line); }
+.rng .fill { background: var(--ink); }
+.rng input { position: absolute; top: 0; left: calc(var(--k) - 7px); right: calc(var(--k) - 7px); width: auto; height: 24px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
+.rng input::-webkit-slider-runnable-track { background: transparent; }
+.rng input::-moz-range-track { background: transparent; }
+.rng input::-webkit-slider-thumb { pointer-events: auto; -webkit-appearance: none; width: 14px; height: 14px; background: var(--ink); border: 0; border-radius: 50%; cursor: grab; }
+.rng input::-moz-range-thumb { pointer-events: auto; width: 14px; height: 14px; background: var(--ink); border: 0; border-radius: 50%; cursor: grab; }
+.rng input:focus-visible { outline: none; }
+.rng input:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--accent); outline-offset: 3px; }
+.rng input:focus-visible::-moz-range-thumb { outline: 2px solid var(--accent); outline-offset: 3px; }
+.era-ticks { position: relative; height: 16px; margin: 6px 0 0; --k: 18px; font: 400 12px var(--mono); color: var(--ink-2); }
+.era-ticks span { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; }
+#eraTimeless { border-bottom: 0; margin-top: 4px; }
+.filter footer { display: flex; gap: 10px; padding: 16px 24px; border-top: 2px solid var(--ink); }
+.btn-1, .btn-2 { height: 52px; padding: 0 14px; white-space: nowrap; border: 2px solid var(--ink); font: 500 14px var(--mono); letter-spacing: .1em; text-transform: uppercase; transition: background var(--t-fast) linear, color var(--t-fast) linear; }
+.btn-1 { flex: 2; background: var(--ink); color: var(--paper); }
+.btn-1:hover, .btn-1:active { background: var(--paper); color: var(--ink); }
+.btn-2 { flex: 1; }
+.btn-2:hover, .btn-2:active { background: var(--ink); color: var(--paper); }
 
 /* ================= 詳細頁 ================= */
 .dnav { position: sticky; top: 0; z-index: 30; background: var(--paper); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 68px; border-bottom: 1px solid var(--line); }
@@ -172,26 +191,24 @@ svg { display: block; }
 .pn a:hover span { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 /* 放大檢視 */
-.lightbox { position: fixed; inset: 0; z-index: 200; background: var(--paper); display: grid; grid-template-rows: auto 1fr auto; opacity: 0; pointer-events: none; transition: opacity var(--t-base) linear; }
+.lightbox { position: fixed; inset: 0; z-index: 200; background: var(--paper); display: grid; grid-template-rows: auto minmax(0, 1fr); opacity: 0; pointer-events: none; transition: opacity var(--t-base) linear; }
 .lightbox.on { opacity: 1; pointer-events: auto; }
-.lb-top, .lb-bot { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 14px max(24px, env(safe-area-inset-left)); }
-.lb-top { border-bottom: 2px solid var(--ink); }
-.lb-bot { border-top: 2px solid var(--ink); }
+.lb-top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 14px max(24px, env(safe-area-inset-left)); border-bottom: 2px solid var(--ink); }
 .lb-count { display: flex; align-items: baseline; gap: 14px; font: 500 14px var(--mono); }
 .lb-count b { font: 800 28px/1 var(--sans); letter-spacing: -.02em; }
 .lb-count span { color: var(--ink-2); }
 .lb-mid { display: grid; grid-template-columns: 96px minmax(0, 1fr) 96px; align-items: center; min-height: 0; }
-.lb-mid .stage { display: grid; place-items: center; min-height: 0; height: 100%; padding: 24px 0; }
-.lb-mid .stage img { max-width: 100%; max-height: calc(100vh - 190px); border: 2px solid var(--ink); display: block; }
+.lb-mid .stage { display: grid; place-items: center; min-height: 0; min-width: 0; height: 100%; padding: 24px 0; }
+/* 作品連結緊貼在圖片正下方，寬度跟圖片對齊 */
+.lb-fig { margin: 0; display: grid; max-width: 100%; }
+.lb-fig img { justify-self: center; max-width: 100%; max-height: calc(100vh - 210px); max-height: calc(100dvh - 210px); border: 2px solid var(--ink); display: block; }
+.lb-fig figcaption { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 12px; min-width: 0; }
 .lb-arrow { justify-self: center; width: 64px; height: 96px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: var(--ink); color: var(--paper); border: 2px solid var(--ink); font: 500 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; transition: background var(--t-fast) linear, color var(--t-fast) linear; }
 .lb-arrow:hover, .lb-arrow:active { background: var(--paper); color: var(--ink); }
 .lb-arrow svg { transition: transform var(--t-base) var(--ease-out); }
 #lbPrev:hover svg { transform: translateX(-4px); } #lbNext:hover svg { transform: translateX(4px); }
 .lb-via { font: 400 14px var(--mono); color: var(--ink-2); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.lb-dots { display: flex; gap: 6px; }
-.lb-dots i { width: 8px; height: 8px; border: 1px solid var(--ink); display: block; }
-.lb-dots i.on { background: var(--ink); }
-.lb-ext { flex: none; display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 18px; background: var(--ink); color: var(--paper); border: 2px solid var(--ink); text-decoration: none; font: 500 13px var(--mono); letter-spacing: .12em; text-transform: uppercase; transition: background var(--t-fast) linear, color var(--t-fast) linear; }
+.lb-ext { flex: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 44px; padding: 0 18px; background: var(--ink); color: var(--paper); border: 2px solid var(--ink); text-decoration: none; font: 500 13px var(--mono); letter-spacing: .12em; text-transform: uppercase; transition: background var(--t-fast) linear, color var(--t-fast) linear; }
 .lb-ext:hover, .lb-ext:active { background: var(--paper); color: var(--ink); }
 
 /* 風格抽屜 */
@@ -274,8 +291,6 @@ svg { display: block; }
   .icon-btn { width: 52px; }
   .search { font-size: 16px; padding: 0 12px 0 2px; }
   .box .count { display: none; }
-  .manual .clauses { grid-template-columns: 1fr; }
-  .manual .clause + .clause { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
   .grid { gap: 40px 16px; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
   .info { row-gap: 10px; margin-top: 14px; }
   .info .name { font-size: 22px; }
@@ -290,11 +305,16 @@ svg { display: block; }
   .mtab { display: flex; }
   .gal { grid-template-columns: 1fr 1fr; gap: 12px; }
   .pn a { font-size: 20px; padding: 20px 0; }
-  .lb-mid { grid-template-columns: 1fr; }
-  .lb-mid .stage { padding: 16px; }
-  .lb-arrow { position: absolute; bottom: 92px; width: 52px; height: 52px; } .lb-arrow span { display: none; }
-  #lbPrev { left: 16px; } #lbNext { right: 16px; }
-  .lb-dots { display: none; }
+  /* 手機：左右切換鍵在畫面中間兩側，圖片左右留出位置不被蓋住 */
+  .lb-top { padding: 12px 16px; }
+  .lb-mid { grid-template-columns: 1fr; position: relative; }
+  .lb-mid .stage { padding: 16px 52px; }
+  .lb-fig { width: 100%; }
+  .lb-fig img { max-height: calc(100vh - 230px); max-height: calc(100dvh - 230px); }
+  .lb-fig figcaption { flex-direction: column; align-items: stretch; gap: 10px; }
+  .lb-via { text-align: center; }
+  .lb-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 64px; z-index: 1; } .lb-arrow span { display: none; }
+  #lbPrev { left: 4px; } #lbNext { right: 4px; }
   .panel { padding: 0 16px 32px; } .panel > header { margin: 0 -16px 8px; padding: 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -320,18 +340,6 @@ svg { display: block; }
     </div>
   </header>
 
-  <section class="manual" id="manual" aria-label="Manual">
-    <div class="wrap">
-      <div class="head"><span>Manual · 使用說明</span><span>Rev. 2026.11</span></div>
-      <div class="clauses">
-        <div class="clause"><h4><b>01</b>Scope</h4><p>本目錄收錄 __COUNT__ 種美術風格，作為設計參考之用。各風格之版面、字體、圖形及禁用事項均已明訂，可據以辨識與執行。</p></div>
-        <div class="clause"><h4><b>02</b>Procedure</h4><ol><li>瀏覽參考圖，選定風格。</li><li>於風格頁取用英文 prompt、背景色與配色。</li><li>如需製作簡報，複製指令貼至 Claude。</li></ol></div>
-        <div class="clause"><h4><b>03</b>Colour</h4><p>重點色數量依風格設有上限。自訂顏色須通過對比檢查，文字與背景之對比不得低於 4.5:1。</p></div>
-        <div class="clause"><h4><b>04</b>Prompts</h4><p>每一風格附英文 prompt，可用於圖像生成工具，或作為設計提案之風格說明。</p></div>
-        <div class="clause"><h4><b>05</b>Sources</h4><p>風格名稱整理自 Kittl 影片；參考圖取自 Pinterest，著作權屬原作者。</p></div>
-      </div>
-    </div>
-  </section>
 
   <main class="wrap" id="main">
     <div class="grid" id="grid"></div>
@@ -350,10 +358,21 @@ svg { display: block; }
 <div class="scrim" id="scrim"></div>
 <aside class="side filter" id="filter" aria-label="Filter">
   <header><h2>Filter</h2><button type="button" class="close" data-close aria-label="Close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></button></header>
-  <div class="body"><h3>Category</h3><div id="catList"></div><h3>Mood</h3><div id="moodList"></div></div>
-  <footer><button type="button" id="clearFilter">Clear</button><span class="count js-count"></span></footer>
+  <div class="body" id="filterBody"></div>
+  <footer><button type="button" class="btn-2" id="clearFilter">Clear</button><button type="button" class="btn-1" id="showFilter">Show</button></footer>
 </aside>
 <aside class="side panel" id="panel" aria-label="Use this style"></aside>
+<div class="help" id="manual" role="dialog" aria-modal="true" aria-labelledby="manualTitle">
+  <header><h2 id="manualTitle">Manual</h2><button type="button" class="close" data-close aria-label="Close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></button></header>
+  <ol>
+    <li><b>01</b><strong>Scope</strong><span>本目錄收錄 __COUNT__ 種美術風格，作為設計參考之用。各風格之版面、字體、圖形及禁用事項均已明訂，可據以辨識與執行。</span></li>
+    <li><b>02</b><strong>Procedure</strong><span>瀏覽參考圖，選定風格；於風格頁取用英文 prompt、背景色與配色；如需製作簡報，複製指令貼至 Claude。</span></li>
+    <li><b>03</b><strong>Colour</strong><span>重點色數量依風格設有上限。自訂顏色須通過對比檢查，文字與背景之對比不得低於 4.5:1。</span></li>
+    <li><b>04</b><strong>Prompts</strong><span>每一風格附英文 prompt，可用於圖像生成工具，或作為設計提案之風格說明。</span></li>
+    <li><b>05</b><strong>Sources</strong><span>風格名稱整理自公開的設計影片與文章，來源持續增加，各風格頁註明出處；參考圖取自 Pinterest，著作權屬原作者。</span></li>
+  </ol>
+  <footer>Rev. 2026.11　按 Esc 關閉。</footer>
+</div>
 <div class="help" id="help" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
   <header><h2 id="helpTitle">How to use</h2><button type="button" class="close" data-close aria-label="Close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></button></header>
   <ol>
@@ -374,8 +393,6 @@ svg { display: block; }
     <div class="stage" id="lbStage"></div>
     <button type="button" class="lb-arrow" id="lbNext" aria-label="Next image"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M10 5l8 8-8 8"/></svg><span>Next</span></button>
   </div>
-  <div class="lb-bot"><span class="lb-via" id="lbVia"></span><span class="lb-dots" id="lbDots"></span>
-    <a class="lb-ext" id="lbExt" target="_blank" rel="noopener">Open on Pinterest <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12L12 4M5 4h7v7"/></svg></a></div>
 </div>
 
 <script type="application/json" id="data">__DATA__</script>
@@ -447,48 +464,108 @@ svg { display: block; }
     a._s = s;
     grid.appendChild(a);
     whenPins(function () {
-      var c = a.querySelector('.cover'), first = s.pins && s.pins[0] && imgUrl(s.pins[0].id);
+      /* 封面用第一張讀得到的參考圖，不是固定第一張 */
+      var c = a.querySelector('.cover'), ok = pinsOf(s), first = ok.length && imgUrl(ok[0].id);
       c.innerHTML = first ? '<img src="' + first + '" alt="' + esc(s.name_en) + ' reference" loading="lazy">' : '<span class="cover-empty">No reference yet</span>';
     });
     return a;
   });
   var emptyEl = document.createElement('p'); emptyEl.className = 'empty'; emptyEl.textContent = '沒有符合的風格。換個關鍵字，或清除篩選。'; emptyEl.hidden = true; grid.appendChild(emptyEl);
 
-  var query = '', active = null;
+  /* 篩選：同一組勾多個＝符合任一個；不同組之間＝都要符合；年代用範圍 */
+  var ERAS = ['Pre-1900', '1900s', '1920s', '1930s', '1940s', '1950s', '1960s', '1970s', '1980s', '1990s', '2000s', '2010s', '2020s'];
+  var query = '', sel = { cat: {}, mood: {} }, era = { lo: 0, hi: ERAS.length - 1, timeless: false };
+  function eraFull() { return era.lo === 0 && era.hi === ERAS.length - 1; }
+  function anyOf(list, set) { var ks = Object.keys(set); return !ks.length || ks.some(function (k) { return (list || []).indexOf(k) >= 0; }); }
+  function eraOk(s) {
+    if (eraFull()) return true;
+    var e = s.eras || [];
+    return e.some(function (x) { var i = ERAS.indexOf(x); return i >= era.lo && i <= era.hi; }) || (era.timeless && e.indexOf('Timeless') >= 0);
+  }
   function applyFilter() {
     var q = query.trim().toLowerCase(), n = 0;
     cards.forEach(function (c) {
-      var s = c._s, show = (!q || s._q.indexOf(q) >= 0) && (!active || (s.keywords || []).indexOf(active) >= 0 || (s.categories || []).indexOf(active) >= 0);
+      var s = c._s, show = (!q || s._q.indexOf(q) >= 0) && anyOf(s.categories, sel.cat) && anyOf(s.keywords, sel.mood) && eraOk(s);
       c.hidden = !show; if (show) n++;
     });
     emptyEl.hidden = n > 0;
     document.querySelectorAll('.js-count').forEach(function (el) { el.innerHTML = '<b>' + pad(n) + '</b> / ' + styles.length; });
+    $('showFilter').textContent = n ? 'Show ' + n + (n === 1 ? ' style' : ' styles') : 'No match';
   }
   $('search').addEventListener('input', function (e) { query = e.target.value; applyFilter(); });
   /* 手機寬度放不下完整提示字，改短 */
   var narrow = matchMedia('(max-width: 760px)');
   function setPlaceholder() { $('search').placeholder = narrow.matches ? 'Search' : 'Search styles, moods, uses'; }
   setPlaceholder(); if (narrow.addEventListener) narrow.addEventListener('change', setPlaceholder);
+  var CHECK = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M2 6.5l2.5 2.5L10 3.5"/></svg>';
+  var CHEV = '<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l4-4 4 4"/></svg>';
+  function fiHTML(label, n) { return '<span class="ck">' + CHECK + '</span><span class="lbl">' + esc(label) + '</span>' + (n == null ? '' : '<span class="n">' + n + '</span>'); }
   (function buildFilters() {
-    var cat = {}, mood = {};
+    var cat = {}, mood = {}, body = $('filterBody');
     styles.forEach(function (s) {
       (s.categories || []).forEach(function (k) { cat[k] = (cat[k] || 0) + 1; });
       (s.keywords || []).forEach(function (k) { mood[k] = (mood[k] || 0) + 1; });
     });
-    function fill(box, counts, keys) {
+    function group(key, title, open) {
+      var h = document.createElement('button'), box = document.createElement('div');
+      h.type = 'button'; h.className = 'fg-h'; h.setAttribute('aria-expanded', open); h.dataset.g = key;
+      h.innerHTML = '<span>' + title + '<span class="sel-n"></span></span>' + CHEV;
+      box.hidden = !open;
+      h.addEventListener('click', function () { var on = h.getAttribute('aria-expanded') !== 'true'; h.setAttribute('aria-expanded', on); box.hidden = !on; });
+      body.appendChild(h); body.appendChild(box);
+      return box;
+    }
+    function checks(box, g, counts, keys) {
       keys.forEach(function (k) {
         var b = document.createElement('button');
-        b.type = 'button'; b.className = 'fi'; b.setAttribute('aria-pressed', 'false'); b.dataset.k = k;
-        b.innerHTML = '<span>' + esc(k) + '</span><span class="n">' + counts[k] + '</span>';
-        b.addEventListener('click', function () { active = active === k ? null : k; syncFilters(); applyFilter(); });
+        b.type = 'button'; b.className = 'fi'; b.setAttribute('aria-pressed', 'false'); b.dataset.g = g; b.dataset.k = k;
+        b.innerHTML = fiHTML(k, counts[k]);
+        b.addEventListener('click', function () { if (sel[g][k]) delete sel[g][k]; else sel[g][k] = 1; syncFilters(); applyFilter(); });
         box.appendChild(b);
       });
     }
-    fill($('catList'), cat, Object.keys(cat).sort(function (a, b) { return cat[b] - cat[a] || a.localeCompare(b); }));
-    fill($('moodList'), mood, Object.keys(mood).filter(function (k) { return mood[k] > 1; }).sort(function (a, b) { return mood[b] - mood[a]; }));
+    var eb = group('era', 'Era', true), max = ERAS.length - 1;
+    /* 標籤放在 Pre-1900、1940s、1980s、2020s（第 0、4、8、12 格），位置剛好等分 */
+    var at = function (i) { return 'calc(var(--k) + (100% - 2 * var(--k)) * ' + (i / max) + ')'; };
+    eb.innerHTML = '<div class="era"><p class="era-val" id="eraVal"></p>' +
+      '<div class="rng" id="eraRng"><span class="track"></span><span class="fill" id="eraFill"></span>' +
+      '<input type="range" id="eraLo" min="0" max="' + max + '" step="1" value="0" aria-label="Era from">' +
+      '<input type="range" id="eraHi" min="0" max="' + max + '" step="1" value="' + max + '" aria-label="Era to"></div>' +
+      '<div class="era-ticks">' + [0, 4, 8, max].map(function (i) { return '<span style="left:' + at(i) + '">' + (i ? ERAS[i] : '&lt;1900') + '</span>'; }).join('') + '</div></div>';
+    var tl = document.createElement('button');
+    tl.type = 'button'; tl.className = 'fi'; tl.id = 'eraTimeless'; tl.setAttribute('aria-pressed', 'false');
+    tl.innerHTML = fiHTML('Include timeless styles', styles.filter(function (s) { return (s.eras || []).indexOf('Timeless') >= 0; }).length);
+    tl.addEventListener('click', function () { era.timeless = !era.timeless; syncFilters(); applyFilter(); });
+    eb.appendChild(tl);
+    ['eraLo', 'eraHi'].forEach(function (id) {
+      $(id).addEventListener('input', function (e) {
+        var v = +e.target.value;
+        if (id === 'eraLo') { era.lo = Math.min(v, era.hi); e.target.value = era.lo; }
+        else { era.hi = Math.max(v, era.lo); e.target.value = era.hi; }
+        syncFilters(); applyFilter();
+      });
+    });
+
+    checks(group('cat', 'Category', false), 'cat', cat, Object.keys(cat).sort(function (a, b) { return cat[b] - cat[a] || a.localeCompare(b); }));
+    checks(group('mood', 'Mood', false), 'mood', mood, Object.keys(mood).filter(function (k) { return mood[k] > 1; }).sort(function (a, b) { return mood[b] - mood[a]; }));
   })();
-  function syncFilters() { document.querySelectorAll('.fi').forEach(function (x) { x.setAttribute('aria-pressed', x.dataset.k === active); }); }
-  $('clearFilter').addEventListener('click', function () { active = null; syncFilters(); applyFilter(); });
+  function syncFilters() {
+    document.querySelectorAll('.fi[data-g]').forEach(function (x) { x.setAttribute('aria-pressed', !!sel[x.dataset.g][x.dataset.k]); });
+    var max = ERAS.length - 1;
+    $('eraLo').value = era.lo; $('eraHi').value = era.hi;
+    $('eraFill').style.left = 'calc(var(--k) + (100% - 2 * var(--k)) * ' + (era.lo / max) + ')';
+    $('eraFill').style.right = 'calc(var(--k) + (100% - 2 * var(--k)) * ' + (1 - era.hi / max) + ')';    $('eraVal').textContent = eraFull() ? 'All eras' : (era.lo === era.hi ? ERAS[era.lo] : ERAS[era.lo] + ' – ' + ERAS[era.hi]);
+    /* 左端拉到最右邊時，讓左端在上層，才拉得回來 */
+    $('eraLo').style.zIndex = era.lo === max ? 2 : 1;
+    $('eraTimeless').setAttribute('aria-pressed', era.timeless || eraFull());
+    document.querySelectorAll('.fg-h').forEach(function (h) {
+      var g = h.dataset.g;
+      h.querySelector('.sel-n').textContent = g === 'era' ? '' : (Object.keys(sel[g]).length || '');
+    });
+  }
+  $('clearFilter').addEventListener('click', function () { sel = { cat: {}, mood: {} }; era = { lo: 0, hi: ERAS.length - 1, timeless: false }; syncFilters(); applyFilter(); });
+  $('showFilter').addEventListener('click', function () { closeAll(); });
+  syncFilters();
 
   /* 頁首：隨捲動從大標題收合成精簡列（標題縮小留在中間，搜尋列拉成全寬） */
   var M = null;
@@ -521,9 +598,7 @@ svg { display: block; }
     M.box.style.top = lerp(s0.by, e.by, p) + 'px';
     M.box.style.width = lerp(s0.bw, e.bw, p) + 'px';
     M.bg.style.transform = 'scaleY(' + (lerp(M.H0, e.H, p) / M.H0) + ')';
-    placeManual();
   }
-  function placeManual() { if (M) $('manual').style.top = (M.box.getBoundingClientRect().bottom + 12) + 'px'; }
   addEventListener('scroll', applyHeader, { passive: true });
   addEventListener('resize', measure);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
@@ -537,7 +612,7 @@ svg { display: block; }
       if (act === 'theme') return toggleTheme();
       if (act === 'random') { var pick = styles[Math.floor(Math.random() * styles.length)]; location.hash = pick.id; return; }
       if (act === 'filter') { openSide($('filter')); setExpanded('filter', true); return; }
-      if (act === 'manual') { var m = $('manual'), on = !m.classList.contains('on'); placeManual(); m.classList.toggle('on', on); setExpanded('manual', on); }
+      if (act === 'manual') { openSide($('manual')); setExpanded('manual', true); }
     });
   });
 
@@ -684,12 +759,11 @@ svg { display: block; }
   function openLb(i) { closeAll(); lbI = i; lbOn = true; showLb(); $('lightbox').classList.add('on'); $('lbClose').focus(); }
   function showLb() {
     var list = pinsOf(cur), p = list[lbI];
-    $('lbStage').innerHTML = '<img src="' + imgUrl(p.id) + '" alt="' + esc(cur.name_en) + ' reference ' + (lbI + 1) + '">';
+    $('lbStage').innerHTML = '<figure class="lb-fig"><img src="' + imgUrl(p.id) + '" alt="' + esc(cur.name_en) + ' reference ' + (lbI + 1) + '">' +
+      '<figcaption><span class="lb-via">via ' + esc(pinner(p.id)) + '</span>' +
+      '<a class="lb-ext" href="https://www.pinterest.com/pin/' + p.id + '/" target="_blank" rel="noopener">Open on Pinterest <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12L12 4M5 4h7v7"/></svg></a></figcaption></figure>';
     $('lbIdx').textContent = pad(lbI + 1) + ' / ' + pad(list.length);
     $('lbName').textContent = cur.name_en;
-    $('lbVia').textContent = 'via ' + pinner(p.id);
-    $('lbExt').href = 'https://www.pinterest.com/pin/' + p.id + '/';
-    $('lbDots').innerHTML = list.map(function (x, k) { return '<i class="' + (k === lbI ? 'on' : '') + '"></i>'; }).join('');
   }
   function stepLb(d) { var n = pinsOf(cur).length; lbI = (lbI + d + n) % n; showLb(); }
   function closeLb() { lbOn = false; $('lightbox').classList.remove('on'); }
@@ -699,15 +773,15 @@ svg { display: block; }
 
   /* ---------- 共用：關閉 ---------- */
   function closeAll() {
-    ['filter', 'panel', 'help'].forEach(function (id) { $(id).classList.remove('on'); });
+    ['filter', 'panel', 'help', 'manual'].forEach(function (id) { $(id).classList.remove('on'); });
     scrim.classList.remove('on');
-    setExpanded('filter', false);
+    setExpanded('filter', false); setExpanded('manual', false);
     var q = $('qbtn'); if (q) q.setAttribute('aria-expanded', 'false');
   }
   scrim.addEventListener('click', closeAll);
-  document.querySelectorAll('#filter [data-close], #help [data-close]').forEach(function (b) { b.addEventListener('click', closeAll); });
+  document.querySelectorAll('#filter [data-close], #help [data-close], #manual [data-close]').forEach(function (b) { b.addEventListener('click', closeAll); });
   addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') { if (lbOn) closeLb(); else { closeAll(); $('manual').classList.remove('on'); setExpanded('manual', false); } }
+    if (e.key === 'Escape') { if (lbOn) closeLb(); else closeAll(); }
     if (lbOn && e.key === 'ArrowRight') stepLb(1);
     if (lbOn && e.key === 'ArrowLeft') stepLb(-1);
   });
@@ -719,7 +793,6 @@ svg { display: block; }
     closeAll(); closeLb();
     if (s) {
       if (!home.hidden) homeY = scrollY;
-      $('manual').classList.remove('on'); setExpanded('manual', false);
       home.hidden = true; detail.hidden = false;
       renderDetail(s);
       document.title = s.name_en + ' — PREMA';
@@ -734,8 +807,9 @@ svg { display: block; }
   }
   addEventListener('hashchange', route);
 
+  /* 頁尾來源：同一支影片只列一次（去掉網址裡的時間點） */
   var src = {};
-  styles.forEach(function (s) { if (s.source) src[s.source.url] = s.source.title; });
+  styles.forEach(function (s) { if (s.source) src[s.source.url.replace(/[?&]t=\d+s?$/, '')] = s.source.title; });
   Object.keys(src).forEach(function (u, i) {
     var box = $('sources');
     if (i) box.appendChild(document.createTextNode(' · '));

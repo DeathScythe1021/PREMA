@@ -18,6 +18,9 @@
     "Graphic",
     "Contemporary"
   ],
+  "eras": [
+    "1900s"
+  ],
   "best_for": [
     "產品介紹與功能拆解",
     "系統架構、流程與技術說明",
@@ -195,10 +198,6 @@
     {
       "id": "148196643976253359",
       "note": "Pantheon architectural blueprint poster, plan and section"
-    },
-    {
-      "id": "958914945640412429",
-      "note": "espresso machine patent print in blueprint style"
     }
   ]
 }
