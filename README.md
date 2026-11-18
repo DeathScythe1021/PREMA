@@ -6,6 +6,7 @@ PREMA 是一個設計風格靈感庫，收錄定義明確的美術風格。每�
 
 - 風格目錄：https://deathscythe1021.github.io/PREMA/
 - 目前收錄：41 種風格
+- 更新紀錄與預計排程：[UPDATES.md](UPDATES.md)
 
 ## 為什麼要先定風格
 
@@ -78,6 +79,7 @@ git -C ~/.claude/skills/art-style-deck pull
 - **審 PR**：點開參考圖連結，不對的 pin 刪掉或換掉，沒問題就合併，網頁會自動更新。
 - **不想收某個風格**：`python3 scripts/candidates.py skip "Kidcore" "原因"`，或直接跟 Claude 說「候選清單跳過 Kidcore」。
 - **加新的來源影片**：`python3 scripts/candidates.py add-video <YouTube 影片 ID>`。
+- **看哪天更新了哪幾種、接下來每週預計做哪幾種**：看 [UPDATES.md](UPDATES.md)，每次排程都會自動更新。
 - **看還剩哪些**：`python3 scripts/candidates.py list --status pending`。
 
 候選清單和 `styles/` 對不上（例如標成已做但沒有風格檔）時，`validate_styles.py` 會報錯，GitHub Actions 也會擋下來。
@@ -100,6 +102,7 @@ styles/<id>.json            風格規格
 styles/previews/<id>.html   示範封面（只有最早的 25 種有；給 Claude 參考，不上網站）
 assets/deck-shell.html      HTML 簡報外殼
 sources/kittl.json          候選風格清單（來源影片與待做／已做／跳過）
+UPDATES.md                  更新紀錄與預計排程（由 scripts/candidates.py log 產生）
 references/                 寫給 Claude 的規範（去 AI 感清單、簡報寫法、封面規格、自動新增流程）
 scripts/                    列出風格、檢查配色、驗證資料、產生網頁、管理候選清單
 tests/                      腳本的單元測試

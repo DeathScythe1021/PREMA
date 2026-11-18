@@ -104,6 +104,50 @@ class TestQueueOps(unittest.TestCase):
         self.assertEqual(q.find(d, "Vaporwave")["video"], "BBB")
 
 
+class TestLog(unittest.TestCase):
+    def data(self):
+        d = sample()
+        d["videos"].append({"id": "BBB", "title": "40 Design Names", "published": "2025-03-12"})
+        d["candidates"][2]["done_on"] = "2026-11-17"
+        d["candidates"] += [
+            {"name_en": "Bauhaus", "video": "BBB", "t": "16:32", "status": "done", "style_id": "bauhaus", "done_on": "2026-11-18"},
+            {"name_en": "Memphis", "video": "BBB", "t": "9:40", "status": "done", "style_id": "memphis", "done_on": "2026-11-18"},
+        ] + [{"name_en": f"Style {i}", "video": "BBB", "t": "0:01", "status": "pending"} for i in range(5)]
+        return d
+
+    def names(self):
+        return {"trinket": "小物件", "bauhaus": "包浩斯", "memphis": "曼菲斯"}
+
+    def test_mark_done_sets_date(self):
+        d = sample()
+        q.mark(d, "Romantasy", "done", style_id="romantasy", today="2026-11-23")
+        self.assertEqual(q.find(d, "Romantasy")["done_on"], "2026-11-23")
+
+    def test_next_monday(self):
+        self.assertEqual(q.next_monday("2026-11-18"), "2026-11-23")  # 週三 → 下週一
+        self.assertEqual(q.next_monday("2026-11-23"), "2026-11-30")  # 週一 → 再下週一
+
+    def test_render_history_newest_first(self):
+        md = q.render_log(self.data(), self.names(), per_week=3, weeks=2)
+        self.assertLess(md.index("2026-11-18"), md.index("2026-11-17"))
+        self.assertIn("[包浩斯 Bauhaus](https://deathscythe1021.github.io/PREMA/#bauhaus)", md)
+        self.assertIn("新增 2 種", md)
+
+    def test_render_upcoming_schedule(self):
+        md = q.render_log(self.data(), self.names(), per_week=3, weeks=2)
+        up = md[md.index("預計排程"):]
+        self.assertIn("2026-11-23", up)
+        self.assertIn("2026-11-30", up)
+        # 第一週：Romantasy、Chinoiserie、Cottagecore；第二週：Style 0–2；剩下 Style 3、4
+        self.assertLess(up.index("Romantasy"), up.index("2026-11-30"))
+        self.assertIn("Style 2", up)
+        self.assertNotIn("Style 3", up)
+        self.assertIn("之後還有 2 種", up)
+
+    def test_render_is_deterministic(self):
+        self.assertEqual(q.render_log(self.data(), self.names()), q.render_log(self.data(), self.names()))
+
+
 class TestCheck(unittest.TestCase):
     def test_ok(self):
         self.assertEqual(q.check(sample(), style_ids={"trinket"}), [])

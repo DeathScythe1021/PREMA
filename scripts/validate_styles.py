@@ -95,6 +95,15 @@ def main():
         for e in errs:
             print(f"    錯誤：{e}")
         total_err += len(errs)
+        if os.path.basename(path) == "kittl.json":
+            names = {s["id"]: s.get("name_zh", "") for _, s in styles}
+            cur = ""
+            if os.path.exists(queue_lib.UPDATES):
+                with open(queue_lib.UPDATES, encoding="utf-8") as f:
+                    cur = f.read()
+            if queue_lib.render_log(queue_lib.load(path), names) != cur:
+                print("[ERR] UPDATES.md\n    錯誤：不是最新的，請執行 python3 scripts/candidates.py log")
+                total_err += 1
     print(f"\n共 {len(styles)} 種風格，{total_err} 個錯誤")
     sys.exit(1 if total_err else 0)
 

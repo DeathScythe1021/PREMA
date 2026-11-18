@@ -65,13 +65,14 @@ python3 scripts/candidates.py next 3
 ### 7. 更新清單、檢查
 
 ```bash
-python3 scripts/candidates.py done "<name_en>" <id>
+python3 scripts/candidates.py done "<name_en>" <id>   # 會記下今天的日期
+python3 scripts/candidates.py log                    # 重新產生 UPDATES.md（更新紀錄＋預計排程）
 python3 -m unittest discover tests
 python3 scripts/validate_styles.py
 python3 scripts/build_site.py --out _site
 ```
 
-全部通過才能開 PR。有錯就修，修不好的風格就把檔案移除、候選改回 `pending`，在 PR 說明裡寫原因。
+全部通過才能開 PR。`validate_styles.py` 也會檢查 `UPDATES.md` 是不是最新的，忘了跑 `log` 會報錯。有錯就修，修不好的風格就把檔案移除、候選改回 `pending`，在 PR 說明裡寫原因。
 
 同時更新 `README.md` 和 `SKILL.md` 裡的風格數量（「目前收錄：N 種風格」「目前 N 種」）。
 
