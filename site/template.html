@@ -302,16 +302,16 @@ svg { display: block; }
   .mtab { display: flex; }
   .gal { grid-template-columns: 1fr 1fr; gap: 12px; }
   .pn a { font-size: 20px; padding: 20px 0; }
-  /* 手機：圖片＋作品連結在上，左右切換鍵排在最下面一列 */
+  /* 手機：左右切換鍵在畫面中間兩側，圖片左右留出位置不被蓋住 */
   .lb-top { padding: 12px 16px; }
-  .lb-mid { grid-template-columns: 1fr 1fr; grid-template-rows: minmax(0, 1fr) auto; }
-  .lb-mid .stage { grid-column: 1 / -1; grid-row: 1; padding: 16px; }
+  .lb-mid { grid-template-columns: 1fr; position: relative; }
+  .lb-mid .stage { padding: 16px 52px; }
   .lb-fig { width: 100%; }
-  .lb-fig img { max-height: calc(100vh - 290px); max-height: calc(100dvh - 290px); }
+  .lb-fig img { max-height: calc(100vh - 230px); max-height: calc(100dvh - 230px); }
   .lb-fig figcaption { flex-direction: column; align-items: stretch; gap: 10px; }
   .lb-via { text-align: center; }
-  .lb-arrow { grid-row: 2; width: 64px; height: 52px; flex-direction: row; margin-bottom: max(16px, env(safe-area-inset-bottom)); } .lb-arrow span { display: none; }
-  #lbPrev { grid-column: 1; justify-self: start; margin-left: 16px; } #lbNext { grid-column: 2; justify-self: end; margin-right: 16px; }
+  .lb-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 64px; z-index: 1; } .lb-arrow span { display: none; }
+  #lbPrev { left: 4px; } #lbNext { right: 4px; }
   .panel { padding: 0 16px 32px; } .panel > header { margin: 0 -16px 8px; padding: 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
