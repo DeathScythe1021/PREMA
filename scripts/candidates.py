@@ -10,6 +10,8 @@
   python3 scripts/candidates.py add-video <影片ID> [--only "名稱" ...]
                                                   把影片章節加進清單（--only 只加指定的章節）
   python3 scripts/candidates.py check             檢查清單和 styles/ 是否一致
+  python3 scripts/candidates.py log               重新產生 UPDATES.md（更新紀錄＋預計排程）
+  python3 scripts/candidates.py log --check       只檢查 UPDATES.md 是不是最新的
 """
 import argparse, json, os, re, sys, urllib.request
 
@@ -106,6 +108,29 @@ def cmd_skip(data, a):
     return True
 
 
+def style_names_zh():
+    out = {}
+    for sid in q.style_ids():
+        out[sid] = q.load(os.path.join(q.STYLES, sid + ".json")).get("name_zh", "")
+    return out
+
+
+def cmd_log(data, a):
+    md = q.render_log(data, style_names_zh())
+    path = q.UPDATES
+    old = open(path, encoding="utf-8").read() if os.path.exists(path) else ""
+    if a.check:
+        if old != md:
+            print("UPDATES.md 不是最新的，請執行 python3 scripts/candidates.py log")
+            sys.exit(1)
+        print("UPDATES.md 是最新的")
+        return False
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(md)
+    print(f"已更新 {path}")
+    return False
+
+
 def cmd_check(data, a):
     errs = q.check(data, q.style_ids())
     for e in errs:
@@ -127,6 +152,7 @@ def main():
     s = sub.add_parser("scan"); s.set_defaults(f=cmd_scan)
     s = sub.add_parser("add-video"); s.add_argument("video"); s.add_argument("--only", nargs="+"); s.set_defaults(f=cmd_add_video)
     s = sub.add_parser("check"); s.set_defaults(f=cmd_check)
+    s = sub.add_parser("log"); s.add_argument("--check", action="store_true"); s.set_defaults(f=cmd_log)
     a = p.parse_args()
     data = q.load(a.file)
     try:

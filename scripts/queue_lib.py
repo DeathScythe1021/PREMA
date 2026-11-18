@@ -8,11 +8,12 @@
                   "status": "pending|done|skipped", "style_id": "...", "note": "..."}]
 }
 """
-import json, os, re
+import datetime, json, os, re
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 SOURCES = os.path.join(ROOT, "sources")
 STYLES = os.path.join(ROOT, "styles")
+UPDATES = os.path.join(ROOT, "UPDATES.md")
 STATUSES = ("pending", "done", "skipped")
 
 _TS = re.compile(r"^\s*((?:\d{1,2}:)?\d{1,2}:\d{2})\s+(.+?)\s*$")
@@ -76,7 +77,7 @@ def next_pending(data, n):
     return [c for c in data["candidates"] if c["status"] == "pending"][:n]
 
 
-def mark(data, name, status, style_id=None, note=None):
+def mark(data, name, status, style_id=None, note=None, today=None):
     if status not in STATUSES:
         raise ValueError(f"status 只能是 {', '.join(STATUSES)}")
     c = find(data, name)
@@ -87,9 +88,68 @@ def mark(data, name, status, style_id=None, note=None):
     c["status"] = status
     if style_id:
         c["style_id"] = style_id
+    if status == "done":
+        c["done_on"] = today or datetime.date.today().isoformat()
     if note:
         c["note"] = note
     return c
+
+
+SITE = "https://deathscythe1021.github.io/PREMA/"
+
+
+def next_monday(day):
+    d = datetime.date.fromisoformat(day)
+    return (d + datetime.timedelta(days=7 - d.weekday())).isoformat()
+
+
+def render_log(data, names_zh, per_week=3, weeks=8):
+    """產生 UPDATES.md：已更新（依日期，新的在上）＋接下來每週預計做哪幾種。
+
+    只依資料計算（排程從最後一次更新的下一個週一算起），同樣的資料一定產生同樣的內容。
+    """
+    vids = {v["id"]: v["title"] for v in data.get("videos", [])}
+    done = [c for c in data["candidates"] if c["status"] == "done" and c.get("done_on")]
+    by_day = {}
+    for c in done:
+        by_day.setdefault(c["done_on"], []).append(c)
+    pending = [c for c in data["candidates"] if c["status"] == "pending"]
+    n_done = sum(c["status"] == "done" for c in data["candidates"])
+
+    out = ["# 更新紀錄", "",
+           "這份檔案由 `python3 scripts/candidates.py log` 依 `sources/kittl.json` 產生，不要手動修改。",
+           f"目前已收錄 {n_done} 種 Kittl 風格，待做 {len(pending)} 種。", "",
+           "## 已更新", ""]
+    for day in sorted(by_day, reverse=True):
+        items = by_day[day]
+        out.append(f"### {day}（新增 {len(items)} 種）")
+        out.append("")
+        for c in items:
+            sid = c["style_id"]
+            zh = names_zh.get(sid, "")
+            label = f"{zh} {c['name_en']}".strip()
+            out.append(f"- [{label}]({SITE}#{sid})　來源：{vids.get(c['video'], c['video'])} {c['t']}")
+        out.append("")
+
+    out += ["## 預計排程", "",
+            f"每週一台北時間 09:00 由雲端排程新增 {per_week} 種，依候選清單順序。"
+            "實際內容以當週的 PR 為準（不適合的候選會被跳過、由下一個補上）。", ""]
+    if not pending:
+        out.append("候選清單已經清空。")
+    else:
+        start = next_monday(max(by_day)) if by_day else next_monday(datetime.date.today().isoformat())
+        day = datetime.date.fromisoformat(start)
+        for w in range(weeks):
+            chunk = pending[w * per_week:(w + 1) * per_week]
+            if not chunk:
+                break
+            out.append(f"- {day.isoformat()}：" + "、".join(c["name_en"] for c in chunk))
+            day += datetime.timedelta(days=7)
+        rest = len(pending) - per_week * weeks
+        if rest > 0:
+            out.append(f"- 之後還有 {rest} 種，完整清單：`python3 scripts/candidates.py list --status pending`")
+    out.append("")
+    return "\n".join(out)
 
 
 def add_candidates(data, video_id, chapters, existing_keys=()):
