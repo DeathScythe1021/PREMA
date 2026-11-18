@@ -1,0 +1,213 @@
+{
+  "id": "vaporwave",
+  "name_zh": "蒸氣波",
+  "name_en": "Vaporwave",
+  "summary": "2010 年代網路音樂圈的懷舊拼貼：粉紫漸層天空、希臘石膏像、Windows 95 視窗、透視格線地板和拉開字距的標題。",
+  "definition": "Vaporwave 來自 2010 年代初的網路音樂場景，把 80、90 年代的購物中心音樂、電視廣告與舊電腦介面重新剪接；Macintosh Plus 的《Floral Shoppe》封面（粉紅背景、石膏胸像、棋盤地板、日文字）定下了它的長相。畫面像一張低解析度的桌布，帶著一點空虛和反諷。轉成簡報時，內容裝進舊作業系統的視窗裡，背景是粉紫漸層天空和往遠方延伸的格線地板，標題拉開字距，像在模仿全形字。",
+  "keywords": [
+    "懷舊",
+    "夢幻",
+    "反諷",
+    "網路次文化"
+  ],
+  "categories": [
+    "Retro",
+    "Collage"
+  ],
+  "best_for": [
+    "音樂、展演與派對宣傳",
+    "潮流品牌與快閃活動",
+    "網路文化與迷因主題分享",
+    "設計系課程與作品集"
+  ],
+  "not_for": [
+    "財報與法規說明",
+    "需要穩重信任感的企業簡報"
+  ],
+  "traits": [
+    "粉紅、薰衣草、青綠的粉彩漸層天空",
+    "往地平線收束的透視格線或棋盤地板",
+    "舊作業系統的灰色立體視窗與標題列",
+    "希臘羅馬石膏像、棕櫚樹等拼貼素材",
+    "拉開字距、模仿全形字的標題",
+    "掃描線、色版錯位與低解析度像素感"
+  ],
+  "layout": [
+    "畫面下方三分之一是透視格線地板，地平線大約在畫面一半偏下",
+    "主要內容放進一個舊作業系統視窗，視窗可以偏離中心、疊在漸層天空上",
+    "照片和圖形像拼貼一樣浮在空中，彼此可以疊壓，不必對齊",
+    "標題字距拉開 0.2em 以上；英文副標用斜體襯線字",
+    "頁碼和標籤用像素字，放在視窗標題列或角落的工作列"
+  ],
+  "motifs": [
+    "透視格線地板",
+    "被橫條切開的夕陽圓",
+    "Windows 95 視窗與按鈕",
+    "棋盤格",
+    "掃描線",
+    "像素游標與讀取進度條"
+  ],
+  "typography": {
+    "display": {
+      "family": "DM Serif Display",
+      "weights": "400、italic",
+      "role": "英文標題與副標，斜體最常用，可以加漸層或雙色錯位"
+    },
+    "body": {
+      "family": "VT323",
+      "weights": "400",
+      "role": "視窗標題列、檔名、頁碼這類短標籤"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文標題用 900 加大字距，內文用 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=VT323&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "標題字距 0.2em 以上，模仿全形英數的鬆散感",
+      "像素字只用在標籤和頁碼，不排長段落",
+      "英文副標用斜體襯線，可以加一層錯位的青色或粉色陰影"
+    ]
+  },
+  "imagery": [
+    "希臘羅馬石膏像、噴泉、棕櫚樹、購物中心中庭、舊電腦與 CRT 螢幕",
+    "照片調成粉紫或青綠色調，可以加掃描線和色版錯位",
+    "去背的物件像貼紙一樣浮在畫面上"
+  ],
+  "placeholder": "一個 Windows 95 風格的小視窗，標題列寫檔名，視窗內是棋盤格底，中間寫「石膏像照片｜4:5」",
+  "avoid": [
+    "黑底霓虹、跑車、鉻字的合成器浪潮（Synthwave）路線",
+    "半透明塑膠與冰藍機殼的千禧科技感",
+    "天空藍、草地綠、水珠泡泡的 Frutiger Aero 光澤",
+    "乾淨的扁平圖示和圓角卡片",
+    "沒有拼貼和介面元素、只剩粉紫漸層"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "背景用粉彩，三個重點色分工：桃紅當夕陽與格線、青綠當錯位陰影與按鈕、紫色當視窗標題列。"
+  },
+  "backgrounds": [
+    {
+      "id": "pink",
+      "name": "黃昏粉",
+      "hex": "#F8D3E4"
+    },
+    {
+      "id": "lav",
+      "name": "薰衣草",
+      "hex": "#DDD5F6"
+    },
+    {
+      "id": "mint",
+      "name": "汽水薄荷",
+      "hex": "#CFF3EC"
+    },
+    {
+      "id": "night",
+      "name": "午夜紫",
+      "hex": "#1E1540"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "V1",
+      "name": "花店購物",
+      "ink": "#2A1846",
+      "accents": [
+        "#C4177A",
+        "#0F7F95",
+        "#6A3FD0"
+      ],
+      "pairs_with": [
+        "pink",
+        "lav",
+        "mint"
+      ]
+    },
+    {
+      "id": "V2",
+      "name": "午夜電視台",
+      "ink": "#F8D3E4",
+      "accents": [
+        "#FF6FB5",
+        "#3FE0E6",
+        "#B8A4FF"
+      ],
+      "pairs_with": [
+        "night"
+      ]
+    },
+    {
+      "id": "V3",
+      "name": "大理石中庭",
+      "ink": "#2A1846",
+      "accents": [
+        "#B0306F",
+        "#5B45C4",
+        "#0E7A6E"
+      ],
+      "pairs_with": [
+        "lav",
+        "mint"
+      ]
+    },
+    {
+      "id": "V4",
+      "name": "熱帶桌布",
+      "ink": "#1E1540",
+      "accents": [
+        "#D8337D",
+        "#2E6FD0",
+        "#7C3FB8"
+      ],
+      "pairs_with": [
+        "pink",
+        "mint"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 5 Weird Design Styles That Go Together Perfectly",
+    "url": "https://www.youtube.com/watch?v=rKx7AsY3HTk&t=285s"
+  },
+  "prompt_en": [
+    "Early-2010s vaporwave album-cover aesthetic, low-res and nostalgic",
+    "Pastel pink, lavender and teal gradient sky over a perspective grid floor",
+    "Greco-Roman plaster bust, palm trees and checkerboard tiles as collage elements",
+    "Windows 95 style grey bevelled windows, title bars and pixel cursors",
+    "Widely letter-spaced titles and italic serif lettering with chromatic offset",
+    "Scanlines, RGB misregistration and a dreamy, ironic mood"
+  ],
+  "pinterest_queries": [
+    "vaporwave album cover art",
+    "vaporwave poster design",
+    "vaporwave aesthetic statue grid"
+  ],
+  "pins": [
+    {
+      "id": "616922848941038253",
+      "note": "Macintosh Plus Floral Shoppe album cover, bust on checkered floor"
+    },
+    {
+      "id": "1076360379673844719",
+      "note": "AVION Dreamin vaporwave album cover with Greek statue"
+    },
+    {
+      "id": "779263541768421595",
+      "note": "neon grid landscape with spaced-out DREAM typography"
+    },
+    {
+      "id": "652810908474332796",
+      "note": "vaporwave poster, credited to Darius Krause"
+    },
+    {
+      "id": "209980401366451409",
+      "note": "vaporwave aesthetic movie poster"
+    },
+    {
+      "id": "293367363238893089",
+      "note": "glitch-art classical bust cut-out, vaporwave palette"
+    }
+  ]
+}

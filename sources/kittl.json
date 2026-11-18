@@ -1,0 +1,738 @@
+{
+  "channel": {
+    "name": "Kittl",
+    "channel_id": "UCXq21-5vkOqtjEGlXB3tRig",
+    "url": "https://www.youtube.com/@kittl"
+  },
+  "ignored_videos": [],
+  "videos": [
+    {
+      "id": "krH0Hdk2mEw",
+      "title": "The 2027 Design Style Trends You Need To Know",
+      "published": "2026-11-02"
+    },
+    {
+      "id": "WHYVUPs8L3k",
+      "title": "10 Cool Design Style Names You've Been Searching For",
+      "published": "2026-08-12"
+    },
+    {
+      "id": "hhbq6-OrAbw",
+      "title": "10 Design Names You've Been Searching For But Can't Find",
+      "published": "2026-06-02"
+    },
+    {
+      "id": "xpLUouSZHi8",
+      "title": "20 More Design Styles You've Been Searching For",
+      "published": "2026-02-13"
+    },
+    {
+      "id": "rXXSNk7-XLs",
+      "title": "The Most Stunning Design Style Is One Of The Most Simple",
+      "published": "2025-10-24"
+    },
+    {
+      "id": "rKx7AsY3HTk",
+      "title": "5 Weird Design Styles That Go Together Perfectly",
+      "published": "2025-08-22"
+    },
+    {
+      "id": "uZWnxa4mkKA",
+      "title": "15 More Design Styles You've Never Heard Of",
+      "published": "2025-05-02"
+    },
+    {
+      "id": "bZ1vbmV5gk8",
+      "title": "40 Design Style Names You've Been Looking For (Find References Faster)",
+      "published": "2025-03-12"
+    }
+  ],
+  "candidates": [
+    {
+      "name_en": "Knolling",
+      "video": "WHYVUPs8L3k",
+      "t": "0:25",
+      "status": "done",
+      "style_id": "knolling"
+    },
+    {
+      "name_en": "Googie",
+      "video": "WHYVUPs8L3k",
+      "t": "1:20",
+      "status": "done",
+      "style_id": "googie"
+    },
+    {
+      "name_en": "Astro Attic",
+      "video": "WHYVUPs8L3k",
+      "t": "2:15",
+      "status": "done",
+      "style_id": "astro-attic"
+    },
+    {
+      "name_en": "Cryptidcore",
+      "video": "WHYVUPs8L3k",
+      "t": "3:00",
+      "status": "done",
+      "style_id": "cryptidcore"
+    },
+    {
+      "name_en": "ASCII Art",
+      "video": "WHYVUPs8L3k",
+      "t": "3:55",
+      "status": "done",
+      "style_id": "ascii-art"
+    },
+    {
+      "name_en": "Postage",
+      "video": "WHYVUPs8L3k",
+      "t": "5:10",
+      "status": "done",
+      "style_id": "postage"
+    },
+    {
+      "name_en": "Metro Aero",
+      "video": "WHYVUPs8L3k",
+      "t": "6:00",
+      "status": "done",
+      "style_id": "metro-aero"
+    },
+    {
+      "name_en": "Skeuomorphism",
+      "video": "WHYVUPs8L3k",
+      "t": "6:45",
+      "status": "done",
+      "style_id": "skeuomorphism"
+    },
+    {
+      "name_en": "Cassette Core",
+      "video": "WHYVUPs8L3k",
+      "t": "7:25",
+      "status": "done",
+      "style_id": "cassette-core"
+    },
+    {
+      "name_en": "Blurry Motion",
+      "video": "WHYVUPs8L3k",
+      "t": "8:25",
+      "status": "done",
+      "style_id": "blurry-motion"
+    },
+    {
+      "name_en": "Neo Frutiger",
+      "video": "uZWnxa4mkKA",
+      "t": "0:47",
+      "status": "done",
+      "style_id": "neo-frutiger"
+    },
+    {
+      "name_en": "Dark Academia",
+      "video": "uZWnxa4mkKA",
+      "t": "2:08",
+      "status": "done",
+      "style_id": "dark-academia"
+    },
+    {
+      "name_en": "Light Academia",
+      "video": "uZWnxa4mkKA",
+      "t": "3:52",
+      "status": "done",
+      "style_id": "light-academia"
+    },
+    {
+      "name_en": "Wabi Sabi",
+      "video": "uZWnxa4mkKA",
+      "t": "5:33",
+      "status": "done",
+      "style_id": "wabi-sabi"
+    },
+    {
+      "name_en": "Southwestern",
+      "video": "uZWnxa4mkKA",
+      "t": "7:10",
+      "status": "done",
+      "style_id": "southwestern"
+    },
+    {
+      "name_en": "Nautical Tattoo",
+      "video": "uZWnxa4mkKA",
+      "t": "8:13",
+      "status": "done",
+      "style_id": "nautical-tattoo"
+    },
+    {
+      "name_en": "Rebus",
+      "video": "uZWnxa4mkKA",
+      "t": "9:31",
+      "status": "done",
+      "style_id": "rebus"
+    },
+    {
+      "name_en": "Literal Object",
+      "video": "uZWnxa4mkKA",
+      "t": "10:35",
+      "status": "done",
+      "style_id": "literal-object"
+    },
+    {
+      "name_en": "Trinket",
+      "video": "uZWnxa4mkKA",
+      "t": "12:06",
+      "status": "done",
+      "style_id": "trinket"
+    },
+    {
+      "name_en": "Glassmorphism",
+      "video": "uZWnxa4mkKA",
+      "t": "13:15",
+      "status": "done",
+      "style_id": "glassmorphism"
+    },
+    {
+      "name_en": "Modular Type",
+      "video": "uZWnxa4mkKA",
+      "t": "14:05",
+      "status": "done",
+      "style_id": "modular-type"
+    },
+    {
+      "name_en": "Receiptify",
+      "video": "uZWnxa4mkKA",
+      "t": "15:24",
+      "status": "done",
+      "style_id": "receiptify"
+    },
+    {
+      "name_en": "Neo-Brutalism",
+      "video": "uZWnxa4mkKA",
+      "t": "17:05",
+      "status": "done",
+      "style_id": "neo-brutalism"
+    },
+    {
+      "name_en": "Modern Nostalgia",
+      "video": "uZWnxa4mkKA",
+      "t": "18:33",
+      "status": "done",
+      "style_id": "modern-nostalgia"
+    },
+    {
+      "name_en": "Swiss Punk",
+      "video": "uZWnxa4mkKA",
+      "t": "19:42",
+      "status": "done",
+      "style_id": "swiss-punk"
+    },
+    {
+      "name_en": "Human Craft",
+      "video": "krH0Hdk2mEw",
+      "t": "0:47",
+      "status": "pending"
+    },
+    {
+      "name_en": "Bedazzled",
+      "video": "krH0Hdk2mEw",
+      "t": "2:09",
+      "status": "pending"
+    },
+    {
+      "name_en": "Collage",
+      "video": "krH0Hdk2mEw",
+      "t": "3:28",
+      "status": "pending"
+    },
+    {
+      "name_en": "Whimsical",
+      "video": "krH0Hdk2mEw",
+      "t": "5:00",
+      "status": "pending"
+    },
+    {
+      "name_en": "Mixed Media",
+      "video": "krH0Hdk2mEw",
+      "t": "6:50",
+      "status": "pending",
+      "note": "也出現在 40 Design Names"
+    },
+    {
+      "name_en": "Low Fidelity",
+      "video": "krH0Hdk2mEw",
+      "t": "9:24",
+      "status": "pending"
+    },
+    {
+      "name_en": "AI Hyperrealism",
+      "video": "krH0Hdk2mEw",
+      "t": "11:29",
+      "status": "pending"
+    },
+    {
+      "name_en": "Dark & Gothic",
+      "video": "krH0Hdk2mEw",
+      "t": "7:48",
+      "status": "skipped",
+      "note": "併入 Gothic"
+    },
+    {
+      "name_en": "Editorial Layout",
+      "video": "krH0Hdk2mEw",
+      "t": "13:20",
+      "status": "skipped",
+      "note": "併入 90s Editorial"
+    },
+    {
+      "name_en": "Y2K Retro",
+      "video": "krH0Hdk2mEw",
+      "t": "14:27",
+      "status": "skipped",
+      "note": "併入 Y2K"
+    },
+    {
+      "name_en": "Dreamcore",
+      "video": "hhbq6-OrAbw",
+      "t": "0:30",
+      "status": "pending"
+    },
+    {
+      "name_en": "Coastal Grandmother",
+      "video": "hhbq6-OrAbw",
+      "t": "1:15",
+      "status": "pending"
+    },
+    {
+      "name_en": "Biophilic",
+      "video": "hhbq6-OrAbw",
+      "t": "2:00",
+      "status": "pending"
+    },
+    {
+      "name_en": "Gorpcore",
+      "video": "hhbq6-OrAbw",
+      "t": "3:30",
+      "status": "pending"
+    },
+    {
+      "name_en": "Transparent Tech",
+      "video": "hhbq6-OrAbw",
+      "t": "4:45",
+      "status": "pending"
+    },
+    {
+      "name_en": "Old Money",
+      "video": "hhbq6-OrAbw",
+      "t": "5:30",
+      "status": "pending"
+    },
+    {
+      "name_en": "Twee",
+      "video": "hhbq6-OrAbw",
+      "t": "6:30",
+      "status": "pending"
+    },
+    {
+      "name_en": "Neo Deco",
+      "video": "hhbq6-OrAbw",
+      "t": "7:15",
+      "status": "pending"
+    },
+    {
+      "name_en": "Witchcore",
+      "video": "hhbq6-OrAbw",
+      "t": "8:20",
+      "status": "pending"
+    },
+    {
+      "name_en": "Rubber Hose",
+      "video": "xpLUouSZHi8",
+      "t": "0:30",
+      "status": "pending"
+    },
+    {
+      "name_en": "Romantasy",
+      "video": "xpLUouSZHi8",
+      "t": "1:15",
+      "status": "pending"
+    },
+    {
+      "name_en": "Chinoiserie",
+      "video": "xpLUouSZHi8",
+      "t": "1:50",
+      "status": "done",
+      "style_id": "chinoiserie"
+    },
+    {
+      "name_en": "Risograph",
+      "video": "xpLUouSZHi8",
+      "t": "2:40",
+      "status": "done",
+      "style_id": "risograph"
+    },
+    {
+      "name_en": "Dieselpunk",
+      "video": "xpLUouSZHi8",
+      "t": "3:20",
+      "status": "pending"
+    },
+    {
+      "name_en": "Lowbrow Art",
+      "video": "xpLUouSZHi8",
+      "t": "3:55",
+      "status": "pending"
+    },
+    {
+      "name_en": "Rocketpunk",
+      "video": "xpLUouSZHi8",
+      "t": "4:35",
+      "status": "pending"
+    },
+    {
+      "name_en": "Mobius",
+      "video": "xpLUouSZHi8",
+      "t": "5:15",
+      "status": "pending"
+    },
+    {
+      "name_en": "Afrofuturism",
+      "video": "xpLUouSZHi8",
+      "t": "5:50",
+      "status": "pending"
+    },
+    {
+      "name_en": "Cottagecore",
+      "video": "xpLUouSZHi8",
+      "t": "6:30",
+      "status": "done",
+      "style_id": "cottagecore"
+    },
+    {
+      "name_en": "Biomorphic",
+      "video": "xpLUouSZHi8",
+      "t": "7:20",
+      "status": "pending"
+    },
+    {
+      "name_en": "Antidesign",
+      "video": "xpLUouSZHi8",
+      "t": "7:45",
+      "status": "pending"
+    },
+    {
+      "name_en": "Surveillance",
+      "video": "xpLUouSZHi8",
+      "t": "8:15",
+      "status": "pending"
+    },
+    {
+      "name_en": "Monoline Illustration",
+      "video": "xpLUouSZHi8",
+      "t": "8:55",
+      "status": "pending"
+    },
+    {
+      "name_en": "Pictograms",
+      "video": "xpLUouSZHi8",
+      "t": "9:20",
+      "status": "pending"
+    },
+    {
+      "name_en": "Isometric",
+      "video": "xpLUouSZHi8",
+      "t": "9:50",
+      "status": "done",
+      "style_id": "isometric"
+    },
+    {
+      "name_en": "Blueprint",
+      "video": "xpLUouSZHi8",
+      "t": "10:20",
+      "status": "done",
+      "style_id": "blueprint"
+    },
+    {
+      "name_en": "Regencycore",
+      "video": "xpLUouSZHi8",
+      "t": "11:10",
+      "status": "pending"
+    },
+    {
+      "name_en": "Kidcore",
+      "video": "xpLUouSZHi8",
+      "t": "11:40",
+      "status": "pending"
+    },
+    {
+      "name_en": "90s Editorial",
+      "video": "rXXSNk7-XLs",
+      "t": "0:50",
+      "status": "done",
+      "note": "整支影片講這個風格；2027 趨勢的 Editorial Layout 併入這裡",
+      "style_id": "90s-editorial"
+    },
+    {
+      "name_en": "Japandi",
+      "video": "rKx7AsY3HTk",
+      "t": "0:30",
+      "status": "done",
+      "note": "也出現在 40 Design Names",
+      "style_id": "japandi"
+    },
+    {
+      "name_en": "Retro Futurism",
+      "video": "rKx7AsY3HTk",
+      "t": "2:00",
+      "status": "pending"
+    },
+    {
+      "name_en": "Western Boho",
+      "video": "rKx7AsY3HTk",
+      "t": "2:55",
+      "status": "pending"
+    },
+    {
+      "name_en": "Modern Gothic",
+      "video": "rKx7AsY3HTk",
+      "t": "3:45",
+      "status": "pending"
+    },
+    {
+      "name_en": "Vaporwave",
+      "video": "rKx7AsY3HTk",
+      "t": "4:45",
+      "status": "done",
+      "note": "也出現在 40 Design Names",
+      "style_id": "vaporwave"
+    },
+    {
+      "name_en": "Neoclassical",
+      "video": "bZ1vbmV5gk8",
+      "t": "0:51",
+      "status": "pending"
+    },
+    {
+      "name_en": "Baroque",
+      "video": "bZ1vbmV5gk8",
+      "t": "1:57",
+      "status": "pending"
+    },
+    {
+      "name_en": "Aurora",
+      "video": "bZ1vbmV5gk8",
+      "t": "2:35",
+      "status": "pending"
+    },
+    {
+      "name_en": "Ethereal",
+      "video": "bZ1vbmV5gk8",
+      "t": "3:19",
+      "status": "pending"
+    },
+    {
+      "name_en": "Filigree",
+      "video": "bZ1vbmV5gk8",
+      "t": "4:06",
+      "status": "pending"
+    },
+    {
+      "name_en": "Acanthus",
+      "video": "bZ1vbmV5gk8",
+      "t": "4:49",
+      "status": "pending"
+    },
+    {
+      "name_en": "Anthropomorphic",
+      "video": "bZ1vbmV5gk8",
+      "t": "5:22",
+      "status": "pending"
+    },
+    {
+      "name_en": "Pixel Art",
+      "video": "bZ1vbmV5gk8",
+      "t": "6:27",
+      "status": "done",
+      "style_id": "pixel-art"
+    },
+    {
+      "name_en": "Conceptual Sketch",
+      "video": "bZ1vbmV5gk8",
+      "t": "7:12",
+      "status": "pending"
+    },
+    {
+      "name_en": "Luxury Typography",
+      "video": "bZ1vbmV5gk8",
+      "t": "8:12",
+      "status": "pending"
+    },
+    {
+      "name_en": "Memphis",
+      "video": "bZ1vbmV5gk8",
+      "t": "9:40",
+      "status": "done",
+      "style_id": "memphis"
+    },
+    {
+      "name_en": "Bohemian",
+      "video": "bZ1vbmV5gk8",
+      "t": "10:15",
+      "status": "pending"
+    },
+    {
+      "name_en": "Shabby Chic",
+      "video": "bZ1vbmV5gk8",
+      "t": "11:00",
+      "status": "pending"
+    },
+    {
+      "name_en": "Farmhouse",
+      "video": "bZ1vbmV5gk8",
+      "t": "11:28",
+      "status": "pending"
+    },
+    {
+      "name_en": "Victorian",
+      "video": "bZ1vbmV5gk8",
+      "t": "12:04",
+      "status": "pending"
+    },
+    {
+      "name_en": "Art Deco",
+      "video": "bZ1vbmV5gk8",
+      "t": "12:41",
+      "status": "done",
+      "style_id": "art-deco"
+    },
+    {
+      "name_en": "Art Nouveau",
+      "video": "bZ1vbmV5gk8",
+      "t": "13:14",
+      "status": "done",
+      "style_id": "art-nouveau"
+    },
+    {
+      "name_en": "Mystical Western",
+      "video": "bZ1vbmV5gk8",
+      "t": "13:59",
+      "status": "pending"
+    },
+    {
+      "name_en": "Kitsch",
+      "video": "bZ1vbmV5gk8",
+      "t": "14:47",
+      "status": "pending"
+    },
+    {
+      "name_en": "3x3 Grid",
+      "video": "bZ1vbmV5gk8",
+      "t": "15:22",
+      "status": "pending",
+      "note": "偏社群版面格式，做之前先確認是否算風格"
+    },
+    {
+      "name_en": "Y2K",
+      "video": "bZ1vbmV5gk8",
+      "t": "15:59",
+      "status": "done",
+      "style_id": "y2k"
+    },
+    {
+      "name_en": "Bauhaus",
+      "video": "bZ1vbmV5gk8",
+      "t": "16:32",
+      "status": "done",
+      "style_id": "bauhaus"
+    },
+    {
+      "name_en": "Brutalism",
+      "video": "bZ1vbmV5gk8",
+      "t": "17:08",
+      "status": "pending",
+      "note": "和 neo-brutalism 不同：原始粗獷主義建築與網頁"
+    },
+    {
+      "name_en": "Cybercore",
+      "video": "bZ1vbmV5gk8",
+      "t": "17:48",
+      "status": "pending"
+    },
+    {
+      "name_en": "Synthwave",
+      "video": "bZ1vbmV5gk8",
+      "t": "18:27",
+      "status": "done",
+      "style_id": "synthwave"
+    },
+    {
+      "name_en": "Pop Art",
+      "video": "bZ1vbmV5gk8",
+      "t": "19:35",
+      "status": "pending"
+    },
+    {
+      "name_en": "Bento Box",
+      "video": "bZ1vbmV5gk8",
+      "t": "20:16",
+      "status": "pending"
+    },
+    {
+      "name_en": "Graffiti",
+      "video": "bZ1vbmV5gk8",
+      "t": "20:47",
+      "status": "pending"
+    },
+    {
+      "name_en": "Tenebrism",
+      "video": "bZ1vbmV5gk8",
+      "t": "21:17",
+      "status": "pending"
+    },
+    {
+      "name_en": "Gothic",
+      "video": "bZ1vbmV5gk8",
+      "t": "21:58",
+      "status": "pending"
+    },
+    {
+      "name_en": "Pointillism",
+      "video": "bZ1vbmV5gk8",
+      "t": "22:48",
+      "status": "pending"
+    },
+    {
+      "name_en": "Steampunk",
+      "video": "bZ1vbmV5gk8",
+      "t": "24:15",
+      "status": "done",
+      "style_id": "steampunk"
+    },
+    {
+      "name_en": "Kawaii",
+      "video": "bZ1vbmV5gk8",
+      "t": "25:21",
+      "status": "pending"
+    },
+    {
+      "name_en": "Coquette",
+      "video": "bZ1vbmV5gk8",
+      "t": "26:07",
+      "status": "pending"
+    },
+    {
+      "name_en": "Surrealism",
+      "video": "bZ1vbmV5gk8",
+      "t": "26:41",
+      "status": "pending"
+    },
+    {
+      "name_en": "Utilitarian",
+      "video": "bZ1vbmV5gk8",
+      "t": "27:16",
+      "status": "pending"
+    },
+    {
+      "name_en": "Mid Century",
+      "video": "bZ1vbmV5gk8",
+      "t": "27:58",
+      "status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "id": "art-deco",
+  "name_zh": "裝飾藝術",
+  "name_en": "Art Deco",
+  "summary": "1920、30 年代巴黎與紐約的裝飾藝術：金色細線、扇形放射、階梯輪廓、左右對稱，配細長的幾何大寫字，華麗又有秩序。",
+  "definition": "Art Deco 因 1925 年巴黎的裝飾藝術博覽會而定型，之後遍及紐約摩天樓、郵輪與電影院。它把機器時代的幾何感和奢華材料放在一起：扇形放射線、層層退縮的階梯輪廓、人字紋、拱窗，深色底配金。海報以 A. M. Cassandre 的旅遊海報最有名，構圖對稱，字是又高又窄的幾何大寫。轉成簡報時，畫面以中軸對稱，用金色雙線框和放射線裝飾，標題置中、字距放寬。它和古奇太空時代（1950 年代、歪斜曲線的公路招牌）、暗黑學院（哥德式老書與燭光）都不同，是幾何、拋光、都會的；和現代重新詮釋的 Neo Deco 相比，這裡要的是原版的年代感。",
+  "keywords": [
+    "華麗",
+    "都會",
+    "對稱",
+    "爵士年代"
+  ],
+  "categories": [
+    "Classic",
+    "Graphic"
+  ],
+  "best_for": [
+    "晚宴、典禮與週年慶",
+    "精品、酒類、飯店與餐廳品牌",
+    "建築與城市主題",
+    "年終盛會與頒獎"
+  ],
+  "not_for": [
+    "要輕鬆活潑的親子或校園內容",
+    "強調環保、手作與自然的品牌"
+  ],
+  "traits": [
+    "扇形與日出放射線",
+    "層層退縮的階梯輪廓，像摩天樓頂",
+    "金色雙線框、切角與拱形窗框",
+    "左右對稱，畫面有一條中軸",
+    "又高又窄的幾何大寫字，字距很寬",
+    "深色底配金，加一個寶石色"
+  ],
+  "layout": [
+    "以畫面中軸為準左右對稱，標題、圖片版位、頁碼都在中軸上",
+    "外圍用金色雙線框，四角做切角或階梯缺角",
+    "主視覺後方放扇形或放射線，從中軸下方往上散開",
+    "標題與副標置中，副標全大寫、字距 0.3em 以上",
+    "兩側可以放直線條紋（像柱子的凹槽）或階梯輪廓收邊"
+  ],
+  "motifs": [
+    "扇形與日出放射線",
+    "階梯輪廓",
+    "人字紋與 V 形紋",
+    "拱形窗框",
+    "金色雙線框與切角",
+    "菱形與直線凹槽"
+  ],
+  "typography": {
+    "display": {
+      "family": "Poiret One",
+      "weights": "400",
+      "role": "英文標題、副標與數字；細線幾何大寫，字距放寬"
+    },
+    "body": {
+      "family": "Tenor Sans",
+      "weights": "400",
+      "role": "內文與說明，大寫時加字距"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "500、900",
+      "role": "中文標題用 900、放寬字距；內文用 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Poiret+One&family=Tenor+Sans&family=Noto+Serif+TC:wght@500;900&display=swap",
+    "rules": [
+      "英文一律全大寫，字距 0.2em 以上",
+      "細線字只用在大字級，小字改用 Tenor Sans",
+      "標題置中，左右可以加短橫線或菱形當括號"
+    ]
+  },
+  "imagery": [
+    "建築立面、摩天樓、郵輪、雞尾酒、爵士樂團",
+    "照片偏暖、高對比，或轉成黑白再壓一層金色",
+    "照片裁成拱形或切角長方形，外面套金色細框"
+  ],
+  "placeholder": "拱頂長方形版位，外面兩圈金色細線，底色是比背景亮一點的深色，中間用寬字距寫「照片｜3:4」，後方有放射線",
+  "avoid": [
+    "1950 年代的迴力鏢、腰果形與歪斜招牌（那是古奇太空時代）",
+    "哥德式尖拱、燭光、舊書與做舊紙張（那是暗黑學院）",
+    "圓潤可愛的字體與手寫字",
+    "不對稱、隨意擺放的構圖",
+    "螢光色與粉彩",
+    "把金色做成亮面漸層與反光特效"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "金色是主要重點色，負責線框、放射線與大字；第二個重點色是寶石色（翡翠綠、珊瑚紅、深青），只用在一兩處小面積。"
+  },
+  "backgrounds": [
+    {
+      "id": "onyx",
+      "name": "曜石黑",
+      "hex": "#14161B"
+    },
+    {
+      "id": "navy",
+      "name": "午夜藍",
+      "hex": "#13233A"
+    },
+    {
+      "id": "emerald",
+      "name": "孔雀綠",
+      "hex": "#0F3B33"
+    },
+    {
+      "id": "ivory",
+      "name": "象牙白",
+      "hex": "#EFE6D2"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "D1",
+      "name": "黑金",
+      "ink": "#EFE6CF",
+      "accents": [
+        "#C9A54C",
+        "#2F8F80"
+      ],
+      "pairs_with": [
+        "onyx"
+      ]
+    },
+    {
+      "id": "D2",
+      "name": "郵輪夜宴",
+      "ink": "#F2E8D0",
+      "accents": [
+        "#D4AF5A",
+        "#D0644B"
+      ],
+      "pairs_with": [
+        "navy",
+        "onyx"
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "翡翠廳",
+      "ink": "#F1E7CF",
+      "accents": [
+        "#D8B45C",
+        "#E7A9A0"
+      ],
+      "pairs_with": [
+        "emerald"
+      ]
+    },
+    {
+      "id": "D4",
+      "name": "象牙與黃銅",
+      "ink": "#1B1B1F",
+      "accents": [
+        "#94722A",
+        "#1F4E5F"
+      ],
+      "pairs_with": [
+        "ivory"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 40 Design Style Names You've Been Looking For (Find References Faster)",
+    "url": "https://www.youtube.com/watch?v=bZ1vbmV5gk8&t=761s"
+  },
+  "prompt_en": [
+    "1920s and 1930s Art Deco poster and architecture",
+    "Sunburst and fan rays, stepped skyscraper silhouettes, chevrons",
+    "Gold double-line frames with chamfered corners and arched windows",
+    "Strict central symmetry",
+    "Tall, narrow geometric capitals with wide letter-spacing",
+    "Black, midnight blue or emerald with gold; glamorous Jazz Age mood"
+  ],
+  "pinterest_queries": [
+    "art deco poster",
+    "cassandre art deco travel poster"
+  ],
+  "pins": [
+    {
+      "id": "109001253470507160",
+      "note": "Cassandre, Nord Express rail poster"
+    },
+    {
+      "id": "35395547059288599",
+      "note": "Cassandre, Normandie ocean liner poster, 1935"
+    },
+    {
+      "id": "282882420338982988",
+      "note": "typographic posters by Cassandre"
+    },
+    {
+      "id": "739857045018563025",
+      "note": "black and gold geometric Gatsby sign"
+    },
+    {
+      "id": "8233211805112509",
+      "note": "gold and black Art Deco frames and borders"
+    },
+    {
+      "id": "422281207847875",
+      "note": "abstract Art Deco poster"
+    }
+  ]
+}

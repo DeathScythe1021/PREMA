@@ -1,0 +1,205 @@
+{
+  "id": "90s-editorial",
+  "name_zh": "90 年代雜誌編排",
+  "name_en": "90s Editorial",
+  "source": {
+    "title": "Kittl — The Most Stunning Design Style Is One Of The Most Simple",
+    "url": "https://www.youtube.com/watch?v=rXXSNk7-XLs"
+  },
+  "summary": "1990 年代時尚雜誌的極簡編排：大片留白、高反差襯線大標配窄體無襯線、黑白顆粒人像當主角。",
+  "definition": "1992 年 Fabien Baron 改版《Harper's Bazaar》，用細到像刀鋒的 Didot 字和大片白底，讓整本雜誌變得安靜而銳利；同一時期《The Face》、Calvin Klein 廣告的黑白快照人像，也把攝影推回版面中心。轉成簡報時，一頁只有一張大照片、一個短標題和少量說明，標題用高反差襯線字放得很大，搭配窄體無襯線的小標，底色是紙白或米白，文字是柔和的黑，最多一個低調的重點色。",
+  "keywords": [
+    "俐落",
+    "時尚",
+    "安靜",
+    "自信"
+  ],
+  "categories": [
+    "Retro",
+    "Editorial",
+    "Photographic"
+  ],
+  "best_for": [
+    "時尚、美妝與服飾品牌",
+    "攝影作品集與人物專訪",
+    "生活風格雜誌與內容品牌",
+    "新品發表的主視覺"
+  ],
+  "not_for": [
+    "沒有照片可用的內容",
+    "資訊密集的流程或數據說明",
+    "需要熱鬧氣氛的兒童或活動主題"
+  ],
+  "traits": [
+    "高反差的 Didone 襯線大標，細線極細",
+    "窄體無襯線小標，全大寫加字距",
+    "一張黑白或低飽和的大照片當主角，常是去背或滿版",
+    "大片留白，紙白或米白底配柔和黑字",
+    "照片和大標互相疊壓，像雜誌刊頭被人像擋住一角",
+    "期號、頁碼、細線分隔等雜誌編排元素"
+  ],
+  "layout": [
+    "一頁一張主照片，佔畫面一半以上，其餘大量留白",
+    "大標可以橫跨整個版寬，讓照片疊在字的一部分上面",
+    "標題短，小標和說明用窄體字縮小排在角落或照片旁",
+    "用細橫線、期號（N° 01）、頁碼做出雜誌的結構感",
+    "對齊用嚴格的欄線，左對齊或置中只選一種，全份統一"
+  ],
+  "motifs": [
+    "刊頭式的大型英文襯線字",
+    "期號 N° 與頁碼",
+    "細橫線分隔",
+    "去背人像或物件",
+    "封面標語（cover lines）"
+  ],
+  "typography": {
+    "display": {
+      "family": "Bodoni Moda",
+      "weights": "400、700、italic",
+      "role": "英文大標與刊頭，可以用斜體做強調"
+    },
+    "body": {
+      "family": "Barlow Condensed",
+      "weights": "500、600",
+      "role": "小標、封面標語、期號，全大寫加字距"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "400、700",
+      "role": "中文大標用明體配合西文襯線；中文小字可改用 Noto Sans TC 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400&family=Barlow+Condensed:wght@500;600&family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@500&display=swap",
+    "rules": [
+      "大標和小標的字級差距要很大，至少 5 倍",
+      "襯線字只用在大標，小標一律用窄體無襯線",
+      "窄體小標全大寫，字距 0.12em 以上",
+      "中文大標用明體，不要用黑體"
+    ]
+  },
+  "imagery": [
+    "黑白或低飽和的人像、物件，帶底片顆粒",
+    "閃光燈直打的快照感，或柔和的棚拍光",
+    "可以去背成單一主體，放在大片留白裡"
+  ],
+  "placeholder": "一個直式的淺灰色大框，帶細微底片顆粒，左下角用窄體大寫寫「COVER PHOTO」、下面小字「黑白人像｜4:5」，框的上緣壓住大標的一部分",
+  "avoid": [
+    "撞色與高飽和的多色配色",
+    "Ray Gun 式的解構亂排與疊字（那是另一種 90 年代）",
+    "圓角卡片、陰影與漸層",
+    "一頁塞多張小照片"
+  ],
+  "color_rules": {
+    "max_accents": 1,
+    "notes": "基本上是雙色：紙白底配柔和黑字。重點色只用在刊頭一個字、期號或一條細線。"
+  },
+  "backgrounds": [
+    {
+      "id": "paper",
+      "name": "銅版紙白",
+      "hex": "#F6F4EF"
+    },
+    {
+      "id": "cream",
+      "name": "米白",
+      "hex": "#EFE8DA"
+    },
+    {
+      "id": "newsprint",
+      "name": "灰紙",
+      "hex": "#E3E1DC"
+    },
+    {
+      "id": "darkroom",
+      "name": "暗房黑",
+      "hex": "#141414"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "E1",
+      "name": "刊頭紅",
+      "ink": "#161616",
+      "accents": [
+        "#B3261E"
+      ],
+      "pairs_with": [
+        "paper",
+        "cream",
+        "newsprint"
+      ]
+    },
+    {
+      "id": "E2",
+      "name": "舊紙棕",
+      "ink": "#2A2420",
+      "accents": [
+        "#8B5E3C"
+      ],
+      "pairs_with": [
+        "cream"
+      ]
+    },
+    {
+      "id": "E3",
+      "name": "冷灰藍",
+      "ink": "#1C1F24",
+      "accents": [
+        "#3F5A7A"
+      ],
+      "pairs_with": [
+        "paper",
+        "newsprint"
+      ]
+    },
+    {
+      "id": "E4",
+      "name": "暗房",
+      "ink": "#F2EFE8",
+      "accents": [
+        "#D9C7A7"
+      ],
+      "pairs_with": [
+        "darkroom"
+      ]
+    }
+  ],
+  "prompt_en": [
+    "1990s minimalist fashion magazine layout, Harper's Bazaar under Fabien Baron",
+    "Huge high-contrast Didone serif headline paired with condensed uppercase sans-serif",
+    "One large black-and-white grainy portrait or cutout object as the focal point",
+    "Vast white space, off-white or cream paper, soft black type",
+    "Photo overlapping the masthead, issue number, thin rules and page folio",
+    "Quiet, confident, sharp"
+  ],
+  "pinterest_queries": [
+    "90s editorial magazine layout",
+    "Harper's Bazaar 1990s Fabien Baron",
+    "90s minimalist fashion editorial"
+  ],
+  "pins": [
+    {
+      "id": "716635359436638243",
+      "note": "Fabien Baron double-page spread for Harper's Bazaar US"
+    },
+    {
+      "id": "602426887661049529",
+      "note": "Harper's Bazaar Sept 1992 cover, Enter the Era of Elegance"
+    },
+    {
+      "id": "659918151622673138",
+      "note": "Kate Moss by Corinne Day, The Face 1990 page"
+    },
+    {
+      "id": "658581145510265189",
+      "note": "Kate Moss on The Face cover, March 1993"
+    },
+    {
+      "id": "341640321707433481",
+      "note": "mid-90s minimalist Calvin Klein black-and-white ad"
+    },
+    {
+      "id": "159174168063666342",
+      "note": "HTF Didot specimen, drawn for Harper's Bazaar 1991"
+    }
+  ]
+}

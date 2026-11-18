@@ -38,7 +38,7 @@ def validate(name, s):
     if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", s["id"]):
         errs.append("id 只能用小寫英數與連字號")
     if not os.path.exists(os.path.join(STYLES, "previews", s["id"] + ".html")):
-        errs.append(f"缺少示範封面 styles/previews/{s['id']}.html")
+        warns.append("沒有示範封面（新風格不做圖，做簡報時直接依 JSON 規格）")
     if not s["typography"].get("google_fonts", "").startswith("https://fonts.googleapis.com/css2?"):
         errs.append("typography.google_fonts 必須是 Google Fonts css2 連結")
     max_acc = s["color_rules"].get("max_accents")
@@ -87,6 +87,13 @@ def main():
             print(f"    錯誤：{e}")
         for w in warns:
             print(f"    提醒：{w}")
+        total_err += len(errs)
+    import queue_lib  # noqa: E402
+    for path in queue_lib.source_files():
+        errs = queue_lib.check(queue_lib.load(path), set(ids))
+        print(f"[{'OK ' if not errs else 'ERR'}] sources/{os.path.basename(path)}")
+        for e in errs:
+            print(f"    錯誤：{e}")
         total_err += len(errs)
     print(f"\n共 {len(styles)} 種風格，{total_err} 個錯誤")
     sys.exit(1 if total_err else 0)

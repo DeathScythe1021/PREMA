@@ -1,0 +1,212 @@
+{
+  "id": "y2k",
+  "name_zh": "Y2K 千禧風",
+  "name_en": "Y2K",
+  "source": {
+    "title": "Kittl — 40 Design Style Names You've Been Looking For (Find References Faster)",
+    "url": "https://www.youtube.com/watch?v=bZ1vbmV5gk8&t=959s"
+  },
+  "summary": "1990 年代末到 2003 年前後的千禧年平面設計：液態鉻字、亮面泡泡字、四芒閃光，配黑底或銀底上的螢光青、桃紅和萊姆綠。",
+  "definition": "Y2K 指世紀交替前後幾年的流行視覺，當時網路泡沫正熱，大家相信數位未來會亮晶晶的：標題做成液態金屬或充氣般的泡泡字，四周散著四芒閃光、圓滑的金屬水滴和細線格網；英國 The Designers Republic 為《Wipeout》做的海報與介面、夜店傳單、青少年流行雜誌都是代表。2020 年代又在潮牌與音樂圈回潮。轉成簡報時，標題是主角，用鉻色漸層或亮面高光撐場，底色是黑或銀，重點色用螢光青、桃紅、萊姆綠。它和千禧科技（透明冰藍機殼與規格標註）、新水感科技（藍天草地與水珠）、蒸氣波（粉紫拼貼、石膏像和 Windows 95 視窗）都不同，靠的是鉻、閃光和高飽和螢光色。",
+  "keywords": [
+    "千禧年",
+    "閃亮",
+    "流行",
+    "未來感"
+  ],
+  "categories": [
+    "Y2K",
+    "Graphic"
+  ],
+  "best_for": [
+    "音樂、夜店與派對宣傳",
+    "潮牌、美妝與飾品新品",
+    "青少年與流行文化主題",
+    "活動開場與抽獎頁"
+  ],
+  "not_for": [
+    "財報、法規與正式公文",
+    "需要沉穩信任感的醫療或金融內容"
+  ],
+  "traits": [
+    "液態鉻或亮銀漸層的標題字，中間有一道高光",
+    "鼓起來的泡泡字與圓滑金屬水滴",
+    "四芒閃光與星星散在標題周圍",
+    "寬扁的科技大寫字配細小的標籤字",
+    "黑底或銀底上的螢光青、桃紅、萊姆綠",
+    "細線格網、圓圈準星與箭頭等介面碎片"
+  ],
+  "layout": [
+    "標題放大到占畫面三分之一以上，做鉻色或亮面處理，可以略為傾斜或彎曲",
+    "四芒閃光放在標題的角落和重點數字旁，一頁三到五顆，大小要有差",
+    "內文放在圓角膠囊或斜切色條上，像傳單上的時間與地點",
+    "角落用細小大寫標籤寫型號、日期、頁碼，像 tDR 海報的小字",
+    "背景可以有一層淡淡的細線格網或同心圓，不要放照片拼貼"
+  ],
+  "motifs": [
+    "四芒閃光",
+    "液態金屬水滴",
+    "泡泡字",
+    "細線格網與同心圓",
+    "圓角膠囊標籤",
+    "蝴蝶與愛心貼紙"
+  ],
+  "typography": {
+    "display": {
+      "family": "Orbitron",
+      "weights": "700、900",
+      "role": "英文標題，全大寫，套鉻色漸層或亮面高光"
+    },
+    "body": {
+      "family": "Exo 2",
+      "weights": "400、600",
+      "role": "內文、小標籤與數字"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文標題用 900，可以加一層白色描邊；內文用 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Exo+2:wght@400;600&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "鉻色效果只用在標題，內文維持純色",
+      "標籤用 Exo 2 大寫，字距 0.1em 以上",
+      "中文標題不要用細字，至少 900 才撐得住鉻色漸層"
+    ]
+  },
+  "imagery": [
+    "去背的人像、手機、耳機、太陽眼鏡，像貼紙一樣浮在底色上",
+    "照片調高對比，可以加一層冷色或桃紅色調",
+    "3D 金屬水滴、鉻色愛心與蝴蝶當裝飾物件"
+  ],
+  "placeholder": "銀色漸層的圓角版位，上緣有一道白色高光，中間寫「人像去背｜3:4」，右上角兩顆四芒閃光",
+  "avoid": [
+    "透明冰藍機殼、規格表與指引線標註（那是千禧科技）",
+    "藍天草地、水珠泡泡的自然光澤（那是新水感科技）",
+    "粉紫漸層天空、石膏像、Windows 95 視窗（那是蒸氣波）",
+    "動態模糊的人影殘影（那是 Blurry Motion）",
+    "米色、大地色與做舊紙張",
+    "細瘦的襯線字與手寫字"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "三個重點色分工：一個當標題的反光色、一個當閃光與記號、一個當膠囊色塊。淺底上的萊姆綠只能當色塊，上面放文字色。"
+  },
+  "backgrounds": [
+    {
+      "id": "silver",
+      "name": "液態銀",
+      "hex": "#DCDFE4"
+    },
+    {
+      "id": "white",
+      "name": "螢幕白",
+      "hex": "#F5F6F8"
+    },
+    {
+      "id": "bubble",
+      "name": "泡泡糖粉",
+      "hex": "#F9D9EA"
+    },
+    {
+      "id": "club",
+      "name": "夜店黑",
+      "hex": "#0B0B10"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "Y1",
+      "name": "液態銀",
+      "ink": "#111218",
+      "accents": [
+        "#0067B0",
+        "#C5106F",
+        "#B6F000"
+      ],
+      "pairs_with": [
+        "silver",
+        "white"
+      ]
+    },
+    {
+      "id": "Y2",
+      "name": "夜店傳單",
+      "ink": "#F2F4F7",
+      "accents": [
+        "#00E5FF",
+        "#FF3EB5",
+        "#C6FF00"
+      ],
+      "pairs_with": [
+        "club"
+      ]
+    },
+    {
+      "id": "Y3",
+      "name": "泡泡糖",
+      "ink": "#23122B",
+      "accents": [
+        "#C8106F",
+        "#6A2BD9",
+        "#0067B0"
+      ],
+      "pairs_with": [
+        "bubble",
+        "white"
+      ]
+    },
+    {
+      "id": "Y4",
+      "name": "賽車介面",
+      "ink": "#101114",
+      "accents": [
+        "#FF4F00",
+        "#0050A8"
+      ],
+      "pairs_with": [
+        "silver",
+        "white"
+      ]
+    }
+  ],
+  "prompt_en": [
+    "Late-1990s to early-2000s Y2K graphic design, dot-com era optimism",
+    "Liquid chrome and inflated glossy bubble lettering with a bright highlight band",
+    "Four-point sparkles, chrome blobs, thin grid lines and target circles",
+    "Wide techno capitals with tiny label text, like The Designers Republic's Wipeout work",
+    "Electric cyan, hot pink and lime on black or brushed silver",
+    "Shiny, loud, pop-futurist mood of rave flyers and teen magazines"
+  ],
+  "pinterest_queries": [
+    "y2k graphic design poster chrome",
+    "designers republic wipeout poster",
+    "y2k rave flyer"
+  ],
+  "pins": [
+    {
+      "id": "11047961580494976",
+      "note": "The Designers Republic, Wipeout typography poster"
+    },
+    {
+      "id": "80431543338802879",
+      "note": "EG-R poster from Wipeout Fusion, red and orange techno type"
+    },
+    {
+      "id": "246923992120457443",
+      "note": "Y2K Aesthetic Institute, Millennium Bug rave flyer by Chipmonk"
+    },
+    {
+      "id": "36732553206030063",
+      "note": "Y2K poster made in Figma, abstract silver lines and shapes"
+    },
+    {
+      "id": "471259548519037253",
+      "note": "Y2K liquid melting chrome lettering by Oksana Trygub (asset listing)"
+    },
+    {
+      "id": "180003317641022093",
+      "note": "Y2K blue rave flyer poster by Glossypop"
+    }
+  ]
+}

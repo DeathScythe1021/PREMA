@@ -1,0 +1,212 @@
+{
+  "id": "memphis",
+  "name_zh": "曼菲斯",
+  "name_en": "Memphis",
+  "summary": "1980 年代米蘭 Memphis 設計團體的後現代玩心：撞色幾何塊、波浪線、黑白細菌紋與點點，散落的碎片，故意不協調又熱鬧。",
+  "definition": "Memphis 是 Ettore Sottsass 在 1980 年底於米蘭召集年輕設計師組成的團體，1981 年第一次發表家具與器物，故意反對現代主義「形隨機能」的嚴肅：用印花美耐板、不合理的造型和刺眼的撞色。它的平面語言後來成了 80 年代流行文化的代表：粉紅、薄荷、黃、鈷藍互撞，黑白的細菌紋與格紋當表面材質，波浪線、鋸齒線、三角、半圓、點點像紙屑一樣散在畫面上。轉成簡報時，主標放在一塊撞色色塊上，周圍浮著幾何碎片，用圖案填色而不是只有平塗。它和敘事新粗野不同：新粗野是每個框都有粗黑邊和硬邊位移陰影、像漫畫分格；Memphis 的形狀大多不加外框，靠圖案和撞色，元素是散落漂浮的。",
+  "keywords": [
+    "玩心",
+    "撞色",
+    "80 年代",
+    "反規矩"
+  ],
+  "categories": [
+    "Retro",
+    "Graphic"
+  ],
+  "best_for": [
+    "活動、派對與快閃店",
+    "年輕族群的品牌與商品提案",
+    "創意發想與腦力激盪",
+    "流行文化與 80 年代主題"
+  ],
+  "not_for": [
+    "需要權威與信任感的金融、醫療內容",
+    "沉重或悼念性質的主題"
+  ],
+  "traits": [
+    "粉紅、薄荷、黃、鈷藍等高彩度與粉彩撞色",
+    "黑白細菌紋、格紋、斜紋當表面圖案",
+    "波浪線、鋸齒線、點點像紙屑散落",
+    "三角、半圓、圓柱等幾何形浮在畫面上",
+    "形狀多半不加外框，或只有細黑線",
+    "構圖故意不平衡，元素有大有小、有正有斜"
+  ],
+  "layout": [
+    "主標放在一塊撞色色塊或半圓上，可以略微傾斜",
+    "畫面四周散放 6–10 個小幾何碎片：波浪線、三角、點點、鋸齒，大小與角度都不一樣",
+    "至少一塊面積用黑白圖案填滿（細菌紋、格紋或斜紋）",
+    "圖片版位像一件家具或器物：疊在色塊上，旁邊靠著一個幾何形",
+    "內頁文字區保持乾淨，碎片只出現在邊緣，不壓在內文上"
+  ],
+  "motifs": [
+    "波浪線",
+    "鋸齒線",
+    "黑白細菌紋",
+    "點點與格紋",
+    "三角形與半圓",
+    "斜紋色塊"
+  ],
+  "typography": {
+    "display": {
+      "family": "Righteous",
+      "weights": "400",
+      "role": "英文標題與數字，幾何、帶一點 80 年代流行感"
+    },
+    "body": {
+      "family": "Rubik",
+      "weights": "400、600",
+      "role": "內文與說明"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文標題用 900，內文用 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Righteous&family=Rubik:wght@400;600&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "標題字可以放在色塊上、略微傾斜，但不加立體陰影",
+      "英文副標可以全大寫，字距 0.08em",
+      "內文維持水平、靠左，好讀第一"
+    ]
+  },
+  "imagery": [
+    "80 年代家具、器物、彩色建築與商品照，背景單純",
+    "照片可以去背放在色塊上，或裁成圓形、半圓",
+    "插圖用平塗幾何形，不畫寫實陰影"
+  ],
+  "placeholder": "薄荷色圓角拱形版位，背後錯開疊一塊黑白細菌紋方塊，旁邊靠著一個黃色三角，中間寫「商品照片｜4:5」",
+  "avoid": [
+    "每個元素都加粗黑框和硬邊位移陰影（那是敘事新粗野）",
+    "只有紅黃藍三原色加黑的嚴謹構成（那是包浩斯）",
+    "70 年代大地色、彩虹弧線與圓潤襯線字（那是現代懷舊）",
+    "漸層、光澤與寫實陰影",
+    "整齊對稱的網格卡片",
+    "碎片壓在內文上影響閱讀"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "三個重點色要互撞，例如粉紅、青綠、黃；黑色負責圖案與文字。淺色重點色在淺底上只當色塊，上面的字用文字色。"
+  },
+  "backgrounds": [
+    {
+      "id": "ivory",
+      "name": "象牙白",
+      "hex": "#FAF5EA"
+    },
+    {
+      "id": "pink",
+      "name": "嬰兒粉",
+      "hex": "#F9D9DE"
+    },
+    {
+      "id": "mint",
+      "name": "薄荷",
+      "hex": "#CFEDE6"
+    },
+    {
+      "id": "night",
+      "name": "夜店紫黑",
+      "hex": "#1E1B2E"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "M1",
+      "name": "米蘭",
+      "ink": "#151515",
+      "accents": [
+        "#FF4F8B",
+        "#22B3B0",
+        "#FFD23F"
+      ],
+      "pairs_with": [
+        "ivory",
+        "pink",
+        "mint"
+      ]
+    },
+    {
+      "id": "M2",
+      "name": "美耐板",
+      "ink": "#1B1B3A",
+      "accents": [
+        "#3F51E0",
+        "#FF7A59",
+        "#9BE15D"
+      ],
+      "pairs_with": [
+        "ivory"
+      ]
+    },
+    {
+      "id": "M3",
+      "name": "汽水糖",
+      "ink": "#151515",
+      "accents": [
+        "#7A5CE6",
+        "#FF9F1C",
+        "#2EC4B6"
+      ],
+      "pairs_with": [
+        "ivory",
+        "mint"
+      ]
+    },
+    {
+      "id": "M4",
+      "name": "霓虹夜",
+      "ink": "#FAF5EA",
+      "accents": [
+        "#FF5FA2",
+        "#3FE0D0",
+        "#FFE14D"
+      ],
+      "pairs_with": [
+        "night"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 40 Design Style Names You've Been Looking For (Find References Faster)",
+    "url": "https://www.youtube.com/watch?v=bZ1vbmV5gk8&t=580s"
+  },
+  "prompt_en": [
+    "1980s Memphis Group design from Milan, postmodern and playful",
+    "Clashing pink, mint, yellow and cobalt blue",
+    "Black-and-white squiggle (Bacterio), grid and stripe surface patterns",
+    "Floating confetti of squiggles, zigzags, dots, triangles and half circles",
+    "Shapes mostly without outlines, no drop shadows",
+    "Deliberately unbalanced, energetic composition"
+  ],
+  "pinterest_queries": [
+    "memphis design poster",
+    "memphis group pattern 80s"
+  ],
+  "pins": [
+    {
+      "id": "114912227989874686",
+      "note": "Memphis/Milano poster (Cooper Hewitt collection)"
+    },
+    {
+      "id": "812266482762893325",
+      "note": "Memphis pattern credited to Ettore Sottsass"
+    },
+    {
+      "id": "626633735663762665",
+      "note": "Sottsass Bacterio squiggle pattern"
+    },
+    {
+      "id": "385339311882117219",
+      "note": "80s/90s Memphis-style poster illustration"
+    },
+    {
+      "id": "839639924293340629",
+      "note": "Memphis geometric background, pop shapes"
+    },
+    {
+      "id": "21181060744644828",
+      "note": "minimal Memphis start-up poster"
+    }
+  ]
+}

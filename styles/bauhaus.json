@@ -1,0 +1,211 @@
+{
+  "id": "bauhaus",
+  "name_zh": "包浩斯",
+  "name_en": "Bauhaus",
+  "summary": "1920 年代德國包浩斯學校的設計語言：圓、方、三角，紅黃藍加黑，粗黑條與無襯線字，在不對稱的構圖裡排出動勢。",
+  "definition": "包浩斯是 1919 年在德國威瑪成立的設計學校，後來遷到德紹。它的平面作品把版面當成構成練習：圓、方、三角這些基本形，紅、黃、藍三原色加黑，粗黑條當結構，無襯線字斜放或轉向，整體不對稱但很平衡。Herbert Bayer 還主張只用小寫字母。轉成簡報時，每頁用幾個大的幾何形和粗黑條撐起構圖，文字貼著這些形狀排。它和瑞士龐克、模組字體都不一樣：瑞士龐克是 1970 年代故意打破網格、用疊印與影印質感；模組字體是用幾何零件拼出字母本身；包浩斯的幾何形是獨立的構圖元素，字還是正常的無襯線字，畫面乾淨、平塗、沒有雜訊。",
+  "keywords": [
+    "理性",
+    "構成",
+    "現代主義",
+    "有動勢的平衡"
+  ],
+  "categories": [
+    "Modernist",
+    "Graphic"
+  ],
+  "best_for": [
+    "設計、建築與藝術教育主題",
+    "產品與工業設計提案",
+    "講方法與原則的分享",
+    "展覽與講座"
+  ],
+  "not_for": [
+    "需要溫暖柔和氣氛的內容",
+    "資訊密集的表格報告"
+  ],
+  "traits": [
+    "圓、方、三角三種基本形當主視覺",
+    "紅、黃、藍三原色加黑，平塗不加質感",
+    "粗黑橫條與直條撐起構圖",
+    "不對稱構圖，常有一條斜向主軸",
+    "無襯線字，英文常全用小寫",
+    "文字轉 90 度沿著色條排"
+  ],
+  "layout": [
+    "先定一條主軸（水平、垂直或 45 度斜線），大幾何形和粗黑條沿著它排",
+    "一頁只用二到三個大幾何形，可以被畫面邊緣裁掉一部分",
+    "主標貼齊粗黑條或幾何形的邊，不置中",
+    "小字靠左對齊，用粗黑條分隔段落",
+    "頁碼和資訊放進小的實心色塊或圓裡"
+  ],
+  "motifs": [
+    "大實心圓",
+    "正方形與長方形色塊",
+    "直角三角形",
+    "粗黑橫條與直條",
+    "半圓與四分之一圓",
+    "細長箭頭"
+  ],
+  "typography": {
+    "display": {
+      "family": "Jost",
+      "weights": "500、800",
+      "role": "英文標題與數字，幾何無襯線，可以全用小寫"
+    },
+    "body": {
+      "family": "Jost",
+      "weights": "400",
+      "role": "內文與說明"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文標題用 900，內文用 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;800&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "只用一種幾何無襯線字，靠字重和方向做層次",
+      "英文標題可以全小寫（Bayer 的 Universal 精神），中文照常",
+      "字可以轉 90 度貼著色條，但不疊字、不打亂網格"
+    ]
+  },
+  "imagery": [
+    "高對比黑白照片：建築、器物、工作中的手",
+    "照片裁成正方形或圓形，可以被色塊壓住一角",
+    "照片不加濾鏡、網點或顆粒"
+  ],
+  "placeholder": "黑白方形照片版位，右上角被一個紅色實心圓壓住，下緣貼一條粗黑條，中間寫「照片｜1:1」",
+  "avoid": [
+    "紋理、顆粒、網點與疊印（那是瑞士龐克）",
+    "用幾何零件拼出整個字母（那是模組字體）",
+    "襯線字、手寫字與裝飾花邊",
+    "漸層、陰影與圓角卡片",
+    "三原色以外再加粉彩或螢光色",
+    "所有元素對稱置中"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "紅、黃、藍各管一種形狀或角色：例如紅色給圓、藍色給方塊、黃色給三角或小記號；黑色負責粗條與文字。黃色在淺底上只當色塊，上面的字用黑色。"
+  },
+  "backgrounds": [
+    {
+      "id": "paper",
+      "name": "米白紙",
+      "hex": "#EEE8DA"
+    },
+    {
+      "id": "white",
+      "name": "白",
+      "hex": "#F7F5F0"
+    },
+    {
+      "id": "grey",
+      "name": "混凝土灰",
+      "hex": "#D9D5CC"
+    },
+    {
+      "id": "black",
+      "name": "黑",
+      "hex": "#141414"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "B1",
+      "name": "三原色",
+      "ink": "#161616",
+      "accents": [
+        "#D62A1E",
+        "#1D4E9E",
+        "#F2C12E"
+      ],
+      "pairs_with": [
+        "paper",
+        "white",
+        "grey"
+      ]
+    },
+    {
+      "id": "B2",
+      "name": "舊印刷品",
+      "ink": "#2A2622",
+      "accents": [
+        "#B8452E",
+        "#2F5C8A",
+        "#D9A93A"
+      ],
+      "pairs_with": [
+        "paper"
+      ]
+    },
+    {
+      "id": "B3",
+      "name": "黑底三原色",
+      "ink": "#EEE8DA",
+      "accents": [
+        "#E2362A",
+        "#F2C12E",
+        "#3D6FC2"
+      ],
+      "pairs_with": [
+        "black"
+      ]
+    },
+    {
+      "id": "B4",
+      "name": "紅與黑",
+      "ink": "#161616",
+      "accents": [
+        "#D62A1E"
+      ],
+      "pairs_with": [
+        "paper",
+        "white",
+        "grey"
+      ]
+    }
+  ],
+  "source": {
+    "title": "Kittl — 40 Design Style Names You've Been Looking For (Find References Faster)",
+    "url": "https://www.youtube.com/watch?v=bZ1vbmV5gk8&t=992s"
+  },
+  "prompt_en": [
+    "1920s Bauhaus poster design from Weimar and Dessau",
+    "Circles, squares and triangles as the main compositional elements",
+    "Primary red, yellow and blue with black, flat colour and no texture",
+    "Thick black bars and an asymmetric, often diagonal layout",
+    "Geometric sans-serif type, sometimes all lowercase, set at 90 degrees",
+    "Rational, constructive, clean modernist mood"
+  ],
+  "pinterest_queries": [
+    "bauhaus poster",
+    "bauhaus exhibition poster 1923"
+  ],
+  "pins": [
+    {
+      "id": "505951339381495806",
+      "note": "Joost Schmidt, 1923 Bauhaus exhibition poster, Weimar"
+    },
+    {
+      "id": "479211216620492944",
+      "note": "Herbert Bayer, unrealized 1923 exhibition poster design"
+    },
+    {
+      "id": "332210910028002021",
+      "note": "1923 Bauhaus poster"
+    },
+    {
+      "id": "303148618686339558",
+      "note": "Bauhaus exhibition Weimar 1923 poster print"
+    },
+    {
+      "id": "607634174753368405",
+      "note": "Bauhaus design posters"
+    },
+    {
+      "id": "560346378653562943",
+      "note": "modern Bauhaus-style geometric poster"
+    }
+  ]
+}
