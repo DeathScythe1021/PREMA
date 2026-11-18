@@ -14,6 +14,9 @@
     "Modernist",
     "Graphic"
   ],
+  "eras": [
+    "1920s"
+  ],
   "best_for": [
     "設計、建築與藝術教育主題",
     "產品與工業設計提案",
@@ -184,20 +187,12 @@
   ],
   "pins": [
     {
-      "id": "505951339381495806",
-      "note": "Joost Schmidt, 1923 Bauhaus exhibition poster, Weimar"
-    },
-    {
       "id": "479211216620492944",
       "note": "Herbert Bayer, unrealized 1923 exhibition poster design"
     },
     {
       "id": "332210910028002021",
       "note": "1923 Bauhaus poster"
-    },
-    {
-      "id": "303148618686339558",
-      "note": "Bauhaus exhibition Weimar 1923 poster print"
     },
     {
       "id": "607634174753368405",

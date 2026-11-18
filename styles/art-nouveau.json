@@ -18,6 +18,10 @@
     "Classic",
     "Illustrative"
   ],
+  "eras": [
+    "Pre-1900",
+    "1900s"
+  ],
   "best_for": [
     "花藝、茶飲、香氛與保養品牌",
     "藝文展演與音樂會",
@@ -186,16 +190,8 @@
       "note": "Mucha, Gismonda poster for Sarah Bernhardt, 1894"
     },
     {
-      "id": "346143921370436735",
-      "note": "Mucha, JOB cigarette paper poster, 1898"
-    },
-    {
       "id": "315252042639645041",
       "note": "Mucha, Zodiac lithograph, 1896"
-    },
-    {
-      "id": "611715561917633390",
-      "note": "Privat-Livemont, Palais de la Femme lithograph"
     },
     {
       "id": "379357968614650262",

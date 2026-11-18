@@ -14,6 +14,10 @@
     "Retro",
     "Collage"
   ],
+  "eras": [
+    "1990s",
+    "2010s"
+  ],
   "best_for": [
     "音樂、展演與派對宣傳",
     "潮流品牌與快閃活動",
@@ -200,10 +204,6 @@
     {
       "id": "652810908474332796",
       "note": "vaporwave poster, credited to Darius Krause"
-    },
-    {
-      "id": "209980401366451409",
-      "note": "vaporwave aesthetic movie poster"
     },
     {
       "id": "293367363238893089",

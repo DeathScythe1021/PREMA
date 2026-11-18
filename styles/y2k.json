@@ -18,6 +18,10 @@
     "Y2K",
     "Graphic"
   ],
+  "eras": [
+    "1990s",
+    "2000s"
+  ],
   "best_for": [
     "音樂、夜店與派對宣傳",
     "潮牌、美妝與飾品新品",
@@ -197,16 +201,8 @@
       "note": "Y2K Aesthetic Institute, Millennium Bug rave flyer by Chipmonk"
     },
     {
-      "id": "36732553206030063",
-      "note": "Y2K poster made in Figma, abstract silver lines and shapes"
-    },
-    {
       "id": "471259548519037253",
       "note": "Y2K liquid melting chrome lettering by Oksana Trygub (asset listing)"
-    },
-    {
-      "id": "180003317641022093",
-      "note": "Y2K blue rave flyer poster by Glossypop"
     }
   ]
 }

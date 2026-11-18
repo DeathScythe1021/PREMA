@@ -14,6 +14,9 @@
     "Retro",
     "Graphic"
   ],
+  "eras": [
+    "1980s"
+  ],
   "best_for": [
     "活動、派對與快閃店",
     "年輕族群的品牌與商品提案",
@@ -191,10 +194,6 @@
     {
       "id": "812266482762893325",
       "note": "Memphis pattern credited to Ettore Sottsass"
-    },
-    {
-      "id": "626633735663762665",
-      "note": "Sottsass Bacterio squiggle pattern"
     },
     {
       "id": "385339311882117219",

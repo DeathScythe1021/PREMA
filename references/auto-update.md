@@ -49,6 +49,7 @@ python3 scripts/candidates.py next 3
 - 4 個背景、4 組配色，重點色數量不超過 `color_rules.max_accents`。寫完跑 `python3 scripts/check_palette.py` 或直接跑 `validate_styles.py` 確認對比通過。
 - 字體只用 Google Fonts，`google_fonts` 連結要包含 display、body 和中文字體。
 - `categories` 用網站上已有的分類名稱為主（看其他 JSON 的 `categories`），真的沒有合適的才新增。
+- `eras` 填這個風格視覺來源的年代，1–3 個，只能用 `Pre-1900`、`1900s`、`1920s`、`1930s`、`1940s`、`1950s`、`1960s`、`1970s`、`1980s`、`1990s`、`2000s`、`2010s`、`2020s`、`Timeless`（沒有特定年代）。網站的 Era 篩選用的就是這個欄位。
 
 ### 5. 不做圖
 
@@ -59,6 +60,7 @@ python3 scripts/candidates.py next 3
 - 用 `pinterest_queries` 的關鍵字搜尋，搜尋範圍限定在 `pinterest.com` 網域（`site:pinterest.com/pin` 這種寫法搜不到結果），從結果網址 `pinterest.com/pin/<數字>` 取出 pin ID。
 - Pinterest 頁面通常抓不到內容，只能依搜尋結果的標題和摘要判斷是否相關；`note` 用英文寫它是什麼。優先選有明確作品名、作者或風格名稱的 pin，少用素材商品頁。
 - 同一張作品常有好幾個 pin，標題相同的只留一個。
+- 填完跑 `python3 scripts/check_pins.py <id>`，確認每張都讀得到（網站讀不到的 pin 不會顯示，第一張讀不到時卡片會沒有封面）。讀不到的用 `--fix` 移除後再補找。
 - 目標 6 張。找不到 6 張就照實際數量填，不要湊數或編造 ID；validate 會出提醒，沒關係。
 - 這些 pin 都還沒人看過，PR 說明裡一定要列出來請維護者確認。
 

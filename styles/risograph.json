@@ -14,6 +14,9 @@
     "Contemporary",
     "Print"
   ],
+  "eras": [
+    "2010s"
+  ],
   "best_for": [
     "插畫、出版與文創品牌提案",
     "活動、市集與講座海報",
@@ -182,10 +185,6 @@
     "riso print two color"
   ],
   "pins": [
-    {
-      "id": "1016687684624634437",
-      "note": "A3 risograph flower print in fluo pink"
-    },
     {
       "id": "493777546653257545",
       "note": "pink and red risograph poster, A4"

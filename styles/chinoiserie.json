@@ -14,6 +14,9 @@
     "Classic",
     "Illustrative"
   ],
+  "eras": [
+    "Pre-1900"
+  ],
   "best_for": [
     "茶、瓷器、家飾與生活品牌",
     "藝術史與博物館展覽",
@@ -196,10 +199,6 @@
     {
       "id": "112730796962004732",
       "note": "hand-drawn blue and white chinoiserie pattern set"
-    },
-    {
-      "id": "432627107959726324",
-      "note": "chinoiserie blue and white porcelain art print"
     },
     {
       "id": "1140607043096496525",

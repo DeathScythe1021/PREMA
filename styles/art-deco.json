@@ -14,6 +14,10 @@
     "Classic",
     "Graphic"
   ],
+  "eras": [
+    "1920s",
+    "1930s"
+  ],
   "best_for": [
     "晚宴、典禮與週年慶",
     "精品、酒類、飯店與餐廳品牌",
@@ -185,10 +189,6 @@
     {
       "id": "35395547059288599",
       "note": "Cassandre, Normandie ocean liner poster, 1935"
-    },
-    {
-      "id": "282882420338982988",
-      "note": "typographic posters by Cassandre"
     },
     {
       "id": "739857045018563025",
