@@ -122,12 +122,11 @@ svg { display: block; }
 .era { padding: 4px 24px 8px; }
 .era-val { font: 700 20px/1.2 var(--sans); letter-spacing: -.01em; margin: 0 0 14px; }
 /* 拉桿端點是 14px 黑色圓點；刻度、色帶、標籤都從 7px 內縮處開始算，才會和端點中心對齊 */
-.rng { position: relative; height: 24px; --k: 7px; }
+/* 拉桿左右各內縮 22px，讓第一個和最後一個標籤也能置中對齊端點，四個標籤等距 */
+.rng { position: relative; height: 24px; --k: 7px; margin: 0 22px; }
 .rng .track, .rng .fill { position: absolute; top: 11px; height: 2px; }
 .rng .track { left: var(--k); right: var(--k); background: var(--line); }
 .rng .fill { background: var(--ink); }
-.rng .tick { position: absolute; top: 10px; width: 4px; height: 4px; margin-left: -2px; border-radius: 50%; background: var(--line); }
-.rng .tick.in { background: var(--ink); }
 .rng input { position: absolute; inset: 0; width: 100%; height: 24px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
 .rng input::-webkit-slider-runnable-track { background: transparent; }
 .rng input::-moz-range-track { background: transparent; }
@@ -136,10 +135,8 @@ svg { display: block; }
 .rng input:focus-visible { outline: none; }
 .rng input:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--accent); outline-offset: 3px; }
 .rng input:focus-visible::-moz-range-thumb { outline: 2px solid var(--accent); outline-offset: 3px; }
-.era-ticks { position: relative; height: 16px; margin-top: 6px; font: 400 12px var(--mono); color: var(--ink-2); }
+.era-ticks { position: relative; height: 16px; margin: 6px 22px 0; font: 400 12px var(--mono); color: var(--ink-2); }
 .era-ticks span { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; }
-.era-ticks span:first-child { transform: none; }
-.era-ticks span:last-child { transform: translateX(-100%); }
 #eraTimeless { border-bottom: 0; margin-top: 4px; }
 .filter footer { display: flex; gap: 10px; padding: 16px 24px; border-top: 2px solid var(--ink); }
 .btn-1, .btn-2 { height: 52px; padding: 0 14px; white-space: nowrap; border: 2px solid var(--ink); font: 500 14px var(--mono); letter-spacing: .1em; text-transform: uppercase; transition: background var(--t-fast) linear, color var(--t-fast) linear; }
@@ -528,11 +525,10 @@ svg { display: block; }
       });
     }
     var eb = group('era', 'Era', true), max = ERAS.length - 1;
-    /* 每個年代一個刻度點；標籤放在 Pre-1900、1940s、1980s、2020s */
+    /* 標籤放在 Pre-1900、1940s、1980s、2020s（第 0、4、8、12 格），位置剛好等分 */
     var at = function (i) { return 'calc(var(--k) + (100% - 2 * var(--k)) * ' + (i / max) + ')'; };
     eb.innerHTML = '<div class="era"><p class="era-val" id="eraVal"></p>' +
       '<div class="rng" id="eraRng"><span class="track"></span><span class="fill" id="eraFill"></span>' +
-      ERAS.map(function (x, i) { return '<span class="tick" style="left:' + at(i) + '"></span>'; }).join('') +
       '<input type="range" id="eraLo" min="0" max="' + max + '" step="1" value="0" aria-label="Era from">' +
       '<input type="range" id="eraHi" min="0" max="' + max + '" step="1" value="' + max + '" aria-label="Era to"></div>' +
       '<div class="era-ticks" style="--k:7px">' + [0, 4, 8, max].map(function (i) { return '<span style="left:' + at(i) + '">' + ERAS[i] + '</span>'; }).join('') + '</div></div>';
@@ -558,9 +554,7 @@ svg { display: block; }
     var max = ERAS.length - 1;
     $('eraLo').value = era.lo; $('eraHi').value = era.hi;
     $('eraFill').style.left = 'calc(var(--k) + (100% - 2 * var(--k)) * ' + (era.lo / max) + ')';
-    $('eraFill').style.right = 'calc(var(--k) + (100% - 2 * var(--k)) * ' + (1 - era.hi / max) + ')';
-    document.querySelectorAll('#eraRng .tick').forEach(function (t, i) { t.classList.toggle('in', i >= era.lo && i <= era.hi); });
-    $('eraVal').textContent = eraFull() ? 'All eras' : (era.lo === era.hi ? ERAS[era.lo] : ERAS[era.lo] + ' – ' + ERAS[era.hi]);
+    $('eraFill').style.right = 'calc(var(--k) + (100% - 2 * var(--k)) * ' + (1 - era.hi / max) + ')';    $('eraVal').textContent = eraFull() ? 'All eras' : (era.lo === era.hi ? ERAS[era.lo] : ERAS[era.lo] + ' – ' + ERAS[era.hi]);
     /* 左端拉到最右邊時，讓左端在上層，才拉得回來 */
     $('eraLo').style.zIndex = era.lo === max ? 2 : 1;
     $('eraTimeless').setAttribute('aria-pressed', era.timeless || eraFull());
