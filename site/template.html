@@ -122,12 +122,12 @@ svg { display: block; }
 .era { padding: 4px 24px 8px; }
 .era-val { font: 700 20px/1.2 var(--sans); letter-spacing: -.01em; margin: 0 0 14px; }
 /* 拉桿端點是 14px 黑色圓點；刻度、色帶、標籤都從 7px 內縮處開始算，才會和端點中心對齊 */
-/* 拉桿左右各內縮 22px，讓第一個和最後一個標籤也能置中對齊端點，四個標籤等距 */
-.rng { position: relative; height: 24px; --k: 7px; margin: 0 22px; }
+/* 線條和其他區塊同寬；端點中心內縮 18px（剛好是 5 個字元標籤的一半），標籤置中在端點下方就會左右貼齊、彼此等距 */
+.rng { position: relative; height: 24px; --k: 18px; }
 .rng .track, .rng .fill { position: absolute; top: 11px; height: 2px; }
-.rng .track { left: var(--k); right: var(--k); background: var(--line); }
+.rng .track { left: 0; right: 0; background: var(--line); }
 .rng .fill { background: var(--ink); }
-.rng input { position: absolute; inset: 0; width: 100%; height: 24px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
+.rng input { position: absolute; top: 0; left: calc(var(--k) - 7px); right: calc(var(--k) - 7px); width: auto; height: 24px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
 .rng input::-webkit-slider-runnable-track { background: transparent; }
 .rng input::-moz-range-track { background: transparent; }
 .rng input::-webkit-slider-thumb { pointer-events: auto; -webkit-appearance: none; width: 14px; height: 14px; background: var(--ink); border: 0; border-radius: 50%; cursor: grab; }
@@ -135,7 +135,7 @@ svg { display: block; }
 .rng input:focus-visible { outline: none; }
 .rng input:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--accent); outline-offset: 3px; }
 .rng input:focus-visible::-moz-range-thumb { outline: 2px solid var(--accent); outline-offset: 3px; }
-.era-ticks { position: relative; height: 16px; margin: 6px 22px 0; font: 400 12px var(--mono); color: var(--ink-2); }
+.era-ticks { position: relative; height: 16px; margin: 6px 0 0; --k: 18px; font: 400 12px var(--mono); color: var(--ink-2); }
 .era-ticks span { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; }
 #eraTimeless { border-bottom: 0; margin-top: 4px; }
 .filter footer { display: flex; gap: 10px; padding: 16px 24px; border-top: 2px solid var(--ink); }
@@ -531,7 +531,7 @@ svg { display: block; }
       '<div class="rng" id="eraRng"><span class="track"></span><span class="fill" id="eraFill"></span>' +
       '<input type="range" id="eraLo" min="0" max="' + max + '" step="1" value="0" aria-label="Era from">' +
       '<input type="range" id="eraHi" min="0" max="' + max + '" step="1" value="' + max + '" aria-label="Era to"></div>' +
-      '<div class="era-ticks" style="--k:7px">' + [0, 4, 8, max].map(function (i) { return '<span style="left:' + at(i) + '">' + ERAS[i] + '</span>'; }).join('') + '</div></div>';
+      '<div class="era-ticks">' + [0, 4, 8, max].map(function (i) { return '<span style="left:' + at(i) + '">' + (i ? ERAS[i] : '&lt;1900') + '</span>'; }).join('') + '</div></div>';
     var tl = document.createElement('button');
     tl.type = 'button'; tl.className = 'fi'; tl.id = 'eraTimeless'; tl.setAttribute('aria-pressed', 'false');
     tl.innerHTML = fiHTML('Include timeless styles', styles.filter(function (s) { return (s.eras || []).indexOf('Timeless') >= 0; }).length);
