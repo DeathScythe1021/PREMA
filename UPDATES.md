@@ -1,9 +1,15 @@
 # 更新紀錄
 
 這份檔案由 `python3 scripts/candidates.py log` 依 `sources/kittl.json` 產生，不要手動修改。
-目前已收錄 41 種 Kittl 風格，待做 62 種。
+目前已收錄 44 種 Kittl 風格，待做 59 種。
 
 ## 已更新
+
+### 2026-11-23（新增 3 種）
+
+- [手作痕跡 Human Craft](https://deathscythe1021.github.io/PREMA/#human-craft)　來源：The 2027 Design Style Trends You Need To Know 0:47
+- [水鑽閃耀 Bedazzled](https://deathscythe1021.github.io/PREMA/#bedazzled)　來源：The 2027 Design Style Trends You Need To Know 2:09
+- [拼貼 Collage](https://deathscythe1021.github.io/PREMA/#collage)　來源：The 2027 Design Style Trends You Need To Know 3:28
 
 ### 2026-11-18（新增 16 種）
 
@@ -56,7 +62,6 @@
 
 每週一台北時間 09:00 由雲端排程新增 3 種，依候選清單順序。實際內容以當週的 PR 為準（不適合的候選會被跳過、由下一個補上）。
 
-- 2026-11-23：Human Craft、Bedazzled、Collage
 - 2026-11-30：Whimsical、Mixed Media、Low Fidelity
 - 2026-12-07：AI Hyperrealism、Dreamcore、Coastal Grandmother
 - 2026-12-14：Biophilic、Gorpcore、Transparent Tech
@@ -64,4 +69,5 @@
 - 2026-12-28：Witchcore、Rubber Hose、Romantasy
 - 2027-01-04：Dieselpunk、Lowbrow Art、Rocketpunk
 - 2027-01-11：Mobius、Afrofuturism、Biomorphic
-- 之後還有 38 種，完整清單：`python3 scripts/candidates.py list --status pending`
+- 2027-01-18：Antidesign、Surveillance、Monoline Illustration
+- 之後還有 35 種，完整清單：`python3 scripts/candidates.py list --status pending`
