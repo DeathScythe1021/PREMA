@@ -1,0 +1,209 @@
+{
+  "id": "collage",
+  "name_zh": "拼貼",
+  "name_en": "Collage",
+  "source": {
+    "title": "Kittl — The 2027 Design Style Trends You Need To Know",
+    "url": "https://www.youtube.com/watch?v=krH0Hdk2mEw&t=208s"
+  },
+  "summary": "把剪下來的照片、紙片、半色調網點和撕邊疊在一起，讓不相關的東西拼出新的意思。",
+  "definition": "拼貼從 1910 年代的立體派與達達的照片蒙太奇（例如 Hannah Höch）延伸而來，現在常見於雜誌、專輯與海報：舊雜誌人像被剪成不規則形，和手寫字、色塊、紙膠帶疊在一起。它和 Mixed Media 的差別是只用剪貼，不混入繪畫與數位特效。轉成簡報時，每頁一個主拼貼，其餘版面留白，並讓文字放在乾淨的紙片上。",
+  "keywords": [
+    "剪貼",
+    "超現實",
+    "雜誌感",
+    "不協調"
+  ],
+  "categories": [
+    "Collage",
+    "Editorial",
+    "Graphic"
+  ],
+  "eras": [
+    "1920s",
+    "2020s"
+  ],
+  "best_for": [
+    "創意與藝文提案",
+    "雜誌與出版企劃",
+    "音樂與展覽",
+    "概念性的品牌故事"
+  ],
+  "not_for": [
+    "財務與法遵報告",
+    "需要精確數據對照的內容",
+    "極簡專業的企業簡報"
+  ],
+  "traits": [
+    "剪下的人像與物件，邊緣有白邊或撕邊",
+    "半色調網點與顆粒的舊印刷質感",
+    "元素大小比例不合理",
+    "手寫字與印刷字剪下來貼",
+    "色塊紙片與紙膠帶",
+    "重疊處有輕微陰影，像真的貼上去"
+  ],
+  "layout": [
+    "每頁一個主拼貼，位置偏一側，另一側放文字紙片",
+    "文字放在乾淨的色塊或白紙條上，不直接壓在拼貼上",
+    "元素邊緣給 4–8px 白邊並加淡陰影",
+    "用紙膠帶與撕邊分隔區塊，不用細線框"
+  ],
+  "motifs": [
+    "剪下的雜誌人像與手",
+    "撕邊紙片",
+    "半色調網點",
+    "紙膠帶",
+    "報紙文字碎片"
+  ],
+  "typography": {
+    "display": {
+      "family": "Anton",
+      "weights": "400",
+      "role": "擠壓粗體標題，像剪下的報紙大標"
+    },
+    "body": {
+      "family": "Special Elite",
+      "weights": "400",
+      "role": "打字機字，當作貼上的說明紙條"
+    },
+    "zh": {
+      "family": "Noto Serif TC",
+      "weights": "500、900",
+      "role": "中文標題用 900，模仿報紙大標；說明用 500"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Anton&family=Special+Elite&family=Noto+Serif+TC:wght@500;900&display=swap",
+    "rules": [
+      "標題、說明、手寫標註各用不同的紙片，字體不要混在同一條紙上",
+      "文字紙片微傾斜即可，不要超過 3 度",
+      "最多兩種字體加一種手寫標註"
+    ]
+  },
+  "imagery": [
+    "舊雜誌、舊報紙、老照片、工業印刷素材",
+    "可以做半色調網點或去色，保留顆粒",
+    "去背後留一圈白邊，像用剪刀剪出來"
+  ],
+  "placeholder": "一張帶白邊的剪紙形版位，邊緣略不規則，角落貼一段紙膠帶，中間寫「剪下照片｜人像」",
+  "avoid": [
+    "完美對齊的格線與卡片",
+    "漸層、玻璃與光球",
+    "向量圖示組",
+    "元素邊緣過於乾淨、沒有紙感"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "紙片色塊分工：一個重點色當大色塊，另一個當小面積的貼紙與標記。"
+  },
+  "backgrounds": [
+    {
+      "id": "newsprint",
+      "name": "報紙灰",
+      "hex": "#E9E4D8"
+    },
+    {
+      "id": "cream",
+      "name": "紙白",
+      "hex": "#F7F2E7"
+    },
+    {
+      "id": "kraft",
+      "name": "牛皮紙",
+      "hex": "#D9C4A0"
+    },
+    {
+      "id": "black",
+      "name": "印刷黑",
+      "hex": "#1C1B1A"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "C1",
+      "name": "剪報與紅",
+      "ink": "#1C1B1A",
+      "accents": [
+        "#D6402F",
+        "#2F5D8A"
+      ],
+      "pairs_with": [
+        "newsprint",
+        "cream"
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "達達",
+      "ink": "#1C1B1A",
+      "accents": [
+        "#E8B230",
+        "#C23B52"
+      ],
+      "pairs_with": [
+        "newsprint",
+        "cream"
+      ]
+    },
+    {
+      "id": "C3",
+      "name": "反白剪報",
+      "ink": "#F2ECDD",
+      "accents": [
+        "#F26B4F",
+        "#6EB5C7"
+      ],
+      "pairs_with": [
+        "black"
+      ]
+    },
+    {
+      "id": "C4",
+      "name": "舊雜誌",
+      "ink": "#2B2420",
+      "accents": [
+        "#9C3B2C",
+        "#3F6F5E"
+      ],
+      "pairs_with": [
+        "cream",
+        "kraft"
+      ]
+    }
+  ],
+  "prompt_en": [
+    "Cut-out photographs and objects with white edges, torn paper and halftone dots",
+    "Surreal scale shifts between unrelated images",
+    "Newsprint, vintage magazine and typewriter text fragments",
+    "Paper tape, subtle drop shadows, layered paper depth",
+    "Limited palette of paper tones with one or two accent colors"
+  ],
+  "pinterest_queries": [
+    "paper collage poster graphic design",
+    "surreal collage vintage magazine cutouts"
+  ],
+  "pins": [
+    {
+      "id": "343540277839190401",
+      "note": "surreal collage art from vintage magazine cutouts"
+    },
+    {
+      "id": "614459942926952640",
+      "note": "surreal paper collage using vintage magazines"
+    },
+    {
+      "id": "6473993207296008",
+      "note": "layered paper cut poster"
+    },
+    {
+      "id": "1071504936337848888",
+      "note": "halftone collage with torn paper and handwriting"
+    },
+    {
+      "id": "273875221079217864",
+      "note": "vintage collage cut-outs with halftone and grain"
+    },
+    {
+      "id": "8936899250985941",
+      "note": "collage pin (title: Collage)"
+    }
+  ]
+}

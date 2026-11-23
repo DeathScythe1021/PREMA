@@ -1,0 +1,210 @@
+{
+  "id": "bedazzled",
+  "name_zh": "水鑽閃耀",
+  "name_en": "Bedazzled",
+  "source": {
+    "title": "Kittl — The 2027 Design Style Trends You Need To Know",
+    "url": "https://www.youtube.com/watch?v=krH0Hdk2mEw&t=129s"
+  },
+  "summary": "用一顆顆手貼的水鑽、亮片和閃粉鋪出畫面，高飽和、愛現、帶點 Y2K 辣妹和舞台的熱鬧。",
+  "definition": "Bedazzled 來自 DIY 水鑽貼飾：牛仔褲、手機殼、帆布畫上一顆顆亮晶晶的平底鑽。它和 Y2K 的差別在材質：重點是真的有顆粒、有反光的鑽石與亮片，而不是金屬漸層與泡泡字。轉成簡報時，在深色底上用點狀排列的鑽石組成星星、字母和邊框，其餘地方保持乾淨，讓閃亮只出現在該被看見的地方。",
+  "keywords": [
+    "閃亮",
+    "誇張",
+    "舞台感",
+    "俏皮"
+  ],
+  "categories": [
+    "Contemporary",
+    "Y2K",
+    "Tactile"
+  ],
+  "eras": [
+    "2000s",
+    "2020s"
+  ],
+  "best_for": [
+    "時尚、美妝與派對品牌",
+    "活動與演出提案",
+    "慶典與年度頒獎",
+    "社群行銷企劃"
+  ],
+  "not_for": [
+    "財務與法遵報告",
+    "醫療與公共政策",
+    "需要冷靜克制的內容"
+  ],
+  "traits": [
+    "點狀排列的水鑽，有高光與陰影",
+    "以鑽石組成的星星、愛心、字母",
+    "黑色或深色絨布底",
+    "鑲邊、緞帶與鏈條",
+    "亮片與閃粉的細碎顆粒",
+    "高飽和寶石色與銀色"
+  ],
+  "layout": [
+    "主標用鑽石點陣拼成，一頁最多一處",
+    "深色底配單一閃亮主體，其餘留白",
+    "用鑽石邊框框住圖片或重點數字",
+    "小亮點可散落在角落，不要鋪滿整頁"
+  ],
+  "motifs": [
+    "水鑽點陣",
+    "四芒星與愛心",
+    "鏈條與鉚釘",
+    "亮片",
+    "珍珠與緞帶"
+  ],
+  "typography": {
+    "display": {
+      "family": "Rubik",
+      "weights": "700、900",
+      "role": "主標用粗圓體，鑽石點陣或高光疊在上面"
+    },
+    "body": {
+      "family": "DM Sans",
+      "weights": "400、500、700",
+      "role": "內文與說明"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "500、900",
+      "role": "中文標題用 900，閃亮效果靠裝飾，不靠字體"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Rubik:wght@700;900&family=DM+Sans:wght@400;500;700&family=Noto+Sans+TC:wght@500;900&display=swap",
+    "rules": [
+      "閃亮只加在主標與重點記號，內文保持實色",
+      "中文標題用粗體，字筆畫要夠粗才撐得起鑽石點",
+      "字級對比大，主標一定比內文大三倍以上"
+    ]
+  },
+  "imagery": [
+    "特寫水鑽、亮片、珍珠、舞台燈光",
+    "照片高對比、深色背景",
+    "物件可以貼上鑽石點陣，不是只套濾鏡"
+  ],
+  "placeholder": "一塊黑絨底的版位，邊緣用鑽石點陣鑲一圈，中間寫「照片｜主體」，一角放一顆四芒星",
+  "avoid": [
+    "鋪滿整頁的亮片紋理",
+    "金屬漸層與泡泡字（那是 Y2K）",
+    "低飽和的大地色",
+    "細線條極簡商務版面"
+  ],
+  "color_rules": {
+    "max_accents": 3,
+    "notes": "三個重點色分工：一個當鑽石主色、一個當高光與星星、一個當小面積點綴。"
+  },
+  "backgrounds": [
+    {
+      "id": "velvet",
+      "name": "黑絨",
+      "hex": "#14101A"
+    },
+    {
+      "id": "midnight",
+      "name": "午夜藍",
+      "hex": "#1A1B3A"
+    },
+    {
+      "id": "blush",
+      "name": "粉霧",
+      "hex": "#F9E3EA"
+    },
+    {
+      "id": "silver",
+      "name": "銀白",
+      "hex": "#F2F2F6"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "B1",
+      "name": "舞台燈",
+      "ink": "#F6F1F7",
+      "accents": [
+        "#FF4FA0",
+        "#7FE0F2",
+        "#FFD65A"
+      ],
+      "pairs_with": [
+        "velvet",
+        "midnight"
+      ]
+    },
+    {
+      "id": "B2",
+      "name": "寶石盒",
+      "ink": "#F6F1F7",
+      "accents": [
+        "#B66BFF",
+        "#5EE6C0",
+        "#FF9AC8"
+      ],
+      "pairs_with": [
+        "velvet",
+        "midnight"
+      ]
+    },
+    {
+      "id": "B3",
+      "name": "粉晶",
+      "ink": "#2A1530",
+      "accents": [
+        "#D81E7A",
+        "#2A7DB8",
+        "#E8A21E"
+      ],
+      "pairs_with": [
+        "blush",
+        "silver"
+      ]
+    },
+    {
+      "id": "B4",
+      "name": "銀河派對",
+      "ink": "#1D1B2E",
+      "accents": [
+        "#E0338F",
+        "#2E8FB5",
+        "#C79A1B"
+      ],
+      "pairs_with": [
+        "silver",
+        "blush"
+      ]
+    }
+  ],
+  "prompt_en": [
+    "Rhinestones and flatback gems set in dot patterns with real highlights",
+    "Crystal stars, hearts and letters on black velvet",
+    "Sparkle, sequins and glitter used as small accents",
+    "Saturated jewel pink, violet, cyan and silver",
+    "Maximalist, glamorous, playful DIY mood"
+  ],
+  "pinterest_queries": [
+    "bedazzled rhinestone art black background",
+    "rhinestone star bedazzle design"
+  ],
+  "pins": [
+    {
+      "id": "563018696954533",
+      "note": "bling glitter Y2K glam wallpaper"
+    },
+    {
+      "id": "29062360087498939",
+      "note": "bedazzled love rhinestone design moodboard"
+    },
+    {
+      "id": "426505027239969816",
+      "note": "rhinestone gem kit for bedazzling projects (product page)"
+    },
+    {
+      "id": "11962755255087237",
+      "note": "bedazzled lighters with rhinestones"
+    },
+    {
+      "id": "945896728006934307",
+      "note": "rhinestone collectibles on display"
+    }
+  ]
+}

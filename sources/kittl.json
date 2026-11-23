@@ -252,19 +252,25 @@
       "name_en": "Human Craft",
       "video": "krH0Hdk2mEw",
       "t": "0:47",
-      "status": "pending"
+      "status": "done",
+      "style_id": "human-craft",
+      "done_on": "2026-11-23"
     },
     {
       "name_en": "Bedazzled",
       "video": "krH0Hdk2mEw",
       "t": "2:09",
-      "status": "pending"
+      "status": "done",
+      "style_id": "bedazzled",
+      "done_on": "2026-11-23"
     },
     {
       "name_en": "Collage",
       "video": "krH0Hdk2mEw",
       "t": "3:28",
-      "status": "pending"
+      "status": "done",
+      "style_id": "collage",
+      "done_on": "2026-11-23"
     },
     {
       "name_en": "Whimsical",

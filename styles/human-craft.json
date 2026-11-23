@@ -1,0 +1,208 @@
+{
+  "id": "human-craft",
+  "name_zh": "手作痕跡",
+  "name_en": "Human Craft",
+  "source": {
+    "title": "Kittl — The 2027 Design Style Trends You Need To Know",
+    "url": "https://www.youtube.com/watch?v=krH0Hdk2mEw&t=47s"
+  },
+  "summary": "刻意留下手的痕跡：不齊的手繪線條、手寫字、紙張紋理與微小的失誤，用來對抗過度完美的數位畫面。",
+  "definition": "Human Craft 是對 AI 與模板的回應：設計者把鉛筆線、墨水暈開、手寫標註和不對齊的拼貼留在成品裡，讓人看得出這是人做的。它比侘寂更有表情，比 Risograph 更少依賴印刷工藝。轉成簡報時，用手繪線框、手寫標題和帶紙紋的底色，圖形可以有一點歪、一點重疊，但資訊層級仍要清楚。",
+  "keywords": [
+    "手作",
+    "溫度",
+    "不完美",
+    "親切"
+  ],
+  "categories": [
+    "Contemporary",
+    "Illustrative",
+    "Tactile"
+  ],
+  "eras": [
+    "2020s"
+  ],
+  "best_for": [
+    "品牌故事與創作者分享",
+    "工藝、餐飲、教育類提案",
+    "個人作品集",
+    "社群與社區專案"
+  ],
+  "not_for": [
+    "財務與法遵報告",
+    "需要精準數據圖表的內容"
+  ],
+  "traits": [
+    "線條粗細不一，有抖動與斷筆",
+    "手寫字夾在印刷字之間",
+    "紙張紋理或顆粒底色",
+    "圖形略微歪斜、輪廓沒有完全對齊",
+    "手繪箭頭、圈選與底線當標註",
+    "色塊邊緣像水彩或蠟筆，不是乾淨的向量邊"
+  ],
+  "layout": [
+    "標題手寫或手繪，內文用易讀的字體",
+    "元素允許 2–3 度的傾斜，但同類元素傾斜方向一致",
+    "用手繪圈、箭頭引導視線，取代圖示",
+    "每頁留一處「失誤」，例如蓋歪的章或溢出的色塊，不要每個元素都歪"
+  ],
+  "motifs": [
+    "手繪圈選與底線",
+    "鉛筆草稿線",
+    "手寫箭頭與註解",
+    "蠟筆或粉彩塊面",
+    "膠帶與紙角"
+  ],
+  "typography": {
+    "display": {
+      "family": "Caveat Brush",
+      "weights": "400",
+      "role": "手寫主標，一頁最多一處"
+    },
+    "body": {
+      "family": "Lora",
+      "weights": "400、700",
+      "role": "內文與說明，保持易讀"
+    },
+    "zh": {
+      "family": "Noto Sans TC",
+      "weights": "400、700",
+      "role": "中文內文與標題；手寫感靠手繪線條，不靠字體模仿"
+    },
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lora:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap",
+    "rules": [
+      "手寫字只用在標題與標註",
+      "內文一律用易讀字體，不用手寫字排整段",
+      "中文不要找手寫字體硬套，標題改用粗體加手繪底線"
+    ]
+  },
+  "imagery": [
+    "掃描的手繪稿、紙上素描、手作物件的近拍",
+    "照片帶自然光與紙紋，不做過度修圖",
+    "可加手繪邊框或膠帶角固定"
+  ],
+  "placeholder": "一塊像貼在紙上的方形版位，邊緣用手繪不規則線條，四角貼膠帶，中間寫「照片｜手作物件」",
+  "avoid": [
+    "乾淨完美的向量圖示組",
+    "漸層、光球與玻璃效果",
+    "完全對稱的網格與機械式留白",
+    "把『手繪』做成統一的濾鏡字體"
+  ],
+  "color_rules": {
+    "max_accents": 2,
+    "notes": "一個重點色當手繪線與圈選，另一個當色塊，兩色都要有點不均勻的飽和度。"
+  },
+  "backgrounds": [
+    {
+      "id": "paper",
+      "name": "手工紙",
+      "hex": "#F3EBDD"
+    },
+    {
+      "id": "kraft",
+      "name": "牛皮紙",
+      "hex": "#E2CFAE"
+    },
+    {
+      "id": "chalk",
+      "name": "粉筆白",
+      "hex": "#FAF7F0"
+    },
+    {
+      "id": "ink",
+      "name": "墨夜",
+      "hex": "#24211F"
+    }
+  ],
+  "palettes": [
+    {
+      "id": "H1",
+      "name": "鉛筆與朱砂",
+      "ink": "#2A2622",
+      "accents": [
+        "#C8452F",
+        "#2F6F73"
+      ],
+      "pairs_with": [
+        "paper",
+        "chalk",
+        "kraft"
+      ]
+    },
+    {
+      "id": "H2",
+      "name": "牛皮紙工房",
+      "ink": "#2A2622",
+      "accents": [
+        "#B8452E",
+        "#3B5D8C"
+      ],
+      "pairs_with": [
+        "kraft",
+        "paper"
+      ]
+    },
+    {
+      "id": "H3",
+      "name": "粉筆夜課",
+      "ink": "#F3EBDD",
+      "accents": [
+        "#F0B94B",
+        "#8CC5B8"
+      ],
+      "pairs_with": [
+        "ink"
+      ]
+    },
+    {
+      "id": "H4",
+      "name": "水彩課",
+      "ink": "#2B2A33",
+      "accents": [
+        "#B8482E",
+        "#5E8F63"
+      ],
+      "pairs_with": [
+        "chalk",
+        "paper"
+      ]
+    }
+  ],
+  "prompt_en": [
+    "Hand-drawn, imperfect lines with visible wobble and pencil texture",
+    "Handwritten annotations, circled words and arrows over printed type",
+    "Paper-grain background, tape corners and slightly tilted elements",
+    "Crayon and watercolor-edged color blocks",
+    "Warm, personal, made-by-a-person mood"
+  ],
+  "pinterest_queries": [
+    "hand drawn imperfect graphic design",
+    "craft inspired branding hand lettering"
+  ],
+  "pins": [
+    {
+      "id": "519110294545545476",
+      "note": "hand-made digital graphic art with a warm hand-drawn feel"
+    },
+    {
+      "id": "798474208911666481",
+      "note": "hand illustrated line patterns, imperfect"
+    },
+    {
+      "id": "47147127336974446",
+      "note": "illustration trend with disproportionate hand-drawn bodies"
+    },
+    {
+      "id": "2462974791826209",
+      "note": "perfect imperfect hand-lettered font poster"
+    },
+    {
+      "id": "193162271506774025",
+      "note": "hand drawn lettering poster designs roundup"
+    },
+    {
+      "id": "154881674678931993",
+      "note": "poster artwork designed with hand lettering"
+    }
+  ]
+}
